@@ -1,0 +1,40 @@
+INFO: [HD-Application 1] Opened log file /home/jikken17/FPGA_TOP/ISE//home/jikken17/FPGA_TOP/ISE/planAhead_run_1/planAhead.log
+INFO: [HD-Application 2] Opened journal file /home/jikken17/FPGA_TOP/ISE//home/jikken17/FPGA_TOP/ISE/planAhead_run_1/planAhead.jou
+#-----------------------------------------------------------
+# PlanAhead v11.3
+# Build 48858 by hdbuild on Fri Aug 21 18:43:38 PDT 2009
+# Start of session at: 11/28/17 4:17:17 PM
+# Process ID: 18691
+#-----------------------------------------------------------
+INFO: [HD-RTPRIM 0] Parsing template file '/mnt/cad/Xilinx/11.1/ISE/data/projnav/templates/verilog.xml'
+INFO: [HD-RTPRIM 1] Finished parsing template file '/mnt/cad/Xilinx/11.1/ISE/data/projnav/templates/verilog.xml'
+INFO: [HD-RTPRIM 0] Parsing template file '/mnt/cad/Xilinx/11.1/ISE/data/projnav/templates/vhdl.xml'
+INFO: [HD-RTPRIM 1] Finished parsing template file '/mnt/cad/Xilinx/11.1/ISE/data/projnav/templates/vhdl.xml'
+INFO: [HD-RTPRIM 0] Parsing template file '/mnt/cad/Xilinx/11.1/ISE/data/projnav/templates/ucf.xml'
+INFO: [HD-RTPRIM 1] Finished parsing template file '/mnt/cad/Xilinx/11.1/ISE/data/projnav/templates/ucf.xml'
+Command> source /home/jikken17/FPGA_TOP/ISE/pa.fromNetlist.tcl
+# hdi::project new -name ISE -dir /home/jikken17/FPGA_TOP/ISE/planAhead_run_1 -netlist /home/jikken17/FPGA_TOP/ISE/fpga_top.ngc -search_path  {/home/jikken17/FPGA_TOP/ISE} 
+INFO: [HD-EDIFIN 0] Parsing Edif File './.HDI-PlanAhead-18691-Jikken-13/ngc2edif/fpga_top.edif'
+INFO: [HD-EDIFIN 1] Finished Parsing Edif File './.HDI-PlanAhead-18691-Jikken-13/ngc2edif/fpga_top.edif'
+WARN: [HD-NETLIST 3] Netlist 'fpga_top' is not ideal for floorplanning, since the cellview 'fpga_top' defined in file 'fpga_top.ngc' contains large number of primitives. Please consider enabling hierarchy in synthesis before floorplan. You can enable hierarchy in XST by setting '-keep_hierarchy=yes' or '-netlist_hierarchy=rebuilt' flags.
+# hdi::project setArch -name ISE -arch virtex5
+# hdi::param set -name project.paUcfFile -svalue /home/jikken17/FPGA_TOP/fpga/fpga_top.ucf
+# hdi::floorplan new -name floorplan_1 -part xc5vlx50ff676-1 -project ISE
+INFO: [HD-ArchReader 15] Reading macro library /mnt/cad/Xilinx/11.1/PlanAhead/./parts/xilinx/virtex5/virtex5lx/hd_int_macros.edn
+INFO: [HD-EDIFIN 0] Parsing Edif File '/mnt/cad/Xilinx/11.1/PlanAhead/./parts/xilinx/virtex5/virtex5lx/hd_int_macros.edn'
+INFO: [HD-EDIFIN 1] Finished Parsing Edif File '/mnt/cad/Xilinx/11.1/PlanAhead/./parts/xilinx/virtex5/virtex5lx/hd_int_macros.edn'
+INFO: [HD-ArchReader 12] Reading bus macro file /mnt/cad/Xilinx/11.1/PlanAhead/./parts/xilinx/virtex5/pr_bus_macros.xml
+INFO: [HD-ArchReader 7] Loading clock regions from /mnt/cad/Xilinx/11.1/PlanAhead/parts/xilinx/virtex5/virtex5lx/xc5vlx50/ClockRegion.xml
+INFO: [HD-ArchReader 8] Loading clock buffers from /mnt/cad/Xilinx/11.1/PlanAhead/parts/xilinx/virtex5/virtex5lx/xc5vlx50/ClockBuffers.xml
+INFO: [HD-ArchReader 3] Loading package from /mnt/cad/Xilinx/11.1/PlanAhead/parts/xilinx/virtex5/virtex5lx/xc5vlx50/ff676/Package.xml
+INFO: [HD-ArchReader 4] Loading io standards from /mnt/cad/Xilinx/11.1/PlanAhead/./parts/xilinx/virtex5/IOStandards.xml
+INFO: [HD-ArchReader 5] Loading pkg sso from /mnt/cad/Xilinx/11.1/PlanAhead/parts/xilinx/virtex5/virtex5lx/xc5vlx50/ff676/SSORules.xml
+INFO: [HD-GDRC 0] Loading list of drcs for the architecture : /mnt/cad/Xilinx/11.1/PlanAhead/./parts/xilinx/virtex5/drc.xml
+# hdi::pconst import -project ISE -floorplan floorplan_1 -file /home/jikken17/FPGA_TOP/fpga/fpga_top.ucf
+INFO: [HD-UCFReader 0] Parsing UCF File : /home/jikken17/FPGA_TOP/fpga/fpga_top.ucf
+ERROR: [HD-Constr 0] Could not find net 'CLK_33MHZ_FPGA' (file = fpga_top.ucf, line = 13)
+INFO: [HD-UCFReader 1] Finished Parsing UCF File : /home/jikken17/FPGA_TOP/fpga/fpga_top.ucf
+#-----------------------------------------------------------
+# End of session at: 11/28/17 4:17:23 PM
+# Process ID: 18691
+#-----------------------------------------------------------

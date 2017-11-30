@@ -1,0 +1,100 @@
+Release 11.1 ngdbuild L.57 (lin64)
+Copyright (c) 1995-2009 Xilinx, Inc.  All rights reserved.
+
+Command Line: /mnt/cad/Xilinx/11.1/ISE/bin/lin64/unwrapped/ngdbuild -ise ISE.ise
+-intstyle ise -dd _ngo -nt timestamp -i -p xc5vlx50-ff676-1 fpga_top.ngc
+fpga_top.ngd
+
+Reading NGO file "/home/jikken17/FPGA_TOP/ISE/fpga_top.ngc" ...
+Reading in constraint information from
+'/home/jikken17/FPGA_TOP/fpga/fpga_top.ucf'...
+Gathering constraint information from source properties...
+Done.
+
+Resolving constraint associations...
+Checking Constraint Associations...
+WARNING:ConstraintSystem:137 - Constraint <NET "CLK_33MHZ_FPGA" TNM_NET =
+   CLK_33MHZ_FPGA;> [/home/jikken17/FPGA_TOP/fpga/fpga_top.ucf(13)]: No
+   appropriate instances for the TNM constraint are driven by "CLK_33MHZ_FPGA".
+
+WARNING:ConstraintSystem:203 - A target design object for the Locate constraint
+   '<Net TP<0> LOC = N4  |> [/home/jikken17/FPGA_TOP/fpga/fpga_top.ucf(75)]'
+   could not be found and so the Locate constraint will be removed.
+
+WARNING:ConstraintSystem:203 - A target design object for the Locate constraint
+   '<Net TP<1> LOC = P5  |> [/home/jikken17/FPGA_TOP/fpga/fpga_top.ucf(76)]'
+   could not be found and so the Locate constraint will be removed.
+
+INFO:ConstraintSystem:178 - TNM 'sys_clk_pin', used in period specification
+   'TS_sys_clk_pin', was traced into DCM_ADV instance A_CRG/DCM_ADV_INST. The
+   following new TNM groups and period specifications were generated at the
+   DCM_ADV output(s): 
+   CLKDV: <TIMESPEC TS_A_CRG_CLKDV_BUF_0 = PERIOD "A_CRG_CLKDV_BUF_0"
+   TS_sys_clk_pin / 2 HIGH 50%>
+
+INFO:ConstraintSystem:178 - TNM 'sys_clk_pin', used in period specification
+   'TS_sys_clk_pin', was traced into DCM_ADV instance A_CRG/DCM_ADV_INST. The
+   following new TNM groups and period specifications were generated at the
+   DCM_ADV output(s): 
+   CLKFX: <TIMESPEC TS_A_CRG_CLKFX_BUF_2 = PERIOD "A_CRG_CLKFX_BUF_2"
+   TS_sys_clk_pin * 0.75 HIGH 50%>
+
+WARNING:ConstraintSystem:194 - The TNM 'CLK_33MHZ_FPGA', does not directly or
+   indirectly drive any flip-flops, latches and/or RAMs and is not actively used
+   by any referencing constraint.
+
+WARNING:NgdBuild:1012 - The constraint <NET: UniqueName:
+   /fpga_top/EXPANDED/I2C_SDA_DVI PULLUP> is overridden on the design object
+   I2C_SDA_DVI by the constraint <Net I2C_SDA_DVI PULLUP;>
+   [/home/jikken17/FPGA_TOP/fpga/fpga_top.ucf(71)].
+WARNING:NgdBuild:1012 - The constraint <NET: UniqueName:
+   /fpga_top/EXPANDED/I2C_SCL_DVI PULLUP> is overridden on the design object
+   I2C_SCL_DVI by the constraint <Net I2C_SCL_DVI PULLUP;>
+   [/home/jikken17/FPGA_TOP/fpga/fpga_top.ucf(65)].
+WARNING:NgdBuild:1012 - The constraint <Net TP<0> LOC = N4  |>
+   [/home/jikken17/FPGA_TOP/fpga/fpga_top.ucf(75)] is overridden on the design
+   object TP<0> by the constraint <Net TP<0> LOC = E13  |>
+   [/home/jikken17/FPGA_TOP/fpga/fpga_top.ucf(79)].
+WARNING:NgdBuild:1012 - The constraint <IOSTANDARD=LVCMOS33  |>
+   [/home/jikken17/FPGA_TOP/fpga/fpga_top.ucf(75)] is overridden on the design
+   object TP<0> by the constraint <IOSTANDARD=LVCMOS25  |>
+   [/home/jikken17/FPGA_TOP/fpga/fpga_top.ucf(79)].
+WARNING:NgdBuild:1012 - The constraint <Net TP<1> LOC = P5  |>
+   [/home/jikken17/FPGA_TOP/fpga/fpga_top.ucf(76)] is overridden on the design
+   object TP<1> by the constraint <Net TP<1> LOC = D14  |>
+   [/home/jikken17/FPGA_TOP/fpga/fpga_top.ucf(80)].
+WARNING:NgdBuild:1012 - The constraint <IOSTANDARD=LVCMOS33  |>
+   [/home/jikken17/FPGA_TOP/fpga/fpga_top.ucf(76)] is overridden on the design
+   object TP<1> by the constraint <IOSTANDARD=LVCMOS25  |>
+   [/home/jikken17/FPGA_TOP/fpga/fpga_top.ucf(80)].
+Done...
+Checking Partitions ...
+
+INFO:NgdBuild:1222 - Setting CLKIN_PERIOD attribute associated with DCM instance
+   A_CRG/DCM_ADV_INST to 10.000000 ns based on the period specification
+   (<TIMESPEC TS_sys_clk_pin = PERIOD sys_clk_pin 100000 kHz;>
+   [/home/jikken17/FPGA_TOP/fpga/fpga_top.ucf(3)]).
+Checking expanded design ...
+WARNING:NgdBuild:486 - Attribute "CLK_FEEDBACK" is not allowed on symbol
+   "A_LCD/pll2/PLL_ADV_INST" of type "PLL_ADV".  This attribute will be ignored.
+WARNING:NgdBuild:486 - Attribute "CLK_FEEDBACK" is not allowed on symbol
+   "A_LCD/pll/PLL_ADV_INST" of type "PLL_ADV".  This attribute will be ignored.
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+NGDBUILD Design Results Summary:
+  Number of errors:     0
+  Number of warnings:  12
+
+Total memory usage is 375048 kilobytes
+
+Writing NGD file "fpga_top.ngd" ...
+Total REAL time to NGDBUILD completion:  2 sec
+Total CPU time to NGDBUILD completion:   2 sec
+
+Writing NGDBUILD log file "fpga_top.bld"...

@@ -1,0 +1,23 @@
+#!/bin/tcsh
+
+
+#source TOOL.ENV
+
+rm -rf log.elab
+
+if ( $1 == 'all' | $1 == 'ALL' ) then
+   ncelab -f option.f h15_ids_cco_top >  log.all.elab
+   ncelab -f option.f h15_ids_cvi_top >> log.all.elab
+   ncelab -f option.f h15_ids_gsc_top >> log.all.elab
+   ncelab -f option.f h15_ids_imx_top >> log.all.elab
+   ncelab -f option.f h15_ids_mcu_top >> log.all.elab
+   ncelab -f option.f h15_ids_nd0_top >> log.all.elab
+   ncelab -f option.f h15_ids_nd1_top >> log.all.elab
+   ncelab -f option.f h15_ids_sub_top >> log.all.elab
+   ncelab -f option.f h15_ids_vsd_top >> log.all.elab
+#  ncelab -f option.f h15_ids_sre_top >> log.all.elab
+else if ( $1 == 'top' ) then                     
+   ncelab -f option.f h15_ids_top  | tee log.top.elab
+else
+   ncelab -f option.f $1 | tee log.elab
+endif

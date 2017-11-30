@@ -1,0 +1,952 @@
+
+---
+
+ncvlog(64): 08.20-s026: (c) Copyright 1995-2010 Cadence Design Systems, Inc.
+TOOL:	ncvlog(64)	08.20-s026: Started on Dec 05, 2016 at 15:31:56 JST
+ncvlog
+    -incdir ./../../include
+    -64bit
+    -message
+    -update
+    -pragma
+    -nowarn mrstar
+    -append_log
+    -define MODELSIM
+    -define FOR_SIM
+    -define SIMULATION
+    -logfile log.vlog
+    ../../rtl/FFT16/TWIDDLER.v
+
+file: ../../rtl/FFT16/TWIDDLER.v
+	module work.TWIDDLER
+		errors: 0, warnings: 0
+TOOL:	ncvlog(64)	08.20-s026: Exiting on Dec 05, 2016 at 15:31:57 JST  (total: 00:00:01)
+
+---
+
+ncvlog(64): 08.20-s026: (c) Copyright 1995-2010 Cadence Design Systems, Inc.
+TOOL:	ncvlog(64)	08.20-s026: Started on Dec 05, 2016 at 15:31:57 JST
+ncvlog
+    -incdir ./../../include
+    -64bit
+    -message
+    -update
+    -pragma
+    -nowarn mrstar
+    -append_log
+    -define MODELSIM
+    -define FOR_SIM
+    -define SIMULATION
+    -logfile log.vlog
+    ../../rtl/FFT16/J_MULTIPLIER.v
+
+file: ../../rtl/FFT16/J_MULTIPLIER.v
+assign {AR, AI} = A;        // j×(AR+j×AI) = -AI+j×AR
+                                |
+ncvlog: *W,NONPRT (../../rtl/FFT16/J_MULTIPLIER.v,11|32): non-printable character (0xc3) ignored.
+assign {AR, AI} = A;        // j×(AR+j×AI) = -AI+j×AR
+                                 |
+ncvlog: *W,NONPRT (../../rtl/FFT16/J_MULTIPLIER.v,11|33): non-printable character (0x97) ignored.
+	module work.J_MULTIPLIER
+		errors: 0, warnings: 2
+TOOL:	ncvlog(64)	08.20-s026: Exiting on Dec 05, 2016 at 15:31:57 JST  (total: 00:00:00)
+
+---
+
+ncvlog(64): 08.20-s026: (c) Copyright 1995-2010 Cadence Design Systems, Inc.
+TOOL:	ncvlog(64)	08.20-s026: Started on Dec 05, 2016 at 15:31:57 JST
+ncvlog
+    -incdir ./../../include
+    -64bit
+    -message
+    -update
+    -pragma
+    -nowarn mrstar
+    -append_log
+    -define MODELSIM
+    -define FOR_SIM
+    -define SIMULATION
+    -logfile log.vlog
+    ../../rtl/FFT16/COMPLEX_ADDER.v
+
+file: ../../rtl/FFT16/COMPLEX_ADDER.v
+	module work.COMPLEX_ADDER
+		errors: 0, warnings: 0
+TOOL:	ncvlog(64)	08.20-s026: Exiting on Dec 05, 2016 at 15:31:57 JST  (total: 00:00:00)
+
+---
+
+ncvlog(64): 08.20-s026: (c) Copyright 1995-2010 Cadence Design Systems, Inc.
+TOOL:	ncvlog(64)	08.20-s026: Started on Dec 05, 2016 at 15:31:57 JST
+ncvlog
+    -incdir ./../../include
+    -64bit
+    -message
+    -update
+    -pragma
+    -nowarn mrstar
+    -append_log
+    -define MODELSIM
+    -define FOR_SIM
+    -define SIMULATION
+    -logfile log.vlog
+    ../../rtl/FFT16/COMPLEX_SUBTRACTOR.v
+
+file: ../../rtl/FFT16/COMPLEX_SUBTRACTOR.v
+	module work.COMPLEX_SUBTRACTOR
+		errors: 0, warnings: 0
+TOOL:	ncvlog(64)	08.20-s026: Exiting on Dec 05, 2016 at 15:31:57 JST  (total: 00:00:00)
+
+---
+
+ncvlog(64): 08.20-s026: (c) Copyright 1995-2010 Cadence Design Systems, Inc.
+TOOL:	ncvlog(64)	08.20-s026: Started on Dec 05, 2016 at 15:31:57 JST
+ncvlog
+    -incdir ./../../include
+    -64bit
+    -message
+    -update
+    -pragma
+    -nowarn mrstar
+    -append_log
+    -define MODELSIM
+    -define FOR_SIM
+    -define SIMULATION
+    -logfile log.vlog
+    ../../rtl/FFT16/RADIX4.v
+
+file: ../../rtl/FFT16/RADIX4.v
+	module work.RADIX4
+		errors: 0, warnings: 0
+TOOL:	ncvlog(64)	08.20-s026: Exiting on Dec 05, 2016 at 15:31:57 JST  (total: 00:00:00)
+
+---
+
+ncvlog(64): 08.20-s026: (c) Copyright 1995-2010 Cadence Design Systems, Inc.
+TOOL:	ncvlog(64)	08.20-s026: Started on Dec 05, 2016 at 15:31:57 JST
+ncvlog
+    -incdir ./../../include
+    -64bit
+    -message
+    -update
+    -pragma
+    -nowarn mrstar
+    -append_log
+    -define MODELSIM
+    -define FOR_SIM
+    -define SIMULATION
+    -logfile log.vlog
+    ../../rtl/FFT16/FF32.v
+
+file: ../../rtl/FFT16/FF32.v
+	module work.FF32
+		errors: 0, warnings: 0
+TOOL:	ncvlog(64)	08.20-s026: Exiting on Dec 05, 2016 at 15:31:57 JST  (total: 00:00:00)
+
+---
+
+ncvlog(64): 08.20-s026: (c) Copyright 1995-2010 Cadence Design Systems, Inc.
+TOOL:	ncvlog(64)	08.20-s026: Started on Dec 05, 2016 at 15:31:57 JST
+ncvlog
+    -incdir ./../../include
+    -64bit
+    -message
+    -update
+    -pragma
+    -nowarn mrstar
+    -append_log
+    -define MODELSIM
+    -define FOR_SIM
+    -define SIMULATION
+    -logfile log.vlog
+    ../../rtl/FFT16/FFT16_SEQUENTIAL.v
+
+file: ../../rtl/FFT16/FFT16_SEQUENTIAL.v
+	A0 <= A1;    // シリアルパラレル変換用シフトレジスタ
+	                |
+ncvlog: *W,NONPRT (../../rtl/FFT16/FFT16_SEQUENTIAL.v,61|17): non-printable character (0xe3) ignored.
+	A0 <= A1;    // シリアルパラレル変換用シフトレジスタ
+	                 |
+ncvlog: *W,NONPRT (../../rtl/FFT16/FFT16_SEQUENTIAL.v,61|18): non-printable character (0x82) ignored.
+	A0 <= A1;    // シリアルパラレル変換用シフトレジスタ
+	                  |
+ncvlog: *W,NONPRT (../../rtl/FFT16/FFT16_SEQUENTIAL.v,61|19): non-printable character (0xb7) ignored.
+	A0 <= A1;    // シリアルパラレル変換用シフトレジスタ
+	                   |
+ncvlog: *W,NONPRT (../../rtl/FFT16/FFT16_SEQUENTIAL.v,61|20): non-printable character (0xe3) ignored.
+	A0 <= A1;    // シリアルパラレル変換用シフトレジスタ
+	                    |
+ncvlog: *W,NONPRT (../../rtl/FFT16/FFT16_SEQUENTIAL.v,61|21): non-printable character (0x83) ignored.
+	A0 <= A1;    // シリアルパラレル変換用シフトレジスタ
+	                     |
+ncvlog: *W,NONPRT (../../rtl/FFT16/FFT16_SEQUENTIAL.v,61|22): non-printable character (0xaa) ignored.
+	A0 <= A1;    // シリアルパラレル変換用シフトレジスタ
+	                      |
+ncvlog: *W,NONPRT (../../rtl/FFT16/FFT16_SEQUENTIAL.v,61|23): non-printable character (0xe3) ignored.
+	A0 <= A1;    // シリアルパラレル変換用シフトレジスタ
+	                       |
+ncvlog: *W,NONPRT (../../rtl/FFT16/FFT16_SEQUENTIAL.v,61|24): non-printable character (0x82) ignored.
+	A0 <= A1;    // シリアルパラレル変換用シフトレジスタ
+	                        |
+ncvlog: *W,NONPRT (../../rtl/FFT16/FFT16_SEQUENTIAL.v,61|25): non-printable character (0xa2) ignored.
+	A0 <= A1;    // シリアルパラレル変換用シフトレジスタ
+	                         |
+ncvlog: *W,NONPRT (../../rtl/FFT16/FFT16_SEQUENTIAL.v,61|26): non-printable character (0xe3) ignored.
+	A0 <= A1;    // シリアルパラレル変換用シフトレジスタ
+	                          |
+ncvlog: *W,NONPRT (../../rtl/FFT16/FFT16_SEQUENTIAL.v,61|27): non-printable character (0x83) ignored.
+	A0 <= A1;    // シリアルパラレル変換用シフトレジスタ
+	                           |
+ncvlog: *W,NONPRT (../../rtl/FFT16/FFT16_SEQUENTIAL.v,61|28): non-printable character (0xab) ignored.
+	A0 <= A1;    // シリアルパラレル変換用シフトレジスタ
+	                            |
+ncvlog: *W,NONPRT (../../rtl/FFT16/FFT16_SEQUENTIAL.v,61|29): non-printable character (0xe3) ignored.
+	A0 <= A1;    // シリアルパラレル変換用シフトレジスタ
+	                             |
+ncvlog: *W,NONPRT (../../rtl/FFT16/FFT16_SEQUENTIAL.v,61|30): non-printable character (0x83) ignored.
+	A0 <= A1;    // シリアルパラレル変換用シフトレジスタ
+	                              |
+ncvlog: *W,NONPRT (../../rtl/FFT16/FFT16_SEQUENTIAL.v,61|31): non-printable character (0x91) ignored.
+	A0 <= A1;    // シリアルパラレル変換用シフトレジスタ
+	                               |
+ncvlog: *W,NONPRT (../../rtl/FFT16/FFT16_SEQUENTIAL.v,61|32): non-printable character (0xe3) ignored.
+	A0 <= A1;    // シリアルパラレル変換用シフトレジスタ
+	                                |
+ncvlog: *W,NONPRT (../../rtl/FFT16/FFT16_SEQUENTIAL.v,61|33): non-printable character (0x83) ignored.
+	A0 <= A1;    // シリアルパラレル変換用シフトレジスタ
+	                                 |
+ncvlog: *W,NONPRT (../../rtl/FFT16/FFT16_SEQUENTIAL.v,61|34): non-printable character (0xa9) ignored.
+	A0 <= A1;    // シリアルパラレル変換用シフトレジスタ
+	                                  |
+ncvlog: *W,NONPRT (../../rtl/FFT16/FFT16_SEQUENTIAL.v,61|35): non-printable character (0xe3) ignored.
+	A0 <= A1;    // シリアルパラレル変換用シフトレジスタ
+	                                   |
+ncvlog: *W,NONPRT (../../rtl/FFT16/FFT16_SEQUENTIAL.v,61|36): non-printable character (0x83) ignored.
+	A0 <= A1;    // シリアルパラレル変換用シフトレジスタ
+	                                    |
+ncvlog: *W,NONPRT (../../rtl/FFT16/FFT16_SEQUENTIAL.v,61|37): non-printable character (0xac) ignored.
+	A0 <= A1;    // シリアルパラレル変換用シフトレジスタ
+	                                     |
+ncvlog: *W,NONPRT (../../rtl/FFT16/FFT16_SEQUENTIAL.v,61|38): non-printable character (0xe3) ignored.
+	A0 <= A1;    // シリアルパラレル変換用シフトレジスタ
+	                                      |
+ncvlog: *W,NONPRT (../../rtl/FFT16/FFT16_SEQUENTIAL.v,61|39): non-printable character (0x83) ignored.
+	A0 <= A1;    // シリアルパラレル変換用シフトレジスタ
+	                                       |
+ncvlog: *W,NONPRT (../../rtl/FFT16/FFT16_SEQUENTIAL.v,61|40): non-printable character (0xab) ignored.
+	A0 <= A1;    // シリアルパラレル変換用シフトレジスタ
+	                                        |
+ncvlog: *W,NONPRT (../../rtl/FFT16/FFT16_SEQUENTIAL.v,61|41): non-printable character (0xe5) ignored.
+	A0 <= A1;    // シリアルパラレル変換用シフトレジスタ
+	                                         |
+ncvlog: *W,NONPRT (../../rtl/FFT16/FFT16_SEQUENTIAL.v,61|42): non-printable character (0xa4) ignored.
+	A0 <= A1;    // シリアルパラレル変換用シフトレジスタ
+	                                          |
+ncvlog: *W,NONPRT (../../rtl/FFT16/FFT16_SEQUENTIAL.v,61|43): non-printable character (0x89) ignored.
+	A0 <= A1;    // シリアルパラレル変換用シフトレジスタ
+	                                           |
+ncvlog: *W,NONPRT (../../rtl/FFT16/FFT16_SEQUENTIAL.v,61|44): non-printable character (0xe6) ignored.
+	A0 <= A1;    // シリアルパラレル変換用シフトレジスタ
+	                                            |
+ncvlog: *W,NONPRT (../../rtl/FFT16/FFT16_SEQUENTIAL.v,61|45): non-printable character (0x8f) ignored.
+	A0 <= A1;    // シリアルパラレル変換用シフトレジスタ
+	                                             |
+ncvlog: *W,NONPRT (../../rtl/FFT16/FFT16_SEQUENTIAL.v,61|46): non-printable character (0x9b) ignored.
+	A0 <= A1;    // シリアルパラレル変換用シフトレジスタ
+	                                              |
+ncvlog: *W,NONPRT (../../rtl/FFT16/FFT16_SEQUENTIAL.v,61|47): non-printable character (0xe7) ignored.
+	A0 <= A1;    // シリアルパラレル変換用シフトレジスタ
+	                                               |
+ncvlog: *W,NONPRT (../../rtl/FFT16/FFT16_SEQUENTIAL.v,61|48): non-printable character (0x94) ignored.
+	A0 <= A1;    // シリアルパラレル変換用シフトレジスタ
+	                                                |
+ncvlog: *W,NONPRT (../../rtl/FFT16/FFT16_SEQUENTIAL.v,61|49): non-printable character (0xa8) ignored.
+	A0 <= A1;    // シリアルパラレル変換用シフトレジスタ
+	                                                 |
+ncvlog: *W,NONPRT (../../rtl/FFT16/FFT16_SEQUENTIAL.v,61|50): non-printable character (0xe3) ignored.
+	A0 <= A1;    // シリアルパラレル変換用シフトレジスタ
+	                                                  |
+ncvlog: *W,NONPRT (../../rtl/FFT16/FFT16_SEQUENTIAL.v,61|51): non-printable character (0x82) ignored.
+	A0 <= A1;    // シリアルパラレル変換用シフトレジスタ
+	                                                   |
+ncvlog: *W,NONPRT (../../rtl/FFT16/FFT16_SEQUENTIAL.v,61|52): non-printable character (0xb7) ignored.
+	A0 <= A1;    // シリアルパラレル変換用シフトレジスタ
+	                                                    |
+ncvlog: *W,NONPRT (../../rtl/FFT16/FFT16_SEQUENTIAL.v,61|53): non-printable character (0xe3) ignored.
+	A0 <= A1;    // シリアルパラレル変換用シフトレジスタ
+	                                                     |
+ncvlog: *W,NONPRT (../../rtl/FFT16/FFT16_SEQUENTIAL.v,61|54): non-printable character (0x83) ignored.
+	A0 <= A1;    // シリアルパラレル変換用シフトレジスタ
+	                                                      |
+ncvlog: *W,NONPRT (../../rtl/FFT16/FFT16_SEQUENTIAL.v,61|55): non-printable character (0x95) ignored.
+	A0 <= A1;    // シリアルパラレル変換用シフトレジスタ
+	                                                       |
+ncvlog: *W,NONPRT (../../rtl/FFT16/FFT16_SEQUENTIAL.v,61|56): non-printable character (0xe3) ignored.
+	A0 <= A1;    // シリアルパラレル変換用シフトレジスタ
+	                                                        |
+ncvlog: *W,NONPRT (../../rtl/FFT16/FFT16_SEQUENTIAL.v,61|57): non-printable character (0x83) ignored.
+	A0 <= A1;    // シリアルパラレル変換用シフトレジスタ
+	                                                         |
+ncvlog: *W,NONPRT (../../rtl/FFT16/FFT16_SEQUENTIAL.v,61|58): non-printable character (0x88) ignored.
+	A0 <= A1;    // シリアルパラレル変換用シフトレジスタ
+	                                                          |
+ncvlog: *W,NONPRT (../../rtl/FFT16/FFT16_SEQUENTIAL.v,61|59): non-printable character (0xe3) ignored.
+	A0 <= A1;    // シリアルパラレル変換用シフトレジスタ
+	                                                           |
+ncvlog: *W,NONPRT (../../rtl/FFT16/FFT16_SEQUENTIAL.v,61|60): non-printable character (0x83) ignored.
+	A0 <= A1;    // シリアルパラレル変換用シフトレジスタ
+	                                                            |
+ncvlog: *W,NONPRT (../../rtl/FFT16/FFT16_SEQUENTIAL.v,61|61): non-printable character (0xac) ignored.
+	A0 <= A1;    // シリアルパラレル変換用シフトレジスタ
+	                                                             |
+ncvlog: *W,NONPRT (../../rtl/FFT16/FFT16_SEQUENTIAL.v,61|62): non-printable character (0xe3) ignored.
+	A0 <= A1;    // シリアルパラレル変換用シフトレジスタ
+	                                                              |
+ncvlog: *W,NONPRT (../../rtl/FFT16/FFT16_SEQUENTIAL.v,61|63): non-printable character (0x82) ignored.
+	A0 <= A1;    // シリアルパラレル変換用シフトレジスタ
+	                                                               |
+ncvlog: *W,NONPRT (../../rtl/FFT16/FFT16_SEQUENTIAL.v,61|64): non-printable character (0xb8) ignored.
+	A0 <= A1;    // シリアルパラレル変換用シフトレジスタ
+	                                                                |
+ncvlog: *W,NONPRT (../../rtl/FFT16/FFT16_SEQUENTIAL.v,61|65): non-printable character (0xe3) ignored.
+	A0 <= A1;    // シリアルパラレル変換用シフトレジスタ
+	                                                                 |
+ncvlog: *W,NONPRT (../../rtl/FFT16/FFT16_SEQUENTIAL.v,61|66): non-printable character (0x82) ignored.
+	A0 <= A1;    // シリアルパラレル変換用シフトレジスタ
+	                                                                  |
+ncvlog: *W,NONPRT (../../rtl/FFT16/FFT16_SEQUENTIAL.v,61|67): non-printable character (0xb9) ignored.
+	A0 <= A1;    // シリアルパラレル変換用シフトレジスタ
+	                                                                   |
+ncvlog: *W,NONPRT (../../rtl/FFT16/FFT16_SEQUENTIAL.v,61|68): non-printable character (0xe3) ignored.
+	A0 <= A1;    // シリアルパラレル変換用シフトレジスタ
+	                                                                    |
+ncvlog: *W,NONPRT (../../rtl/FFT16/FFT16_SEQUENTIAL.v,61|69): non-printable character (0x82) ignored.
+	A0 <= A1;    // シリアルパラレル変換用シフトレジスタ
+	                                                                     |
+ncvlog: *W,NONPRT (../../rtl/FFT16/FFT16_SEQUENTIAL.v,61|70): non-printable character (0xbf) ignored.
+	YR0 <= SEL ? Y0 : YR1;    // パラレルシリアル変換用シフトレジスタ
+	                             |
+ncvlog: *W,NONPRT (../../rtl/FFT16/FFT16_SEQUENTIAL.v,78|30): non-printable character (0xe3) ignored.
+	YR0 <= SEL ? Y0 : YR1;    // パラレルシリアル変換用シフトレジスタ
+	                              |
+ncvlog: *W,NONPRT (../../rtl/FFT16/FFT16_SEQUENTIAL.v,78|31): non-printable character (0x83) ignored.
+	YR0 <= SEL ? Y0 : YR1;    // パラレルシリアル変換用シフトレジスタ
+	                               |
+ncvlog: *W,NONPRT (../../rtl/FFT16/FFT16_SEQUENTIAL.v,78|32): non-printable character (0x91) ignored.
+	YR0 <= SEL ? Y0 : YR1;    // パラレルシリアル変換用シフトレジスタ
+	                                |
+ncvlog: *W,NONPRT (../../rtl/FFT16/FFT16_SEQUENTIAL.v,78|33): non-printable character (0xe3) ignored.
+	YR0 <= SEL ? Y0 : YR1;    // パラレルシリアル変換用シフトレジスタ
+	                                 |
+ncvlog: *W,NONPRT (../../rtl/FFT16/FFT16_SEQUENTIAL.v,78|34): non-printable character (0x83) ignored.
+	YR0 <= SEL ? Y0 : YR1;    // パラレルシリアル変換用シフトレジスタ
+	                                  |
+ncvlog: *W,NONPRT (../../rtl/FFT16/FFT16_SEQUENTIAL.v,78|35): non-printable character (0xa9) ignored.
+	YR0 <= SEL ? Y0 : YR1;    // パラレルシリアル変換用シフトレジスタ
+	                                   |
+ncvlog: *W,NONPRT (../../rtl/FFT16/FFT16_SEQUENTIAL.v,78|36): non-printable character (0xe3) ignored.
+	YR0 <= SEL ? Y0 : YR1;    // パラレルシリアル変換用シフトレジスタ
+	                                    |
+ncvlog: *W,NONPRT (../../rtl/FFT16/FFT16_SEQUENTIAL.v,78|37): non-printable character (0x83) ignored.
+	YR0 <= SEL ? Y0 : YR1;    // パラレルシリアル変換用シフトレジスタ
+	                                     |
+ncvlog: *W,NONPRT (../../rtl/FFT16/FFT16_SEQUENTIAL.v,78|38): non-printable character (0xac) ignored.
+	YR0 <= SEL ? Y0 : YR1;    // パラレルシリアル変換用シフトレジスタ
+	                                      |
+ncvlog: *W,NONPRT (../../rtl/FFT16/FFT16_SEQUENTIAL.v,78|39): non-printable character (0xe3) ignored.
+	YR0 <= SEL ? Y0 : YR1;    // パラレルシリアル変換用シフトレジスタ
+	                                       |
+ncvlog: *W,NONPRT (../../rtl/FFT16/FFT16_SEQUENTIAL.v,78|40): non-printable character (0x83) ignored.
+	YR0 <= SEL ? Y0 : YR1;    // パラレルシリアル変換用シフトレジスタ
+	                                        |
+ncvlog: *W,NONPRT (../../rtl/FFT16/FFT16_SEQUENTIAL.v,78|41): non-printable character (0xab) ignored.
+	YR0 <= SEL ? Y0 : YR1;    // パラレルシリアル変換用シフトレジスタ
+	                                         |
+ncvlog: *W,NONPRT (../../rtl/FFT16/FFT16_SEQUENTIAL.v,78|42): non-printable character (0xe3) ignored.
+	YR0 <= SEL ? Y0 : YR1;    // パラレルシリアル変換用シフトレジスタ
+	                                          |
+ncvlog: *W,NONPRT (../../rtl/FFT16/FFT16_SEQUENTIAL.v,78|43): non-printable character (0x82) ignored.
+	YR0 <= SEL ? Y0 : YR1;    // パラレルシリアル変換用シフトレジスタ
+	                                           |
+ncvlog: *W,NONPRT (../../rtl/FFT16/FFT16_SEQUENTIAL.v,78|44): non-printable character (0xb7) ignored.
+	YR0 <= SEL ? Y0 : YR1;    // パラレルシリアル変換用シフトレジスタ
+	                                            |
+ncvlog: *W,NONPRT (../../rtl/FFT16/FFT16_SEQUENTIAL.v,78|45): non-printable character (0xe3) ignored.
+	YR0 <= SEL ? Y0 : YR1;    // パラレルシリアル変換用シフトレジスタ
+	                                             |
+ncvlog: *W,NONPRT (../../rtl/FFT16/FFT16_SEQUENTIAL.v,78|46): non-printable character (0x83) ignored.
+	YR0 <= SEL ? Y0 : YR1;    // パラレルシリアル変換用シフトレジスタ
+	                                              |
+ncvlog: *W,NONPRT (../../rtl/FFT16/FFT16_SEQUENTIAL.v,78|47): non-printable character (0xaa) ignored.
+	YR0 <= SEL ? Y0 : YR1;    // パラレルシリアル変換用シフトレジスタ
+	                                               |
+ncvlog: *W,NONPRT (../../rtl/FFT16/FFT16_SEQUENTIAL.v,78|48): non-printable character (0xe3) ignored.
+	YR0 <= SEL ? Y0 : YR1;    // パラレルシリアル変換用シフトレジスタ
+	                                                |
+ncvlog: *W,NONPRT (../../rtl/FFT16/FFT16_SEQUENTIAL.v,78|49): non-printable character (0x82) ignored.
+	YR0 <= SEL ? Y0 : YR1;    // パラレルシリアル変換用シフトレジスタ
+	                                                 |
+ncvlog: *W,NONPRT (../../rtl/FFT16/FFT16_SEQUENTIAL.v,78|50): non-printable character (0xa2) ignored.
+	YR0 <= SEL ? Y0 : YR1;    // パラレルシリアル変換用シフトレジスタ
+	                                                  |
+ncvlog: *W,NONPRT (../../rtl/FFT16/FFT16_SEQUENTIAL.v,78|51): non-printable character (0xe3) ignored.
+	YR0 <= SEL ? Y0 : YR1;    // パラレルシリアル変換用シフトレジスタ
+	                                                   |
+ncvlog: *W,NONPRT (../../rtl/FFT16/FFT16_SEQUENTIAL.v,78|52): non-printable character (0x83) ignored.
+	YR0 <= SEL ? Y0 : YR1;    // パラレルシリアル変換用シフトレジスタ
+	                                                    |
+ncvlog: *W,NONPRT (../../rtl/FFT16/FFT16_SEQUENTIAL.v,78|53): non-printable character (0xab) ignored.
+	YR0 <= SEL ? Y0 : YR1;    // パラレルシリアル変換用シフトレジスタ
+	                                                     |
+ncvlog: *W,NONPRT (../../rtl/FFT16/FFT16_SEQUENTIAL.v,78|54): non-printable character (0xe5) ignored.
+	YR0 <= SEL ? Y0 : YR1;    // パラレルシリアル変換用シフトレジスタ
+	                                                      |
+ncvlog: *W,NONPRT (../../rtl/FFT16/FFT16_SEQUENTIAL.v,78|55): non-printable character (0xa4) ignored.
+	YR0 <= SEL ? Y0 : YR1;    // パラレルシリアル変換用シフトレジスタ
+	                                                       |
+ncvlog: *W,NONPRT (../../rtl/FFT16/FFT16_SEQUENTIAL.v,78|56): non-printable character (0x89) ignored.
+	YR0 <= SEL ? Y0 : YR1;    // パラレルシリアル変換用シフトレジスタ
+	                                                        |
+ncvlog: *W,NONPRT (../../rtl/FFT16/FFT16_SEQUENTIAL.v,78|57): non-printable character (0xe6) ignored.
+	YR0 <= SEL ? Y0 : YR1;    // パラレルシリアル変換用シフトレジスタ
+	                                                         |
+ncvlog: *W,NONPRT (../../rtl/FFT16/FFT16_SEQUENTIAL.v,78|58): non-printable character (0x8f) ignored.
+	YR0 <= SEL ? Y0 : YR1;    // パラレルシリアル変換用シフトレジスタ
+	                                                          |
+ncvlog: *W,NONPRT (../../rtl/FFT16/FFT16_SEQUENTIAL.v,78|59): non-printable character (0x9b) ignored.
+	YR0 <= SEL ? Y0 : YR1;    // パラレルシリアル変換用シフトレジスタ
+	                                                           |
+ncvlog: *W,NONPRT (../../rtl/FFT16/FFT16_SEQUENTIAL.v,78|60): non-printable character (0xe7) ignored.
+	YR0 <= SEL ? Y0 : YR1;    // パラレルシリアル変換用シフトレジスタ
+	                                                            |
+ncvlog: *W,NONPRT (../../rtl/FFT16/FFT16_SEQUENTIAL.v,78|61): non-printable character (0x94) ignored.
+	YR0 <= SEL ? Y0 : YR1;    // パラレルシリアル変換用シフトレジスタ
+	                                                             |
+ncvlog: *W,NONPRT (../../rtl/FFT16/FFT16_SEQUENTIAL.v,78|62): non-printable character (0xa8) ignored.
+	YR0 <= SEL ? Y0 : YR1;    // パラレルシリアル変換用シフトレジスタ
+	                                                              |
+ncvlog: *W,NONPRT (../../rtl/FFT16/FFT16_SEQUENTIAL.v,78|63): non-printable character (0xe3) ignored.
+	YR0 <= SEL ? Y0 : YR1;    // パラレルシリアル変換用シフトレジスタ
+	                                                               |
+ncvlog: *W,NONPRT (../../rtl/FFT16/FFT16_SEQUENTIAL.v,78|64): non-printable character (0x82) ignored.
+	YR0 <= SEL ? Y0 : YR1;    // パラレルシリアル変換用シフトレジスタ
+	                                                                |
+ncvlog: *W,NONPRT (../../rtl/FFT16/FFT16_SEQUENTIAL.v,78|65): non-printable character (0xb7) ignored.
+	YR0 <= SEL ? Y0 : YR1;    // パラレルシリアル変換用シフトレジスタ
+	                                                                 |
+ncvlog: *W,NONPRT (../../rtl/FFT16/FFT16_SEQUENTIAL.v,78|66): non-printable character (0xe3) ignored.
+	YR0 <= SEL ? Y0 : YR1;    // パラレルシリアル変換用シフトレジスタ
+	                                                                  |
+ncvlog: *W,NONPRT (../../rtl/FFT16/FFT16_SEQUENTIAL.v,78|67): non-printable character (0x83) ignored.
+	YR0 <= SEL ? Y0 : YR1;    // パラレルシリアル変換用シフトレジスタ
+	                                                                   |
+ncvlog: *W,NONPRT (../../rtl/FFT16/FFT16_SEQUENTIAL.v,78|68): non-printable character (0x95) ignored.
+	YR0 <= SEL ? Y0 : YR1;    // パラレルシリアル変換用シフトレジスタ
+	                                                                    |
+ncvlog: *W,NONPRT (../../rtl/FFT16/FFT16_SEQUENTIAL.v,78|69): non-printable character (0xe3) ignored.
+	YR0 <= SEL ? Y0 : YR1;    // パラレルシリアル変換用シフトレジスタ
+	                                                                     |
+ncvlog: *W,NONPRT (../../rtl/FFT16/FFT16_SEQUENTIAL.v,78|70): non-printable character (0x83) ignored.
+	YR0 <= SEL ? Y0 : YR1;    // パラレルシリアル変換用シフトレジスタ
+	                                                                      |
+ncvlog: *W,NONPRT (../../rtl/FFT16/FFT16_SEQUENTIAL.v,78|71): non-printable character (0x88) ignored.
+	YR0 <= SEL ? Y0 : YR1;    // パラレルシリアル変換用シフトレジスタ
+	                                                                       |
+ncvlog: *W,NONPRT (../../rtl/FFT16/FFT16_SEQUENTIAL.v,78|72): non-printable character (0xe3) ignored.
+	YR0 <= SEL ? Y0 : YR1;    // パラレルシリアル変換用シフトレジスタ
+	                                                                        |
+ncvlog: *W,NONPRT (../../rtl/FFT16/FFT16_SEQUENTIAL.v,78|73): non-printable character (0x83) ignored.
+	YR0 <= SEL ? Y0 : YR1;    // パラレルシリアル変換用シフトレジスタ
+	                                                                         |
+ncvlog: *W,NONPRT (../../rtl/FFT16/FFT16_SEQUENTIAL.v,78|74): non-printable character (0xac) ignored.
+	YR0 <= SEL ? Y0 : YR1;    // パラレルシリアル変換用シフトレジスタ
+	                                                                          |
+ncvlog: *W,NONPRT (../../rtl/FFT16/FFT16_SEQUENTIAL.v,78|75): non-printable character (0xe3) ignored.
+	YR0 <= SEL ? Y0 : YR1;    // パラレルシリアル変換用シフトレジスタ
+	                                                                           |
+ncvlog: *W,NONPRT (../../rtl/FFT16/FFT16_SEQUENTIAL.v,78|76): non-printable character (0x82) ignored.
+	YR0 <= SEL ? Y0 : YR1;    // パラレルシリアル変換用シフトレジスタ
+	                                                                            |
+ncvlog: *W,NONPRT (../../rtl/FFT16/FFT16_SEQUENTIAL.v,78|77): non-printable character (0xb8) ignored.
+	YR0 <= SEL ? Y0 : YR1;    // パラレルシリアル変換用シフトレジスタ
+	                                                                             |
+ncvlog: *W,NONPRT (../../rtl/FFT16/FFT16_SEQUENTIAL.v,78|78): non-printable character (0xe3) ignored.
+	YR0 <= SEL ? Y0 : YR1;    // パラレルシリアル変換用シフトレジスタ
+	                                                                              |
+ncvlog: *W,NONPRT (../../rtl/FFT16/FFT16_SEQUENTIAL.v,78|79): non-printable character (0x82) ignored.
+	YR0 <= SEL ? Y0 : YR1;    // パラレルシリアル変換用シフトレジスタ
+	                                                                               |
+ncvlog: *W,NONPRT (../../rtl/FFT16/FFT16_SEQUENTIAL.v,78|80): non-printable character (0xb9) ignored.
+	YR0 <= SEL ? Y0 : YR1;    // パラレルシリアル変換用シフトレジスタ
+	                                                                                |
+ncvlog: *W,NONPRT (../../rtl/FFT16/FFT16_SEQUENTIAL.v,78|81): non-printable character (0xe3) ignored.
+	YR0 <= SEL ? Y0 : YR1;    // パラレルシリアル変換用シフトレジスタ
+	                                                                                 |
+ncvlog: *W,NONPRT (../../rtl/FFT16/FFT16_SEQUENTIAL.v,78|82): non-printable character (0x82) ignored.
+	YR0 <= SEL ? Y0 : YR1;    // パラレルシリアル変換用シフトレジスタ
+	                                                                                  |
+ncvlog: *W,NONPRT (../../rtl/FFT16/FFT16_SEQUENTIAL.v,78|83): non-printable character (0xbf) ignored.
+	YR2 <= SEL ? Y2 : YR3;    //    FFT16の出力値がシフトレジスタにロードされる。
+	                                     |
+ncvlog: *W,NONPRT (../../rtl/FFT16/FFT16_SEQUENTIAL.v,80|38): non-printable character (0xe3) ignored.
+	YR2 <= SEL ? Y2 : YR3;    //    FFT16の出力値がシフトレジスタにロードされる。
+	                                      |
+ncvlog: *W,NONPRT (../../rtl/FFT16/FFT16_SEQUENTIAL.v,80|39): non-printable character (0x81) ignored.
+	YR2 <= SEL ? Y2 : YR3;    //    FFT16の出力値がシフトレジスタにロードされる。
+	                                       |
+ncvlog: *W,NONPRT (../../rtl/FFT16/FFT16_SEQUENTIAL.v,80|40): non-printable character (0xae) ignored.
+	YR2 <= SEL ? Y2 : YR3;    //    FFT16の出力値がシフトレジスタにロードされる。
+	                                        |
+ncvlog: *W,NONPRT (../../rtl/FFT16/FFT16_SEQUENTIAL.v,80|41): non-printable character (0xe5) ignored.
+	YR2 <= SEL ? Y2 : YR3;    //    FFT16の出力値がシフトレジスタにロードされる。
+	                                         |
+ncvlog: *W,NONPRT (../../rtl/FFT16/FFT16_SEQUENTIAL.v,80|42): non-printable character (0x87) ignored.
+	YR2 <= SEL ? Y2 : YR3;    //    FFT16の出力値がシフトレジスタにロードされる。
+	                                          |
+ncvlog: *W,NONPRT (../../rtl/FFT16/FFT16_SEQUENTIAL.v,80|43): non-printable character (0xba) ignored.
+	YR2 <= SEL ? Y2 : YR3;    //    FFT16の出力値がシフトレジスタにロードされる。
+	                                           |
+ncvlog: *W,NONPRT (../../rtl/FFT16/FFT16_SEQUENTIAL.v,80|44): non-printable character (0xe5) ignored.
+	YR2 <= SEL ? Y2 : YR3;    //    FFT16の出力値がシフトレジスタにロードされる。
+	                                            |
+ncvlog: *W,NONPRT (../../rtl/FFT16/FFT16_SEQUENTIAL.v,80|45): non-printable character (0x8a) ignored.
+	YR2 <= SEL ? Y2 : YR3;    //    FFT16の出力値がシフトレジスタにロードされる。
+	                                             |
+ncvlog: *W,NONPRT (../../rtl/FFT16/FFT16_SEQUENTIAL.v,80|46): non-printable character (0x9b) ignored.
+	YR2 <= SEL ? Y2 : YR3;    //    FFT16の出力値がシフトレジスタにロードされる。
+	                                              |
+ncvlog: *W,NONPRT (../../rtl/FFT16/FFT16_SEQUENTIAL.v,80|47): non-printable character (0xe5) ignored.
+	YR2 <= SEL ? Y2 : YR3;    //    FFT16の出力値がシフトレジスタにロードされる。
+	                                               |
+ncvlog: *W,NONPRT (../../rtl/FFT16/FFT16_SEQUENTIAL.v,80|48): non-printable character (0x80) ignored.
+	YR2 <= SEL ? Y2 : YR3;    //    FFT16の出力値がシフトレジスタにロードされる。
+	                                                |
+ncvlog: *W,NONPRT (../../rtl/FFT16/FFT16_SEQUENTIAL.v,80|49): non-printable character (0xa4) ignored.
+	YR2 <= SEL ? Y2 : YR3;    //    FFT16の出力値がシフトレジスタにロードされる。
+	                                                 |
+ncvlog: *W,NONPRT (../../rtl/FFT16/FFT16_SEQUENTIAL.v,80|50): non-printable character (0xe3) ignored.
+	YR2 <= SEL ? Y2 : YR3;    //    FFT16の出力値がシフトレジスタにロードされる。
+	                                                  |
+ncvlog: *W,NONPRT (../../rtl/FFT16/FFT16_SEQUENTIAL.v,80|51): non-printable character (0x81) ignored.
+	YR2 <= SEL ? Y2 : YR3;    //    FFT16の出力値がシフトレジスタにロードされる。
+	                                                   |
+ncvlog: *W,NONPRT (../../rtl/FFT16/FFT16_SEQUENTIAL.v,80|52): non-printable character (0x8c) ignored.
+	YR2 <= SEL ? Y2 : YR3;    //    FFT16の出力値がシフトレジスタにロードされる。
+	                                                    |
+ncvlog: *W,NONPRT (../../rtl/FFT16/FFT16_SEQUENTIAL.v,80|53): non-printable character (0xe3) ignored.
+	YR2 <= SEL ? Y2 : YR3;    //    FFT16の出力値がシフトレジスタにロードされる。
+	                                                     |
+ncvlog: *W,NONPRT (../../rtl/FFT16/FFT16_SEQUENTIAL.v,80|54): non-printable character (0x82) ignored.
+	YR2 <= SEL ? Y2 : YR3;    //    FFT16の出力値がシフトレジスタにロードされる。
+	                                                      |
+ncvlog: *W,NONPRT (../../rtl/FFT16/FFT16_SEQUENTIAL.v,80|55): non-printable character (0xb7) ignored.
+	YR2 <= SEL ? Y2 : YR3;    //    FFT16の出力値がシフトレジスタにロードされる。
+	                                                       |
+ncvlog: *W,NONPRT (../../rtl/FFT16/FFT16_SEQUENTIAL.v,80|56): non-printable character (0xe3) ignored.
+	YR2 <= SEL ? Y2 : YR3;    //    FFT16の出力値がシフトレジスタにロードされる。
+	                                                        |
+ncvlog: *W,NONPRT (../../rtl/FFT16/FFT16_SEQUENTIAL.v,80|57): non-printable character (0x83) ignored.
+	YR2 <= SEL ? Y2 : YR3;    //    FFT16の出力値がシフトレジスタにロードされる。
+	                                                         |
+ncvlog: *W,NONPRT (../../rtl/FFT16/FFT16_SEQUENTIAL.v,80|58): non-printable character (0x95) ignored.
+	YR2 <= SEL ? Y2 : YR3;    //    FFT16の出力値がシフトレジスタにロードされる。
+	                                                          |
+ncvlog: *W,NONPRT (../../rtl/FFT16/FFT16_SEQUENTIAL.v,80|59): non-printable character (0xe3) ignored.
+	YR2 <= SEL ? Y2 : YR3;    //    FFT16の出力値がシフトレジスタにロードされる。
+	                                                           |
+ncvlog: *W,NONPRT (../../rtl/FFT16/FFT16_SEQUENTIAL.v,80|60): non-printable character (0x83) ignored.
+	YR2 <= SEL ? Y2 : YR3;    //    FFT16の出力値がシフトレジスタにロードされる。
+	                                                            |
+ncvlog: *W,NONPRT (../../rtl/FFT16/FFT16_SEQUENTIAL.v,80|61): non-printable character (0x88) ignored.
+	YR2 <= SEL ? Y2 : YR3;    //    FFT16の出力値がシフトレジスタにロードされる。
+	                                                             |
+ncvlog: *W,NONPRT (../../rtl/FFT16/FFT16_SEQUENTIAL.v,80|62): non-printable character (0xe3) ignored.
+	YR2 <= SEL ? Y2 : YR3;    //    FFT16の出力値がシフトレジスタにロードされる。
+	                                                              |
+ncvlog: *W,NONPRT (../../rtl/FFT16/FFT16_SEQUENTIAL.v,80|63): non-printable character (0x83) ignored.
+	YR2 <= SEL ? Y2 : YR3;    //    FFT16の出力値がシフトレジスタにロードされる。
+	                                                               |
+ncvlog: *W,NONPRT (../../rtl/FFT16/FFT16_SEQUENTIAL.v,80|64): non-printable character (0xac) ignored.
+	YR2 <= SEL ? Y2 : YR3;    //    FFT16の出力値がシフトレジスタにロードされる。
+	                                                                |
+ncvlog: *W,NONPRT (../../rtl/FFT16/FFT16_SEQUENTIAL.v,80|65): non-printable character (0xe3) ignored.
+	YR2 <= SEL ? Y2 : YR3;    //    FFT16の出力値がシフトレジスタにロードされる。
+	                                                                 |
+ncvlog: *W,NONPRT (../../rtl/FFT16/FFT16_SEQUENTIAL.v,80|66): non-printable character (0x82) ignored.
+	YR2 <= SEL ? Y2 : YR3;    //    FFT16の出力値がシフトレジスタにロードされる。
+	                                                                  |
+ncvlog: *W,NONPRT (../../rtl/FFT16/FFT16_SEQUENTIAL.v,80|67): non-printable character (0xb8) ignored.
+	YR2 <= SEL ? Y2 : YR3;    //    FFT16の出力値がシフトレジスタにロードされる。
+	                                                                   |
+ncvlog: *W,NONPRT (../../rtl/FFT16/FFT16_SEQUENTIAL.v,80|68): non-printable character (0xe3) ignored.
+	YR2 <= SEL ? Y2 : YR3;    //    FFT16の出力値がシフトレジスタにロードされる。
+	                                                                    |
+ncvlog: *W,NONPRT (../../rtl/FFT16/FFT16_SEQUENTIAL.v,80|69): non-printable character (0x82) ignored.
+	YR2 <= SEL ? Y2 : YR3;    //    FFT16の出力値がシフトレジスタにロードされる。
+	                                                                     |
+ncvlog: *W,NONPRT (../../rtl/FFT16/FFT16_SEQUENTIAL.v,80|70): non-printable character (0xb9) ignored.
+	YR2 <= SEL ? Y2 : YR3;    //    FFT16の出力値がシフトレジスタにロードされる。
+	                                                                      |
+ncvlog: *W,NONPRT (../../rtl/FFT16/FFT16_SEQUENTIAL.v,80|71): non-printable character (0xe3) ignored.
+	YR2 <= SEL ? Y2 : YR3;    //    FFT16の出力値がシフトレジスタにロードされる。
+	                                                                       |
+ncvlog: *W,NONPRT (../../rtl/FFT16/FFT16_SEQUENTIAL.v,80|72): non-printable character (0x82) ignored.
+	YR2 <= SEL ? Y2 : YR3;    //    FFT16の出力値がシフトレジスタにロードされる。
+	                                                                        |
+ncvlog: *W,NONPRT (../../rtl/FFT16/FFT16_SEQUENTIAL.v,80|73): non-printable character (0xbf) ignored.
+	YR2 <= SEL ? Y2 : YR3;    //    FFT16の出力値がシフトレジスタにロードされる。
+	                                                                         |
+ncvlog: *W,NONPRT (../../rtl/FFT16/FFT16_SEQUENTIAL.v,80|74): non-printable character (0xe3) ignored.
+	YR2 <= SEL ? Y2 : YR3;    //    FFT16の出力値がシフトレジスタにロードされる。
+	                                                                          |
+ncvlog: *W,NONPRT (../../rtl/FFT16/FFT16_SEQUENTIAL.v,80|75): non-printable character (0x81) ignored.
+	YR2 <= SEL ? Y2 : YR3;    //    FFT16の出力値がシフトレジスタにロードされる。
+	                                                                           |
+ncvlog: *W,NONPRT (../../rtl/FFT16/FFT16_SEQUENTIAL.v,80|76): non-printable character (0xab) ignored.
+	YR2 <= SEL ? Y2 : YR3;    //    FFT16の出力値がシフトレジスタにロードされる。
+	                                                                            |
+ncvlog: *W,NONPRT (../../rtl/FFT16/FFT16_SEQUENTIAL.v,80|77): non-printable character (0xe3) ignored.
+	YR2 <= SEL ? Y2 : YR3;    //    FFT16の出力値がシフトレジスタにロードされる。
+	                                                                             |
+ncvlog: *W,NONPRT (../../rtl/FFT16/FFT16_SEQUENTIAL.v,80|78): non-printable character (0x83) ignored.
+	YR2 <= SEL ? Y2 : YR3;    //    FFT16の出力値がシフトレジスタにロードされる。
+	                                                                              |
+ncvlog: *W,NONPRT (../../rtl/FFT16/FFT16_SEQUENTIAL.v,80|79): non-printable character (0xad) ignored.
+	YR2 <= SEL ? Y2 : YR3;    //    FFT16の出力値がシフトレジスタにロードされる。
+	                                                                               |
+ncvlog: *W,NONPRT (../../rtl/FFT16/FFT16_SEQUENTIAL.v,80|80): non-printable character (0xe3) ignored.
+	YR2 <= SEL ? Y2 : YR3;    //    FFT16の出力値がシフトレジスタにロードされる。
+	                                                                                |
+ncvlog: *W,NONPRT (../../rtl/FFT16/FFT16_SEQUENTIAL.v,80|81): non-printable character (0x83) ignored.
+	YR2 <= SEL ? Y2 : YR3;    //    FFT16の出力値がシフトレジスタにロードされる。
+	                                                                                 |
+ncvlog: *W,NONPRT (../../rtl/FFT16/FFT16_SEQUENTIAL.v,80|82): non-printable character (0xbc) ignored.
+	YR2 <= SEL ? Y2 : YR3;    //    FFT16の出力値がシフトレジスタにロードされる。
+	                                                                                  |
+ncvlog: *W,NONPRT (../../rtl/FFT16/FFT16_SEQUENTIAL.v,80|83): non-printable character (0xe3) ignored.
+	YR2 <= SEL ? Y2 : YR3;    //    FFT16の出力値がシフトレジスタにロードされる。
+	                                                                                   |
+ncvlog: *W,NONPRT (../../rtl/FFT16/FFT16_SEQUENTIAL.v,80|84): non-printable character (0x83) ignored.
+	YR2 <= SEL ? Y2 : YR3;    //    FFT16の出力値がシフトレジスタにロードされる。
+	                                                                                    |
+ncvlog: *W,NONPRT (../../rtl/FFT16/FFT16_SEQUENTIAL.v,80|85): non-printable character (0x89) ignored.
+	YR2 <= SEL ? Y2 : YR3;    //    FFT16の出力値がシフトレジスタにロードされる。
+	                                                                                     |
+ncvlog: *W,NONPRT (../../rtl/FFT16/FFT16_SEQUENTIAL.v,80|86): non-printable character (0xe3) ignored.
+	YR2 <= SEL ? Y2 : YR3;    //    FFT16の出力値がシフトレジスタにロードされる。
+	                                                                                      |
+ncvlog: *W,NONPRT (../../rtl/FFT16/FFT16_SEQUENTIAL.v,80|87): non-printable character (0x81) ignored.
+	YR2 <= SEL ? Y2 : YR3;    //    FFT16の出力値がシフトレジスタにロードされる。
+	                                                                                       |
+ncvlog: *W,NONPRT (../../rtl/FFT16/FFT16_SEQUENTIAL.v,80|88): non-printable character (0x95) ignored.
+	YR2 <= SEL ? Y2 : YR3;    //    FFT16の出力値がシフトレジスタにロードされる。
+	                                                                                        |
+ncvlog: *W,NONPRT (../../rtl/FFT16/FFT16_SEQUENTIAL.v,80|89): non-printable character (0xe3) ignored.
+	YR2 <= SEL ? Y2 : YR3;    //    FFT16の出力値がシフトレジスタにロードされる。
+	                                                                                         |
+ncvlog: *W,NONPRT (../../rtl/FFT16/FFT16_SEQUENTIAL.v,80|90): non-printable character (0x82) ignored.
+	YR2 <= SEL ? Y2 : YR3;    //    FFT16の出力値がシフトレジスタにロードされる。
+	                                                                                          |
+ncvlog: *W,NONPRT (../../rtl/FFT16/FFT16_SEQUENTIAL.v,80|91): non-printable character (0x8c) ignored.
+	YR2 <= SEL ? Y2 : YR3;    //    FFT16の出力値がシフトレジスタにロードされる。
+	                                                                                           |
+ncvlog: *W,NONPRT (../../rtl/FFT16/FFT16_SEQUENTIAL.v,80|92): non-printable character (0xe3) ignored.
+	YR2 <= SEL ? Y2 : YR3;    //    FFT16の出力値がシフトレジスタにロードされる。
+	                                                                                            |
+ncvlog: *W,NONPRT (../../rtl/FFT16/FFT16_SEQUENTIAL.v,80|93): non-printable character (0x82) ignored.
+	YR2 <= SEL ? Y2 : YR3;    //    FFT16の出力値がシフトレジスタにロードされる。
+	                                                                                             |
+ncvlog: *W,NONPRT (../../rtl/FFT16/FFT16_SEQUENTIAL.v,80|94): non-printable character (0x8b) ignored.
+	YR2 <= SEL ? Y2 : YR3;    //    FFT16の出力値がシフトレジスタにロードされる。
+	                                                                                              |
+ncvlog: *W,NONPRT (../../rtl/FFT16/FFT16_SEQUENTIAL.v,80|95): non-printable character (0xe3) ignored.
+	YR2 <= SEL ? Y2 : YR3;    //    FFT16の出力値がシフトレジスタにロードされる。
+	                                                                                               |
+ncvlog: *W,NONPRT (../../rtl/FFT16/FFT16_SEQUENTIAL.v,80|96): non-printable character (0x80) ignored.
+	YR2 <= SEL ? Y2 : YR3;    //    FFT16の出力値がシフトレジスタにロードされる。
+	                                                                                                |
+ncvlog: *W,NONPRT (../../rtl/FFT16/FFT16_SEQUENTIAL.v,80|97): non-printable character (0x82) ignored.
+	module work.FFT16_SEQUENTIAL
+		errors: 0, warnings: 168
+TOOL:	ncvlog(64)	08.20-s026: Exiting on Dec 05, 2016 at 15:31:57 JST  (total: 00:00:00)
+
+---
+
+ncvlog(64): 08.20-s026: (c) Copyright 1995-2010 Cadence Design Systems, Inc.
+TOOL:	ncvlog(64)	08.20-s026: Started on Dec 05, 2016 at 15:31:57 JST
+ncvlog
+    -incdir ./../../include
+    -64bit
+    -message
+    -update
+    -pragma
+    -nowarn mrstar
+    -append_log
+    -define MODELSIM
+    -define FOR_SIM
+    -define SIMULATION
+    -logfile log.vlog
+    ../../rtl/FFT16/CONTROLLER.v
+
+file: ../../rtl/FFT16/CONTROLLER.v
+						                        // 全34状態を記憶するため 6ビットを用意する
+						                           |
+ncvlog: *W,NONPRT (../../rtl/FFT16/CONTROLLER.v,9|33): non-printable character (0xe5) ignored.
+						                        // 全34状態を記憶するため 6ビットを用意する
+						                            |
+ncvlog: *W,NONPRT (../../rtl/FFT16/CONTROLLER.v,9|34): non-printable character (0x85) ignored.
+						                        // 全34状態を記憶するため 6ビットを用意する
+						                             |
+ncvlog: *W,NONPRT (../../rtl/FFT16/CONTROLLER.v,9|35): non-printable character (0xa8) ignored.
+					                33:    STATE <= 0;    // 演算終了時には初期状態 0 に戻す
+					                                         |
+ncvlog: *W,NONPRT (../../rtl/FFT16/CONTROLLER.v,28|46): non-printable character (0xe6) ignored.
+					                33:    STATE <= 0;    // 演算終了時には初期状態 0 に戻す
+					                                          |
+ncvlog: *W,NONPRT (../../rtl/FFT16/CONTROLLER.v,28|47): non-printable character (0xbc) ignored.
+					                33:    STATE <= 0;    // 演算終了時には初期状態 0 に戻す
+					                                           |
+ncvlog: *W,NONPRT (../../rtl/FFT16/CONTROLLER.v,28|48): non-printable character (0x94) ignored.
+					                33:    STATE <= 0;    // 演算終了時には初期状態 0 に戻す
+					                                            |
+ncvlog: *W,NONPRT (../../rtl/FFT16/CONTROLLER.v,28|49): non-printable character (0xe7) ignored.
+					                33:    STATE <= 0;    // 演算終了時には初期状態 0 に戻す
+					                                             |
+ncvlog: *W,NONPRT (../../rtl/FFT16/CONTROLLER.v,28|50): non-printable character (0xae) ignored.
+					                33:    STATE <= 0;    // 演算終了時には初期状態 0 に戻す
+					                                              |
+ncvlog: *W,NONPRT (../../rtl/FFT16/CONTROLLER.v,28|51): non-printable character (0x97) ignored.
+					                33:    STATE <= 0;    // 演算終了時には初期状態 0 に戻す
+					                                               |
+ncvlog: *W,NONPRT (../../rtl/FFT16/CONTROLLER.v,28|52): non-printable character (0xe7) ignored.
+					                33:    STATE <= 0;    // 演算終了時には初期状態 0 に戻す
+					                                                |
+ncvlog: *W,NONPRT (../../rtl/FFT16/CONTROLLER.v,28|53): non-printable character (0xb5) ignored.
+					                33:    STATE <= 0;    // 演算終了時には初期状態 0 に戻す
+					                                                 |
+ncvlog: *W,NONPRT (../../rtl/FFT16/CONTROLLER.v,28|54): non-printable character (0x82) ignored.
+					                33:    STATE <= 0;    // 演算終了時には初期状態 0 に戻す
+					                                                  |
+ncvlog: *W,NONPRT (../../rtl/FFT16/CONTROLLER.v,28|55): non-printable character (0xe4) ignored.
+					                33:    STATE <= 0;    // 演算終了時には初期状態 0 に戻す
+					                                                   |
+ncvlog: *W,NONPRT (../../rtl/FFT16/CONTROLLER.v,28|56): non-printable character (0xba) ignored.
+					                33:    STATE <= 0;    // 演算終了時には初期状態 0 に戻す
+					                                                    |
+ncvlog: *W,NONPRT (../../rtl/FFT16/CONTROLLER.v,28|57): non-printable character (0x86) ignored.
+					                33:    STATE <= 0;    // 演算終了時には初期状態 0 に戻す
+					                                                     |
+ncvlog: *W,NONPRT (../../rtl/FFT16/CONTROLLER.v,28|58): non-printable character (0xe6) ignored.
+					                33:    STATE <= 0;    // 演算終了時には初期状態 0 に戻す
+					                                                      |
+ncvlog: *W,NONPRT (../../rtl/FFT16/CONTROLLER.v,28|59): non-printable character (0x99) ignored.
+					                33:    STATE <= 0;    // 演算終了時には初期状態 0 に戻す
+					                                                       |
+ncvlog: *W,NONPRT (../../rtl/FFT16/CONTROLLER.v,28|60): non-printable character (0x82) ignored.
+					                33:    STATE <= 0;    // 演算終了時には初期状態 0 に戻す
+					                                                        |
+ncvlog: *W,NONPRT (../../rtl/FFT16/CONTROLLER.v,28|61): non-printable character (0xe3) ignored.
+					                33:    STATE <= 0;    // 演算終了時には初期状態 0 に戻す
+					                                                         |
+ncvlog: *W,NONPRT (../../rtl/FFT16/CONTROLLER.v,28|62): non-printable character (0x81) ignored.
+					                33:    STATE <= 0;    // 演算終了時には初期状態 0 に戻す
+					                                                          |
+ncvlog: *W,NONPRT (../../rtl/FFT16/CONTROLLER.v,28|63): non-printable character (0xab) ignored.
+					                33:    STATE <= 0;    // 演算終了時には初期状態 0 に戻す
+					                                                           |
+ncvlog: *W,NONPRT (../../rtl/FFT16/CONTROLLER.v,28|64): non-printable character (0xe3) ignored.
+					                33:    STATE <= 0;    // 演算終了時には初期状態 0 に戻す
+					                                                            |
+ncvlog: *W,NONPRT (../../rtl/FFT16/CONTROLLER.v,28|65): non-printable character (0x81) ignored.
+					                33:    STATE <= 0;    // 演算終了時には初期状態 0 に戻す
+					                                                             |
+ncvlog: *W,NONPRT (../../rtl/FFT16/CONTROLLER.v,28|66): non-printable character (0xaf) ignored.
+					                33:    STATE <= 0;    // 演算終了時には初期状態 0 に戻す
+					                                                              |
+ncvlog: *W,NONPRT (../../rtl/FFT16/CONTROLLER.v,28|67): non-printable character (0xe5) ignored.
+					                33:    STATE <= 0;    // 演算終了時には初期状態 0 に戻す
+					                                                               |
+ncvlog: *W,NONPRT (../../rtl/FFT16/CONTROLLER.v,28|68): non-printable character (0x88) ignored.
+					                33:    STATE <= 0;    // 演算終了時には初期状態 0 に戻す
+					                                                                |
+ncvlog: *W,NONPRT (../../rtl/FFT16/CONTROLLER.v,28|69): non-printable character (0x9d) ignored.
+					                33:    STATE <= 0;    // 演算終了時には初期状態 0 に戻す
+					                                                                 |
+ncvlog: *W,NONPRT (../../rtl/FFT16/CONTROLLER.v,28|70): non-printable character (0xe6) ignored.
+					                33:    STATE <= 0;    // 演算終了時には初期状態 0 に戻す
+					                                                                  |
+ncvlog: *W,NONPRT (../../rtl/FFT16/CONTROLLER.v,28|71): non-printable character (0x9c) ignored.
+					                33:    STATE <= 0;    // 演算終了時には初期状態 0 に戻す
+					                                                                   |
+ncvlog: *W,NONPRT (../../rtl/FFT16/CONTROLLER.v,28|72): non-printable character (0x9f) ignored.
+					                33:    STATE <= 0;    // 演算終了時には初期状態 0 に戻す
+					                                                                    |
+ncvlog: *W,NONPRT (../../rtl/FFT16/CONTROLLER.v,28|73): non-printable character (0xe7) ignored.
+					                33:    STATE <= 0;    // 演算終了時には初期状態 0 に戻す
+					                                                                     |
+ncvlog: *W,NONPRT (../../rtl/FFT16/CONTROLLER.v,28|74): non-printable character (0x8a) ignored.
+					                33:    STATE <= 0;    // 演算終了時には初期状態 0 に戻す
+					                                                                      |
+ncvlog: *W,NONPRT (../../rtl/FFT16/CONTROLLER.v,28|75): non-printable character (0xb6) ignored.
+					                33:    STATE <= 0;    // 演算終了時には初期状態 0 に戻す
+					                                                                       |
+ncvlog: *W,NONPRT (../../rtl/FFT16/CONTROLLER.v,28|76): non-printable character (0xe6) ignored.
+					                33:    STATE <= 0;    // 演算終了時には初期状態 0 に戻す
+					                                                                        |
+ncvlog: *W,NONPRT (../../rtl/FFT16/CONTROLLER.v,28|77): non-printable character (0x85) ignored.
+					                33:    STATE <= 0;    // 演算終了時には初期状態 0 に戻す
+					                                                                         |
+ncvlog: *W,NONPRT (../../rtl/FFT16/CONTROLLER.v,28|78): non-printable character (0x8b) ignored.
+													                    STATE <= STATE+1;    // 演算中は原則、STATE を1増加
+													                                            |
+ncvlog: *W,NONPRT (../../rtl/FFT16/CONTROLLER.v,30|57): non-printable character (0xe6) ignored.
+													                    STATE <= STATE+1;    // 演算中は原則、STATE を1増加
+													                                             |
+ncvlog: *W,NONPRT (../../rtl/FFT16/CONTROLLER.v,30|58): non-printable character (0xbc) ignored.
+													                    STATE <= STATE+1;    // 演算中は原則、STATE を1増加
+													                                              |
+ncvlog: *W,NONPRT (../../rtl/FFT16/CONTROLLER.v,30|59): non-printable character (0x94) ignored.
+													                    STATE <= STATE+1;    // 演算中は原則、STATE を1増加
+													                                               |
+ncvlog: *W,NONPRT (../../rtl/FFT16/CONTROLLER.v,30|60): non-printable character (0xe7) ignored.
+													                    STATE <= STATE+1;    // 演算中は原則、STATE を1増加
+													                                                |
+ncvlog: *W,NONPRT (../../rtl/FFT16/CONTROLLER.v,30|61): non-printable character (0xae) ignored.
+													                    STATE <= STATE+1;    // 演算中は原則、STATE を1増加
+													                                                 |
+ncvlog: *W,NONPRT (../../rtl/FFT16/CONTROLLER.v,30|62): non-printable character (0x97) ignored.
+													                    STATE <= STATE+1;    // 演算中は原則、STATE を1増加
+													                                                  |
+ncvlog: *W,NONPRT (../../rtl/FFT16/CONTROLLER.v,30|63): non-printable character (0xe4) ignored.
+													                    STATE <= STATE+1;    // 演算中は原則、STATE を1増加
+													                                                   |
+ncvlog: *W,NONPRT (../../rtl/FFT16/CONTROLLER.v,30|64): non-printable character (0xb8) ignored.
+													                    STATE <= STATE+1;    // 演算中は原則、STATE を1増加
+													                                                    |
+ncvlog: *W,NONPRT (../../rtl/FFT16/CONTROLLER.v,30|65): non-printable character (0xad) ignored.
+													                    STATE <= STATE+1;    // 演算中は原則、STATE を1増加
+													                                                     |
+ncvlog: *W,NONPRT (../../rtl/FFT16/CONTROLLER.v,30|66): non-printable character (0xe3) ignored.
+													                    STATE <= STATE+1;    // 演算中は原則、STATE を1増加
+													                                                      |
+ncvlog: *W,NONPRT (../../rtl/FFT16/CONTROLLER.v,30|67): non-printable character (0x81) ignored.
+													                    STATE <= STATE+1;    // 演算中は原則、STATE を1増加
+													                                                       |
+ncvlog: *W,NONPRT (../../rtl/FFT16/CONTROLLER.v,30|68): non-printable character (0xaf) ignored.
+													                    STATE <= STATE+1;    // 演算中は原則、STATE を1増加
+													                                                        |
+ncvlog: *W,NONPRT (../../rtl/FFT16/CONTROLLER.v,30|69): non-printable character (0xe5) ignored.
+													                    STATE <= STATE+1;    // 演算中は原則、STATE を1増加
+													                                                         |
+ncvlog: *W,NONPRT (../../rtl/FFT16/CONTROLLER.v,30|70): non-printable character (0x8e) ignored.
+													                    STATE <= STATE+1;    // 演算中は原則、STATE を1増加
+													                                                          |
+ncvlog: *W,NONPRT (../../rtl/FFT16/CONTROLLER.v,30|71): non-printable character (0x9f) ignored.
+													                    STATE <= STATE+1;    // 演算中は原則、STATE を1増加
+													                                                           |
+ncvlog: *W,NONPRT (../../rtl/FFT16/CONTROLLER.v,30|72): non-printable character (0xe5) ignored.
+													                    STATE <= STATE+1;    // 演算中は原則、STATE を1増加
+													                                                            |
+ncvlog: *W,NONPRT (../../rtl/FFT16/CONTROLLER.v,30|73): non-printable character (0x89) ignored.
+													                    STATE <= STATE+1;    // 演算中は原則、STATE を1増加
+													                                                             |
+ncvlog: *W,NONPRT (../../rtl/FFT16/CONTROLLER.v,30|74): non-printable character (0x87) ignored.
+													                    STATE <= STATE+1;    // 演算中は原則、STATE を1増加
+													                                                              |
+ncvlog: *W,NONPRT (../../rtl/FFT16/CONTROLLER.v,30|75): non-printable character (0xe3) ignored.
+													                    STATE <= STATE+1;    // 演算中は原則、STATE を1増加
+													                                                               |
+ncvlog: *W,NONPRT (../../rtl/FFT16/CONTROLLER.v,30|76): non-printable character (0x80) ignored.
+													                    STATE <= STATE+1;    // 演算中は原則、STATE を1増加
+													                                                                |
+ncvlog: *W,NONPRT (../../rtl/FFT16/CONTROLLER.v,30|77): non-printable character (0x81) ignored.
+	module work.CONTROLLER
+		errors: 0, warnings: 57
+TOOL:	ncvlog(64)	08.20-s026: Exiting on Dec 05, 2016 at 15:31:58 JST  (total: 00:00:01)
+
+---
+
+ncvlog(64): 08.20-s026: (c) Copyright 1995-2010 Cadence Design Systems, Inc.
+TOOL:	ncvlog(64)	08.20-s026: Started on Dec 05, 2016 at 15:31:58 JST
+ncvlog
+    -incdir ./../../include
+    -64bit
+    -message
+    -update
+    -pragma
+    -nowarn mrstar
+    -append_log
+    -define MODELSIM
+    -define FOR_SIM
+    -define SIMULATION
+    -logfile log.vlog
+    ../../rtl/FFT16/FFT16.v
+
+file: ../../rtl/FFT16/FFT16.v
+																																	    wire [31:0] B0;    // C0～C15 はフリップフロップの入力
+																																	                            |
+ncvlog: *W,NONPRT (../../rtl/FFT16/FFT16.v,38|61): non-printable character (0xef) ignored.
+																																	    wire [31:0] B0;    // C0～C15 はフリップフロップの入力
+																																	                             |
+ncvlog: *W,NONPRT (../../rtl/FFT16/FFT16.v,38|62): non-printable character (0xbd) ignored.
+																																	    wire [31:0] B0;    // C0～C15 はフリップフロップの入力
+																																	                              |
+ncvlog: *W,NONPRT (../../rtl/FFT16/FFT16.v,38|63): non-printable character (0x9e) ignored.
+																																																	    wire [31:0] C0;    // C0～C15 はフリップフロップの出力
+																																																	                            |
+ncvlog: *W,NONPRT (../../rtl/FFT16/FFT16.v,55|77): non-printable character (0xef) ignored.
+																																																	    wire [31:0] C0;    // C0～C15 はフリップフロップの出力
+																																																	                             |
+ncvlog: *W,NONPRT (../../rtl/FFT16/FFT16.v,55|78): non-printable character (0xbd) ignored.
+																																																	    wire [31:0] C0;    // C0～C15 はフリップフロップの出力
+																																																	                              |
+ncvlog: *W,NONPRT (../../rtl/FFT16/FFT16.v,55|79): non-printable character (0x9e) ignored.
+	module work.FFT16
+		errors: 0, warnings: 6
+TOOL:	ncvlog(64)	08.20-s026: Exiting on Dec 05, 2016 at 15:31:58 JST  (total: 00:00:00)
+
+---
+
+ncvlog(64): 08.20-s026: (c) Copyright 1995-2010 Cadence Design Systems, Inc.
+TOOL:	ncvlog(64)	08.20-s026: Started on Dec 05, 2016 at 15:31:58 JST
+ncvlog
+    -incdir ./../../include
+    -64bit
+    -message
+    -update
+    -pragma
+    -nowarn mrstar
+    -append_log
+    -define MODELSIM
+    -define FOR_SIM
+    -define SIMULATION
+    -logfile log.vlog
+    ../../tb/crg.v
+
+file: ../../tb/crg.v
+	module work.crg
+		errors: 0, warnings: 0
+TOOL:	ncvlog(64)	08.20-s026: Exiting on Dec 05, 2016 at 15:31:58 JST  (total: 00:00:00)
+
+---
+
+ncvlog(64): 08.20-s026: (c) Copyright 1995-2010 Cadence Design Systems, Inc.
+TOOL:	ncvlog(64)	08.20-s026: Started on Dec 05, 2016 at 15:31:58 JST
+ncvlog
+    -incdir ./../../include
+    -64bit
+    -message
+    -update
+    -pragma
+    -nowarn mrstar
+    -append_log
+    -define MODELSIM
+    -define FOR_SIM
+    -define SIMULATION
+    -logfile log.vlog
+    ../../tb/tb.fft.v
+
+file: ../../tb/tb.fft.v
+	module work.tb
+		errors: 0, warnings: 0
+TOOL:	ncvlog(64)	08.20-s026: Exiting on Dec 05, 2016 at 15:31:58 JST  (total: 00:00:00)

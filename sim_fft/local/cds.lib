@@ -1,0 +1,4 @@
+DEFINE work     ./work
+DEFINE std      $CDS_INST_DIR/tools/inca/files/STD
+DEFINE ieee     $CDS_INST_DIR/tools/inca/files/IEEE
+DEFINE synopsys $CDS_INST_DIR/tools/inca/files/SYNOPSYS

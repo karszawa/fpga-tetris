@@ -1,0 +1,24 @@
+CommandLine-Map
+
+s
+CommandLine-Ngdbuild
+/mnt/cad/Xilinx/11.1/ISE/bin/lin64/unwrapped/ngdbuild -ise ISE.ise -intstyle ise -dd _ngo -nt timestamp -i -p xc5vlx50-ff676-1 fpga_top.ngc fpga_top.ngd
+s
+CommandLine-Par
+
+s
+CommandLine-Xst
+
+s
+Previous-NGD
+
+s
+Previous-NGM
+
+s
+Previous-Packed-NCD
+
+s
+Previous-Routed-NCD
+
+s

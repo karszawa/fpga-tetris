@@ -1,0 +1,21 @@
+Release 11.1 - par L.57 (lin64)
+Copyright (c) 1995-2009 Xilinx, Inc.  All rights reserved.
+
+Tue Nov 28 16:53:25 2017
+
+All signals are completely routed.
+
+WARNING:ParHelpers:361 - There are 9 loadless signals in this design. This design will cause Bitgen to issue DRC
+   warnings.
+
+   CLK_33MHZ_FPGA_IBUF
+   DIP<0>_IBUF
+   DIP<1>_IBUF
+   DIP<2>_IBUF
+   DIP<3>_IBUF
+   DIP<4>_IBUF
+   DIP<5>_IBUF
+   DIP<6>_IBUF
+   DIP<7>_IBUF
+
+

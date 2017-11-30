@@ -1,0 +1,50 @@
+#! /usr/local/bin/vvp
+:ivl_version "11.0 (devel)" "(s20150603-451-g063ae77)";
+:ivl_delay_selection "TYPICAL";
+:vpi_time_precision + 0;
+:vpi_module "system";
+:vpi_module "vhdl_sys";
+:vpi_module "vhdl_textio";
+:vpi_module "v2005_math";
+:vpi_module "va_math";
+S_0x7f9b7d603a20 .scope module, "tb_complex_adder" "tb_complex_adder" 2 1;
+ .timescale 0 0;
+v0x7f9b7d616d10_0 .net "Y", 31 0, L_0x7f9b7d617510;  1 drivers
+S_0x7f9b7d6022e0 .scope module, "A0_UNIT" "COMPLEX_ADDER" 2 28, 3 1 0, S_0x7f9b7d603a20;
+ .timescale 0 0;
+    .port_info 0 /INPUT 32 "A"
+    .port_info 1 /INPUT 32 "B"
+    .port_info 2 /OUTPUT 32 "Y"
+L_0x108fdd008 .functor BUFT 1, C4<00000000000000000000000000000000>, C4<0>, C4<0>, C4<0>;
+L_0x7f9b7d616f60 .functor BUFZ 32, L_0x108fdd008, C4<00000000000000000000000000000000>, C4<00000000000000000000000000000000>, C4<00000000000000000000000000000000>;
+L_0x108fdd050 .functor BUFT 1, C4<00000000000000000000000000000000>, C4<0>, C4<0>, C4<0>;
+L_0x7f9b7d6171d0 .functor BUFZ 32, L_0x108fdd050, C4<00000000000000000000000000000000>, C4<00000000000000000000000000000000>, C4<00000000000000000000000000000000>;
+v0x7f9b7d606a30_0 .net "A", 31 0, L_0x108fdd008;  1 drivers
+v0x7f9b7d616530_0 .net/s "AI", 15 0, L_0x7f9b7d616e60;  1 drivers
+v0x7f9b7d6165e0_0 .net/s "AR", 15 0, L_0x7f9b7d616da0;  1 drivers
+v0x7f9b7d6166a0_0 .net "B", 31 0, L_0x108fdd050;  1 drivers
+v0x7f9b7d616750_0 .net/s "BI", 15 0, L_0x7f9b7d6170d0;  1 drivers
+v0x7f9b7d616840_0 .net/s "BR", 15 0, L_0x7f9b7d616fd0;  1 drivers
+v0x7f9b7d6168f0_0 .net "Y", 31 0, L_0x7f9b7d617510;  alias, 1 drivers
+v0x7f9b7d6169a0_0 .net/s "YI", 15 0, L_0x7f9b7d6173d0;  1 drivers
+v0x7f9b7d616a50_0 .net/s "YR", 15 0, L_0x7f9b7d617240;  1 drivers
+v0x7f9b7d616b60_0 .net *"_s4", 31 0, L_0x7f9b7d616f60;  1 drivers
+v0x7f9b7d616c10_0 .net *"_s9", 31 0, L_0x7f9b7d6171d0;  1 drivers
+L_0x7f9b7d616da0 .part L_0x7f9b7d616f60, 16, 16;
+L_0x7f9b7d616e60 .part L_0x7f9b7d616f60, 0, 16;
+L_0x7f9b7d616fd0 .part L_0x7f9b7d6171d0, 16, 16;
+L_0x7f9b7d6170d0 .part L_0x7f9b7d6171d0, 0, 16;
+L_0x7f9b7d617240 .arith/sum 16, L_0x7f9b7d616da0, L_0x7f9b7d616fd0;
+L_0x7f9b7d6173d0 .arith/sum 16, L_0x7f9b7d616e60, L_0x7f9b7d6170d0;
+L_0x7f9b7d617510 .concat [ 16 16 0 0], L_0x7f9b7d6173d0, L_0x7f9b7d617240;
+    .scope S_0x7f9b7d603a20;
+T_0 ;
+    %vpi_call 2 22 "$display", "Y  = %h          \012", v0x7f9b7d616d10_0 {0 0 0};
+    %end;
+    .thread T_0;
+# The file index is used to find the file name in the following table.
+:file_names 4;
+    "N/A";
+    "<interactive>";
+    "tb_complex_adder.v";
+    "../../rtl/FFT16/COMPLEX_ADDER.v";

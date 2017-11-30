@@ -1,0 +1,1203 @@
+Release 11.1 Map L.57 (lin64)
+Xilinx Mapping Report File for Design 'fpga_top'
+
+Design Information
+------------------
+Command Line   : map -ise ISE.ise -intstyle ise -p xc5vlx50-ff676-1 -w
+-logic_opt off -ol high -t 1 -register_duplication off -global_opt off -mt off
+-cm area -ir off -pr off -lc off -power off -o fpga_top_map.ncd fpga_top.ngd
+fpga_top.pcf 
+Target Device  : xc5vlx50
+Target Package : ff676
+Target Speed   : -1
+Mapper Version : virtex5 -- $Revision: 1.51.18.1 $
+Mapped Date    : Tue Nov 28 16:52:35 2017
+
+Design Summary
+--------------
+Number of errors:      0
+Number of warnings:   35
+Slice Logic Utilization:
+  Number of Slice Registers:                 3,260 out of  28,800   11%
+    Number used as Flip Flops:               3,258
+    Number used as Latches:                      2
+  Number of Slice LUTs:                      2,291 out of  28,800    7%
+    Number used as logic:                    2,256 out of  28,800    7%
+      Number using O6 output only:           1,816
+      Number using O5 output only:             244
+      Number using O5 and O6:                  196
+    Number used as Memory:                      17 out of   7,680    1%
+      Number used as Dual Port RAM:              8
+        Number using O6 output only:             4
+        Number using O5 and O6:                  4
+      Number used as Shift Register:             9
+        Number using O6 output only:             9
+    Number used as exclusive route-thru:        18
+  Number of route-thrus:                       263
+    Number using O6 output only:               261
+    Number using O5 output only:                 2
+
+Slice Logic Distribution:
+  Number of occupied Slices:                 1,249 out of   7,200   17%
+  Number of LUT Flip Flop pairs used:        4,095
+    Number with an unused Flip Flop:           835 out of   4,095   20%
+    Number with an unused LUT:               1,804 out of   4,095   44%
+    Number of fully used LUT-FF pairs:       1,456 out of   4,095   35%
+    Number of unique control sets:             124
+    Number of slice register sites lost
+      to control set restrictions:             151 out of  28,800    1%
+
+  A LUT Flip Flop pair for this architecture represents one LUT paired with
+  one Flip Flop within a slice.  A control set is a unique combination of
+  clock, reset, set, and enable signals for a registered element.
+  The Slice Logic Distribution report is not meaningful if the design is
+  over-mapped for a non-slice resource or if Placement fails.
+  OVERMAPPING of BRAM resources should be ignored if the design is
+  over-mapped for a non-BRAM resource or if placement fails.
+
+IO Utilization:
+  Number of bonded IOBs:                        71 out of     440   16%
+    Number of LOCed IOBs:                       71 out of      71  100%
+    IOB Flip Flops:                             14
+
+Specific Feature Utilization:
+  Number of BUFG/BUFGCTRLs:                      8 out of      32   25%
+    Number used as BUFGs:                        8
+  Number of DCM_ADVs:                            1 out of      12    8%
+  Number of PLL_ADVs:                            2 out of       6   33%
+
+Average Fanout of Non-Clock Nets:                3.58
+
+Peak Memory Usage:  817 MB
+Total REAL time to MAP completion:  33 secs 
+Total CPU time to MAP completion:   32 secs 
+
+Table of Contents
+-----------------
+Section 1 - Errors
+Section 2 - Warnings
+Section 3 - Informational
+Section 4 - Removed Logic Summary
+Section 5 - Removed Logic
+Section 6 - IOB Properties
+Section 7 - RPMs
+Section 8 - Guide Report
+Section 9 - Area Group and Partition Summary
+Section 10 - Modular Design Summary
+Section 11 - Timing Report
+Section 12 - Configuration String Information
+Section 13 - Control Set Information
+Section 14 - Utilization by Hierarchy
+
+Section 1 - Errors
+------------------
+
+Section 2 - Warnings
+--------------------
+WARNING:Security:43 - No license file was found in the standard Xilinx license
+directory.
+WARNING:Security:44 - No license file was found.
+WARNING:Security:42 - Your software subscription period has lapsed. Your current
+version of Xilinx tools will continue to function, but you no longer qualify for
+Xilinx software updates or new releases.
+WARNING:LIT:243 - Logical network CLK_33MHZ_FPGA_IBUF has no load.
+WARNING:LIT:395 - The above warning message is repeated 10 more times for the
+   following (max. 5 shown):
+   DIP<7>_IBUF,
+   DIP<6>_IBUF,
+   DIP<5>_IBUF,
+   DIP<4>_IBUF,
+   DIP<3>_IBUF
+   To see the details of these warning messages, please use the -detail switch.
+WARNING:MapLib:701 - Signal KEYBOARD_DATA connected to top level port
+   KEYBOARD_DATA has been removed.
+WARNING:Pack:2515 - The LUT-1 inverter "A_LCD/A1_LCD/inst/lcddata_en_inv1_INV_0"
+   failed to join the OLOGIC comp matched to output buffer "LCD_DATA_0_OBUFT". 
+   This may result in suboptimal timing.  The LUT-1 inverter
+   A_LCD/A1_LCD/inst/lcddata_en_inv1_INV_0 drives multiple loads.
+WARNING:Pack:2515 - The LUT-1 inverter "A_LCD/A1_LCD/inst/lcddata_en_inv1_INV_0"
+   failed to join the OLOGIC comp matched to output buffer "LCD_DATA_1_OBUFT". 
+   This may result in suboptimal timing.  The LUT-1 inverter
+   A_LCD/A1_LCD/inst/lcddata_en_inv1_INV_0 drives multiple loads.
+WARNING:Pack:2515 - The LUT-1 inverter "A_LCD/A1_LCD/inst/lcddata_en_inv1_INV_0"
+   failed to join the OLOGIC comp matched to output buffer "LCD_DATA_2_OBUFT". 
+   This may result in suboptimal timing.  The LUT-1 inverter
+   A_LCD/A1_LCD/inst/lcddata_en_inv1_INV_0 drives multiple loads.
+WARNING:Pack:2515 - The LUT-1 inverter "A_LCD/A1_LCD/inst/lcddata_en_inv1_INV_0"
+   failed to join the OLOGIC comp matched to output buffer
+   "LCD_DATA_3_IOBUF/OBUFT".  This may result in suboptimal timing.  The LUT-1
+   inverter A_LCD/A1_LCD/inst/lcddata_en_inv1_INV_0 drives multiple loads.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   A_PS2_KEY_MOUSE/A2_KEYBOARD_CTRL/nxtSTATE_not0001 is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:367 - The signal <DIP<0>_IBUF> is incomplete. The signal
+   does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <DIP<1>_IBUF> is incomplete. The signal
+   does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <DIP<2>_IBUF> is incomplete. The signal
+   does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <DIP<3>_IBUF> is incomplete. The signal
+   does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <DIP<4>_IBUF> is incomplete. The signal
+   does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <DIP<5>_IBUF> is incomplete. The signal
+   does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <DIP<6>_IBUF> is incomplete. The signal
+   does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <DIP<7>_IBUF> is incomplete. The signal
+   does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <CLK_33MHZ_FPGA_IBUF> is incomplete.
+   The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:781 - PULLDOWN on an active net. PULLDOWN of comp
+   ProtoComp491.PULL is set but the tri state is not configured. 
+WARNING:PhysDesignRules:781 - PULLDOWN on an active net. PULLDOWN of comp
+   ProtoComp491.PULL.1 is set but the tri state is not configured. 
+WARNING:PhysDesignRules:781 - PULLDOWN on an active net. PULLDOWN of comp
+   ProtoComp491.PULL.2 is set but the tri state is not configured. 
+WARNING:PhysDesignRules:781 - PULLDOWN on an active net. PULLDOWN of comp
+   ProtoComp491.PULL.3 is set but the tri state is not configured. 
+WARNING:PhysDesignRules:781 - PULLDOWN on an active net. PULLDOWN of comp
+   ProtoComp491.PULL.4 is set but the tri state is not configured. 
+WARNING:PhysDesignRules:781 - PULLDOWN on an active net. PULLDOWN of comp
+   ProtoComp491.PULL.5 is set but the tri state is not configured. 
+WARNING:PhysDesignRules:781 - PULLDOWN on an active net. PULLDOWN of comp
+   ProtoComp491.PULL.6 is set but the tri state is not configured. 
+WARNING:PhysDesignRules:781 - PULLDOWN on an active net. PULLDOWN of comp
+   ProtoComp491.PULL.7 is set but the tri state is not configured. 
+WARNING:PhysDesignRules:781 - PULLDOWN on an active net. PULLDOWN of comp
+   ProtoComp491.PULL.8 is set but the tri state is not configured. 
+WARNING:PhysDesignRules:781 - PULLDOWN on an active net. PULLDOWN of comp
+   ProtoComp491.PULL.9 is set but the tri state is not configured. 
+WARNING:PhysDesignRules:781 - PULLDOWN on an active net. PULLDOWN of comp
+   ProtoComp491.PULL.10 is set but the tri state is not configured. 
+WARNING:PhysDesignRules:781 - PULLDOWN on an active net. PULLDOWN of comp
+   ProtoComp491.PULL.11 is set but the tri state is not configured. 
+WARNING:PhysDesignRules:781 - PULLDOWN on an active net. PULLDOWN of comp
+   ProtoComp491.PULL.12 is set but the tri state is not configured. 
+WARNING:PhysDesignRules:781 - PULLDOWN on an active net. PULLDOWN of comp
+   ProtoComp491.PULL.13 is set but the tri state is not configured. 
+WARNING:PhysDesignRules:781 - PULLDOWN on an active net. PULLDOWN of comp
+   ProtoComp491.PULL.14 is set but the tri state is not configured. 
+WARNING:PhysDesignRules:781 - PULLDOWN on an active net. PULLDOWN of comp
+   ProtoComp491.PULL.15 is set but the tri state is not configured. 
+WARNING:PhysDesignRules:781 - PULLDOWN on an active net. PULLDOWN of comp
+   ProtoComp491.PULL.16 is set but the tri state is not configured. 
+WARNING:PhysDesignRules:781 - PULLDOWN on an active net. PULLDOWN of comp
+   ProtoComp491.PULL.17 is set but the tri state is not configured. 
+
+Section 3 - Informational
+-------------------------
+INFO:Security:50 - The XILINXD_LICENSE_FILE environment variable is set to
+'2100@133.11.58.13'.
+INFO:Security:53 - The LM_LICENSE_FILE environment variable is not set.
+INFO:Security:54 - 'xc5vlx50' is a WebPack part.
+INFO:MapLib:562 - No environment variables are currently set.
+INFO:MapLib:856 - PLL_ADV A_LCD/pll/PLL_ADV_INST CLKIN2 pin was disconnected
+   because a constant 1 is driving the CLKINSEL pin.
+INFO:MapLib:856 - PLL_ADV A_LCD/pll2/PLL_ADV_INST CLKIN2 pin was disconnected
+   because a constant 1 is driving the CLKINSEL pin.
+INFO:MapLib:841 - Changing COMPENSATION attribute from SYSTEM_SYNCHRONOUS to
+   INTERNAL for PLL_ADV A_LCD/pll2/PLL_ADV_INST.
+INFO:Pack:1716 - Initializing temperature to 85.000 Celsius. (default - Range:
+   0.000 to 85.000 Celsius)
+INFO:Pack:1720 - Initializing voltage to 0.950 Volts. (default - Range: 0.950 to
+   1.050 Volts)
+INFO:Map:215 - The Interim Design Summary has been generated in the MAP Report
+   (.mrp).
+INFO:Pack:1650 - Map created a placed design.
+INFO:PhysDesignRules:1437 - To achieve optimal frequency synthesis performance
+   with the CLKFX and CLKFX180 outputs of the DCM_ADV comp A_CRG/DCM_ADV_INST,
+   consult the device Data Sheet.
+
+Section 4 - Removed Logic Summary
+---------------------------------
+ 246 block(s) removed
+   2 block(s) optimized away
+ 245 signal(s) removed
+
+Section 5 - Removed Logic
+-------------------------
+
+The trimmed logic report below shows the logic removed from your design due to
+sourceless or loadless signals, and VCC or ground connections.  If the removal
+of a signal or symbol results in the subsequent removal of an additional signal
+or symbol, the message explaining that second removal will be indented.  This
+indentation will be repeated as a chain of related logic is removed.
+
+To quickly locate the original cause for the removal of a chain of logic, look
+above the place where that logic is listed in the trimming report, then locate
+the lines that are least indented (begin at the leftmost edge).
+
+Loadless block "A_LCD/pll/CLKOUT1_BUFG_INST" (CKBUF) removed.
+ The signal "A_LCD/pll/CLKOUT1_BUF" is loadless and has been removed.
+Loadless block "A_LCD/pll2/CLKOUT1_BUFG_INST" (CKBUF) removed.
+ The signal "A_LCD/pll2/CLKOUT1_BUF" is loadless and has been removed.
+
+The trimmed logic reported below is either:
+   1. part of a cycle
+   2. part of disabled logic
+   3. a side-effect of other trimmed logic
+
+The signal "A_PS2_KEY_MOUSE/A0_MOUSE/Madd_my_sub0000_cy<8>" is unused and has
+been removed.
+ Unused block "A_PS2_KEY_MOUSE/A0_MOUSE/Madd_my_sub0000_cy<8>11" (ROM) removed.
+  The signal "A_PS2_KEY_MOUSE/A0_MOUSE/m1/y_increment<6>" is unused and has been
+removed.
+   Unused block "A_PS2_KEY_MOUSE/A0_MOUSE/m1/y_increment_6" (SFF) removed.
+    The signal "A_PS2_KEY_MOUSE/A0_MOUSE/m1/output_strobe" is unused and has been
+removed.
+     Unused block "A_PS2_KEY_MOUSE/A0_MOUSE/m1/output_strobe_cmp_eq00001" (ROM)
+removed.
+  The signal "A_PS2_KEY_MOUSE/A0_MOUSE/m1/y_increment<5>" is unused and has been
+removed.
+   Unused block "A_PS2_KEY_MOUSE/A0_MOUSE/m1/y_increment_5" (SFF) removed.
+  The signal "A_PS2_KEY_MOUSE/A0_MOUSE/m1/y_increment<8>" is unused and has been
+removed.
+   Unused block "A_PS2_KEY_MOUSE/A0_MOUSE/m1/y_increment_8" (SFF) removed.
+  The signal "A_PS2_KEY_MOUSE/A0_MOUSE/Madd_ndy_addsub0000_cy<4>" is unused and
+has been removed.
+   Unused block "A_PS2_KEY_MOUSE/A0_MOUSE/Madd_ndy_addsub0000_cy<4>11" (ROM)
+removed.
+    The signal "A_PS2_KEY_MOUSE/A0_MOUSE/m1/y_increment<4>" is unused and has been
+removed.
+     Unused block "A_PS2_KEY_MOUSE/A0_MOUSE/m1/y_increment_4" (SFF) removed.
+    The signal "A_PS2_KEY_MOUSE/A0_MOUSE/m1/y_increment<3>" is unused and has been
+removed.
+     Unused block "A_PS2_KEY_MOUSE/A0_MOUSE/m1/y_increment_3" (SFF) removed.
+    The signal "A_PS2_KEY_MOUSE/A0_MOUSE/m1/y_increment<2>" is unused and has been
+removed.
+     Unused block "A_PS2_KEY_MOUSE/A0_MOUSE/m1/y_increment_2" (SFF) removed.
+    The signal "A_PS2_KEY_MOUSE/A0_MOUSE/m1/y_increment<1>" is unused and has been
+removed.
+     Unused block "A_PS2_KEY_MOUSE/A0_MOUSE/m1/y_increment_1" (SFF) removed.
+    The signal "A_PS2_KEY_MOUSE/A0_MOUSE/m1/y_increment<0>" is unused and has been
+removed.
+     Unused block "A_PS2_KEY_MOUSE/A0_MOUSE/m1/y_increment_0" (SFF) removed.
+  The signal "A_PS2_KEY_MOUSE/A0_MOUSE/m1/y_increment<7>" is unused and has been
+removed.
+   Unused block "A_PS2_KEY_MOUSE/A0_MOUSE/m1/y_increment_7" (SFF) removed.
+The signal "A_PS2_KEY_MOUSE/A0_MOUSE/Madd_my_sub0000_lut<8>" is unused and has
+been removed.
+ Unused block "A_PS2_KEY_MOUSE/A0_MOUSE/ndy<8>1" (ROM) removed.
+The signal "A_PS2_KEY_MOUSE/A0_MOUSE/Madd_ndx_addsub0000_cy<4>" is unused and
+has been removed.
+ Unused block "A_PS2_KEY_MOUSE/A0_MOUSE/Madd_ndx_addsub0000_cy<4>11" (ROM)
+removed.
+  The signal "A_PS2_KEY_MOUSE/A0_MOUSE/m1/x_increment<4>" is unused and has been
+removed.
+   Unused block "A_PS2_KEY_MOUSE/A0_MOUSE/m1/x_increment_4" (SFF) removed.
+  The signal "A_PS2_KEY_MOUSE/A0_MOUSE/m1/x_increment<3>" is unused and has been
+removed.
+   Unused block "A_PS2_KEY_MOUSE/A0_MOUSE/m1/x_increment_3" (SFF) removed.
+  The signal "A_PS2_KEY_MOUSE/A0_MOUSE/m1/x_increment<2>" is unused and has been
+removed.
+   Unused block "A_PS2_KEY_MOUSE/A0_MOUSE/m1/x_increment_2" (SFF) removed.
+  The signal "A_PS2_KEY_MOUSE/A0_MOUSE/m1/x_increment<1>" is unused and has been
+removed.
+   Unused block "A_PS2_KEY_MOUSE/A0_MOUSE/m1/x_increment_1" (SFF) removed.
+  The signal "A_PS2_KEY_MOUSE/A0_MOUSE/m1/x_increment<0>" is unused and has been
+removed.
+   Unused block "A_PS2_KEY_MOUSE/A0_MOUSE/m1/x_increment_0" (SFF) removed.
+The signal "A_PS2_KEY_MOUSE/A0_MOUSE/Maddsub_mx_addsub0000_cy<0>" is unused and
+has been removed.
+ Unused block "A_PS2_KEY_MOUSE/A0_MOUSE/Maddsub_mx_addsub0000_cy<0>" (MUX)
+removed.
+  The signal "A_PS2_KEY_MOUSE/A0_MOUSE/m1/x_increment<8>" is unused and has been
+removed.
+   Unused block "A_PS2_KEY_MOUSE/A0_MOUSE/m1/x_increment_8" (SFF) removed.
+  The signal "A_PS2_KEY_MOUSE/A0_MOUSE/mx<0>" is unused and has been removed.
+   Unused block "A_PS2_KEY_MOUSE/A0_MOUSE/mx_0" (SFF) removed.
+    The signal "A_PS2_KEY_MOUSE/A0_MOUSE/m1/m3_state" is unused and has been
+removed.
+     Unused block "A_PS2_KEY_MOUSE/A0_MOUSE/m1/m3_state" (SFF) removed.
+      The signal "A_PS2_KEY_MOUSE/A0_MOUSE/m1/m3_next_state" is unused and has been
+removed.
+       Unused block "A_PS2_KEY_MOUSE/A0_MOUSE/m1/m3_next_state1" (ROM) removed.
+    The signal "A_PS2_KEY_MOUSE/A0_MOUSE/mx_mux0000<11>" is unused and has been
+removed.
+     Unused block "A_PS2_KEY_MOUSE/A0_MOUSE/mx_mux0000<11>1" (ROM) removed.
+      The signal "A_PS2_KEY_MOUSE/A0_MOUSE/mx_addsub0000<0>" is unused and has been
+removed.
+       Unused block "A_PS2_KEY_MOUSE/A0_MOUSE/Maddsub_mx_addsub0000_xor<0>" (XOR)
+removed.
+        The signal "A_PS2_KEY_MOUSE/A0_MOUSE/Maddsub_mx_addsub0000_lut<0>" is unused and
+has been removed.
+         Unused block "A_PS2_KEY_MOUSE/A0_MOUSE/Maddsub_mx_addsub0000_lut<0>" (ROM)
+removed.
+      The signal "A_PS2_KEY_MOUSE/A0_MOUSE/Mcompar_mx_cmp_lt0000_cy<4>" is unused and
+has been removed.
+       Unused block "A_PS2_KEY_MOUSE/A0_MOUSE/Mcompar_mx_cmp_lt0000_cy<4>" (MUX)
+removed.
+        The signal "A_PS2_KEY_MOUSE/A0_MOUSE/Mcompar_mx_cmp_lt0000_cy<3>" is unused and
+has been removed.
+         Unused block "A_PS2_KEY_MOUSE/A0_MOUSE/Mcompar_mx_cmp_lt0000_cy<3>" (MUX)
+removed.
+          The signal "A_PS2_KEY_MOUSE/A0_MOUSE/Mcompar_mx_cmp_lt0000_cy<2>" is unused and
+has been removed.
+           Unused block "A_PS2_KEY_MOUSE/A0_MOUSE/Mcompar_mx_cmp_lt0000_cy<2>" (MUX)
+removed.
+            The signal "A_PS2_KEY_MOUSE/A0_MOUSE/Mcompar_mx_cmp_lt0000_cy<1>" is unused and
+has been removed.
+             Unused block "A_PS2_KEY_MOUSE/A0_MOUSE/Mcompar_mx_cmp_lt0000_cy<1>" (MUX)
+removed.
+              The signal "A_PS2_KEY_MOUSE/A0_MOUSE/Mcompar_mx_cmp_lt0000_cy<0>" is unused and
+has been removed.
+               Unused block "A_PS2_KEY_MOUSE/A0_MOUSE/Mcompar_mx_cmp_lt0000_cy<0>" (MUX)
+removed.
+                The signal "A_PS2_KEY_MOUSE/A0_MOUSE/Mcompar_mx_cmp_lt0000_lutdi" is unused and
+has been removed.
+                 Unused block "A_PS2_KEY_MOUSE/A0_MOUSE/Mcompar_mx_cmp_lt0000_lutdi" (ROM)
+removed.
+                  The signal "A_PS2_KEY_MOUSE/A0_MOUSE/mx<1>" is unused and has been removed.
+                   Unused block "A_PS2_KEY_MOUSE/A0_MOUSE/mx_1" (SFF) removed.
+                    The signal "A_PS2_KEY_MOUSE/A0_MOUSE/mx_mux0000<10>" is unused and has been
+removed.
+                     Unused block "A_PS2_KEY_MOUSE/A0_MOUSE/mx_mux0000<10>1" (ROM) removed.
+                      The signal "A_PS2_KEY_MOUSE/A0_MOUSE/mx_addsub0000<1>" is unused and has been
+removed.
+                       Unused block "A_PS2_KEY_MOUSE/A0_MOUSE/Maddsub_mx_addsub0000_xor<1>" (XOR)
+removed.
+                        The signal "A_PS2_KEY_MOUSE/A0_MOUSE/Maddsub_mx_addsub0000_lut<1>" is unused and
+has been removed.
+                         Unused block "A_PS2_KEY_MOUSE/A0_MOUSE/Maddsub_mx_addsub0000_lut<1>" (ROM)
+removed.
+                    The signal "A_PS2_KEY_MOUSE/A0_MOUSE/mx_and00001" is unused and has been
+removed.
+                     Unused block "A_PS2_KEY_MOUSE/A0_MOUSE/mx_and000011" (ROM) removed.
+                      The signal "A_PS2_KEY_MOUSE/A0_MOUSE/Mcompar_mx_cmp_gt0000_cy<4>" is unused and
+has been removed.
+                       Unused block "A_PS2_KEY_MOUSE/A0_MOUSE/Mcompar_mx_cmp_gt0000_cy<4>" (MUX)
+removed.
+                        The signal "A_PS2_KEY_MOUSE/A0_MOUSE/Mcompar_mx_cmp_gt0000_cy<3>" is unused and
+has been removed.
+                         Unused block "A_PS2_KEY_MOUSE/A0_MOUSE/Mcompar_mx_cmp_gt0000_cy<3>" (MUX)
+removed.
+                          The signal "A_PS2_KEY_MOUSE/A0_MOUSE/Mcompar_mx_cmp_gt0000_cy<2>" is unused and
+has been removed.
+                           Unused block "A_PS2_KEY_MOUSE/A0_MOUSE/Mcompar_mx_cmp_gt0000_cy<2>" (MUX)
+removed.
+                            The signal "A_PS2_KEY_MOUSE/A0_MOUSE/Mcompar_mx_cmp_gt0000_cy<1>" is unused and
+has been removed.
+                             Unused block "A_PS2_KEY_MOUSE/A0_MOUSE/Mcompar_mx_cmp_gt0000_cy<1>" (MUX)
+removed.
+                              The signal "A_PS2_KEY_MOUSE/A0_MOUSE/Mcompar_mx_cmp_gt0000_cy<0>" is unused and
+has been removed.
+                               Unused block "A_PS2_KEY_MOUSE/A0_MOUSE/Mcompar_mx_cmp_gt0000_cy<0>" (MUX)
+removed.
+                                The signal "A_PS2_KEY_MOUSE/A0_MOUSE/Mcompar_mx_cmp_gt0000_lutdi" is unused and
+has been removed.
+                                 Unused block "A_PS2_KEY_MOUSE/A0_MOUSE/Mcompar_mx_cmp_gt0000_lutdi" (ROM)
+removed.
+                                  The signal "A_PS2_KEY_MOUSE/A0_MOUSE/ndx<1>" is unused and has been removed.
+                                   Unused block "A_PS2_KEY_MOUSE/A0_MOUSE/ndx<1>11" (ROM) removed.
+                                The signal "A_PS2_KEY_MOUSE/A0_MOUSE/Mcompar_mx_cmp_gt0000_lut<0>" is unused and
+has been removed.
+                                 Unused block "A_PS2_KEY_MOUSE/A0_MOUSE/Mcompar_mx_cmp_gt0000_lut<0>" (ROM)
+removed.
+                              The signal "A_PS2_KEY_MOUSE/A0_MOUSE/Mcompar_mx_cmp_gt0000_lutdi1" is unused and
+has been removed.
+                               Unused block "A_PS2_KEY_MOUSE/A0_MOUSE/Mcompar_mx_cmp_gt0000_lutdi1" (ROM)
+removed.
+                                The signal "A_PS2_KEY_MOUSE/A0_MOUSE/ndx<3>" is unused and has been removed.
+                                 Unused block "A_PS2_KEY_MOUSE/A0_MOUSE/ndx<3>11" (ROM) removed.
+                                The signal "A_PS2_KEY_MOUSE/A0_MOUSE/ndx<2>" is unused and has been removed.
+                                 Unused block "A_PS2_KEY_MOUSE/A0_MOUSE/ndx<2>11" (ROM) removed.
+                                The signal "A_PS2_KEY_MOUSE/A0_MOUSE/mx<2>" is unused and has been removed.
+                                 Unused block "A_PS2_KEY_MOUSE/A0_MOUSE/mx_2" (SFF) removed.
+                                  The signal "A_PS2_KEY_MOUSE/A0_MOUSE/mx_mux0000<9>" is unused and has been
+removed.
+                                   Unused block "A_PS2_KEY_MOUSE/A0_MOUSE/mx_mux0000<9>1" (ROM) removed.
+                                    The signal "A_PS2_KEY_MOUSE/A0_MOUSE/mx_addsub0000<2>" is unused and has been
+removed.
+                                     Unused block "A_PS2_KEY_MOUSE/A0_MOUSE/Maddsub_mx_addsub0000_xor<2>" (XOR)
+removed.
+                                      The signal "A_PS2_KEY_MOUSE/A0_MOUSE/Maddsub_mx_addsub0000_cy<1>" is unused and
+has been removed.
+                                       Unused block "A_PS2_KEY_MOUSE/A0_MOUSE/Maddsub_mx_addsub0000_cy<1>" (MUX)
+removed.
+                                      The signal "A_PS2_KEY_MOUSE/A0_MOUSE/Maddsub_mx_addsub0000_lut<2>" is unused and
+has been removed.
+                                       Unused block "A_PS2_KEY_MOUSE/A0_MOUSE/Maddsub_mx_addsub0000_lut<2>" (ROM)
+removed.
+                                  The signal "A_PS2_KEY_MOUSE/A0_MOUSE/mx_and0000" is unused and has been removed.
+                                   Unused block "A_PS2_KEY_MOUSE/A0_MOUSE/mx_and00001" (ROM) removed.
+                                The signal "A_PS2_KEY_MOUSE/A0_MOUSE/mx<3>" is unused and has been removed.
+                                 Unused block "A_PS2_KEY_MOUSE/A0_MOUSE/mx_3" (SFF) removed.
+                                  The signal "A_PS2_KEY_MOUSE/A0_MOUSE/mx_mux0000<8>" is unused and has been
+removed.
+                                   Unused block "A_PS2_KEY_MOUSE/A0_MOUSE/mx_mux0000<8>1" (ROM) removed.
+                                    The signal "A_PS2_KEY_MOUSE/A0_MOUSE/mx_addsub0000<3>" is unused and has been
+removed.
+                                     Unused block "A_PS2_KEY_MOUSE/A0_MOUSE/Maddsub_mx_addsub0000_xor<3>" (XOR)
+removed.
+                                      The signal "A_PS2_KEY_MOUSE/A0_MOUSE/Maddsub_mx_addsub0000_cy<2>" is unused and
+has been removed.
+                                       Unused block "A_PS2_KEY_MOUSE/A0_MOUSE/Maddsub_mx_addsub0000_cy<2>" (MUX)
+removed.
+                                      The signal "A_PS2_KEY_MOUSE/A0_MOUSE/Maddsub_mx_addsub0000_lut<3>" is unused and
+has been removed.
+                                       Unused block "A_PS2_KEY_MOUSE/A0_MOUSE/Maddsub_mx_addsub0000_lut<3>" (ROM)
+removed.
+                              The signal "A_PS2_KEY_MOUSE/A0_MOUSE/Mcompar_mx_cmp_gt0000_lut<1>" is unused and
+has been removed.
+                               Unused block "A_PS2_KEY_MOUSE/A0_MOUSE/Mcompar_mx_cmp_gt0000_lut<1>" (ROM)
+removed.
+                            The signal "A_PS2_KEY_MOUSE/A0_MOUSE/Mcompar_mx_cmp_gt0000_lutdi2" is unused and
+has been removed.
+                             Unused block "A_PS2_KEY_MOUSE/A0_MOUSE/Mcompar_mx_cmp_gt0000_lutdi2" (ROM)
+removed.
+                              The signal "A_PS2_KEY_MOUSE/A0_MOUSE/ndx<5>" is unused and has been removed.
+                               Unused block "A_PS2_KEY_MOUSE/A0_MOUSE/ndx<5>1" (ROM) removed.
+                                The signal "A_PS2_KEY_MOUSE/A0_MOUSE/m1/x_increment<5>" is unused and has been
+removed.
+                                 Unused block "A_PS2_KEY_MOUSE/A0_MOUSE/m1/x_increment_5" (SFF) removed.
+                              The signal "A_PS2_KEY_MOUSE/A0_MOUSE/ndx<4>" is unused and has been removed.
+                               Unused block "A_PS2_KEY_MOUSE/A0_MOUSE/ndx<4>11" (ROM) removed.
+                              The signal "A_PS2_KEY_MOUSE/A0_MOUSE/mx<4>" is unused and has been removed.
+                               Unused block "A_PS2_KEY_MOUSE/A0_MOUSE/mx_4" (SFF) removed.
+                                The signal "A_PS2_KEY_MOUSE/A0_MOUSE/mx_mux0000<7>" is unused and has been
+removed.
+                                 Unused block "A_PS2_KEY_MOUSE/A0_MOUSE/mx_mux0000<7>1" (ROM) removed.
+                                  The signal "A_PS2_KEY_MOUSE/A0_MOUSE/mx_addsub0000<4>" is unused and has been
+removed.
+                                   Unused block "A_PS2_KEY_MOUSE/A0_MOUSE/Maddsub_mx_addsub0000_xor<4>" (XOR)
+removed.
+                                    The signal "A_PS2_KEY_MOUSE/A0_MOUSE/Maddsub_mx_addsub0000_cy<3>" is unused and
+has been removed.
+                                     Unused block "A_PS2_KEY_MOUSE/A0_MOUSE/Maddsub_mx_addsub0000_cy<3>" (MUX)
+removed.
+                                    The signal "A_PS2_KEY_MOUSE/A0_MOUSE/Maddsub_mx_addsub0000_lut<4>" is unused and
+has been removed.
+                                     Unused block "A_PS2_KEY_MOUSE/A0_MOUSE/Maddsub_mx_addsub0000_lut<4>" (ROM)
+removed.
+                              The signal "A_PS2_KEY_MOUSE/A0_MOUSE/mx<5>" is unused and has been removed.
+                               Unused block "A_PS2_KEY_MOUSE/A0_MOUSE/mx_5" (SFF) removed.
+                                The signal "A_PS2_KEY_MOUSE/A0_MOUSE/mx_mux0000<6>" is unused and has been
+removed.
+                                 Unused block "A_PS2_KEY_MOUSE/A0_MOUSE/mx_mux0000<6>1" (ROM) removed.
+                                  The signal "A_PS2_KEY_MOUSE/A0_MOUSE/mx_addsub0000<5>" is unused and has been
+removed.
+                                   Unused block "A_PS2_KEY_MOUSE/A0_MOUSE/Maddsub_mx_addsub0000_xor<5>" (XOR)
+removed.
+                                    The signal "A_PS2_KEY_MOUSE/A0_MOUSE/Maddsub_mx_addsub0000_cy<4>" is unused and
+has been removed.
+                                     Unused block "A_PS2_KEY_MOUSE/A0_MOUSE/Maddsub_mx_addsub0000_cy<4>" (MUX)
+removed.
+                                    The signal "A_PS2_KEY_MOUSE/A0_MOUSE/Maddsub_mx_addsub0000_lut<5>" is unused and
+has been removed.
+                                     Unused block "A_PS2_KEY_MOUSE/A0_MOUSE/Maddsub_mx_addsub0000_lut<5>" (ROM)
+removed.
+                            The signal "A_PS2_KEY_MOUSE/A0_MOUSE/Mcompar_mx_cmp_gt0000_lut<2>" is unused and
+has been removed.
+                             Unused block "A_PS2_KEY_MOUSE/A0_MOUSE/Mcompar_mx_cmp_gt0000_lut<2>" (ROM)
+removed.
+                          The signal "A_PS2_KEY_MOUSE/A0_MOUSE/Mcompar_mx_cmp_gt0000_lutdi3" is unused and
+has been removed.
+                           Unused block "A_PS2_KEY_MOUSE/A0_MOUSE/Mcompar_mx_cmp_gt0000_lutdi3" (ROM)
+removed.
+                            The signal "A_PS2_KEY_MOUSE/A0_MOUSE/ndx<7>" is unused and has been removed.
+                             Unused block "A_PS2_KEY_MOUSE/A0_MOUSE/ndx<7>1" (ROM) removed.
+                              The signal "A_PS2_KEY_MOUSE/A0_MOUSE/m1/x_increment<7>" is unused and has been
+removed.
+                               Unused block "A_PS2_KEY_MOUSE/A0_MOUSE/m1/x_increment_7" (SFF) removed.
+                              The signal "A_PS2_KEY_MOUSE/A0_MOUSE/m1/x_increment<6>" is unused and has been
+removed.
+                               Unused block "A_PS2_KEY_MOUSE/A0_MOUSE/m1/x_increment_6" (SFF) removed.
+                            The signal "A_PS2_KEY_MOUSE/A0_MOUSE/ndx<6>" is unused and has been removed.
+                             Unused block "A_PS2_KEY_MOUSE/A0_MOUSE/ndx<6>1" (ROM) removed.
+                            The signal "A_PS2_KEY_MOUSE/A0_MOUSE/mx<6>" is unused and has been removed.
+                             Unused block "A_PS2_KEY_MOUSE/A0_MOUSE/mx_6" (SFF) removed.
+                              The signal "A_PS2_KEY_MOUSE/A0_MOUSE/mx_mux0000<5>" is unused and has been
+removed.
+                               Unused block "A_PS2_KEY_MOUSE/A0_MOUSE/mx_mux0000<5>1" (ROM) removed.
+                                The signal "A_PS2_KEY_MOUSE/A0_MOUSE/mx_addsub0000<6>" is unused and has been
+removed.
+                                 Unused block "A_PS2_KEY_MOUSE/A0_MOUSE/Maddsub_mx_addsub0000_xor<6>" (XOR)
+removed.
+                                  The signal "A_PS2_KEY_MOUSE/A0_MOUSE/Maddsub_mx_addsub0000_cy<5>" is unused and
+has been removed.
+                                   Unused block "A_PS2_KEY_MOUSE/A0_MOUSE/Maddsub_mx_addsub0000_cy<5>" (MUX)
+removed.
+                                  The signal "A_PS2_KEY_MOUSE/A0_MOUSE/Maddsub_mx_addsub0000_lut<6>" is unused and
+has been removed.
+                                   Unused block "A_PS2_KEY_MOUSE/A0_MOUSE/Maddsub_mx_addsub0000_lut<6>" (ROM)
+removed.
+                            The signal "A_PS2_KEY_MOUSE/A0_MOUSE/mx<7>" is unused and has been removed.
+                             Unused block "A_PS2_KEY_MOUSE/A0_MOUSE/mx_7" (SFF) removed.
+                              The signal "A_PS2_KEY_MOUSE/A0_MOUSE/mx_mux0000<4>" is unused and has been
+removed.
+                               Unused block "A_PS2_KEY_MOUSE/A0_MOUSE/mx_mux0000<4>1" (ROM) removed.
+                                The signal "A_PS2_KEY_MOUSE/A0_MOUSE/mx_addsub0000<7>" is unused and has been
+removed.
+                                 Unused block "A_PS2_KEY_MOUSE/A0_MOUSE/Maddsub_mx_addsub0000_xor<7>" (XOR)
+removed.
+                                  The signal "A_PS2_KEY_MOUSE/A0_MOUSE/Maddsub_mx_addsub0000_cy<6>" is unused and
+has been removed.
+                                   Unused block "A_PS2_KEY_MOUSE/A0_MOUSE/Maddsub_mx_addsub0000_cy<6>" (MUX)
+removed.
+                                  The signal "A_PS2_KEY_MOUSE/A0_MOUSE/Maddsub_mx_addsub0000_lut<7>" is unused and
+has been removed.
+                                   Unused block "A_PS2_KEY_MOUSE/A0_MOUSE/Maddsub_mx_addsub0000_lut<7>" (ROM)
+removed.
+                          The signal "A_PS2_KEY_MOUSE/A0_MOUSE/Mcompar_mx_cmp_gt0000_lut<3>" is unused and
+has been removed.
+                           Unused block "A_PS2_KEY_MOUSE/A0_MOUSE/Mcompar_mx_cmp_gt0000_lut<3>" (ROM)
+removed.
+                        The signal "A_PS2_KEY_MOUSE/A0_MOUSE/Mcompar_mx_cmp_gt0000_lutdi4" is unused and
+has been removed.
+                         Unused block "A_PS2_KEY_MOUSE/A0_MOUSE/Mcompar_mx_cmp_gt0000_lutdi4" (ROM)
+removed.
+                          The signal "A_PS2_KEY_MOUSE/A0_MOUSE/mx<8>" is unused and has been removed.
+                           Unused block "A_PS2_KEY_MOUSE/A0_MOUSE/mx_8" (SFF) removed.
+                            The signal "A_PS2_KEY_MOUSE/A0_MOUSE/mx_mux0000<3>" is unused and has been
+removed.
+                             Unused block "A_PS2_KEY_MOUSE/A0_MOUSE/mx_mux0000<3>1" (ROM) removed.
+                              The signal "A_PS2_KEY_MOUSE/A0_MOUSE/mx_addsub0000<8>" is unused and has been
+removed.
+                               Unused block "A_PS2_KEY_MOUSE/A0_MOUSE/Maddsub_mx_addsub0000_xor<8>" (XOR)
+removed.
+                                The signal "A_PS2_KEY_MOUSE/A0_MOUSE/Maddsub_mx_addsub0000_cy<7>" is unused and
+has been removed.
+                                 Unused block "A_PS2_KEY_MOUSE/A0_MOUSE/Maddsub_mx_addsub0000_cy<7>" (MUX)
+removed.
+                                The signal "A_PS2_KEY_MOUSE/A0_MOUSE/Maddsub_mx_addsub0000_lut<8>" is unused and
+has been removed.
+                                 Unused block "A_PS2_KEY_MOUSE/A0_MOUSE/Maddsub_mx_addsub0000_lut<8>" (ROM)
+removed.
+                          The signal "A_PS2_KEY_MOUSE/A0_MOUSE/mx<9>" is unused and has been removed.
+                           Unused block "A_PS2_KEY_MOUSE/A0_MOUSE/mx_9" (SFF) removed.
+                            The signal "A_PS2_KEY_MOUSE/A0_MOUSE/mx_mux0000<2>" is unused and has been
+removed.
+                             Unused block "A_PS2_KEY_MOUSE/A0_MOUSE/mx_mux0000<2>1" (ROM) removed.
+                              The signal "A_PS2_KEY_MOUSE/A0_MOUSE/mx_addsub0000<9>" is unused and has been
+removed.
+                               Unused block "A_PS2_KEY_MOUSE/A0_MOUSE/Maddsub_mx_addsub0000_xor<9>" (XOR)
+removed.
+                                The signal "A_PS2_KEY_MOUSE/A0_MOUSE/Maddsub_mx_addsub0000_cy<8>" is unused and
+has been removed.
+                                 Unused block "A_PS2_KEY_MOUSE/A0_MOUSE/Maddsub_mx_addsub0000_cy<8>" (MUX)
+removed.
+                                The signal "A_PS2_KEY_MOUSE/A0_MOUSE/Maddsub_mx_addsub0000_lut<9>" is unused and
+has been removed.
+                                 Unused block "A_PS2_KEY_MOUSE/A0_MOUSE/Maddsub_mx_addsub0000_lut<9>" (ROM)
+removed.
+                          The signal "A_PS2_KEY_MOUSE/A0_MOUSE/ndx<8>" is unused and has been removed.
+                           Unused block "A_PS2_KEY_MOUSE/A0_MOUSE/ndx<8>1" (ROM) removed.
+                          The signal "A_PS2_KEY_MOUSE/A0_MOUSE/mx<10>" is unused and has been removed.
+                           Unused block "A_PS2_KEY_MOUSE/A0_MOUSE/mx_10" (SFF) removed.
+                            The signal "A_PS2_KEY_MOUSE/A0_MOUSE/mx_mux0000<1>" is unused and has been
+removed.
+                             Unused block "A_PS2_KEY_MOUSE/A0_MOUSE/mx_mux0000<1>1" (ROM) removed.
+                              The signal "A_PS2_KEY_MOUSE/A0_MOUSE/mx_addsub0000<10>" is unused and has been
+removed.
+                               Unused block "A_PS2_KEY_MOUSE/A0_MOUSE/Maddsub_mx_addsub0000_xor<10>" (XOR)
+removed.
+                                The signal "A_PS2_KEY_MOUSE/A0_MOUSE/Maddsub_mx_addsub0000_cy<9>" is unused and
+has been removed.
+                                 Unused block "A_PS2_KEY_MOUSE/A0_MOUSE/Maddsub_mx_addsub0000_cy<9>" (MUX)
+removed.
+                                The signal "A_PS2_KEY_MOUSE/A0_MOUSE/Maddsub_mx_addsub0000_lut<10>" is unused
+and has been removed.
+                                 Unused block "A_PS2_KEY_MOUSE/A0_MOUSE/Maddsub_mx_addsub0000_lut<10>" (ROM)
+removed.
+                          The signal "A_PS2_KEY_MOUSE/A0_MOUSE/mx<11>" is unused and has been removed.
+                           Unused block "A_PS2_KEY_MOUSE/A0_MOUSE/mx_11" (SFF) removed.
+                            The signal "A_PS2_KEY_MOUSE/A0_MOUSE/mx_mux0000<0>" is unused and has been
+removed.
+                             Unused block "A_PS2_KEY_MOUSE/A0_MOUSE/mx_mux0000<0>1" (ROM) removed.
+                              The signal "A_PS2_KEY_MOUSE/A0_MOUSE/mx_addsub0000<11>" is unused and has been
+removed.
+                               Unused block "A_PS2_KEY_MOUSE/A0_MOUSE/Maddsub_mx_addsub0000_xor<11>" (XOR)
+removed.
+                                The signal "A_PS2_KEY_MOUSE/A0_MOUSE/Maddsub_mx_addsub0000_cy<10>" is unused and
+has been removed.
+                                 Unused block "A_PS2_KEY_MOUSE/A0_MOUSE/Maddsub_mx_addsub0000_cy<10>" (MUX)
+removed.
+                                The signal "A_PS2_KEY_MOUSE/A0_MOUSE/Maddsub_mx_addsub0000_lut<11>" is unused
+and has been removed.
+                                 Unused block "A_PS2_KEY_MOUSE/A0_MOUSE/Maddsub_mx_addsub0000_lut<11>" (ROM)
+removed.
+                        The signal "A_PS2_KEY_MOUSE/A0_MOUSE/Mcompar_mx_cmp_gt0000_lut<4>" is unused and
+has been removed.
+                         Unused block "A_PS2_KEY_MOUSE/A0_MOUSE/Mcompar_mx_cmp_gt0000_lut<4>" (ROM)
+removed.
+                  The signal "A_PS2_KEY_MOUSE/A0_MOUSE/mx_not0000<0>" is unused and has been
+removed.
+                   Unused block "A_PS2_KEY_MOUSE/A0_MOUSE/mx_not0000<0>1_INV_0" (BUF) removed.
+                  The signal "A_PS2_KEY_MOUSE/A0_MOUSE/mx_not0000<1>" is unused and has been
+removed.
+                   Unused block "A_PS2_KEY_MOUSE/A0_MOUSE/mx_not0000<1>11" (ROM) removed.
+                The signal "A_PS2_KEY_MOUSE/A0_MOUSE/Mcompar_mx_cmp_lt0000_lut<0>" is unused and
+has been removed.
+                 Unused block "A_PS2_KEY_MOUSE/A0_MOUSE/Mcompar_mx_cmp_lt0000_lut<0>" (ROM)
+removed.
+              The signal "A_PS2_KEY_MOUSE/A0_MOUSE/Mcompar_mx_cmp_lt0000_lutdi1" is unused and
+has been removed.
+               Unused block "A_PS2_KEY_MOUSE/A0_MOUSE/Mcompar_mx_cmp_lt0000_lutdi1" (ROM)
+removed.
+                The signal "A_PS2_KEY_MOUSE/A0_MOUSE/mx_not0000<2>" is unused and has been
+removed.
+                 Unused block "A_PS2_KEY_MOUSE/A0_MOUSE/mx_not0000<2>11" (ROM) removed.
+                The signal "A_PS2_KEY_MOUSE/A0_MOUSE/mx_not0000<3>" is unused and has been
+removed.
+                 Unused block "A_PS2_KEY_MOUSE/A0_MOUSE/mx_not0000<3>11" (ROM) removed.
+              The signal "A_PS2_KEY_MOUSE/A0_MOUSE/Mcompar_mx_cmp_lt0000_lut<1>" is unused and
+has been removed.
+               Unused block "A_PS2_KEY_MOUSE/A0_MOUSE/Mcompar_mx_cmp_lt0000_lut<1>" (ROM)
+removed.
+            The signal "A_PS2_KEY_MOUSE/A0_MOUSE/Mcompar_mx_cmp_lt0000_lutdi2" is unused and
+has been removed.
+             Unused block "A_PS2_KEY_MOUSE/A0_MOUSE/Mcompar_mx_cmp_lt0000_lutdi2" (ROM)
+removed.
+              The signal "A_PS2_KEY_MOUSE/A0_MOUSE/mx_not0000<4>" is unused and has been
+removed.
+               Unused block "A_PS2_KEY_MOUSE/A0_MOUSE/mx_not0000<4>11" (ROM) removed.
+              The signal "A_PS2_KEY_MOUSE/A0_MOUSE/mx_not0000<5>" is unused and has been
+removed.
+               Unused block "A_PS2_KEY_MOUSE/A0_MOUSE/mx_not0000<5>1" (ROM) removed.
+            The signal "A_PS2_KEY_MOUSE/A0_MOUSE/Mcompar_mx_cmp_lt0000_lut<2>" is unused and
+has been removed.
+             Unused block "A_PS2_KEY_MOUSE/A0_MOUSE/Mcompar_mx_cmp_lt0000_lut<2>" (ROM)
+removed.
+          The signal "A_PS2_KEY_MOUSE/A0_MOUSE/Mcompar_mx_cmp_lt0000_lutdi3" is unused and
+has been removed.
+           Unused block "A_PS2_KEY_MOUSE/A0_MOUSE/Mcompar_mx_cmp_lt0000_lutdi3" (ROM)
+removed.
+            The signal "A_PS2_KEY_MOUSE/A0_MOUSE/mx_not0000<6>" is unused and has been
+removed.
+             Unused block "A_PS2_KEY_MOUSE/A0_MOUSE/mx_not0000<6>1" (ROM) removed.
+            The signal "A_PS2_KEY_MOUSE/A0_MOUSE/mx_not0000<7>" is unused and has been
+removed.
+             Unused block "A_PS2_KEY_MOUSE/A0_MOUSE/mx_not0000<7>1" (ROM) removed.
+          The signal "A_PS2_KEY_MOUSE/A0_MOUSE/Mcompar_mx_cmp_lt0000_lut<3>" is unused and
+has been removed.
+           Unused block "A_PS2_KEY_MOUSE/A0_MOUSE/Mcompar_mx_cmp_lt0000_lut<3>" (ROM)
+removed.
+        The signal "A_PS2_KEY_MOUSE/A0_MOUSE/Mcompar_mx_cmp_lt0000_lutdi4" is unused and
+has been removed.
+         Unused block "A_PS2_KEY_MOUSE/A0_MOUSE/Mcompar_mx_cmp_lt0000_lutdi4" (ROM)
+removed.
+          The signal "A_PS2_KEY_MOUSE/A0_MOUSE/mx_not0000<8>" is unused and has been
+removed.
+           Unused block "A_PS2_KEY_MOUSE/A0_MOUSE/mx_not0000<8>1" (ROM) removed.
+        The signal "A_PS2_KEY_MOUSE/A0_MOUSE/Mcompar_mx_cmp_lt0000_lut<4>" is unused and
+has been removed.
+         Unused block "A_PS2_KEY_MOUSE/A0_MOUSE/Mcompar_mx_cmp_lt0000_lut<4>" (ROM)
+removed.
+The signal "A_PS2_KEY_MOUSE/A0_MOUSE/Maddsub_my_share0000_cy<0>" is unused and
+has been removed.
+ Unused block "A_PS2_KEY_MOUSE/A0_MOUSE/Maddsub_my_share0000_cy<0>" (MUX)
+removed.
+  The signal "A_PS2_KEY_MOUSE/A0_MOUSE/my_mux0001" is unused and has been removed.
+   Unused block "A_PS2_KEY_MOUSE/A0_MOUSE/my_mux00012_INV_0" (BUF) removed.
+  The signal "A_PS2_KEY_MOUSE/A0_MOUSE/my<0>" is unused and has been removed.
+   Unused block "A_PS2_KEY_MOUSE/A0_MOUSE/my_0" (SFF) removed.
+    The signal "A_PS2_KEY_MOUSE/A0_MOUSE/my_mux0000<11>" is unused and has been
+removed.
+     Unused block "A_PS2_KEY_MOUSE/A0_MOUSE/my_mux0000<11>1" (ROM) removed.
+      The signal "A_PS2_KEY_MOUSE/A0_MOUSE/my_share0000<0>" is unused and has been
+removed.
+       Unused block "A_PS2_KEY_MOUSE/A0_MOUSE/Maddsub_my_share0000_xor<0>" (XOR)
+removed.
+        The signal "A_PS2_KEY_MOUSE/A0_MOUSE/Maddsub_my_share0000_lut<0>" is unused and
+has been removed.
+         Unused block "A_PS2_KEY_MOUSE/A0_MOUSE/Maddsub_my_share0000_lut<0>" (ROM)
+removed.
+      The signal "A_PS2_KEY_MOUSE/A0_MOUSE/Mcompar_my_cmp_lt0000_cy<5>" is unused and
+has been removed.
+       Unused block "A_PS2_KEY_MOUSE/A0_MOUSE/Mcompar_my_cmp_lt0000_cy<5>" (MUX)
+removed.
+        The signal "A_PS2_KEY_MOUSE/A0_MOUSE/Mcompar_my_cmp_lt0000_cy<4>" is unused and
+has been removed.
+         Unused block "A_PS2_KEY_MOUSE/A0_MOUSE/Mcompar_my_cmp_lt0000_cy<4>" (MUX)
+removed.
+          The signal "A_PS2_KEY_MOUSE/A0_MOUSE/Mcompar_my_cmp_lt0000_cy<3>" is unused and
+has been removed.
+           Unused block "A_PS2_KEY_MOUSE/A0_MOUSE/Mcompar_my_cmp_lt0000_cy<3>" (MUX)
+removed.
+            The signal "A_PS2_KEY_MOUSE/A0_MOUSE/Mcompar_my_cmp_lt0000_cy<2>" is unused and
+has been removed.
+             Unused block "A_PS2_KEY_MOUSE/A0_MOUSE/Mcompar_my_cmp_lt0000_cy<2>" (MUX)
+removed.
+              The signal "A_PS2_KEY_MOUSE/A0_MOUSE/Mcompar_my_cmp_lt0000_cy<1>" is unused and
+has been removed.
+               Unused block "A_PS2_KEY_MOUSE/A0_MOUSE/Mcompar_my_cmp_lt0000_cy<1>" (MUX)
+removed.
+                The signal "A_PS2_KEY_MOUSE/A0_MOUSE/Mcompar_my_cmp_lt0000_cy<0>" is unused and
+has been removed.
+                 Unused block "A_PS2_KEY_MOUSE/A0_MOUSE/Mcompar_my_cmp_lt0000_cy<0>" (MUX)
+removed.
+                  The signal "A_PS2_KEY_MOUSE/A0_MOUSE/Mcompar_my_cmp_lt0000_lutdi" is unused and
+has been removed.
+                   Unused block "A_PS2_KEY_MOUSE/A0_MOUSE/Mcompar_my_cmp_lt0000_lutdi" (ROM)
+removed.
+                    The signal "A_PS2_KEY_MOUSE/A0_MOUSE/my<1>" is unused and has been removed.
+                     Unused block "A_PS2_KEY_MOUSE/A0_MOUSE/my_1" (SFF) removed.
+                      The signal "A_PS2_KEY_MOUSE/A0_MOUSE/my_mux0000<10>" is unused and has been
+removed.
+                       Unused block "A_PS2_KEY_MOUSE/A0_MOUSE/my_mux0000<10>1" (ROM) removed.
+                        The signal "A_PS2_KEY_MOUSE/A0_MOUSE/my_share0000<1>" is unused and has been
+removed.
+                         Unused block "A_PS2_KEY_MOUSE/A0_MOUSE/Maddsub_my_share0000_xor<1>" (XOR)
+removed.
+                          The signal "A_PS2_KEY_MOUSE/A0_MOUSE/Maddsub_my_share0000_lut<1>" is unused and
+has been removed.
+                           Unused block "A_PS2_KEY_MOUSE/A0_MOUSE/Maddsub_my_share0000_lut<1>" (ROM)
+removed.
+                      The signal "A_PS2_KEY_MOUSE/A0_MOUSE/my_and00001" is unused and has been
+removed.
+                       Unused block "A_PS2_KEY_MOUSE/A0_MOUSE/my_and000011" (ROM) removed.
+                        The signal "A_PS2_KEY_MOUSE/A0_MOUSE/Mcompar_my_cmp_gt0000_cy<4>" is unused and
+has been removed.
+                         Unused block "A_PS2_KEY_MOUSE/A0_MOUSE/Mcompar_my_cmp_gt0000_cy<4>" (MUX)
+removed.
+                          The signal "A_PS2_KEY_MOUSE/A0_MOUSE/Mcompar_my_cmp_gt0000_cy<3>" is unused and
+has been removed.
+                           Unused block "A_PS2_KEY_MOUSE/A0_MOUSE/Mcompar_my_cmp_gt0000_cy<3>" (MUX)
+removed.
+                            The signal "A_PS2_KEY_MOUSE/A0_MOUSE/Mcompar_my_cmp_gt0000_cy<2>" is unused and
+has been removed.
+                             Unused block "A_PS2_KEY_MOUSE/A0_MOUSE/Mcompar_my_cmp_gt0000_cy<2>" (MUX)
+removed.
+                              The signal "A_PS2_KEY_MOUSE/A0_MOUSE/Mcompar_my_cmp_gt0000_cy<1>" is unused and
+has been removed.
+                               Unused block "A_PS2_KEY_MOUSE/A0_MOUSE/Mcompar_my_cmp_gt0000_cy<1>" (MUX)
+removed.
+                                The signal "A_PS2_KEY_MOUSE/A0_MOUSE/Mcompar_my_cmp_gt0000_cy<0>" is unused and
+has been removed.
+                                 Unused block "A_PS2_KEY_MOUSE/A0_MOUSE/Mcompar_my_cmp_gt0000_cy<0>" (MUX)
+removed.
+                                  The signal "A_PS2_KEY_MOUSE/A0_MOUSE/Mcompar_my_cmp_gt0000_lutdi" is unused and
+has been removed.
+                                   Unused block "A_PS2_KEY_MOUSE/A0_MOUSE/Mcompar_my_cmp_gt0000_lutdi" (ROM)
+removed.
+                                    The signal "A_PS2_KEY_MOUSE/A0_MOUSE/ndy<1>" is unused and has been removed.
+                                     Unused block "A_PS2_KEY_MOUSE/A0_MOUSE/ndy<1>11" (ROM) removed.
+                                  The signal "A_PS2_KEY_MOUSE/A0_MOUSE/Mcompar_my_cmp_gt0000_lut<0>" is unused and
+has been removed.
+                                   Unused block "A_PS2_KEY_MOUSE/A0_MOUSE/Mcompar_my_cmp_gt0000_lut<0>" (ROM)
+removed.
+                                The signal "A_PS2_KEY_MOUSE/A0_MOUSE/Mcompar_my_cmp_gt0000_lutdi1" is unused and
+has been removed.
+                                 Unused block "A_PS2_KEY_MOUSE/A0_MOUSE/Mcompar_my_cmp_gt0000_lutdi1" (ROM)
+removed.
+                                  The signal "A_PS2_KEY_MOUSE/A0_MOUSE/ndy<3>" is unused and has been removed.
+                                   Unused block "A_PS2_KEY_MOUSE/A0_MOUSE/ndy<3>11" (ROM) removed.
+                                  The signal "A_PS2_KEY_MOUSE/A0_MOUSE/ndy<2>" is unused and has been removed.
+                                   Unused block "A_PS2_KEY_MOUSE/A0_MOUSE/ndy<2>11" (ROM) removed.
+                                  The signal "A_PS2_KEY_MOUSE/A0_MOUSE/my<2>" is unused and has been removed.
+                                   Unused block "A_PS2_KEY_MOUSE/A0_MOUSE/my_2" (SFF) removed.
+                                    The signal "A_PS2_KEY_MOUSE/A0_MOUSE/my_mux0000<9>" is unused and has been
+removed.
+                                     Unused block "A_PS2_KEY_MOUSE/A0_MOUSE/my_mux0000<9>1" (ROM) removed.
+                                      The signal "A_PS2_KEY_MOUSE/A0_MOUSE/my_share0000<2>" is unused and has been
+removed.
+                                       Unused block "A_PS2_KEY_MOUSE/A0_MOUSE/Maddsub_my_share0000_xor<2>" (XOR)
+removed.
+                                        The signal "A_PS2_KEY_MOUSE/A0_MOUSE/Maddsub_my_share0000_cy<1>" is unused and
+has been removed.
+                                         Unused block "A_PS2_KEY_MOUSE/A0_MOUSE/Maddsub_my_share0000_cy<1>" (MUX)
+removed.
+                                        The signal "A_PS2_KEY_MOUSE/A0_MOUSE/Maddsub_my_share0000_lut<2>" is unused and
+has been removed.
+                                         Unused block "A_PS2_KEY_MOUSE/A0_MOUSE/Maddsub_my_share0000_lut<2>" (ROM)
+removed.
+                                    The signal "A_PS2_KEY_MOUSE/A0_MOUSE/my_and0000" is unused and has been removed.
+                                     Unused block "A_PS2_KEY_MOUSE/A0_MOUSE/my_and00001" (ROM) removed.
+                                  The signal "A_PS2_KEY_MOUSE/A0_MOUSE/my<3>" is unused and has been removed.
+                                   Unused block "A_PS2_KEY_MOUSE/A0_MOUSE/my_3" (SFF) removed.
+                                    The signal "A_PS2_KEY_MOUSE/A0_MOUSE/my_mux0000<8>" is unused and has been
+removed.
+                                     Unused block "A_PS2_KEY_MOUSE/A0_MOUSE/my_mux0000<8>1" (ROM) removed.
+                                      The signal "A_PS2_KEY_MOUSE/A0_MOUSE/my_share0000<3>" is unused and has been
+removed.
+                                       Unused block "A_PS2_KEY_MOUSE/A0_MOUSE/Maddsub_my_share0000_xor<3>" (XOR)
+removed.
+                                        The signal "A_PS2_KEY_MOUSE/A0_MOUSE/Maddsub_my_share0000_cy<2>" is unused and
+has been removed.
+                                         Unused block "A_PS2_KEY_MOUSE/A0_MOUSE/Maddsub_my_share0000_cy<2>" (MUX)
+removed.
+                                        The signal "A_PS2_KEY_MOUSE/A0_MOUSE/Maddsub_my_share0000_lut<3>" is unused and
+has been removed.
+                                         Unused block "A_PS2_KEY_MOUSE/A0_MOUSE/Maddsub_my_share0000_lut<3>" (ROM)
+removed.
+                                The signal "A_PS2_KEY_MOUSE/A0_MOUSE/Mcompar_my_cmp_gt0000_lut<1>" is unused and
+has been removed.
+                                 Unused block "A_PS2_KEY_MOUSE/A0_MOUSE/Mcompar_my_cmp_gt0000_lut<1>" (ROM)
+removed.
+                              The signal "A_PS2_KEY_MOUSE/A0_MOUSE/Mcompar_my_cmp_gt0000_lutdi2" is unused and
+has been removed.
+                               Unused block "A_PS2_KEY_MOUSE/A0_MOUSE/Mcompar_my_cmp_gt0000_lutdi2" (ROM)
+removed.
+                                The signal "A_PS2_KEY_MOUSE/A0_MOUSE/ndy<5>" is unused and has been removed.
+                                 Unused block "A_PS2_KEY_MOUSE/A0_MOUSE/ndy<5>1" (ROM) removed.
+                                The signal "A_PS2_KEY_MOUSE/A0_MOUSE/ndy<4>" is unused and has been removed.
+                                 Unused block "A_PS2_KEY_MOUSE/A0_MOUSE/ndy<4>11" (ROM) removed.
+                                The signal "A_PS2_KEY_MOUSE/A0_MOUSE/my<4>" is unused and has been removed.
+                                 Unused block "A_PS2_KEY_MOUSE/A0_MOUSE/my_4" (SFF) removed.
+                                  The signal "A_PS2_KEY_MOUSE/A0_MOUSE/my_mux0000<7>" is unused and has been
+removed.
+                                   Unused block "A_PS2_KEY_MOUSE/A0_MOUSE/my_mux0000<7>1" (ROM) removed.
+                                    The signal "A_PS2_KEY_MOUSE/A0_MOUSE/my_share0000<4>" is unused and has been
+removed.
+                                     Unused block "A_PS2_KEY_MOUSE/A0_MOUSE/Maddsub_my_share0000_xor<4>" (XOR)
+removed.
+                                      The signal "A_PS2_KEY_MOUSE/A0_MOUSE/Maddsub_my_share0000_cy<3>" is unused and
+has been removed.
+                                       Unused block "A_PS2_KEY_MOUSE/A0_MOUSE/Maddsub_my_share0000_cy<3>" (MUX)
+removed.
+                                      The signal "A_PS2_KEY_MOUSE/A0_MOUSE/Maddsub_my_share0000_lut<4>" is unused and
+has been removed.
+                                       Unused block "A_PS2_KEY_MOUSE/A0_MOUSE/Maddsub_my_share0000_lut<4>" (ROM)
+removed.
+                                The signal "A_PS2_KEY_MOUSE/A0_MOUSE/my<5>" is unused and has been removed.
+                                 Unused block "A_PS2_KEY_MOUSE/A0_MOUSE/my_5" (SFF) removed.
+                                  The signal "A_PS2_KEY_MOUSE/A0_MOUSE/my_mux0000<6>" is unused and has been
+removed.
+                                   Unused block "A_PS2_KEY_MOUSE/A0_MOUSE/my_mux0000<6>1" (ROM) removed.
+                                    The signal "A_PS2_KEY_MOUSE/A0_MOUSE/my_share0000<5>" is unused and has been
+removed.
+                                     Unused block "A_PS2_KEY_MOUSE/A0_MOUSE/Maddsub_my_share0000_xor<5>" (XOR)
+removed.
+                                      The signal "A_PS2_KEY_MOUSE/A0_MOUSE/Maddsub_my_share0000_cy<4>" is unused and
+has been removed.
+                                       Unused block "A_PS2_KEY_MOUSE/A0_MOUSE/Maddsub_my_share0000_cy<4>" (MUX)
+removed.
+                                      The signal "A_PS2_KEY_MOUSE/A0_MOUSE/Maddsub_my_share0000_lut<5>" is unused and
+has been removed.
+                                       Unused block "A_PS2_KEY_MOUSE/A0_MOUSE/Maddsub_my_share0000_lut<5>" (ROM)
+removed.
+                              The signal "A_PS2_KEY_MOUSE/A0_MOUSE/Mcompar_my_cmp_gt0000_lut<2>" is unused and
+has been removed.
+                               Unused block "A_PS2_KEY_MOUSE/A0_MOUSE/Mcompar_my_cmp_gt0000_lut<2>" (ROM)
+removed.
+                            The signal "A_PS2_KEY_MOUSE/A0_MOUSE/Mcompar_my_cmp_gt0000_lutdi3" is unused and
+has been removed.
+                             Unused block "A_PS2_KEY_MOUSE/A0_MOUSE/Mcompar_my_cmp_gt0000_lutdi3" (ROM)
+removed.
+                              The signal "A_PS2_KEY_MOUSE/A0_MOUSE/ndy<7>" is unused and has been removed.
+                               Unused block "A_PS2_KEY_MOUSE/A0_MOUSE/ndy<7>1" (ROM) removed.
+                              The signal "A_PS2_KEY_MOUSE/A0_MOUSE/ndy<6>" is unused and has been removed.
+                               Unused block "A_PS2_KEY_MOUSE/A0_MOUSE/ndy<6>1" (ROM) removed.
+                              The signal "A_PS2_KEY_MOUSE/A0_MOUSE/my<6>" is unused and has been removed.
+                               Unused block "A_PS2_KEY_MOUSE/A0_MOUSE/my_6" (SFF) removed.
+                                The signal "A_PS2_KEY_MOUSE/A0_MOUSE/my_mux0000<5>" is unused and has been
+removed.
+                                 Unused block "A_PS2_KEY_MOUSE/A0_MOUSE/my_mux0000<5>1" (ROM) removed.
+                                  The signal "A_PS2_KEY_MOUSE/A0_MOUSE/my_share0000<6>" is unused and has been
+removed.
+                                   Unused block "A_PS2_KEY_MOUSE/A0_MOUSE/Maddsub_my_share0000_xor<6>" (XOR)
+removed.
+                                    The signal "A_PS2_KEY_MOUSE/A0_MOUSE/Maddsub_my_share0000_cy<5>" is unused and
+has been removed.
+                                     Unused block "A_PS2_KEY_MOUSE/A0_MOUSE/Maddsub_my_share0000_cy<5>" (MUX)
+removed.
+                                    The signal "A_PS2_KEY_MOUSE/A0_MOUSE/Maddsub_my_share0000_lut<6>" is unused and
+has been removed.
+                                     Unused block "A_PS2_KEY_MOUSE/A0_MOUSE/Maddsub_my_share0000_lut<6>" (ROM)
+removed.
+                              The signal "A_PS2_KEY_MOUSE/A0_MOUSE/my<7>" is unused and has been removed.
+                               Unused block "A_PS2_KEY_MOUSE/A0_MOUSE/my_7" (SFF) removed.
+                                The signal "A_PS2_KEY_MOUSE/A0_MOUSE/my_mux0000<4>" is unused and has been
+removed.
+                                 Unused block "A_PS2_KEY_MOUSE/A0_MOUSE/my_mux0000<4>1" (ROM) removed.
+                                  The signal "A_PS2_KEY_MOUSE/A0_MOUSE/my_share0000<7>" is unused and has been
+removed.
+                                   Unused block "A_PS2_KEY_MOUSE/A0_MOUSE/Maddsub_my_share0000_xor<7>" (XOR)
+removed.
+                                    The signal "A_PS2_KEY_MOUSE/A0_MOUSE/Maddsub_my_share0000_cy<6>" is unused and
+has been removed.
+                                     Unused block "A_PS2_KEY_MOUSE/A0_MOUSE/Maddsub_my_share0000_cy<6>" (MUX)
+removed.
+                                    The signal "A_PS2_KEY_MOUSE/A0_MOUSE/Maddsub_my_share0000_lut<7>" is unused and
+has been removed.
+                                     Unused block "A_PS2_KEY_MOUSE/A0_MOUSE/Maddsub_my_share0000_lut<7>" (ROM)
+removed.
+                            The signal "A_PS2_KEY_MOUSE/A0_MOUSE/Mcompar_my_cmp_gt0000_lut<3>" is unused and
+has been removed.
+                             Unused block "A_PS2_KEY_MOUSE/A0_MOUSE/Mcompar_my_cmp_gt0000_lut<3>" (ROM)
+removed.
+                          The signal "A_PS2_KEY_MOUSE/A0_MOUSE/Mcompar_my_cmp_gt0000_lutdi4" is unused and
+has been removed.
+                           Unused block "A_PS2_KEY_MOUSE/A0_MOUSE/Mcompar_my_cmp_gt0000_lutdi4" (ROM)
+removed.
+                            The signal "A_PS2_KEY_MOUSE/A0_MOUSE/my<8>" is unused and has been removed.
+                             Unused block "A_PS2_KEY_MOUSE/A0_MOUSE/my_8" (SFF) removed.
+                              The signal "A_PS2_KEY_MOUSE/A0_MOUSE/my_mux0000<3>" is unused and has been
+removed.
+                               Unused block "A_PS2_KEY_MOUSE/A0_MOUSE/my_mux0000<3>1" (ROM) removed.
+                                The signal "A_PS2_KEY_MOUSE/A0_MOUSE/my_share0000<8>" is unused and has been
+removed.
+                                 Unused block "A_PS2_KEY_MOUSE/A0_MOUSE/Maddsub_my_share0000_xor<8>" (XOR)
+removed.
+                                  The signal "A_PS2_KEY_MOUSE/A0_MOUSE/Maddsub_my_share0000_cy<7>" is unused and
+has been removed.
+                                   Unused block "A_PS2_KEY_MOUSE/A0_MOUSE/Maddsub_my_share0000_cy<7>" (MUX)
+removed.
+                                  The signal "A_PS2_KEY_MOUSE/A0_MOUSE/Maddsub_my_share0000_lut<8>" is unused and
+has been removed.
+                                   Unused block "A_PS2_KEY_MOUSE/A0_MOUSE/Maddsub_my_share0000_lut<8>" (ROM)
+removed.
+                            The signal "A_PS2_KEY_MOUSE/A0_MOUSE/my<9>" is unused and has been removed.
+                             Unused block "A_PS2_KEY_MOUSE/A0_MOUSE/my_9" (SFF) removed.
+                              The signal "A_PS2_KEY_MOUSE/A0_MOUSE/my_mux0000<2>" is unused and has been
+removed.
+                               Unused block "A_PS2_KEY_MOUSE/A0_MOUSE/my_mux0000<2>1" (ROM) removed.
+                                The signal "A_PS2_KEY_MOUSE/A0_MOUSE/my_share0000<9>" is unused and has been
+removed.
+                                 Unused block "A_PS2_KEY_MOUSE/A0_MOUSE/Maddsub_my_share0000_xor<9>" (XOR)
+removed.
+                                  The signal "A_PS2_KEY_MOUSE/A0_MOUSE/Maddsub_my_share0000_cy<8>" is unused and
+has been removed.
+                                   Unused block "A_PS2_KEY_MOUSE/A0_MOUSE/Maddsub_my_share0000_cy<8>" (MUX)
+removed.
+                                  The signal "A_PS2_KEY_MOUSE/A0_MOUSE/Maddsub_my_share0000_lut<9>" is unused and
+has been removed.
+                                   Unused block "A_PS2_KEY_MOUSE/A0_MOUSE/Maddsub_my_share0000_lut<9>" (ROM)
+removed.
+                            The signal "A_PS2_KEY_MOUSE/A0_MOUSE/my<10>" is unused and has been removed.
+                             Unused block "A_PS2_KEY_MOUSE/A0_MOUSE/my_10" (SFF) removed.
+                              The signal "A_PS2_KEY_MOUSE/A0_MOUSE/my_mux0000<1>" is unused and has been
+removed.
+                               Unused block "A_PS2_KEY_MOUSE/A0_MOUSE/my_mux0000<1>1" (ROM) removed.
+                                The signal "A_PS2_KEY_MOUSE/A0_MOUSE/my_share0000<10>" is unused and has been
+removed.
+                                 Unused block "A_PS2_KEY_MOUSE/A0_MOUSE/Maddsub_my_share0000_xor<10>" (XOR)
+removed.
+                                  The signal "A_PS2_KEY_MOUSE/A0_MOUSE/Maddsub_my_share0000_cy<9>" is unused and
+has been removed.
+                                   Unused block "A_PS2_KEY_MOUSE/A0_MOUSE/Maddsub_my_share0000_cy<9>" (MUX)
+removed.
+                                  The signal "A_PS2_KEY_MOUSE/A0_MOUSE/Maddsub_my_share0000_lut<10>" is unused and
+has been removed.
+                                   Unused block "A_PS2_KEY_MOUSE/A0_MOUSE/Maddsub_my_share0000_lut<10>" (ROM)
+removed.
+                            The signal "A_PS2_KEY_MOUSE/A0_MOUSE/my<11>" is unused and has been removed.
+                             Unused block "A_PS2_KEY_MOUSE/A0_MOUSE/my_11" (SFF) removed.
+                              The signal "A_PS2_KEY_MOUSE/A0_MOUSE/my_mux0000<0>" is unused and has been
+removed.
+                               Unused block "A_PS2_KEY_MOUSE/A0_MOUSE/my_mux0000<0>1" (ROM) removed.
+                                The signal "A_PS2_KEY_MOUSE/A0_MOUSE/my_share0000<11>" is unused and has been
+removed.
+                                 Unused block "A_PS2_KEY_MOUSE/A0_MOUSE/Maddsub_my_share0000_xor<11>" (XOR)
+removed.
+                                  The signal "A_PS2_KEY_MOUSE/A0_MOUSE/Maddsub_my_share0000_cy<10>" is unused and
+has been removed.
+                                   Unused block "A_PS2_KEY_MOUSE/A0_MOUSE/Maddsub_my_share0000_cy<10>" (MUX)
+removed.
+                                  The signal "A_PS2_KEY_MOUSE/A0_MOUSE/Maddsub_my_share0000_lut<11>" is unused and
+has been removed.
+                                   Unused block "A_PS2_KEY_MOUSE/A0_MOUSE/Maddsub_my_share0000_lut<11>" (ROM)
+removed.
+                          The signal "A_PS2_KEY_MOUSE/A0_MOUSE/Mcompar_my_cmp_gt0000_lut<4>" is unused and
+has been removed.
+                           Unused block "A_PS2_KEY_MOUSE/A0_MOUSE/Mcompar_my_cmp_gt0000_lut<4>" (ROM)
+removed.
+                    The signal "A_PS2_KEY_MOUSE/A0_MOUSE/my_not0000<0>" is unused and has been
+removed.
+                     Unused block "A_PS2_KEY_MOUSE/A0_MOUSE/my_not0000<0>1_INV_0" (BUF) removed.
+                    The signal "A_PS2_KEY_MOUSE/A0_MOUSE/my_not0000<1>" is unused and has been
+removed.
+                     Unused block "A_PS2_KEY_MOUSE/A0_MOUSE/my_not0000<1>11" (ROM) removed.
+                  The signal "A_PS2_KEY_MOUSE/A0_MOUSE/Mcompar_my_cmp_lt0000_lut<0>" is unused and
+has been removed.
+                   Unused block "A_PS2_KEY_MOUSE/A0_MOUSE/Mcompar_my_cmp_lt0000_lut<0>" (ROM)
+removed.
+                The signal "A_PS2_KEY_MOUSE/A0_MOUSE/Mcompar_my_cmp_lt0000_lutdi1" is unused and
+has been removed.
+                 Unused block "A_PS2_KEY_MOUSE/A0_MOUSE/Mcompar_my_cmp_lt0000_lutdi1" (ROM)
+removed.
+                  The signal "A_PS2_KEY_MOUSE/A0_MOUSE/my_not0000<2>" is unused and has been
+removed.
+                   Unused block "A_PS2_KEY_MOUSE/A0_MOUSE/my_not0000<2>11" (ROM) removed.
+                  The signal "A_PS2_KEY_MOUSE/A0_MOUSE/my_not0000<3>" is unused and has been
+removed.
+                   Unused block "A_PS2_KEY_MOUSE/A0_MOUSE/my_not0000<3>11" (ROM) removed.
+                The signal "A_PS2_KEY_MOUSE/A0_MOUSE/Mcompar_my_cmp_lt0000_lut<1>" is unused and
+has been removed.
+                 Unused block "A_PS2_KEY_MOUSE/A0_MOUSE/Mcompar_my_cmp_lt0000_lut<1>" (ROM)
+removed.
+              The signal "A_PS2_KEY_MOUSE/A0_MOUSE/Mcompar_my_cmp_lt0000_lutdi2" is unused and
+has been removed.
+               Unused block "A_PS2_KEY_MOUSE/A0_MOUSE/Mcompar_my_cmp_lt0000_lutdi2" (ROM)
+removed.
+                The signal "A_PS2_KEY_MOUSE/A0_MOUSE/my_not0000<4>" is unused and has been
+removed.
+                 Unused block "A_PS2_KEY_MOUSE/A0_MOUSE/my_not0000<4>11" (ROM) removed.
+                The signal "A_PS2_KEY_MOUSE/A0_MOUSE/my_not0000<5>" is unused and has been
+removed.
+                 Unused block "A_PS2_KEY_MOUSE/A0_MOUSE/my_not0000<5>1" (ROM) removed.
+              The signal "A_PS2_KEY_MOUSE/A0_MOUSE/Mcompar_my_cmp_lt0000_lut<2>" is unused and
+has been removed.
+               Unused block "A_PS2_KEY_MOUSE/A0_MOUSE/Mcompar_my_cmp_lt0000_lut<2>" (ROM)
+removed.
+            The signal "A_PS2_KEY_MOUSE/A0_MOUSE/Mcompar_my_cmp_lt0000_lutdi3" is unused and
+has been removed.
+             Unused block "A_PS2_KEY_MOUSE/A0_MOUSE/Mcompar_my_cmp_lt0000_lutdi3" (ROM)
+removed.
+              The signal "A_PS2_KEY_MOUSE/A0_MOUSE/my_not0000<6>" is unused and has been
+removed.
+               Unused block "A_PS2_KEY_MOUSE/A0_MOUSE/my_not0000<6>1" (ROM) removed.
+              The signal "A_PS2_KEY_MOUSE/A0_MOUSE/my_not0000<7>" is unused and has been
+removed.
+               Unused block "A_PS2_KEY_MOUSE/A0_MOUSE/my_not0000<7>1" (ROM) removed.
+            The signal "A_PS2_KEY_MOUSE/A0_MOUSE/Mcompar_my_cmp_lt0000_lut<3>" is unused and
+has been removed.
+             Unused block "A_PS2_KEY_MOUSE/A0_MOUSE/Mcompar_my_cmp_lt0000_lut<3>" (ROM)
+removed.
+          The signal "A_PS2_KEY_MOUSE/A0_MOUSE/Mcompar_my_cmp_lt0000_lutdi4" is unused and
+has been removed.
+           Unused block "A_PS2_KEY_MOUSE/A0_MOUSE/Mcompar_my_cmp_lt0000_lutdi4" (ROM)
+removed.
+          The signal "A_PS2_KEY_MOUSE/A0_MOUSE/Mcompar_my_cmp_lt0000_lut<4>" is unused and
+has been removed.
+           Unused block "A_PS2_KEY_MOUSE/A0_MOUSE/Mcompar_my_cmp_lt0000_lut<4>" (ROM)
+removed.
+        The signal "A_PS2_KEY_MOUSE/A0_MOUSE/Mcompar_my_cmp_lt0000_lut<5>" is unused and
+has been removed.
+         Unused block "A_PS2_KEY_MOUSE/A0_MOUSE/Mcompar_my_cmp_lt0000_lut<5>_INV_0" (BUF)
+removed.
+The signal "KEYBOARD_DATA" is unused and has been removed.
+ Unused block "KEYBOARD_DATA_OBUFT" (TRI) removed.
+Unused block "KEYBOARD_DATA" (PAD) removed.
+
+Optimized Block(s):
+TYPE 		BLOCK
+GND 		XST_GND
+VCC 		XST_VCC
+
+To enable printing of redundant blocks removed and signals merged, set the
+detailed map report option and rerun map.
+
+Section 6 - IOB Properties
+--------------------------
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------+
+| IOB Name                           | Type             | Direction | IO Standard          | Diff  | Drive    | Slew | Reg (s)      | Resistor | IOB      |
+|                                    |                  |           |                      | Term  | Strength | Rate |              |          | Delay    |
++---------------------------------------------------------------------------------------------------------------------------------------------------------+
+| BUTTON_C                           | IOB              | INPUT     | LVDCI_33             |       |          |      |              |          |          |
+| BUTTON_E                           | IOB              | INPUT     | LVDCI_33             |       |          |      |              |          |          |
+| BUTTON_N                           | IOB              | INPUT     | LVDCI_33             |       |          |      |              |          |          |
+| BUTTON_S                           | IOB              | INPUT     | LVDCI_33             |       |          |      |              |          |          |
+| BUTTON_W                           | IOB              | INPUT     | LVDCI_33             |       |          |      |              |          |          |
+| CLK_27MHZ_FPGA                     | IOB              | INPUT     | LVCMOS33             |       |          |      |              |          |          |
+| CLK_33MHZ_FPGA                     | IOB              | INPUT     | LVCMOS33             |       |          |      |              |          |          |
+| CLK_DIFF_FPGA_N                    | IOB              | INPUT     | LVDS_25              | FALSE |          |      |              |          |          |
+| CLK_DIFF_FPGA_P                    | IOB              | INPUT     | LVDS_25              | FALSE |          |      |              |          |          |
+| DIP<0>                             | IOB              | INPUT     | LVCMOS18             |       |          |      |              |          |          |
+| DIP<1>                             | IOB              | INPUT     | LVCMOS18             |       |          |      |              |          |          |
+| DIP<2>                             | IOB              | INPUT     | LVCMOS18             |       |          |      |              |          |          |
+| DIP<3>                             | IOB              | INPUT     | LVCMOS18             |       |          |      |              |          |          |
+| DIP<4>                             | IOB              | INPUT     | LVCMOS18             |       |          |      |              |          |          |
+| DIP<5>                             | IOB              | INPUT     | LVCMOS18             |       |          |      |              |          |          |
+| DIP<6>                             | IOB              | INPUT     | LVCMOS18             |       |          |      |              |          |          |
+| DIP<7>                             | IOB              | INPUT     | LVCMOS18             |       |          |      |              |          |          |
+| DVI_D<0>                           | IOB              | OUTPUT    | LVDCI_33             |       |          |      | ODDR         |          |          |
+| DVI_D<1>                           | IOB              | OUTPUT    | LVDCI_33             |       |          |      | ODDR         |          |          |
+| DVI_D<2>                           | IOB              | OUTPUT    | LVDCI_33             |       |          |      | ODDR         |          |          |
+| DVI_D<3>                           | IOB              | OUTPUT    | LVDCI_33             |       |          |      | ODDR         |          |          |
+| DVI_D<4>                           | IOB              | OUTPUT    | LVDCI_33             |       |          |      | ODDR         |          |          |
+| DVI_D<5>                           | IOB              | OUTPUT    | LVDCI_33             |       |          |      | ODDR         |          |          |
+| DVI_D<6>                           | IOB              | OUTPUT    | LVDCI_33             |       |          |      | ODDR         |          |          |
+| DVI_D<7>                           | IOB              | OUTPUT    | LVDCI_33             |       |          |      | ODDR         |          |          |
+| DVI_D<8>                           | IOB              | OUTPUT    | LVDCI_33             |       |          |      | ODDR         |          |          |
+| DVI_D<9>                           | IOB              | OUTPUT    | LVDCI_33             |       |          |      | ODDR         |          |          |
+| DVI_D<10>                          | IOB              | OUTPUT    | LVDCI_33             |       |          |      | ODDR         |          |          |
+| DVI_D<11>                          | IOB              | OUTPUT    | LVDCI_33             |       |          |      | ODDR         |          |          |
+| DVI_DE                             | IOB              | OUTPUT    | LVDCI_33             |       |          |      |              |          |          |
+| DVI_H                              | IOB              | OUTPUT    | LVDCI_33             |       |          |      |              |          |          |
+| DVI_RESET_B                        | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| DVI_V                              | IOB              | OUTPUT    | LVDCI_33             |       |          |      |              |          |          |
+| DVI_XCLK_N                         | IOB              | OUTPUT    | LVCMOS33             |       | 24       | FAST | ODDR         |          |          |
+| DVI_XCLK_P                         | IOB              | OUTPUT    | LVCMOS33             |       | 24       | FAST | ODDR         |          |          |
+| I2C_SCL_DVI                        | IOB              | OUTPUT    | LVCMOS33             |       | 24       | FAST |              | PULLUP   |          |
+| I2C_SDA_DVI                        | IOB              | BIDIR     | LVCMOS33             |       | 24       | FAST |              | PULLUP   |          |
+| KEYBOARD_CLK                       | IOB              | BIDIR     | LVCMOS18             |       | 12       | SLOW |              |          |          |
+| LCD_DATA<0>                        | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              | PULLDOWN |          |
+| LCD_DATA<1>                        | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              | PULLDOWN |          |
+| LCD_DATA<2>                        | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              | PULLDOWN |          |
+| LCD_DATA<3>                        | IOB              | BIDIR     | LVCMOS33             |       | 12       | SLOW |              | PULLDOWN |          |
+| LCD_EN                             | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              | PULLDOWN |          |
+| LCD_RS                             | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              | PULLDOWN |          |
+| LCD_RW                             | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              | PULLDOWN |          |
+| LED_C                              | IOB              | OUTPUT    | LVCMOS33             |       | 2        | SLOW |              | PULLDOWN |          |
+| LED_E                              | IOB              | OUTPUT    | LVCMOS33             |       | 2        | SLOW |              | PULLDOWN |          |
+| LED_ERR_0                          | IOB              | OUTPUT    | LVCMOS33             |       | 2        | SLOW |              | PULLDOWN |          |
+| LED_ERR_1                          | IOB              | OUTPUT    | LVCMOS33             |       | 2        | SLOW |              | PULLDOWN |          |
+| LED_N                              | IOB              | OUTPUT    | LVCMOS33             |       | 2        | SLOW |              | PULLDOWN |          |
+| LED_S                              | IOB              | OUTPUT    | LVCMOS33             |       | 2        | SLOW |              | PULLDOWN |          |
+| LED_W                              | IOB              | OUTPUT    | LVCMOS33             |       | 2        | SLOW |              | PULLDOWN |          |
+| MOUSE_CLK                          | IOB              | BIDIR     | LVCMOS18             |       | 12       | SLOW |              |          |          |
+| MOUSE_DATA                         | IOB              | BIDIR     | LVCMOS18             |       | 12       | SLOW |              |          |          |
+| TELE_RX                            | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| TELE_TX                            | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| TP<0>                              | IOB              | OUTPUT    | LVCMOS25             |       | 2        | SLOW |              | PULLDOWN |          |
+| TP<1>                              | IOB              | OUTPUT    | LVCMOS25             |       | 2        | SLOW |              | PULLDOWN |          |
+| TP<2>                              | IOB              | OUTPUT    | LVCMOS25             |       | 2        | SLOW |              | PULLDOWN |          |
+| TP<3>                              | IOB              | OUTPUT    | LVCMOS25             |       | 2        | SLOW |              | PULLDOWN |          |
+| TP<4>                              | IOB              | OUTPUT    | LVCMOS25             |       | 2        | SLOW |              | PULLDOWN |          |
+| TP<5>                              | IOB              | OUTPUT    | LVCMOS25             |       | 2        | SLOW |              | PULLDOWN |          |
+| TP<6>                              | IOB              | OUTPUT    | LVCMOS25             |       | 2        | SLOW |              | PULLDOWN |          |
+| TP<7>                              | IOB              | OUTPUT    | LVCMOS25             |       | 2        | SLOW |              | PULLDOWN |          |
+| audio_bit_clk                      | IOB              | INPUT     | LVCMOS33             |       |          |      |              |          |          |
+| audio_sdata_in                     | IOB              | INPUT     | LVCMOS33             |       |          |      |              |          |          |
+| audio_sdata_out                    | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| audio_sync                         | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| clk                                | IOB              | INPUT     | LVCMOS33             |       |          |      |              |          |          |
+| flash_audio_reset_b                | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| rst_n                              | IOB              | INPUT     | LVCMOS33             |       |          |      |              | PULLUP   |          |
++---------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+Section 7 - RPMs
+----------------
+
+Section 8 - Guide Report
+------------------------
+Guide not run on this design.
+
+Section 9 - Area Group and Partition Summary
+--------------------------------------------
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+Area Group Information
+----------------------
+
+  No area groups were found in this design.
+
+----------------------
+
+Section 10 - Modular Design Summary
+-----------------------------------
+Modular Design not used for this design.
+
+Section 11 - Timing Report
+--------------------------
+A logic-level (pre-route) timing report can be generated by using Xilinx static
+timing analysis tools, Timing Analyzer (GUI) or TRCE (command line), with the
+mapped NCD and PCF files. Please note that this timing report will be generated
+using estimated delay information. For accurate numbers, please generate a
+timing report with the post Place and Route NCD file.
+
+For more information about the Timing Analyzer, consult the Xilinx Timing
+Analyzer Reference Manual; for more information about TRCE, consult the Xilinx
+Command Line Tools User Guide "TRACE" chapter.
+
+Section 12 - Configuration String Details
+-----------------------------------------
+Use the "-detail" map option to print out Configuration Strings
+
+Section 13 - Control Set Information
+------------------------------------
+Use the "-detail" map option to print out Control Set Information.
+
+Section 14 - Utilization by Hierarchy
+-------------------------------------
+Use the "-detail" map option to print out the Utilization by Hierarchy section.

@@ -1,0 +1,18 @@
+#!/bin/csh -f
+
+#source 1_simulation.env
+
+#rm -r -rf ./cov_work
+
+ncsim -64bit -gui -licqueue $1 -input ncsim.run work.tb | tee ncsim.log
+
+
+
+
+
+
+
+
+
+
+

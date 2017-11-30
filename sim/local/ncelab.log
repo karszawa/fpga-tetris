@@ -1,0 +1,228 @@
+ncelab(64): 08.20-s026: (c) Copyright 1995-2010 Cadence Design Systems, Inc.
+TOOL:	ncelab(64)	08.20-s026: Started on Dec 06, 2016 at 19:23:00 JST
+ncelab
+    -f option.f
+        -64bit
+        -V200X
+        -access +rwc
+        -messages
+        -neg_tchk
+        -nosource
+        -update
+        -ntcnotchk
+        -NEG_TCHK
+        -DELAY_MODE zero
+        -timescale 1ps/1ps
+        -NOWARN MRSTAR
+        -NOWARN CUVWSB
+        -NOWARN STARMT
+        -NOWARN CUDEFB
+        -NOWARN MEMODR
+        -NOWARN BNDWRN
+        -NOWARN ZROMCV
+    tb
+    -access rwc
+
+	Elaborating the design hierarchy:
+		Caching library 'work' ....... Done
+DVI_TOP A_DVI_TELE_TXRX (
+                      |
+ncelab: *W,CUVWSP (/home/jikken16/Dropbox/Experiment_TA/2016/fpga/fpga_top.v,155|22): 3 output ports were not connected:
+ncelab: (/home/jikken16/Dropbox/Experiment_TA/2016/rtl/dvi/DVI_TOP.v,48): LCD_RS
+ncelab: (/home/jikken16/Dropbox/Experiment_TA/2016/rtl/dvi/DVI_TOP.v,49): LCD_RW
+ncelab: (/home/jikken16/Dropbox/Experiment_TA/2016/rtl/dvi/DVI_TOP.v,50): LCD_EN
+
+   m1(
+    |
+ncelab: *W,CUVWSP (/home/jikken16/Dropbox/Experiment_TA/2016/rtl/ps2/ps2_mouse.v,53|4): 1 output port was not connected:
+ncelab: (/home/jikken16/Dropbox/Experiment_TA/2016/rtl/ps2/ps2_mouse.v,225): error_no_ack
+
+	Building instance overlay tables: .................... Done
+	Generating native compiled code:
+		work.CPG:module <0x7b098b37>
+			streams:  12, words:  4918
+		work.CountCompare:module <0x130c864e>
+			streams:   2, words:   372
+		work.CountCompare:module <0x1ddf84c7>
+			streams:   2, words:   372
+		work.CountCompare:module <0x2765ecd3>
+			streams:   2, words:   372
+		work.CountCompare:module <0x4ac1caf7>
+			streams:   2, words:   372
+		work.CountCompare:module <0x4d922a54>
+			streams:   2, words:   372
+		work.CountCompare:module <0x57f0dcd5>
+			streams:   2, words:   372
+		work.CountCompare:module <0x65c66f34>
+			streams:   2, words:   367
+		work.CountCompare:module <0x7197458f>
+			streams:   2, words:   372
+		work.CountCompare:module <0x75c9b456>
+			streams:   2, words:   372
+		work.CountRegion:module <0x2d9fccfe>
+			streams:   6, words:  1093
+		work.CountRegion:module <0x3053a7f0>
+			streams:   5, words:   972
+		work.CountRegion:module <0x30c3afc0>
+			streams:   5, words:   972
+		work.CountRegion:module <0x68729040>
+			streams:   6, words:  1093
+		work.Counter:module <0x09b79ca7>
+			streams:   3, words:   805
+		work.Counter:module <0x49b362a1>
+			streams:   3, words:   656
+		work.Counter:module <0x4cccfa5a>
+			streams:   3, words:   679
+		work.Counter:module <0x5d3bd418>
+			streams:   3, words:   674
+		work.Counter:module <0x79e71bd1>
+			streams:   3, words:   679
+		work.DVIData:module <0x5535ab25>
+			streams:   9, words:  2035
+		work.DVIInitial:module <0x3f4eda81>
+			streams:   3, words:   462
+		work.DVI_TOP:module <0x4186fed5>
+			streams:  47, words: 15683
+		work.FIFOInitial:module <0x397bdfec>
+			streams:  12, words:  2491
+		work.FIFOInitial:module <0x69eb7043>
+			streams:  12, words:  2491
+		work.FIFORegControl:module <0x24b62914>
+			streams:   5, words:   832
+		work.FIFORegister:module <0x14a2890a>
+			streams:   3, words:   442
+		work.FIFORegister:module <0x4d9183ef>
+			streams:   3, words:   442
+		work.HardRegister:module <0x1fe278cf>
+			streams:   3, words:  1199
+		work.HardRegister:module <0x2f3a9e6b>
+			streams:   3, words:  1187
+		work.HardRegister:module <0x443e5111>
+			streams:   3, words:  1531
+		work.HardRegister:module <0x62ae3ac8>
+			streams:   3, words:  1531
+		work.HardRegister:module <0x7c48d4d5>
+			streams:   3, words:  1191
+		work.I2CDRAMMaster:module <0x6903742e>
+			streams:  20, words: 10651
+		work.I2CMaster:module <0x792133b6>
+			streams:  32, words: 15290
+		work.IORegister:module <0x3f4c926d>
+			streams:   3, words:  1536
+		work.ODDR:module <0x5216ad95>
+			streams:   2, words:   805
+		work.PixelCounter:module <0x0dcc34ff>
+			streams:   9, words:  1776
+		work.Register:module <0x07fd0825>
+			streams:   3, words:  1362
+		work.Register:module <0x0d592660>
+			streams:   3, words:  1214
+		work.Register:module <0x1b3ca9af>
+			streams:   3, words:  1214
+		work.Register:module <0x2409ee23>
+			streams:   3, words:  1187
+		work.Register:module <0x37d190b0>
+			streams:   3, words:  1231
+		work.Register:module <0x3c1b1ce9>
+			streams:   3, words:  1374
+		work.Register:module <0x4a1c3fa2>
+			streams:   3, words:  1214
+		work.Register:module <0x60abf168>
+			streams:   3, words:  1374
+		work.Register:module <0x70c2bfdd>
+			streams:   3, words:  1208
+		work.Register:module <0x732e9b75>
+			streams:   3, words:  1199
+		work.SDR2DDR:module <0x19f19760>
+			streams:   3, words:   537
+		work.SDR2DDR:module <0x740da949>
+			streams:   3, words:   552
+		work.ShiftRegister:module <0x36c831c4>
+			streams:   4, words:   669
+		work.ShiftRegister:module <0x3b8e5926>
+			streams:   4, words:   663
+		work.ShiftRegister:module <0x64448c56>
+			streams:   4, words:   874
+		work.ShiftRegister:module <0x68844d48>
+			streams:   4, words:   663
+		work.ShiftRegister:module <0x6911cb83>
+			streams:   4, words:   874
+		work.audio:module <0x539f811d>
+			streams:   1, words:   120
+		work.audio_if:module <0x3c9aa827>
+			streams: 141, words: 66302
+		work.audio_proc:module <0x71c91694>
+			streams:   7, words:  2036
+		work.button_detector:module <0x6f769331>
+			streams:  10, words:  3286
+		work.crg:module <0x7615167b>
+			streams:  54, words: 16662
+		work.disp_digit:module <0x185d54f7>
+			streams:  21, words:  9915
+		work.disp_digit_seg:module <0x4db54587>
+			streams:  34, words: 14190
+		work.draw_rect:module <0x39e91dc8>
+			streams:  12, words:  5765
+		work.fpga_top:module <0x19179255>
+			streams:   2, words:   307
+		work.key2char:module <0x4da1eba4>
+			streams:  41, words: 15421
+		work.lcd:module <0x1d57084a>
+			streams:  17, words:  9894
+		work.lcd_comm:module <0x5e1520af>
+			streams:  24, words: 13783
+		work.lcd_control:module <0x25e093d3>
+			streams:   8, words:  1927
+		work.lcd_ctrl_top:module <0x1d5bbc1a>
+			streams:   3, words:   752
+		work.lcd_memory:module <0x2d55d8cc>
+			streams:   4, words:  1354
+		work.lcd_top:module <0x4b2e4044>
+			streams:   6, words:   700
+		work.monitor_model:module <0x289159df>
+			streams:   8, words: 10374
+		work.ps2_command_out:module <0x20433576>
+			streams:  15, words:  8595
+		work.ps2_data_in:module <0x1a7b43b5>
+			streams:   8, words:  4447
+		work.ps2_keyboard:module <0x12f89af1>
+			streams:  16, words:  5783
+		work.ps2_keyboard_ctrl:module <0x7f3eb7f7>
+			streams:   7, words:  2899
+		work.ps2_mouse:module <0x218dd9e8>
+			streams:   8, words:  3159
+		work.ps2_mouse_interface:module <0x21fe7ce9>
+			streams:  37, words: 18421
+		work.ps2_top:module <0x01b2f410>
+			streams:  31, words:  7056
+		work.rstgen:module <0x435f1fa0>
+			streams:   3, words:   874
+		work.sync_gen:module <0x6ebba6ca>
+			streams:  12, words:  5906
+		work.tb:module <0x7d20fbea>
+			streams:   9, words:  1994
+		work.tele_crg:module <0x2d73641b>
+			streams:  12, words:  2534
+		work.tele_err:module <0x0d84c811>
+			streams:  10, words:  5807
+		work.tele_rx:module <0x6edb2dae>
+			streams:  11, words:  3748
+		work.tele_tx:module <0x46093f74>
+			streams:  20, words: 11884
+	Loading native compiled code:     .................... Done
+	Building instance specific data structures.
+	Design hierarchy summary:
+		                 Instances  Unique
+		Modules:               118      53
+		Primitives:              2       1
+		Registers:             377     300
+		Scalar wires:          567       -
+		Expanded wires:         37       9
+		Vectored wires:        153       -
+		Always blocks:         245     207
+		Initial blocks:         38      14
+		Cont. assignments:     249     286
+		Pseudo assignments:    145     103
+		Simulation timescale:  1ps
+	Writing initial simulation snapshot: work.tb:module
+TOOL:	ncelab(64)	08.20-s026: Exiting on Dec 06, 2016 at 19:23:01 JST  (total: 00:00:01)

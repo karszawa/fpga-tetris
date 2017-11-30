@@ -1,0 +1,2617 @@
+
+---
+
+ncvlog(64): 08.20-s026: (c) Copyright 1995-2010 Cadence Design Systems, Inc.
+TOOL:	ncvlog(64)	08.20-s026: Started on Dec 06, 2016 at 19:57:38 JST
+ncvlog
+    -incdir ./../../include
+    -64bit
+    -message
+    -update
+    -pragma
+    -nowarn mrstar
+    -append_log
+    -define MODELSIM
+    -define FOR_SIM
+    -define SIMULATION
+    -logfile log.vlog
+    ../../rtl/dvi/DVI.v
+
+file: ../../rtl/dvi/DVI.v
+	module work.DVI
+		errors: 0, warnings: 0
+TOOL:	ncvlog(64)	08.20-s026: Exiting on Dec 06, 2016 at 19:57:38 JST  (total: 00:00:00)
+
+---
+
+ncvlog(64): 08.20-s026: (c) Copyright 1995-2010 Cadence Design Systems, Inc.
+TOOL:	ncvlog(64)	08.20-s026: Started on Dec 06, 2016 at 19:57:38 JST
+ncvlog
+    -incdir ./../../include
+    -64bit
+    -message
+    -update
+    -pragma
+    -nowarn mrstar
+    -append_log
+    -define MODELSIM
+    -define FOR_SIM
+    -define SIMULATION
+    -logfile log.vlog
+    ../../rtl/dvi/DVIData.v
+
+file: ../../rtl/dvi/DVIData.v
+	module work.DVIData
+		errors: 0, warnings: 0
+TOOL:	ncvlog(64)	08.20-s026: Exiting on Dec 06, 2016 at 19:57:38 JST  (total: 00:00:00)
+
+---
+
+ncvlog(64): 08.20-s026: (c) Copyright 1995-2010 Cadence Design Systems, Inc.
+TOOL:	ncvlog(64)	08.20-s026: Started on Dec 06, 2016 at 19:57:38 JST
+ncvlog
+    -incdir ./../../include
+    -64bit
+    -message
+    -update
+    -pragma
+    -nowarn mrstar
+    -append_log
+    -define MODELSIM
+    -define FOR_SIM
+    -define SIMULATION
+    -logfile log.vlog
+    ../../rtl/dvi/DVIInitial.v
+
+file: ../../rtl/dvi/DVIInitial.v
+	module work.DVIInitial
+		errors: 0, warnings: 0
+TOOL:	ncvlog(64)	08.20-s026: Exiting on Dec 06, 2016 at 19:57:38 JST  (total: 00:00:00)
+
+---
+
+ncvlog(64): 08.20-s026: (c) Copyright 1995-2010 Cadence Design Systems, Inc.
+TOOL:	ncvlog(64)	08.20-s026: Started on Dec 06, 2016 at 19:57:38 JST
+ncvlog
+    -incdir ./../../include
+    -64bit
+    -message
+    -update
+    -pragma
+    -nowarn mrstar
+    -append_log
+    -define MODELSIM
+    -define FOR_SIM
+    -define SIMULATION
+    -logfile log.vlog
+    ../../rtl/dvi/IORegister.v
+
+file: ../../rtl/dvi/IORegister.v
+	output reg [Width-1:0]	Out =					Initial /* synthesis syn_useioff = 1 iob = true useioff = 1 */;
+	                      	     					                               |
+ncvlog: *W,INVPRG (../../rtl/dvi/IORegister.v,63|65): Invalid/Unsupported pragma (syn_useioff).
+	module work.IORegister
+		errors: 0, warnings: 1
+TOOL:	ncvlog(64)	08.20-s026: Exiting on Dec 06, 2016 at 19:57:38 JST  (total: 00:00:00)
+
+---
+
+ncvlog(64): 08.20-s026: (c) Copyright 1995-2010 Cadence Design Systems, Inc.
+TOOL:	ncvlog(64)	08.20-s026: Started on Dec 06, 2016 at 19:57:38 JST
+ncvlog
+    -incdir ./../../include
+    -64bit
+    -message
+    -update
+    -pragma
+    -nowarn mrstar
+    -append_log
+    -define MODELSIM
+    -define FOR_SIM
+    -define SIMULATION
+    -logfile log.vlog
+    ../../rtl/dvi/Register.v
+
+file: ../../rtl/dvi/Register.v
+	module work.Register
+		errors: 0, warnings: 0
+TOOL:	ncvlog(64)	08.20-s026: Exiting on Dec 06, 2016 at 19:57:39 JST  (total: 00:00:01)
+
+---
+
+ncvlog(64): 08.20-s026: (c) Copyright 1995-2010 Cadence Design Systems, Inc.
+TOOL:	ncvlog(64)	08.20-s026: Started on Dec 06, 2016 at 19:57:39 JST
+ncvlog
+    -incdir ./../../include
+    -64bit
+    -message
+    -update
+    -pragma
+    -nowarn mrstar
+    -append_log
+    -define MODELSIM
+    -define FOR_SIM
+    -define SIMULATION
+    -logfile log.vlog
+    ../../rtl/dvi/SDR2DDR.v
+
+file: ../../rtl/dvi/SDR2DDR.v
+		`define SIMULATION
+		                  |
+ncvlog: *W,MACNDF (./../../include/Const.v,58|20): The text macro 'SIMULATION' has also been defined on the command line using the -DEFINE command line option.  The compiler will ignore the definition found in the Verilog source code.
+(`include file: ./../../include/Const.v line 58, file: ../../rtl/dvi/SDR2DDR.v line 44)
+	module work.SDR2DDR
+		errors: 0, warnings: 0
+reg Q;
+    |
+ncvlog: *W,ILLPDX (../../rtl/dvi/SDR2DDR.v,114|4): Multiple declarations for a port not allowed in module with ANSI list of port declarations (port 'Q') [12.3.4(IEEE-2001)].
+	module work.ODDR
+		errors: 0, warnings: 1
+	Total errors/warnings found outside modules and primitives:
+		errors: 0, warnings: 1
+TOOL:	ncvlog(64)	08.20-s026: Exiting on Dec 06, 2016 at 19:57:39 JST  (total: 00:00:00)
+
+---
+
+ncvlog(64): 08.20-s026: (c) Copyright 1995-2010 Cadence Design Systems, Inc.
+TOOL:	ncvlog(64)	08.20-s026: Started on Dec 06, 2016 at 19:57:39 JST
+ncvlog
+    -incdir ./../../include
+    -64bit
+    -message
+    -update
+    -pragma
+    -nowarn mrstar
+    -append_log
+    -define MODELSIM
+    -define FOR_SIM
+    -define SIMULATION
+    -logfile log.vlog
+    ../../rtl/dvi/PixelCounter.v
+
+file: ../../rtl/dvi/PixelCounter.v
+		`define SIMULATION
+		                  |
+ncvlog: *W,MACNDF (./../../include/Const.v,58|20): The text macro 'SIMULATION' has also been defined on the command line using the -DEFINE command line option.  The compiler will ignore the definition found in the Verilog source code.
+(`include file: ./../../include/Const.v line 58, file: ../../rtl/dvi/PixelCounter.v line 44)
+	module work.PixelCounter
+		errors: 0, warnings: 0
+	Total errors/warnings found outside modules and primitives:
+		errors: 0, warnings: 1
+TOOL:	ncvlog(64)	08.20-s026: Exiting on Dec 06, 2016 at 19:57:39 JST  (total: 00:00:00)
+
+---
+
+ncvlog(64): 08.20-s026: (c) Copyright 1995-2010 Cadence Design Systems, Inc.
+TOOL:	ncvlog(64)	08.20-s026: Started on Dec 06, 2016 at 19:57:39 JST
+ncvlog
+    -incdir ./../../include
+    -64bit
+    -message
+    -update
+    -pragma
+    -nowarn mrstar
+    -append_log
+    -define MODELSIM
+    -define FOR_SIM
+    -define SIMULATION
+    -logfile log.vlog
+    ../../rtl/dvi/FIFOInitial.v
+
+file: ../../rtl/dvi/FIFOInitial.v
+		`define SIMULATION
+		                  |
+ncvlog: *W,MACNDF (./../../include/Const.v,58|20): The text macro 'SIMULATION' has also been defined on the command line using the -DEFINE command line option.  The compiler will ignore the definition found in the Verilog source code.
+(`include file: ./../../include/Const.v line 58, file: ../../rtl/dvi/FIFOInitial.v line 43)
+	module work.FIFOInitial
+		errors: 0, warnings: 0
+	Total errors/warnings found outside modules and primitives:
+		errors: 0, warnings: 1
+TOOL:	ncvlog(64)	08.20-s026: Exiting on Dec 06, 2016 at 19:57:39 JST  (total: 00:00:00)
+
+---
+
+ncvlog(64): 08.20-s026: (c) Copyright 1995-2010 Cadence Design Systems, Inc.
+TOOL:	ncvlog(64)	08.20-s026: Started on Dec 06, 2016 at 19:57:39 JST
+ncvlog
+    -incdir ./../../include
+    -64bit
+    -message
+    -update
+    -pragma
+    -nowarn mrstar
+    -append_log
+    -define MODELSIM
+    -define FOR_SIM
+    -define SIMULATION
+    -logfile log.vlog
+    ../../rtl/dvi/FIFORegister.v
+
+file: ../../rtl/dvi/FIFORegister.v
+	module work.FIFORegister
+		errors: 0, warnings: 0
+TOOL:	ncvlog(64)	08.20-s026: Exiting on Dec 06, 2016 at 19:57:39 JST  (total: 00:00:00)
+
+---
+
+ncvlog(64): 08.20-s026: (c) Copyright 1995-2010 Cadence Design Systems, Inc.
+TOOL:	ncvlog(64)	08.20-s026: Started on Dec 06, 2016 at 19:57:39 JST
+ncvlog
+    -incdir ./../../include
+    -64bit
+    -message
+    -update
+    -pragma
+    -nowarn mrstar
+    -append_log
+    -define MODELSIM
+    -define FOR_SIM
+    -define SIMULATION
+    -logfile log.vlog
+    ../../rtl/dvi/FIFORegControl.v
+
+file: ../../rtl/dvi/FIFORegControl.v
+	module work.FIFORegControl
+		errors: 0, warnings: 0
+TOOL:	ncvlog(64)	08.20-s026: Exiting on Dec 06, 2016 at 19:57:39 JST  (total: 00:00:00)
+
+---
+
+ncvlog(64): 08.20-s026: (c) Copyright 1995-2010 Cadence Design Systems, Inc.
+TOOL:	ncvlog(64)	08.20-s026: Started on Dec 06, 2016 at 19:57:39 JST
+ncvlog
+    -incdir ./../../include
+    -64bit
+    -message
+    -update
+    -pragma
+    -nowarn mrstar
+    -append_log
+    -define MODELSIM
+    -define FOR_SIM
+    -define SIMULATION
+    -logfile log.vlog
+    ../../rtl/dvi/FIFOShiftRound.v
+
+file: ../../rtl/dvi/FIFOShiftRound.v
+		`define SIMULATION
+		                  |
+ncvlog: *W,MACNDF (./../../include/Const.v,58|20): The text macro 'SIMULATION' has also been defined on the command line using the -DEFINE command line option.  The compiler will ignore the definition found in the Verilog source code.
+(`include file: ./../../include/Const.v line 58, file: ../../rtl/dvi/FIFOShiftRound.v line 43)
+	module work.FIFOShiftRound
+		errors: 0, warnings: 0
+	Total errors/warnings found outside modules and primitives:
+		errors: 0, warnings: 1
+TOOL:	ncvlog(64)	08.20-s026: Exiting on Dec 06, 2016 at 19:57:39 JST  (total: 00:00:00)
+
+---
+
+ncvlog(64): 08.20-s026: (c) Copyright 1995-2010 Cadence Design Systems, Inc.
+TOOL:	ncvlog(64)	08.20-s026: Started on Dec 06, 2016 at 19:57:39 JST
+ncvlog
+    -incdir ./../../include
+    -64bit
+    -message
+    -update
+    -pragma
+    -nowarn mrstar
+    -append_log
+    -define MODELSIM
+    -define FOR_SIM
+    -define SIMULATION
+    -logfile log.vlog
+    ../../rtl/dvi/I2CMaster.v
+
+file: ../../rtl/dvi/I2CMaster.v
+		`define SIMULATION
+		                  |
+ncvlog: *W,MACNDF (./../../include/Const.v,58|20): The text macro 'SIMULATION' has also been defined on the command line using the -DEFINE command line option.  The compiler will ignore the definition found in the Verilog source code.
+(`include file: ./../../include/Const.v line 58, file: ../../rtl/dvi/I2CMaster.v line 44)
+	inout					SDA 					/* synthesis xc_pullup = 1 */;
+	     					    					                     |
+ncvlog: *W,INVPRG (../../rtl/dvi/I2CMaster.v,122|41): Invalid/Unsupported pragma (xc_pullup).
+	inout					SCL 					/* synthesis xc_pullup = 1 */;
+	     					    					                     |
+ncvlog: *W,INVPRG (../../rtl/dvi/I2CMaster.v,123|41): Invalid/Unsupported pragma (xc_pullup).
+	module work.I2CMaster
+		errors: 0, warnings: 2
+	Total errors/warnings found outside modules and primitives:
+		errors: 0, warnings: 1
+TOOL:	ncvlog(64)	08.20-s026: Exiting on Dec 06, 2016 at 19:57:40 JST  (total: 00:00:01)
+
+---
+
+ncvlog(64): 08.20-s026: (c) Copyright 1995-2010 Cadence Design Systems, Inc.
+TOOL:	ncvlog(64)	08.20-s026: Started on Dec 06, 2016 at 19:57:40 JST
+ncvlog
+    -incdir ./../../include
+    -64bit
+    -message
+    -update
+    -pragma
+    -nowarn mrstar
+    -append_log
+    -define MODELSIM
+    -define FOR_SIM
+    -define SIMULATION
+    -logfile log.vlog
+    ../../rtl/dvi/I2CDRAMMaster.v
+
+file: ../../rtl/dvi/I2CDRAMMaster.v
+		`define SIMULATION
+		                  |
+ncvlog: *W,MACNDF (./../../include/Const.v,58|20): The text macro 'SIMULATION' has also been defined on the command line using the -DEFINE command line option.  The compiler will ignore the definition found in the Verilog source code.
+(`include file: ./../../include/Const.v line 58, file: ../../rtl/dvi/I2CDRAMMaster.v line 45)
+	inout					SDA 					/* synthesis xc_pullup = 1 */;
+	     					    					                     |
+ncvlog: *W,INVPRG (../../rtl/dvi/I2CDRAMMaster.v,174|41): Invalid/Unsupported pragma (xc_pullup).
+	inout					SCL 					/* synthesis xc_pullup = 1 */;
+	     					    					                     |
+ncvlog: *W,INVPRG (../../rtl/dvi/I2CDRAMMaster.v,175|41): Invalid/Unsupported pragma (xc_pullup).
+	module work.I2CDRAMMaster
+		errors: 0, warnings: 2
+	Total errors/warnings found outside modules and primitives:
+		errors: 0, warnings: 1
+TOOL:	ncvlog(64)	08.20-s026: Exiting on Dec 06, 2016 at 19:57:40 JST  (total: 00:00:00)
+
+---
+
+ncvlog(64): 08.20-s026: (c) Copyright 1995-2010 Cadence Design Systems, Inc.
+TOOL:	ncvlog(64)	08.20-s026: Started on Dec 06, 2016 at 19:57:40 JST
+ncvlog
+    -incdir ./../../include
+    -64bit
+    -message
+    -update
+    -pragma
+    -nowarn mrstar
+    -append_log
+    -define MODELSIM
+    -define FOR_SIM
+    -define SIMULATION
+    -logfile log.vlog
+    ../../rtl/dvi/Counter.v
+
+file: ../../rtl/dvi/Counter.v
+	module work.Counter
+		errors: 0, warnings: 0
+TOOL:	ncvlog(64)	08.20-s026: Exiting on Dec 06, 2016 at 19:57:40 JST  (total: 00:00:00)
+
+---
+
+ncvlog(64): 08.20-s026: (c) Copyright 1995-2010 Cadence Design Systems, Inc.
+TOOL:	ncvlog(64)	08.20-s026: Started on Dec 06, 2016 at 19:57:40 JST
+ncvlog
+    -incdir ./../../include
+    -64bit
+    -message
+    -update
+    -pragma
+    -nowarn mrstar
+    -append_log
+    -define MODELSIM
+    -define FOR_SIM
+    -define SIMULATION
+    -logfile log.vlog
+    ../../rtl/dvi/CountCompare.v
+
+file: ../../rtl/dvi/CountCompare.v
+		`define SIMULATION
+		                  |
+ncvlog: *W,MACNDF (./../../include/Const.v,58|20): The text macro 'SIMULATION' has also been defined on the command line using the -DEFINE command line option.  The compiler will ignore the definition found in the Verilog source code.
+(`include file: ./../../include/Const.v line 58, file: ../../rtl/dvi/CountCompare.v line 43)
+	module work.CountCompare
+		errors: 0, warnings: 0
+	Total errors/warnings found outside modules and primitives:
+		errors: 0, warnings: 1
+TOOL:	ncvlog(64)	08.20-s026: Exiting on Dec 06, 2016 at 19:57:40 JST  (total: 00:00:00)
+
+---
+
+ncvlog(64): 08.20-s026: (c) Copyright 1995-2010 Cadence Design Systems, Inc.
+TOOL:	ncvlog(64)	08.20-s026: Started on Dec 06, 2016 at 19:57:40 JST
+ncvlog
+    -incdir ./../../include
+    -64bit
+    -message
+    -update
+    -pragma
+    -nowarn mrstar
+    -append_log
+    -define MODELSIM
+    -define FOR_SIM
+    -define SIMULATION
+    -logfile log.vlog
+    ../../rtl/dvi/CountRegion.v
+
+file: ../../rtl/dvi/CountRegion.v
+		`define SIMULATION
+		                  |
+ncvlog: *W,MACNDF (./../../include/Const.v,58|20): The text macro 'SIMULATION' has also been defined on the command line using the -DEFINE command line option.  The compiler will ignore the definition found in the Verilog source code.
+(`include file: ./../../include/Const.v line 58, file: ../../rtl/dvi/CountRegion.v line 43)
+	module work.CountRegion
+		errors: 0, warnings: 0
+	Total errors/warnings found outside modules and primitives:
+		errors: 0, warnings: 1
+TOOL:	ncvlog(64)	08.20-s026: Exiting on Dec 06, 2016 at 19:57:40 JST  (total: 00:00:00)
+
+---
+
+ncvlog(64): 08.20-s026: (c) Copyright 1995-2010 Cadence Design Systems, Inc.
+TOOL:	ncvlog(64)	08.20-s026: Started on Dec 06, 2016 at 19:57:40 JST
+ncvlog
+    -incdir ./../../include
+    -64bit
+    -message
+    -update
+    -pragma
+    -nowarn mrstar
+    -append_log
+    -define MODELSIM
+    -define FOR_SIM
+    -define SIMULATION
+    -logfile log.vlog
+    ../../rtl/dvi/ShiftRegister.v
+
+file: ../../rtl/dvi/ShiftRegister.v
+	module work.ShiftRegister
+		errors: 0, warnings: 0
+TOOL:	ncvlog(64)	08.20-s026: Exiting on Dec 06, 2016 at 19:57:40 JST  (total: 00:00:00)
+
+---
+
+ncvlog(64): 08.20-s026: (c) Copyright 1995-2010 Cadence Design Systems, Inc.
+TOOL:	ncvlog(64)	08.20-s026: Started on Dec 06, 2016 at 19:57:40 JST
+ncvlog
+    -incdir ./../../include
+    -64bit
+    -message
+    -update
+    -pragma
+    -nowarn mrstar
+    -append_log
+    -define MODELSIM
+    -define FOR_SIM
+    -define SIMULATION
+    -logfile log.vlog
+    ../../rtl/dvi/HardRegister.v
+
+file: ../../rtl/dvi/HardRegister.v
+module	HardRegister(Clock, Reset, Set, Enable, In, Out) /* synthesis syn_hier = "hard" */;
+      	                                                                     |
+ncvlog: *W,INVPRG (../../rtl/dvi/HardRegister.v,46|76): Invalid/Unsupported pragma (syn_hier).
+	output reg [Width-1:0]	Out =					Initial /* synthesis syn_keep = 1 */;
+	                      	     					                            |
+ncvlog: *W,INVPRG (../../rtl/dvi/HardRegister.v,63|62): Invalid/Unsupported pragma (syn_keep).
+	module work.HardRegister
+		errors: 0, warnings: 2
+TOOL:	ncvlog(64)	08.20-s026: Exiting on Dec 06, 2016 at 19:57:41 JST  (total: 00:00:01)
+
+---
+
+ncvlog(64): 08.20-s026: (c) Copyright 1995-2010 Cadence Design Systems, Inc.
+TOOL:	ncvlog(64)	08.20-s026: Started on Dec 06, 2016 at 19:57:41 JST
+ncvlog
+    -incdir ./../../include
+    -64bit
+    -message
+    -update
+    -pragma
+    -nowarn mrstar
+    -append_log
+    -define MODELSIM
+    -define FOR_SIM
+    -define SIMULATION
+    -logfile log.vlog
+    ../../rtl/dvi/sync_gen.v
+
+file: ../../rtl/dvi/sync_gen.v
+	module work.sync_gen
+		errors: 0, warnings: 0
+TOOL:	ncvlog(64)	08.20-s026: Exiting on Dec 06, 2016 at 19:57:41 JST  (total: 00:00:00)
+
+---
+
+ncvlog(64): 08.20-s026: (c) Copyright 1995-2010 Cadence Design Systems, Inc.
+TOOL:	ncvlog(64)	08.20-s026: Started on Dec 06, 2016 at 19:57:41 JST
+ncvlog
+    -incdir ./../../include
+    -64bit
+    -message
+    -update
+    -pragma
+    -nowarn mrstar
+    -append_log
+    -define MODELSIM
+    -define FOR_SIM
+    -define SIMULATION
+    -logfile log.vlog
+    ../../rtl/dvi/display.v
+
+file: ../../rtl/dvi/display.v
+	module work.display
+		errors: 0, warnings: 0
+TOOL:	ncvlog(64)	08.20-s026: Exiting on Dec 06, 2016 at 19:57:41 JST  (total: 00:00:00)
+
+---
+
+ncvlog(64): 08.20-s026: (c) Copyright 1995-2010 Cadence Design Systems, Inc.
+TOOL:	ncvlog(64)	08.20-s026: Started on Dec 06, 2016 at 19:57:41 JST
+ncvlog
+    -incdir ./../../include
+    -64bit
+    -message
+    -update
+    -pragma
+    -nowarn mrstar
+    -append_log
+    -define MODELSIM
+    -define FOR_SIM
+    -define SIMULATION
+    -logfile log.vlog
+    ../../rtl/dvi/disp_digit.v
+
+file: ../../rtl/dvi/disp_digit.v
+	module work.disp_digit
+		errors: 0, warnings: 0
+TOOL:	ncvlog(64)	08.20-s026: Exiting on Dec 06, 2016 at 19:57:41 JST  (total: 00:00:00)
+
+---
+
+ncvlog(64): 08.20-s026: (c) Copyright 1995-2010 Cadence Design Systems, Inc.
+TOOL:	ncvlog(64)	08.20-s026: Started on Dec 06, 2016 at 19:57:41 JST
+ncvlog
+    -incdir ./../../include
+    -64bit
+    -message
+    -update
+    -pragma
+    -nowarn mrstar
+    -append_log
+    -define MODELSIM
+    -define FOR_SIM
+    -define SIMULATION
+    -logfile log.vlog
+    ../../rtl/dvi/disp_digit_seg.v
+
+file: ../../rtl/dvi/disp_digit_seg.v
+	module work.disp_digit_seg
+		errors: 0, warnings: 0
+TOOL:	ncvlog(64)	08.20-s026: Exiting on Dec 06, 2016 at 19:57:41 JST  (total: 00:00:00)
+
+---
+
+ncvlog(64): 08.20-s026: (c) Copyright 1995-2010 Cadence Design Systems, Inc.
+TOOL:	ncvlog(64)	08.20-s026: Started on Dec 06, 2016 at 19:57:41 JST
+ncvlog
+    -incdir ./../../include
+    -64bit
+    -message
+    -update
+    -pragma
+    -nowarn mrstar
+    -append_log
+    -define MODELSIM
+    -define FOR_SIM
+    -define SIMULATION
+    -logfile log.vlog
+    ../../rtl/dvi/draw_rect.v
+
+file: ../../rtl/dvi/draw_rect.v
+	module work.draw_rect
+		errors: 0, warnings: 0
+TOOL:	ncvlog(64)	08.20-s026: Exiting on Dec 06, 2016 at 19:57:41 JST  (total: 00:00:00)
+
+---
+
+ncvlog(64): 08.20-s026: (c) Copyright 1995-2010 Cadence Design Systems, Inc.
+TOOL:	ncvlog(64)	08.20-s026: Started on Dec 06, 2016 at 19:57:41 JST
+ncvlog
+    -incdir ./../../include
+    -64bit
+    -message
+    -update
+    -pragma
+    -nowarn mrstar
+    -append_log
+    -define MODELSIM
+    -define FOR_SIM
+    -define SIMULATION
+    -logfile log.vlog
+    ../../rtl/dvi/move_rect.v
+
+file: ../../rtl/dvi/move_rect.v
+	module work.move_rect
+		errors: 0, warnings: 0
+TOOL:	ncvlog(64)	08.20-s026: Exiting on Dec 06, 2016 at 19:57:41 JST  (total: 00:00:00)
+
+---
+
+ncvlog(64): 08.20-s026: (c) Copyright 1995-2010 Cadence Design Systems, Inc.
+TOOL:	ncvlog(64)	08.20-s026: Started on Dec 06, 2016 at 19:57:41 JST
+ncvlog
+    -incdir ./../../include
+    -64bit
+    -message
+    -update
+    -pragma
+    -nowarn mrstar
+    -append_log
+    -define MODELSIM
+    -define FOR_SIM
+    -define SIMULATION
+    -logfile log.vlog
+    ../../rtl/dvi/button_detector.v
+
+file: ../../rtl/dvi/button_detector.v
+	module work.button_detector
+		errors: 0, warnings: 0
+TOOL:	ncvlog(64)	08.20-s026: Exiting on Dec 06, 2016 at 19:57:42 JST  (total: 00:00:01)
+
+---
+
+ncvlog(64): 08.20-s026: (c) Copyright 1995-2010 Cadence Design Systems, Inc.
+TOOL:	ncvlog(64)	08.20-s026: Started on Dec 06, 2016 at 19:57:42 JST
+ncvlog
+    -incdir ./../../include
+    -64bit
+    -message
+    -update
+    -pragma
+    -nowarn mrstar
+    -append_log
+    -define MODELSIM
+    -define FOR_SIM
+    -define SIMULATION
+    -logfile log.vlog
+    ../../rtl/dvi/CPG.v
+
+file: ../../rtl/dvi/CPG.v
+	module work.CPG
+		errors: 0, warnings: 0
+TOOL:	ncvlog(64)	08.20-s026: Exiting on Dec 06, 2016 at 19:57:42 JST  (total: 00:00:00)
+
+---
+
+ncvlog(64): 08.20-s026: (c) Copyright 1995-2010 Cadence Design Systems, Inc.
+TOOL:	ncvlog(64)	08.20-s026: Started on Dec 06, 2016 at 19:57:42 JST
+ncvlog
+    -incdir ./../../include
+    -64bit
+    -message
+    -update
+    -pragma
+    -nowarn mrstar
+    -append_log
+    -define MODELSIM
+    -define FOR_SIM
+    -define SIMULATION
+    -logfile log.vlog
+    ../../rtl/dvi/DVI_TOP.v
+
+file: ../../rtl/dvi/DVI_TOP.v
+	module work.DVI_TOP
+		errors: 0, warnings: 0
+TOOL:	ncvlog(64)	08.20-s026: Exiting on Dec 06, 2016 at 19:57:42 JST  (total: 00:00:00)
+
+---
+
+ncvlog(64): 08.20-s026: (c) Copyright 1995-2010 Cadence Design Systems, Inc.
+TOOL:	ncvlog(64)	08.20-s026: Started on Dec 06, 2016 at 19:57:42 JST
+ncvlog
+    -incdir ./../../include
+    -64bit
+    -message
+    -update
+    -pragma
+    -nowarn mrstar
+    -append_log
+    -define MODELSIM
+    -define FOR_SIM
+    -define SIMULATION
+    -logfile log.vlog
+    ../../rtl/tele_txrx/tele_tx.v
+
+file: ../../rtl/tele_txrx/tele_tx.v
+	module work.tele_tx
+		errors: 0, warnings: 0
+TOOL:	ncvlog(64)	08.20-s026: Exiting on Dec 06, 2016 at 19:57:42 JST  (total: 00:00:00)
+
+---
+
+ncvlog(64): 08.20-s026: (c) Copyright 1995-2010 Cadence Design Systems, Inc.
+TOOL:	ncvlog(64)	08.20-s026: Started on Dec 06, 2016 at 19:57:42 JST
+ncvlog
+    -incdir ./../../include
+    -64bit
+    -message
+    -update
+    -pragma
+    -nowarn mrstar
+    -append_log
+    -define MODELSIM
+    -define FOR_SIM
+    -define SIMULATION
+    -logfile log.vlog
+    ../../rtl/tele_txrx/tele_rx.v
+
+file: ../../rtl/tele_txrx/tele_rx.v
+	module work.tele_rx
+		errors: 0, warnings: 0
+TOOL:	ncvlog(64)	08.20-s026: Exiting on Dec 06, 2016 at 19:57:42 JST  (total: 00:00:00)
+
+---
+
+ncvlog(64): 08.20-s026: (c) Copyright 1995-2010 Cadence Design Systems, Inc.
+TOOL:	ncvlog(64)	08.20-s026: Started on Dec 06, 2016 at 19:57:42 JST
+ncvlog
+    -incdir ./../../include
+    -64bit
+    -message
+    -update
+    -pragma
+    -nowarn mrstar
+    -append_log
+    -define MODELSIM
+    -define FOR_SIM
+    -define SIMULATION
+    -logfile log.vlog
+    ../../rtl/tele_txrx/tele_err.v
+
+file: ../../rtl/tele_txrx/tele_err.v
+		// この時の ErrCntを表示する
+		   |
+ncvlog: *W,NONPRT (../../rtl/tele_txrx/tele_err.v,32|5): non-printable character (0xe3) ignored.
+		// この時の ErrCntを表示する
+		    |
+ncvlog: *W,NONPRT (../../rtl/tele_txrx/tele_err.v,32|6): non-printable character (0x81) ignored.
+		// この時の ErrCntを表示する
+		     |
+ncvlog: *W,NONPRT (../../rtl/tele_txrx/tele_err.v,32|7): non-printable character (0x93) ignored.
+		// この時の ErrCntを表示する
+		      |
+ncvlog: *W,NONPRT (../../rtl/tele_txrx/tele_err.v,32|8): non-printable character (0xe3) ignored.
+		// この時の ErrCntを表示する
+		       |
+ncvlog: *W,NONPRT (../../rtl/tele_txrx/tele_err.v,32|9): non-printable character (0x81) ignored.
+		// この時の ErrCntを表示する
+		        |
+ncvlog: *W,NONPRT (../../rtl/tele_txrx/tele_err.v,32|10): non-printable character (0xae) ignored.
+		// この時の ErrCntを表示する
+		         |
+ncvlog: *W,NONPRT (../../rtl/tele_txrx/tele_err.v,32|11): non-printable character (0xe6) ignored.
+		// この時の ErrCntを表示する
+		          |
+ncvlog: *W,NONPRT (../../rtl/tele_txrx/tele_err.v,32|12): non-printable character (0x99) ignored.
+		// この時の ErrCntを表示する
+		           |
+ncvlog: *W,NONPRT (../../rtl/tele_txrx/tele_err.v,32|13): non-printable character (0x82) ignored.
+		// この時の ErrCntを表示する
+		            |
+ncvlog: *W,NONPRT (../../rtl/tele_txrx/tele_err.v,32|14): non-printable character (0xe3) ignored.
+		// この時の ErrCntを表示する
+		             |
+ncvlog: *W,NONPRT (../../rtl/tele_txrx/tele_err.v,32|15): non-printable character (0x81) ignored.
+		// この時の ErrCntを表示する
+		              |
+ncvlog: *W,NONPRT (../../rtl/tele_txrx/tele_err.v,32|16): non-printable character (0xae) ignored.
+		// この時の ErrCntを表示する
+		                      |
+ncvlog: *W,NONPRT (../../rtl/tele_txrx/tele_err.v,32|24): non-printable character (0xe3) ignored.
+		// この時の ErrCntを表示する
+		                       |
+ncvlog: *W,NONPRT (../../rtl/tele_txrx/tele_err.v,32|25): non-printable character (0x82) ignored.
+		// この時の ErrCntを表示する
+		                        |
+ncvlog: *W,NONPRT (../../rtl/tele_txrx/tele_err.v,32|26): non-printable character (0x92) ignored.
+		// この時の ErrCntを表示する
+		                         |
+ncvlog: *W,NONPRT (../../rtl/tele_txrx/tele_err.v,32|27): non-printable character (0xe8) ignored.
+		// この時の ErrCntを表示する
+		                          |
+ncvlog: *W,NONPRT (../../rtl/tele_txrx/tele_err.v,32|28): non-printable character (0xa1) ignored.
+		// この時の ErrCntを表示する
+		                           |
+ncvlog: *W,NONPRT (../../rtl/tele_txrx/tele_err.v,32|29): non-printable character (0xa8) ignored.
+		// この時の ErrCntを表示する
+		                            |
+ncvlog: *W,NONPRT (../../rtl/tele_txrx/tele_err.v,32|30): non-printable character (0xe7) ignored.
+		// この時の ErrCntを表示する
+		                             |
+ncvlog: *W,NONPRT (../../rtl/tele_txrx/tele_err.v,32|31): non-printable character (0xa4) ignored.
+		// この時の ErrCntを表示する
+		                              |
+ncvlog: *W,NONPRT (../../rtl/tele_txrx/tele_err.v,32|32): non-printable character (0xba) ignored.
+		// この時の ErrCntを表示する
+		                               |
+ncvlog: *W,NONPRT (../../rtl/tele_txrx/tele_err.v,32|33): non-printable character (0xe3) ignored.
+		// この時の ErrCntを表示する
+		                                |
+ncvlog: *W,NONPRT (../../rtl/tele_txrx/tele_err.v,32|34): non-printable character (0x81) ignored.
+		// この時の ErrCntを表示する
+		                                 |
+ncvlog: *W,NONPRT (../../rtl/tele_txrx/tele_err.v,32|35): non-printable character (0x99) ignored.
+		// この時の ErrCntを表示する
+		                                  |
+ncvlog: *W,NONPRT (../../rtl/tele_txrx/tele_err.v,32|36): non-printable character (0xe3) ignored.
+		// この時の ErrCntを表示する
+		                                   |
+ncvlog: *W,NONPRT (../../rtl/tele_txrx/tele_err.v,32|37): non-printable character (0x82) ignored.
+		// この時の ErrCntを表示する
+		                                    |
+ncvlog: *W,NONPRT (../../rtl/tele_txrx/tele_err.v,32|38): non-printable character (0x8b) ignored.
+	module work.tele_err
+		errors: 0, warnings: 27
+TOOL:	ncvlog(64)	08.20-s026: Exiting on Dec 06, 2016 at 19:57:42 JST  (total: 00:00:00)
+
+---
+
+ncvlog(64): 08.20-s026: (c) Copyright 1995-2010 Cadence Design Systems, Inc.
+TOOL:	ncvlog(64)	08.20-s026: Started on Dec 06, 2016 at 19:57:42 JST
+ncvlog
+    -incdir ./../../include
+    -64bit
+    -message
+    -update
+    -pragma
+    -nowarn mrstar
+    -append_log
+    -define MODELSIM
+    -define FOR_SIM
+    -define SIMULATION
+    -logfile log.vlog
+    ../../rtl/tele_txrx/tele_crg.v
+
+file: ../../rtl/tele_txrx/tele_crg.v
+	module work.tele_crg
+		errors: 0, warnings: 0
+TOOL:	ncvlog(64)	08.20-s026: Exiting on Dec 06, 2016 at 19:57:43 JST  (total: 00:00:01)
+
+---
+
+ncvlog(64): 08.20-s026: (c) Copyright 1995-2010 Cadence Design Systems, Inc.
+TOOL:	ncvlog(64)	08.20-s026: Started on Dec 06, 2016 at 19:57:43 JST
+ncvlog
+    -incdir ./../../include
+    -64bit
+    -message
+    -update
+    -pragma
+    -nowarn mrstar
+    -append_log
+    -define MODELSIM
+    -define FOR_SIM
+    -define SIMULATION
+    -logfile log.vlog
+    ../../rtl/sysele/adc_sync.v
+
+file: ../../rtl/sysele/adc_sync.v
+	module work.adc_sync
+		errors: 0, warnings: 0
+TOOL:	ncvlog(64)	08.20-s026: Exiting on Dec 06, 2016 at 19:57:43 JST  (total: 00:00:00)
+
+---
+
+ncvlog(64): 08.20-s026: (c) Copyright 1995-2010 Cadence Design Systems, Inc.
+TOOL:	ncvlog(64)	08.20-s026: Started on Dec 06, 2016 at 19:57:43 JST
+ncvlog
+    -incdir ./../../include
+    -64bit
+    -message
+    -update
+    -pragma
+    -nowarn mrstar
+    -append_log
+    -define MODELSIM
+    -define FOR_SIM
+    -define SIMULATION
+    -logfile log.vlog
+    ../../rtl/sysele/adc_test.v
+
+file: ../../rtl/sysele/adc_test.v
+	module work.adc_test
+		errors: 0, warnings: 0
+TOOL:	ncvlog(64)	08.20-s026: Exiting on Dec 06, 2016 at 19:57:43 JST  (total: 00:00:00)
+
+---
+
+ncvlog(64): 08.20-s026: (c) Copyright 1995-2010 Cadence Design Systems, Inc.
+TOOL:	ncvlog(64)	08.20-s026: Started on Dec 06, 2016 at 19:57:43 JST
+ncvlog
+    -incdir ./../../include
+    -64bit
+    -message
+    -update
+    -pragma
+    -nowarn mrstar
+    -append_log
+    -define MODELSIM
+    -define FOR_SIM
+    -define SIMULATION
+    -logfile log.vlog
+    ../../rtl/sysele/control.v
+
+file: ../../rtl/sysele/control.v
+	module work.control
+		errors: 0, warnings: 0
+TOOL:	ncvlog(64)	08.20-s026: Exiting on Dec 06, 2016 at 19:57:43 JST  (total: 00:00:00)
+
+---
+
+ncvlog(64): 08.20-s026: (c) Copyright 1995-2010 Cadence Design Systems, Inc.
+TOOL:	ncvlog(64)	08.20-s026: Started on Dec 06, 2016 at 19:57:43 JST
+ncvlog
+    -incdir ./../../include
+    -64bit
+    -message
+    -update
+    -pragma
+    -nowarn mrstar
+    -append_log
+    -define MODELSIM
+    -define FOR_SIM
+    -define SIMULATION
+    -logfile log.vlog
+    ../../rtl/sysele/dac_delay.v
+
+file: ../../rtl/sysele/dac_delay.v
+	module work.dac_delay
+		errors: 0, warnings: 0
+TOOL:	ncvlog(64)	08.20-s026: Exiting on Dec 06, 2016 at 19:57:44 JST  (total: 00:00:01)
+
+---
+
+ncvlog(64): 08.20-s026: (c) Copyright 1995-2010 Cadence Design Systems, Inc.
+TOOL:	ncvlog(64)	08.20-s026: Started on Dec 06, 2016 at 19:57:44 JST
+ncvlog
+    -incdir ./../../include
+    -64bit
+    -message
+    -update
+    -pragma
+    -nowarn mrstar
+    -append_log
+    -define MODELSIM
+    -define FOR_SIM
+    -define SIMULATION
+    -logfile log.vlog
+    ../../rtl/sysele/lfsr32.v
+
+file: ../../rtl/sysele/lfsr32.v
+	module work.lfsr32
+		errors: 0, warnings: 0
+TOOL:	ncvlog(64)	08.20-s026: Exiting on Dec 06, 2016 at 19:57:44 JST  (total: 00:00:00)
+
+---
+
+ncvlog(64): 08.20-s026: (c) Copyright 1995-2010 Cadence Design Systems, Inc.
+TOOL:	ncvlog(64)	08.20-s026: Started on Dec 06, 2016 at 19:57:44 JST
+ncvlog
+    -incdir ./../../include
+    -64bit
+    -message
+    -update
+    -pragma
+    -nowarn mrstar
+    -append_log
+    -define MODELSIM
+    -define FOR_SIM
+    -define SIMULATION
+    -logfile log.vlog
+    ../../rtl/sysele/rstgen.v
+
+file: ../../rtl/sysele/rstgen.v
+	module work.rstgen
+		errors: 0, warnings: 0
+TOOL:	ncvlog(64)	08.20-s026: Exiting on Dec 06, 2016 at 19:57:44 JST  (total: 00:00:00)
+
+---
+
+ncvlog(64): 08.20-s026: (c) Copyright 1995-2010 Cadence Design Systems, Inc.
+TOOL:	ncvlog(64)	08.20-s026: Started on Dec 06, 2016 at 19:57:44 JST
+ncvlog
+    -incdir ./../../include
+    -64bit
+    -message
+    -update
+    -pragma
+    -nowarn mrstar
+    -append_log
+    -define MODELSIM
+    -define FOR_SIM
+    -define SIMULATION
+    -logfile log.vlog
+    ../../rtl/sysele/switch.v
+
+file: ../../rtl/sysele/switch.v
+	module work.switch
+		errors: 0, warnings: 0
+TOOL:	ncvlog(64)	08.20-s026: Exiting on Dec 06, 2016 at 19:57:44 JST  (total: 00:00:00)
+
+---
+
+ncvlog(64): 08.20-s026: (c) Copyright 1995-2010 Cadence Design Systems, Inc.
+TOOL:	ncvlog(64)	08.20-s026: Started on Dec 06, 2016 at 19:57:44 JST
+ncvlog
+    -incdir ./../../include
+    -64bit
+    -message
+    -update
+    -pragma
+    -nowarn mrstar
+    -append_log
+    -define MODELSIM
+    -define FOR_SIM
+    -define SIMULATION
+    -logfile log.vlog
+    ../../rtl/sysele/sysele.v
+
+file: ../../rtl/sysele/sysele.v
+   wire          locked, locked1, locked2;
+                               |
+ncvlog: *W,ILLPDX (../../rtl/sysele/sysele.v,111|31): Multiple declarations for a port not allowed in module with ANSI list of port declarations (port 'locked1') [12.3.4(IEEE-2001)].
+   wire          locked, locked1, locked2;
+                                        |
+ncvlog: *W,ILLPDX (../../rtl/sysele/sysele.v,111|40): Multiple declarations for a port not allowed in module with ANSI list of port declarations (port 'locked2') [12.3.4(IEEE-2001)].
+	module work.sysele
+		errors: 0, warnings: 2
+	module work.OBUFDS
+		errors: 0, warnings: 0
+	module work.IBUFDS
+		errors: 0, warnings: 0
+TOOL:	ncvlog(64)	08.20-s026: Exiting on Dec 06, 2016 at 19:57:45 JST  (total: 00:00:01)
+
+---
+
+ncvlog(64): 08.20-s026: (c) Copyright 1995-2010 Cadence Design Systems, Inc.
+TOOL:	ncvlog(64)	08.20-s026: Started on Dec 06, 2016 at 19:57:45 JST
+ncvlog
+    -incdir ./../../include
+    -64bit
+    -message
+    -update
+    -pragma
+    -nowarn mrstar
+    -append_log
+    -define MODELSIM
+    -define FOR_SIM
+    -define SIMULATION
+    -logfile log.vlog
+    ../../rtl/sysele/comm/bpsk_inv.v
+
+file: ../../rtl/sysele/comm/bpsk_inv.v
+	module work.bpsk_inv
+		errors: 0, warnings: 0
+TOOL:	ncvlog(64)	08.20-s026: Exiting on Dec 06, 2016 at 19:57:45 JST  (total: 00:00:00)
+
+---
+
+ncvlog(64): 08.20-s026: (c) Copyright 1995-2010 Cadence Design Systems, Inc.
+TOOL:	ncvlog(64)	08.20-s026: Started on Dec 06, 2016 at 19:57:45 JST
+ncvlog
+    -incdir ./../../include
+    -64bit
+    -message
+    -update
+    -pragma
+    -nowarn mrstar
+    -append_log
+    -define MODELSIM
+    -define FOR_SIM
+    -define SIMULATION
+    -logfile log.vlog
+    ../../rtl/sysele/comm/bpsk.v
+
+file: ../../rtl/sysele/comm/bpsk.v
+	module work.bpsk
+		errors: 0, warnings: 0
+TOOL:	ncvlog(64)	08.20-s026: Exiting on Dec 06, 2016 at 19:57:45 JST  (total: 00:00:00)
+
+---
+
+ncvlog(64): 08.20-s026: (c) Copyright 1995-2010 Cadence Design Systems, Inc.
+TOOL:	ncvlog(64)	08.20-s026: Started on Dec 06, 2016 at 19:57:45 JST
+ncvlog
+    -incdir ./../../include
+    -64bit
+    -message
+    -update
+    -pragma
+    -nowarn mrstar
+    -append_log
+    -define MODELSIM
+    -define FOR_SIM
+    -define SIMULATION
+    -logfile log.vlog
+    ../../rtl/sysele/comm/collect_bpsk.v
+
+file: ../../rtl/sysele/comm/collect_bpsk.v
+	module work.collect_bpsk
+		errors: 0, warnings: 0
+TOOL:	ncvlog(64)	08.20-s026: Exiting on Dec 06, 2016 at 19:57:45 JST  (total: 00:00:00)
+
+---
+
+ncvlog(64): 08.20-s026: (c) Copyright 1995-2010 Cadence Design Systems, Inc.
+TOOL:	ncvlog(64)	08.20-s026: Started on Dec 06, 2016 at 19:57:45 JST
+ncvlog
+    -incdir ./../../include
+    -64bit
+    -message
+    -update
+    -pragma
+    -nowarn mrstar
+    -append_log
+    -define MODELSIM
+    -define FOR_SIM
+    -define SIMULATION
+    -logfile log.vlog
+    ../../rtl/sysele/comm/collect_qam16.v
+
+file: ../../rtl/sysele/comm/collect_qam16.v
+	module work.collect_qam16
+		errors: 0, warnings: 0
+TOOL:	ncvlog(64)	08.20-s026: Exiting on Dec 06, 2016 at 19:57:45 JST  (total: 00:00:00)
+
+---
+
+ncvlog(64): 08.20-s026: (c) Copyright 1995-2010 Cadence Design Systems, Inc.
+TOOL:	ncvlog(64)	08.20-s026: Started on Dec 06, 2016 at 19:57:45 JST
+ncvlog
+    -incdir ./../../include
+    -64bit
+    -message
+    -update
+    -pragma
+    -nowarn mrstar
+    -append_log
+    -define MODELSIM
+    -define FOR_SIM
+    -define SIMULATION
+    -logfile log.vlog
+    ../../rtl/sysele/comm/collect_qpsk.v
+
+file: ../../rtl/sysele/comm/collect_qpsk.v
+	module work.collect_qpsk
+		errors: 0, warnings: 0
+TOOL:	ncvlog(64)	08.20-s026: Exiting on Dec 06, 2016 at 19:57:45 JST  (total: 00:00:00)
+
+---
+
+ncvlog(64): 08.20-s026: (c) Copyright 1995-2010 Cadence Design Systems, Inc.
+TOOL:	ncvlog(64)	08.20-s026: Started on Dec 06, 2016 at 19:57:45 JST
+ncvlog
+    -incdir ./../../include
+    -64bit
+    -message
+    -update
+    -pragma
+    -nowarn mrstar
+    -append_log
+    -define MODELSIM
+    -define FOR_SIM
+    -define SIMULATION
+    -logfile log.vlog
+    ../../rtl/sysele/comm/comm_recv.v
+
+file: ../../rtl/sysele/comm/comm_recv.v
+	module work.comm_recv
+		errors: 0, warnings: 0
+TOOL:	ncvlog(64)	08.20-s026: Exiting on Dec 06, 2016 at 19:57:46 JST  (total: 00:00:01)
+
+---
+
+ncvlog(64): 08.20-s026: (c) Copyright 1995-2010 Cadence Design Systems, Inc.
+TOOL:	ncvlog(64)	08.20-s026: Started on Dec 06, 2016 at 19:57:46 JST
+ncvlog
+    -incdir ./../../include
+    -64bit
+    -message
+    -update
+    -pragma
+    -nowarn mrstar
+    -append_log
+    -define MODELSIM
+    -define FOR_SIM
+    -define SIMULATION
+    -logfile log.vlog
+    ../../rtl/sysele/comm/comm_send.v
+
+file: ../../rtl/sysele/comm/comm_send.v
+	module work.comm_send
+		errors: 0, warnings: 0
+TOOL:	ncvlog(64)	08.20-s026: Exiting on Dec 06, 2016 at 19:57:46 JST  (total: 00:00:00)
+
+---
+
+ncvlog(64): 08.20-s026: (c) Copyright 1995-2010 Cadence Design Systems, Inc.
+TOOL:	ncvlog(64)	08.20-s026: Started on Dec 06, 2016 at 19:57:46 JST
+ncvlog
+    -incdir ./../../include
+    -64bit
+    -message
+    -update
+    -pragma
+    -nowarn mrstar
+    -append_log
+    -define MODELSIM
+    -define FOR_SIM
+    -define SIMULATION
+    -logfile log.vlog
+    ../../rtl/sysele/comm/comm.v
+
+file: ../../rtl/sysele/comm/comm.v
+	module work.comm
+		errors: 0, warnings: 0
+TOOL:	ncvlog(64)	08.20-s026: Exiting on Dec 06, 2016 at 19:57:46 JST  (total: 00:00:00)
+
+---
+
+ncvlog(64): 08.20-s026: (c) Copyright 1995-2010 Cadence Design Systems, Inc.
+TOOL:	ncvlog(64)	08.20-s026: Started on Dec 06, 2016 at 19:57:46 JST
+ncvlog
+    -incdir ./../../include
+    -64bit
+    -message
+    -update
+    -pragma
+    -nowarn mrstar
+    -append_log
+    -define MODELSIM
+    -define FOR_SIM
+    -define SIMULATION
+    -logfile log.vlog
+    ../../rtl/sysele/comm/fftfifo.v
+
+file: ../../rtl/sysele/comm/fftfifo.v
+	module work.fftfifo
+		errors: 0, warnings: 0
+TOOL:	ncvlog(64)	08.20-s026: Exiting on Dec 06, 2016 at 19:57:46 JST  (total: 00:00:00)
+
+---
+
+ncvlog(64): 08.20-s026: (c) Copyright 1995-2010 Cadence Design Systems, Inc.
+TOOL:	ncvlog(64)	08.20-s026: Started on Dec 06, 2016 at 19:57:46 JST
+ncvlog
+    -incdir ./../../include
+    -64bit
+    -message
+    -update
+    -pragma
+    -nowarn mrstar
+    -append_log
+    -define MODELSIM
+    -define FOR_SIM
+    -define SIMULATION
+    -logfile log.vlog
+    ../../rtl/sysele/comm/iqdemap_bpsk.v
+
+file: ../../rtl/sysele/comm/iqdemap_bpsk.v
+	module work.iqdemap_bpsk
+		errors: 0, warnings: 0
+TOOL:	ncvlog(64)	08.20-s026: Exiting on Dec 06, 2016 at 19:57:46 JST  (total: 00:00:00)
+
+---
+
+ncvlog(64): 08.20-s026: (c) Copyright 1995-2010 Cadence Design Systems, Inc.
+TOOL:	ncvlog(64)	08.20-s026: Started on Dec 06, 2016 at 19:57:46 JST
+ncvlog
+    -incdir ./../../include
+    -64bit
+    -message
+    -update
+    -pragma
+    -nowarn mrstar
+    -append_log
+    -define MODELSIM
+    -define FOR_SIM
+    -define SIMULATION
+    -logfile log.vlog
+    ../../rtl/sysele/comm/iqdemap_qam16.v
+
+file: ../../rtl/sysele/comm/iqdemap_qam16.v
+	module work.iqdemap_qam16
+		errors: 0, warnings: 0
+TOOL:	ncvlog(64)	08.20-s026: Exiting on Dec 06, 2016 at 19:57:47 JST  (total: 00:00:01)
+
+---
+
+ncvlog(64): 08.20-s026: (c) Copyright 1995-2010 Cadence Design Systems, Inc.
+TOOL:	ncvlog(64)	08.20-s026: Started on Dec 06, 2016 at 19:57:47 JST
+ncvlog
+    -incdir ./../../include
+    -64bit
+    -message
+    -update
+    -pragma
+    -nowarn mrstar
+    -append_log
+    -define MODELSIM
+    -define FOR_SIM
+    -define SIMULATION
+    -logfile log.vlog
+    ../../rtl/sysele/comm/iqdemap_qpsk.v
+
+file: ../../rtl/sysele/comm/iqdemap_qpsk.v
+	module work.iqdemap_qpsk
+		errors: 0, warnings: 0
+TOOL:	ncvlog(64)	08.20-s026: Exiting on Dec 06, 2016 at 19:57:47 JST  (total: 00:00:00)
+
+---
+
+ncvlog(64): 08.20-s026: (c) Copyright 1995-2010 Cadence Design Systems, Inc.
+TOOL:	ncvlog(64)	08.20-s026: Started on Dec 06, 2016 at 19:57:47 JST
+ncvlog
+    -incdir ./../../include
+    -64bit
+    -message
+    -update
+    -pragma
+    -nowarn mrstar
+    -append_log
+    -define MODELSIM
+    -define FOR_SIM
+    -define SIMULATION
+    -logfile log.vlog
+    ../../rtl/sysele/comm/iqmap_bpsk.v
+
+file: ../../rtl/sysele/comm/iqmap_bpsk.v
+	module work.iqmap_bpsk
+		errors: 0, warnings: 0
+TOOL:	ncvlog(64)	08.20-s026: Exiting on Dec 06, 2016 at 19:57:47 JST  (total: 00:00:00)
+
+---
+
+ncvlog(64): 08.20-s026: (c) Copyright 1995-2010 Cadence Design Systems, Inc.
+TOOL:	ncvlog(64)	08.20-s026: Started on Dec 06, 2016 at 19:57:47 JST
+ncvlog
+    -incdir ./../../include
+    -64bit
+    -message
+    -update
+    -pragma
+    -nowarn mrstar
+    -append_log
+    -define MODELSIM
+    -define FOR_SIM
+    -define SIMULATION
+    -logfile log.vlog
+    ../../rtl/sysele/comm/iqmap_qam16.v
+
+file: ../../rtl/sysele/comm/iqmap_qam16.v
+	module work.iqmap_qam16
+		errors: 0, warnings: 0
+TOOL:	ncvlog(64)	08.20-s026: Exiting on Dec 06, 2016 at 19:57:47 JST  (total: 00:00:00)
+
+---
+
+ncvlog(64): 08.20-s026: (c) Copyright 1995-2010 Cadence Design Systems, Inc.
+TOOL:	ncvlog(64)	08.20-s026: Started on Dec 06, 2016 at 19:57:48 JST
+ncvlog
+    -incdir ./../../include
+    -64bit
+    -message
+    -update
+    -pragma
+    -nowarn mrstar
+    -append_log
+    -define MODELSIM
+    -define FOR_SIM
+    -define SIMULATION
+    -logfile log.vlog
+    ../../rtl/sysele/comm/iqmap_qpsk.v
+
+file: ../../rtl/sysele/comm/iqmap_qpsk.v
+	module work.iqmap_qpsk
+		errors: 0, warnings: 0
+TOOL:	ncvlog(64)	08.20-s026: Exiting on Dec 06, 2016 at 19:57:48 JST  (total: 00:00:00)
+
+---
+
+ncvlog(64): 08.20-s026: (c) Copyright 1995-2010 Cadence Design Systems, Inc.
+TOOL:	ncvlog(64)	08.20-s026: Started on Dec 06, 2016 at 19:57:48 JST
+ncvlog
+    -incdir ./../../include
+    -64bit
+    -message
+    -update
+    -pragma
+    -nowarn mrstar
+    -append_log
+    -define MODELSIM
+    -define FOR_SIM
+    -define SIMULATION
+    -logfile log.vlog
+    ../../rtl/sysele/comm/qam16_inv.v
+
+file: ../../rtl/sysele/comm/qam16_inv.v
+	module work.qam16_inv
+		errors: 0, warnings: 0
+TOOL:	ncvlog(64)	08.20-s026: Exiting on Dec 06, 2016 at 19:57:48 JST  (total: 00:00:00)
+
+---
+
+ncvlog(64): 08.20-s026: (c) Copyright 1995-2010 Cadence Design Systems, Inc.
+TOOL:	ncvlog(64)	08.20-s026: Started on Dec 06, 2016 at 19:57:48 JST
+ncvlog
+    -incdir ./../../include
+    -64bit
+    -message
+    -update
+    -pragma
+    -nowarn mrstar
+    -append_log
+    -define MODELSIM
+    -define FOR_SIM
+    -define SIMULATION
+    -logfile log.vlog
+    ../../rtl/sysele/comm/qam16.v
+
+file: ../../rtl/sysele/comm/qam16.v
+	module work.qam16
+		errors: 0, warnings: 0
+TOOL:	ncvlog(64)	08.20-s026: Exiting on Dec 06, 2016 at 19:57:48 JST  (total: 00:00:00)
+
+---
+
+ncvlog(64): 08.20-s026: (c) Copyright 1995-2010 Cadence Design Systems, Inc.
+TOOL:	ncvlog(64)	08.20-s026: Started on Dec 06, 2016 at 19:57:48 JST
+ncvlog
+    -incdir ./../../include
+    -64bit
+    -message
+    -update
+    -pragma
+    -nowarn mrstar
+    -append_log
+    -define MODELSIM
+    -define FOR_SIM
+    -define SIMULATION
+    -logfile log.vlog
+    ../../rtl/sysele/comm/qpsk_inv.v
+
+file: ../../rtl/sysele/comm/qpsk_inv.v
+	module work.qpsk_inv
+		errors: 0, warnings: 0
+TOOL:	ncvlog(64)	08.20-s026: Exiting on Dec 06, 2016 at 19:57:49 JST  (total: 00:00:01)
+
+---
+
+ncvlog(64): 08.20-s026: (c) Copyright 1995-2010 Cadence Design Systems, Inc.
+TOOL:	ncvlog(64)	08.20-s026: Started on Dec 06, 2016 at 19:57:49 JST
+ncvlog
+    -incdir ./../../include
+    -64bit
+    -message
+    -update
+    -pragma
+    -nowarn mrstar
+    -append_log
+    -define MODELSIM
+    -define FOR_SIM
+    -define SIMULATION
+    -logfile log.vlog
+    ../../rtl/sysele/comm/qpsk.v
+
+file: ../../rtl/sysele/comm/qpsk.v
+	module work.qpsk
+		errors: 0, warnings: 0
+TOOL:	ncvlog(64)	08.20-s026: Exiting on Dec 06, 2016 at 19:57:49 JST  (total: 00:00:00)
+
+---
+
+ncvlog(64): 08.20-s026: (c) Copyright 1995-2010 Cadence Design Systems, Inc.
+TOOL:	ncvlog(64)	08.20-s026: Started on Dec 06, 2016 at 19:57:49 JST
+ncvlog
+    -incdir ./../../include
+    -64bit
+    -message
+    -update
+    -pragma
+    -nowarn mrstar
+    -append_log
+    -define MODELSIM
+    -define FOR_SIM
+    -define SIMULATION
+    -logfile log.vlog
+    ../../rtl/sysele/comm/rescale.v
+
+file: ../../rtl/sysele/comm/rescale.v
+	module work.rescale
+		errors: 0, warnings: 0
+TOOL:	ncvlog(64)	08.20-s026: Exiting on Dec 06, 2016 at 19:57:49 JST  (total: 00:00:00)
+
+---
+
+ncvlog(64): 08.20-s026: (c) Copyright 1995-2010 Cadence Design Systems, Inc.
+TOOL:	ncvlog(64)	08.20-s026: Started on Dec 06, 2016 at 19:57:49 JST
+ncvlog
+    -incdir ./../../include
+    -64bit
+    -message
+    -update
+    -pragma
+    -nowarn mrstar
+    -append_log
+    -define MODELSIM
+    -define FOR_SIM
+    -define SIMULATION
+    -logfile log.vlog
+    ../../rtl/sysele/comm/slice_bpsk.v
+
+file: ../../rtl/sysele/comm/slice_bpsk.v
+	module work.slice_bpsk
+		errors: 0, warnings: 0
+TOOL:	ncvlog(64)	08.20-s026: Exiting on Dec 06, 2016 at 19:57:49 JST  (total: 00:00:00)
+
+---
+
+ncvlog(64): 08.20-s026: (c) Copyright 1995-2010 Cadence Design Systems, Inc.
+TOOL:	ncvlog(64)	08.20-s026: Started on Dec 06, 2016 at 19:57:49 JST
+ncvlog
+    -incdir ./../../include
+    -64bit
+    -message
+    -update
+    -pragma
+    -nowarn mrstar
+    -append_log
+    -define MODELSIM
+    -define FOR_SIM
+    -define SIMULATION
+    -logfile log.vlog
+    ../../rtl/sysele/comm/slice_qam16.v
+
+file: ../../rtl/sysele/comm/slice_qam16.v
+	module work.slice_qam16
+		errors: 0, warnings: 0
+TOOL:	ncvlog(64)	08.20-s026: Exiting on Dec 06, 2016 at 19:57:49 JST  (total: 00:00:00)
+
+---
+
+ncvlog(64): 08.20-s026: (c) Copyright 1995-2010 Cadence Design Systems, Inc.
+TOOL:	ncvlog(64)	08.20-s026: Started on Dec 06, 2016 at 19:57:49 JST
+ncvlog
+    -incdir ./../../include
+    -64bit
+    -message
+    -update
+    -pragma
+    -nowarn mrstar
+    -append_log
+    -define MODELSIM
+    -define FOR_SIM
+    -define SIMULATION
+    -logfile log.vlog
+    ../../rtl/sysele/comm/slice_qpsk.v
+
+file: ../../rtl/sysele/comm/slice_qpsk.v
+	module work.slice_qpsk
+		errors: 0, warnings: 0
+TOOL:	ncvlog(64)	08.20-s026: Exiting on Dec 06, 2016 at 19:57:49 JST  (total: 00:00:00)
+
+---
+
+ncvlog(64): 08.20-s026: (c) Copyright 1995-2010 Cadence Design Systems, Inc.
+TOOL:	ncvlog(64)	08.20-s026: Started on Dec 06, 2016 at 19:57:50 JST
+ncvlog
+    -incdir ./../../include
+    -64bit
+    -message
+    -update
+    -pragma
+    -nowarn mrstar
+    -append_log
+    -define MODELSIM
+    -define FOR_SIM
+    -define SIMULATION
+    -logfile log.vlog
+    ../../rtl/sysele/comm/variable_delay.v
+
+file: ../../rtl/sysele/comm/variable_delay.v
+	module work.variable_delay
+		errors: 0, warnings: 0
+TOOL:	ncvlog(64)	08.20-s026: Exiting on Dec 06, 2016 at 19:57:50 JST  (total: 00:00:00)
+
+---
+
+ncvlog(64): 08.20-s026: (c) Copyright 1995-2010 Cadence Design Systems, Inc.
+TOOL:	ncvlog(64)	08.20-s026: Started on Dec 06, 2016 at 19:57:50 JST
+ncvlog
+    -incdir ./../../include
+    -64bit
+    -message
+    -update
+    -pragma
+    -nowarn mrstar
+    -append_log
+    -define MODELSIM
+    -define FOR_SIM
+    -define SIMULATION
+    -logfile log.vlog
+    ../../rtl/sysele/comm/compmult/compmult.v
+
+file: ../../rtl/sysele/comm/compmult/compmult.v
+	module work.compmult
+		errors: 0, warnings: 0
+TOOL:	ncvlog(64)	08.20-s026: Exiting on Dec 06, 2016 at 19:57:50 JST  (total: 00:00:00)
+
+---
+
+ncvlog(64): 08.20-s026: (c) Copyright 1995-2010 Cadence Design Systems, Inc.
+TOOL:	ncvlog(64)	08.20-s026: Started on Dec 06, 2016 at 19:57:50 JST
+ncvlog
+    -incdir ./../../include
+    -64bit
+    -message
+    -update
+    -pragma
+    -nowarn mrstar
+    -append_log
+    -define MODELSIM
+    -define FOR_SIM
+    -define SIMULATION
+    -logfile log.vlog
+    ../../rtl/sysele/ec/ec_comm.v
+
+file: ../../rtl/sysele/ec/ec_comm.v
+	module work.ec_comm
+		errors: 0, warnings: 0
+TOOL:	ncvlog(64)	08.20-s026: Exiting on Dec 06, 2016 at 19:57:50 JST  (total: 00:00:00)
+
+---
+
+ncvlog(64): 08.20-s026: (c) Copyright 1995-2010 Cadence Design Systems, Inc.
+TOOL:	ncvlog(64)	08.20-s026: Started on Dec 06, 2016 at 19:57:50 JST
+ncvlog
+    -incdir ./../../include
+    -64bit
+    -message
+    -update
+    -pragma
+    -nowarn mrstar
+    -append_log
+    -define MODELSIM
+    -define FOR_SIM
+    -define SIMULATION
+    -logfile log.vlog
+    ../../rtl/sysele/ec/ec.v
+
+file: ../../rtl/sysele/ec/ec.v
+	module work.ec
+		errors: 0, warnings: 0
+TOOL:	ncvlog(64)	08.20-s026: Exiting on Dec 06, 2016 at 19:57:50 JST  (total: 00:00:00)
+
+---
+
+ncvlog(64): 08.20-s026: (c) Copyright 1995-2010 Cadence Design Systems, Inc.
+TOOL:	ncvlog(64)	08.20-s026: Started on Dec 06, 2016 at 19:57:51 JST
+ncvlog
+    -incdir ./../../include
+    -64bit
+    -message
+    -update
+    -pragma
+    -nowarn mrstar
+    -append_log
+    -define MODELSIM
+    -define FOR_SIM
+    -define SIMULATION
+    -logfile log.vlog
+    ../../rtl/sysele/lcd/ber.v
+
+file: ../../rtl/sysele/lcd/ber.v
+	module work.ber
+		errors: 0, warnings: 0
+TOOL:	ncvlog(64)	08.20-s026: Exiting on Dec 06, 2016 at 19:57:51 JST  (total: 00:00:00)
+
+---
+
+ncvlog(64): 08.20-s026: (c) Copyright 1995-2010 Cadence Design Systems, Inc.
+TOOL:	ncvlog(64)	08.20-s026: Started on Dec 06, 2016 at 19:57:51 JST
+ncvlog
+    -incdir ./../../include
+    -64bit
+    -message
+    -update
+    -pragma
+    -nowarn mrstar
+    -append_log
+    -define MODELSIM
+    -define FOR_SIM
+    -define SIMULATION
+    -logfile log.vlog
+    ../../rtl/sysele/lcd/bin2bcd32.v
+
+file: ../../rtl/sysele/lcd/bin2bcd32.v
+	module work.bin2bcd32
+		errors: 0, warnings: 0
+TOOL:	ncvlog(64)	08.20-s026: Exiting on Dec 06, 2016 at 19:57:51 JST  (total: 00:00:00)
+
+---
+
+ncvlog(64): 08.20-s026: (c) Copyright 1995-2010 Cadence Design Systems, Inc.
+TOOL:	ncvlog(64)	08.20-s026: Started on Dec 06, 2016 at 19:57:51 JST
+ncvlog
+    -incdir ./../../include
+    -64bit
+    -message
+    -update
+    -pragma
+    -nowarn mrstar
+    -append_log
+    -define MODELSIM
+    -define FOR_SIM
+    -define SIMULATION
+    -logfile log.vlog
+    ../../rtl/sysele/lcd/lcd_ber_top.v
+
+file: ../../rtl/sysele/lcd/lcd_ber_top.v
+	module work.lcd_ber_top
+		errors: 0, warnings: 0
+TOOL:	ncvlog(64)	08.20-s026: Exiting on Dec 06, 2016 at 19:57:51 JST  (total: 00:00:00)
+
+---
+
+ncvlog(64): 08.20-s026: (c) Copyright 1995-2010 Cadence Design Systems, Inc.
+TOOL:	ncvlog(64)	08.20-s026: Started on Dec 06, 2016 at 19:57:51 JST
+ncvlog
+    -incdir ./../../include
+    -64bit
+    -message
+    -update
+    -pragma
+    -nowarn mrstar
+    -append_log
+    -define MODELSIM
+    -define FOR_SIM
+    -define SIMULATION
+    -logfile log.vlog
+    ../../rtl/sysele/lcd/lcd_ctrl_top.v
+
+file: ../../rtl/sysele/lcd/lcd_ctrl_top.v
+	module work.lcd_ctrl_top
+		errors: 0, warnings: 0
+TOOL:	ncvlog(64)	08.20-s026: Exiting on Dec 06, 2016 at 19:57:51 JST  (total: 00:00:00)
+
+---
+
+ncvlog(64): 08.20-s026: (c) Copyright 1995-2010 Cadence Design Systems, Inc.
+TOOL:	ncvlog(64)	08.20-s026: Started on Dec 06, 2016 at 19:57:51 JST
+ncvlog
+    -incdir ./../../include
+    -64bit
+    -message
+    -update
+    -pragma
+    -nowarn mrstar
+    -append_log
+    -define MODELSIM
+    -define FOR_SIM
+    -define SIMULATION
+    -logfile log.vlog
+    ../../rtl/sysele/lcd/lcd_comm.v
+
+file: ../../rtl/sysele/lcd/lcd_comm.v
+	module work.lcd_comm
+		errors: 0, warnings: 0
+TOOL:	ncvlog(64)	08.20-s026: Exiting on Dec 06, 2016 at 19:57:52 JST  (total: 00:00:01)
+
+---
+
+ncvlog(64): 08.20-s026: (c) Copyright 1995-2010 Cadence Design Systems, Inc.
+TOOL:	ncvlog(64)	08.20-s026: Started on Dec 06, 2016 at 19:57:52 JST
+ncvlog
+    -incdir ./../../include
+    -64bit
+    -message
+    -update
+    -pragma
+    -nowarn mrstar
+    -append_log
+    -define MODELSIM
+    -define FOR_SIM
+    -define SIMULATION
+    -logfile log.vlog
+    ../../rtl/sysele/lcd/lcd_control.v
+
+file: ../../rtl/sysele/lcd/lcd_control.v
+	module work.lcd_control
+		errors: 0, warnings: 0
+TOOL:	ncvlog(64)	08.20-s026: Exiting on Dec 06, 2016 at 19:57:52 JST  (total: 00:00:00)
+
+---
+
+ncvlog(64): 08.20-s026: (c) Copyright 1995-2010 Cadence Design Systems, Inc.
+TOOL:	ncvlog(64)	08.20-s026: Started on Dec 06, 2016 at 19:57:52 JST
+ncvlog
+    -incdir ./../../include
+    -64bit
+    -message
+    -update
+    -pragma
+    -nowarn mrstar
+    -append_log
+    -define MODELSIM
+    -define FOR_SIM
+    -define SIMULATION
+    -logfile log.vlog
+    ../../rtl/sysele/lcd/lcd_memory.v
+
+file: ../../rtl/sysele/lcd/lcd_memory.v
+	module work.lcd_memory
+		errors: 0, warnings: 0
+TOOL:	ncvlog(64)	08.20-s026: Exiting on Dec 06, 2016 at 19:57:52 JST  (total: 00:00:00)
+
+---
+
+ncvlog(64): 08.20-s026: (c) Copyright 1995-2010 Cadence Design Systems, Inc.
+TOOL:	ncvlog(64)	08.20-s026: Started on Dec 06, 2016 at 19:57:52 JST
+ncvlog
+    -incdir ./../../include
+    -64bit
+    -message
+    -update
+    -pragma
+    -nowarn mrstar
+    -append_log
+    -define MODELSIM
+    -define FOR_SIM
+    -define SIMULATION
+    -logfile log.vlog
+    ../../rtl/sysele/lcd/lcd.v
+
+file: ../../rtl/sysele/lcd/lcd.v
+	module work.lcd
+		errors: 0, warnings: 0
+TOOL:	ncvlog(64)	08.20-s026: Exiting on Dec 06, 2016 at 19:57:52 JST  (total: 00:00:00)
+
+---
+
+ncvlog(64): 08.20-s026: (c) Copyright 1995-2010 Cadence Design Systems, Inc.
+TOOL:	ncvlog(64)	08.20-s026: Started on Dec 06, 2016 at 19:57:52 JST
+ncvlog
+    -incdir ./../../include
+    -64bit
+    -message
+    -update
+    -pragma
+    -nowarn mrstar
+    -append_log
+    -define MODELSIM
+    -define FOR_SIM
+    -define SIMULATION
+    -logfile log.vlog
+    ../../rtl/sysele/lcd/num2char.v
+
+file: ../../rtl/sysele/lcd/num2char.v
+	module work.num2char
+		errors: 0, warnings: 0
+TOOL:	ncvlog(64)	08.20-s026: Exiting on Dec 06, 2016 at 19:57:52 JST  (total: 00:00:00)
+
+---
+
+ncvlog(64): 08.20-s026: (c) Copyright 1995-2010 Cadence Design Systems, Inc.
+TOOL:	ncvlog(64)	08.20-s026: Started on Dec 06, 2016 at 19:57:52 JST
+ncvlog
+    -incdir ./../../include
+    -64bit
+    -message
+    -update
+    -pragma
+    -nowarn mrstar
+    -append_log
+    -define MODELSIM
+    -define FOR_SIM
+    -define SIMULATION
+    -logfile log.vlog
+    ../../rtl/sysele/lcd/key2char.v
+
+file: ../../rtl/sysele/lcd/key2char.v
+	module work.key2char
+		errors: 0, warnings: 0
+TOOL:	ncvlog(64)	08.20-s026: Exiting on Dec 06, 2016 at 19:57:52 JST  (total: 00:00:00)
+
+---
+
+ncvlog(64): 08.20-s026: (c) Copyright 1995-2010 Cadence Design Systems, Inc.
+TOOL:	ncvlog(64)	08.20-s026: Started on Dec 06, 2016 at 19:57:52 JST
+ncvlog
+    -incdir ./../../include
+    -64bit
+    -message
+    -update
+    -pragma
+    -nowarn mrstar
+    -append_log
+    -define MODELSIM
+    -define FOR_SIM
+    -define SIMULATION
+    -logfile log.vlog
+    ../../rtl/sysele/lcd_top.v
+
+file: ../../rtl/sysele/lcd_top.v
+   wire          locked, locked1, locked2;
+                               |
+ncvlog: *W,ILLPDX (../../rtl/sysele/lcd_top.v,63|31): Multiple declarations for a port not allowed in module with ANSI list of port declarations (port 'locked1') [12.3.4(IEEE-2001)].
+   wire          locked, locked1, locked2;
+                                        |
+ncvlog: *W,ILLPDX (../../rtl/sysele/lcd_top.v,63|40): Multiple declarations for a port not allowed in module with ANSI list of port declarations (port 'locked2') [12.3.4(IEEE-2001)].
+always @ (posedge CLK50 or negedge nRST) begin
+                      |
+ncvlog: *E,UNDIDN (../../rtl/sysele/lcd_top.v,110|22): 'CLK50': undeclared identifier [12.5(IEEE)].
+always @ (posedge CLK50 or negedge nRST) begin
+                      |
+ncvlog: *E,UNDIDN (../../rtl/sysele/lcd_top.v,122|22): 'CLK50': undeclared identifier [12.5(IEEE)].
+	module work.lcd_top
+		errors: 2, warnings: 2
+TOOL:	ncvlog(64)	08.20-s026: Exiting on Dec 06, 2016 at 19:57:52 JST  (total: 00:00:00)
+
+---
+
+ncvlog(64): 08.20-s026: (c) Copyright 1995-2010 Cadence Design Systems, Inc.
+TOOL:	ncvlog(64)	08.20-s026: Started on Dec 06, 2016 at 19:57:52 JST
+ncvlog
+    -incdir ./../../include
+    -64bit
+    -message
+    -update
+    -pragma
+    -nowarn mrstar
+    -append_log
+    -define MODELSIM
+    -define FOR_SIM
+    -define SIMULATION
+    -logfile log.vlog
+    ../../rtl/sysele/spi/spi_chunk.v
+
+file: ../../rtl/sysele/spi/spi_chunk.v
+	module work.spi_chunk
+		errors: 0, warnings: 0
+TOOL:	ncvlog(64)	08.20-s026: Exiting on Dec 06, 2016 at 19:57:53 JST  (total: 00:00:01)
+
+---
+
+ncvlog(64): 08.20-s026: (c) Copyright 1995-2010 Cadence Design Systems, Inc.
+TOOL:	ncvlog(64)	08.20-s026: Started on Dec 06, 2016 at 19:57:53 JST
+ncvlog
+    -incdir ./../../include
+    -64bit
+    -message
+    -update
+    -pragma
+    -nowarn mrstar
+    -append_log
+    -define MODELSIM
+    -define FOR_SIM
+    -define SIMULATION
+    -logfile log.vlog
+    ../../rtl/sysele/spi/spi.v
+
+file: ../../rtl/sysele/spi/spi.v
+	module work.spi
+		errors: 0, warnings: 0
+TOOL:	ncvlog(64)	08.20-s026: Exiting on Dec 06, 2016 at 19:57:53 JST  (total: 00:00:00)
+
+---
+
+ncvlog(64): 08.20-s026: (c) Copyright 1995-2010 Cadence Design Systems, Inc.
+TOOL:	ncvlog(64)	08.20-s026: Started on Dec 06, 2016 at 19:57:53 JST
+ncvlog
+    -incdir ./../../include
+    -64bit
+    -message
+    -update
+    -pragma
+    -nowarn mrstar
+    -append_log
+    -define MODELSIM
+    -define FOR_SIM
+    -define SIMULATION
+    -logfile log.vlog
+    ../../rtl/fft/butterfly2.v
+
+file: ../../rtl/fft/butterfly2.v
+	module work.butterfly2
+		errors: 0, warnings: 0
+TOOL:	ncvlog(64)	08.20-s026: Exiting on Dec 06, 2016 at 19:57:53 JST  (total: 00:00:00)
+
+---
+
+ncvlog(64): 08.20-s026: (c) Copyright 1995-2010 Cadence Design Systems, Inc.
+TOOL:	ncvlog(64)	08.20-s026: Started on Dec 06, 2016 at 19:57:53 JST
+ncvlog
+    -incdir ./../../include
+    -64bit
+    -message
+    -update
+    -pragma
+    -nowarn mrstar
+    -append_log
+    -define MODELSIM
+    -define FOR_SIM
+    -define SIMULATION
+    -logfile log.vlog
+    ../../rtl/fft/cross_switch.v
+
+file: ../../rtl/fft/cross_switch.v
+	module work.cross_switch
+		errors: 0, warnings: 0
+TOOL:	ncvlog(64)	08.20-s026: Exiting on Dec 06, 2016 at 19:57:53 JST  (total: 00:00:00)
+
+---
+
+ncvlog(64): 08.20-s026: (c) Copyright 1995-2010 Cadence Design Systems, Inc.
+TOOL:	ncvlog(64)	08.20-s026: Started on Dec 06, 2016 at 19:57:53 JST
+ncvlog
+    -incdir ./../../include
+    -64bit
+    -message
+    -update
+    -pragma
+    -nowarn mrstar
+    -append_log
+    -define MODELSIM
+    -define FOR_SIM
+    -define SIMULATION
+    -logfile log.vlog
+    ../../rtl/fft/delay.v
+
+file: ../../rtl/fft/delay.v
+	module work.delay
+		errors: 0, warnings: 0
+TOOL:	ncvlog(64)	08.20-s026: Exiting on Dec 06, 2016 at 19:57:53 JST  (total: 00:00:00)
+
+---
+
+ncvlog(64): 08.20-s026: (c) Copyright 1995-2010 Cadence Design Systems, Inc.
+TOOL:	ncvlog(64)	08.20-s026: Started on Dec 06, 2016 at 19:57:53 JST
+ncvlog
+    -incdir ./../../include
+    -64bit
+    -message
+    -update
+    -pragma
+    -nowarn mrstar
+    -append_log
+    -define MODELSIM
+    -define FOR_SIM
+    -define SIMULATION
+    -logfile log.vlog
+    ../../rtl/fft/dpram.v
+
+file: ../../rtl/fft/dpram.v
+	module work.dpram
+		errors: 0, warnings: 0
+TOOL:	ncvlog(64)	08.20-s026: Exiting on Dec 06, 2016 at 19:57:54 JST  (total: 00:00:01)
+
+---
+
+ncvlog(64): 08.20-s026: (c) Copyright 1995-2010 Cadence Design Systems, Inc.
+TOOL:	ncvlog(64)	08.20-s026: Started on Dec 06, 2016 at 19:57:54 JST
+ncvlog
+    -incdir ./../../include
+    -64bit
+    -message
+    -update
+    -pragma
+    -nowarn mrstar
+    -append_log
+    -define MODELSIM
+    -define FOR_SIM
+    -define SIMULATION
+    -logfile log.vlog
+    ../../rtl/fft/fft16_stage.v
+
+file: ../../rtl/fft/fft16_stage.v
+	module work.fft16_stage
+		errors: 0, warnings: 0
+TOOL:	ncvlog(64)	08.20-s026: Exiting on Dec 06, 2016 at 19:57:54 JST  (total: 00:00:00)
+
+---
+
+ncvlog(64): 08.20-s026: (c) Copyright 1995-2010 Cadence Design Systems, Inc.
+TOOL:	ncvlog(64)	08.20-s026: Started on Dec 06, 2016 at 19:57:54 JST
+ncvlog
+    -incdir ./../../include
+    -64bit
+    -message
+    -update
+    -pragma
+    -nowarn mrstar
+    -append_log
+    -define MODELSIM
+    -define FOR_SIM
+    -define SIMULATION
+    -logfile log.vlog
+    ../../rtl/fft/fft32_stage.v
+
+file: ../../rtl/fft/fft32_stage.v
+	module work.fft32_stage
+		errors: 0, warnings: 0
+TOOL:	ncvlog(64)	08.20-s026: Exiting on Dec 06, 2016 at 19:57:54 JST  (total: 00:00:00)
+
+---
+
+ncvlog(64): 08.20-s026: (c) Copyright 1995-2010 Cadence Design Systems, Inc.
+TOOL:	ncvlog(64)	08.20-s026: Started on Dec 06, 2016 at 19:57:54 JST
+ncvlog
+    -incdir ./../../include
+    -64bit
+    -message
+    -update
+    -pragma
+    -nowarn mrstar
+    -append_log
+    -define MODELSIM
+    -define FOR_SIM
+    -define SIMULATION
+    -logfile log.vlog
+    ../../rtl/fft/fft64_stage.v
+
+file: ../../rtl/fft/fft64_stage.v
+	module work.fft64_stage
+		errors: 0, warnings: 0
+TOOL:	ncvlog(64)	08.20-s026: Exiting on Dec 06, 2016 at 19:57:54 JST  (total: 00:00:00)
+
+---
+
+ncvlog(64): 08.20-s026: (c) Copyright 1995-2010 Cadence Design Systems, Inc.
+TOOL:	ncvlog(64)	08.20-s026: Started on Dec 06, 2016 at 19:57:54 JST
+ncvlog
+    -incdir ./../../include
+    -64bit
+    -message
+    -update
+    -pragma
+    -nowarn mrstar
+    -append_log
+    -define MODELSIM
+    -define FOR_SIM
+    -define SIMULATION
+    -logfile log.vlog
+    ../../rtl/fft/fft64_top.v
+
+file: ../../rtl/fft/fft64_top.v
+	module work.fft64_top
+		errors: 0, warnings: 0
+TOOL:	ncvlog(64)	08.20-s026: Exiting on Dec 06, 2016 at 19:57:54 JST  (total: 00:00:00)
+
+---
+
+ncvlog(64): 08.20-s026: (c) Copyright 1995-2010 Cadence Design Systems, Inc.
+TOOL:	ncvlog(64)	08.20-s026: Started on Dec 06, 2016 at 19:57:54 JST
+ncvlog
+    -incdir ./../../include
+    -64bit
+    -message
+    -update
+    -pragma
+    -nowarn mrstar
+    -append_log
+    -define MODELSIM
+    -define FOR_SIM
+    -define SIMULATION
+    -logfile log.vlog
+    ../../rtl/fft/fft64.v
+
+file: ../../rtl/fft/fft64.v
+	module work.fft64
+		errors: 0, warnings: 0
+TOOL:	ncvlog(64)	08.20-s026: Exiting on Dec 06, 2016 at 19:57:55 JST  (total: 00:00:01)
+
+---
+
+ncvlog(64): 08.20-s026: (c) Copyright 1995-2010 Cadence Design Systems, Inc.
+TOOL:	ncvlog(64)	08.20-s026: Started on Dec 06, 2016 at 19:57:55 JST
+ncvlog
+    -incdir ./../../include
+    -64bit
+    -message
+    -update
+    -pragma
+    -nowarn mrstar
+    -append_log
+    -define MODELSIM
+    -define FOR_SIM
+    -define SIMULATION
+    -logfile log.vlog
+    ../../rtl/fft/fft_reorder.v
+
+file: ../../rtl/fft/fft_reorder.v
+	module work.fft_reorder
+		errors: 0, warnings: 0
+TOOL:	ncvlog(64)	08.20-s026: Exiting on Dec 06, 2016 at 19:57:55 JST  (total: 00:00:00)
+
+---
+
+ncvlog(64): 08.20-s026: (c) Copyright 1995-2010 Cadence Design Systems, Inc.
+TOOL:	ncvlog(64)	08.20-s026: Started on Dec 06, 2016 at 19:57:55 JST
+ncvlog
+    -incdir ./../../include
+    -64bit
+    -message
+    -update
+    -pragma
+    -nowarn mrstar
+    -append_log
+    -define MODELSIM
+    -define FOR_SIM
+    -define SIMULATION
+    -logfile log.vlog
+    ../../rtl/fft/fifo_2w1r_fwft.v
+
+file: ../../rtl/fft/fifo_2w1r_fwft.v
+	module work.fifo_2w1r_fwft
+		errors: 0, warnings: 0
+TOOL:	ncvlog(64)	08.20-s026: Exiting on Dec 06, 2016 at 19:57:55 JST  (total: 00:00:00)
+
+---
+
+ncvlog(64): 08.20-s026: (c) Copyright 1995-2010 Cadence Design Systems, Inc.
+TOOL:	ncvlog(64)	08.20-s026: Started on Dec 06, 2016 at 19:57:55 JST
+ncvlog
+    -incdir ./../../include
+    -64bit
+    -message
+    -update
+    -pragma
+    -nowarn mrstar
+    -append_log
+    -define MODELSIM
+    -define FOR_SIM
+    -define SIMULATION
+    -logfile log.vlog
+    ../../rtl/fft/ifft64.v
+
+file: ../../rtl/fft/ifft64.v
+	module work.ifft64
+		errors: 0, warnings: 0
+TOOL:	ncvlog(64)	08.20-s026: Exiting on Dec 06, 2016 at 19:57:55 JST  (total: 00:00:00)
+
+---
+
+ncvlog(64): 08.20-s026: (c) Copyright 1995-2010 Cadence Design Systems, Inc.
+TOOL:	ncvlog(64)	08.20-s026: Started on Dec 06, 2016 at 19:57:55 JST
+ncvlog
+    -incdir ./../../include
+    -64bit
+    -message
+    -update
+    -pragma
+    -nowarn mrstar
+    -append_log
+    -define MODELSIM
+    -define FOR_SIM
+    -define SIMULATION
+    -logfile log.vlog
+    ../../rtl/fft/interlace.v
+
+file: ../../rtl/fft/interlace.v
+	module work.interlace
+		errors: 0, warnings: 0
+TOOL:	ncvlog(64)	08.20-s026: Exiting on Dec 06, 2016 at 19:57:55 JST  (total: 00:00:00)
+
+---
+
+ncvlog(64): 08.20-s026: (c) Copyright 1995-2010 Cadence Design Systems, Inc.
+TOOL:	ncvlog(64)	08.20-s026: Started on Dec 06, 2016 at 19:57:55 JST
+ncvlog
+    -incdir ./../../include
+    -64bit
+    -message
+    -update
+    -pragma
+    -nowarn mrstar
+    -append_log
+    -define MODELSIM
+    -define FOR_SIM
+    -define SIMULATION
+    -logfile log.vlog
+    ../../rtl/fft/twiddle4.v
+
+file: ../../rtl/fft/twiddle4.v
+	module work.twiddle4
+		errors: 0, warnings: 0
+TOOL:	ncvlog(64)	08.20-s026: Exiting on Dec 06, 2016 at 19:57:56 JST  (total: 00:00:01)
+
+---
+
+ncvlog(64): 08.20-s026: (c) Copyright 1995-2010 Cadence Design Systems, Inc.
+TOOL:	ncvlog(64)	08.20-s026: Started on Dec 06, 2016 at 19:57:56 JST
+ncvlog
+    -incdir ./../../include
+    -64bit
+    -message
+    -update
+    -pragma
+    -nowarn mrstar
+    -append_log
+    -define MODELSIM
+    -define FOR_SIM
+    -define SIMULATION
+    -logfile log.vlog
+    ../../rtl/audio/audio.v
+
+file: ../../rtl/audio/audio.v
+	module work.audio
+		errors: 0, warnings: 0
+TOOL:	ncvlog(64)	08.20-s026: Exiting on Dec 06, 2016 at 19:57:56 JST  (total: 00:00:00)
+
+---
+
+ncvlog(64): 08.20-s026: (c) Copyright 1995-2010 Cadence Design Systems, Inc.
+TOOL:	ncvlog(64)	08.20-s026: Started on Dec 06, 2016 at 19:57:56 JST
+ncvlog
+    -incdir ./../../include
+    -64bit
+    -message
+    -update
+    -pragma
+    -nowarn mrstar
+    -append_log
+    -define MODELSIM
+    -define FOR_SIM
+    -define SIMULATION
+    -logfile log.vlog
+    ../../rtl/audio/audio_if.v
+
+file: ../../rtl/audio/audio_if.v
+	module work.audio_if
+		errors: 0, warnings: 0
+TOOL:	ncvlog(64)	08.20-s026: Exiting on Dec 06, 2016 at 19:57:56 JST  (total: 00:00:00)
+
+---
+
+ncvlog(64): 08.20-s026: (c) Copyright 1995-2010 Cadence Design Systems, Inc.
+TOOL:	ncvlog(64)	08.20-s026: Started on Dec 06, 2016 at 19:57:56 JST
+ncvlog
+    -incdir ./../../include
+    -64bit
+    -message
+    -update
+    -pragma
+    -nowarn mrstar
+    -append_log
+    -define MODELSIM
+    -define FOR_SIM
+    -define SIMULATION
+    -logfile log.vlog
+    ../../rtl/audio/audio_proc.v
+
+file: ../../rtl/audio/audio_proc.v
+	module work.audio_proc
+		errors: 0, warnings: 0
+TOOL:	ncvlog(64)	08.20-s026: Exiting on Dec 06, 2016 at 19:57:56 JST  (total: 00:00:00)
+
+---
+
+ncvlog(64): 08.20-s026: (c) Copyright 1995-2010 Cadence Design Systems, Inc.
+TOOL:	ncvlog(64)	08.20-s026: Started on Dec 06, 2016 at 19:57:56 JST
+ncvlog
+    -incdir ./../../include
+    -64bit
+    -message
+    -update
+    -pragma
+    -nowarn mrstar
+    -append_log
+    -define MODELSIM
+    -define FOR_SIM
+    -define SIMULATION
+    -logfile log.vlog
+    ../../rtl/ps2/ps2_top.v
+
+file: ../../rtl/ps2/ps2_top.v
+	module work.ps2_top
+		errors: 0, warnings: 0
+TOOL:	ncvlog(64)	08.20-s026: Exiting on Dec 06, 2016 at 19:57:57 JST  (total: 00:00:01)
+
+---
+
+ncvlog(64): 08.20-s026: (c) Copyright 1995-2010 Cadence Design Systems, Inc.
+TOOL:	ncvlog(64)	08.20-s026: Started on Dec 06, 2016 at 19:57:57 JST
+ncvlog
+    -incdir ./../../include
+    -64bit
+    -message
+    -update
+    -pragma
+    -nowarn mrstar
+    -append_log
+    -define MODELSIM
+    -define FOR_SIM
+    -define SIMULATION
+    -logfile log.vlog
+    ../../rtl/ps2/ps2_mouse.v
+
+file: ../../rtl/ps2/ps2_mouse.v
+	module work.ps2_mouse
+		errors: 0, warnings: 0
+	module work.ps2_mouse_interface
+		errors: 0, warnings: 0
+TOOL:	ncvlog(64)	08.20-s026: Exiting on Dec 06, 2016 at 19:57:57 JST  (total: 00:00:00)
+
+---
+
+ncvlog(64): 08.20-s026: (c) Copyright 1995-2010 Cadence Design Systems, Inc.
+TOOL:	ncvlog(64)	08.20-s026: Started on Dec 06, 2016 at 19:57:57 JST
+ncvlog
+    -incdir ./../../include
+    -64bit
+    -message
+    -update
+    -pragma
+    -nowarn mrstar
+    -append_log
+    -define MODELSIM
+    -define FOR_SIM
+    -define SIMULATION
+    -logfile log.vlog
+    ../../rtl/ps2/ps2_keyboard.v
+
+file: ../../rtl/ps2/ps2_keyboard.v
+	module work.ps2_keyboard
+		errors: 0, warnings: 0
+TOOL:	ncvlog(64)	08.20-s026: Exiting on Dec 06, 2016 at 19:57:57 JST  (total: 00:00:00)
+
+---
+
+ncvlog(64): 08.20-s026: (c) Copyright 1995-2010 Cadence Design Systems, Inc.
+TOOL:	ncvlog(64)	08.20-s026: Started on Dec 06, 2016 at 19:57:57 JST
+ncvlog
+    -incdir ./../../include
+    -64bit
+    -message
+    -update
+    -pragma
+    -nowarn mrstar
+    -append_log
+    -define MODELSIM
+    -define FOR_SIM
+    -define SIMULATION
+    -logfile log.vlog
+    ../../rtl/ps2/ps2_keyboard_ctrl.v
+
+file: ../../rtl/ps2/ps2_keyboard_ctrl.v
+	module work.ps2_keyboard_ctrl
+		errors: 0, warnings: 0
+TOOL:	ncvlog(64)	08.20-s026: Exiting on Dec 06, 2016 at 19:57:57 JST  (total: 00:00:00)
+
+---
+
+ncvlog(64): 08.20-s026: (c) Copyright 1995-2010 Cadence Design Systems, Inc.
+TOOL:	ncvlog(64)	08.20-s026: Started on Dec 06, 2016 at 19:57:57 JST
+ncvlog
+    -incdir ./../../include
+    -64bit
+    -message
+    -update
+    -pragma
+    -nowarn mrstar
+    -append_log
+    -define MODELSIM
+    -define FOR_SIM
+    -define SIMULATION
+    -logfile log.vlog
+    ../../rtl/ps2/ps2_command_out.v
+
+file: ../../rtl/ps2/ps2_command_out.v
+	module work.ps2_command_out
+		errors: 0, warnings: 0
+TOOL:	ncvlog(64)	08.20-s026: Exiting on Dec 06, 2016 at 19:57:58 JST  (total: 00:00:01)
+
+---
+
+ncvlog(64): 08.20-s026: (c) Copyright 1995-2010 Cadence Design Systems, Inc.
+TOOL:	ncvlog(64)	08.20-s026: Started on Dec 06, 2016 at 19:57:58 JST
+ncvlog
+    -incdir ./../../include
+    -64bit
+    -message
+    -update
+    -pragma
+    -nowarn mrstar
+    -append_log
+    -define MODELSIM
+    -define FOR_SIM
+    -define SIMULATION
+    -logfile log.vlog
+    ../../rtl/ps2/ps2_data_in.v
+
+file: ../../rtl/ps2/ps2_data_in.v
+	module work.ps2_data_in
+		errors: 0, warnings: 0
+TOOL:	ncvlog(64)	08.20-s026: Exiting on Dec 06, 2016 at 19:57:58 JST  (total: 00:00:00)
+
+---
+
+ncvlog(64): 08.20-s026: (c) Copyright 1995-2010 Cadence Design Systems, Inc.
+TOOL:	ncvlog(64)	08.20-s026: Started on Dec 06, 2016 at 19:57:58 JST
+ncvlog
+    -incdir ./../../include
+    -64bit
+    -message
+    -update
+    -pragma
+    -nowarn mrstar
+    -append_log
+    -define MODELSIM
+    -define FOR_SIM
+    -define SIMULATION
+    -logfile log.vlog
+    ../../tb/crg.v
+
+file: ../../tb/crg.v
+	module work.crg
+		errors: 0, warnings: 0
+TOOL:	ncvlog(64)	08.20-s026: Exiting on Dec 06, 2016 at 19:57:58 JST  (total: 00:00:00)
+
+---
+
+ncvlog(64): 08.20-s026: (c) Copyright 1995-2010 Cadence Design Systems, Inc.
+TOOL:	ncvlog(64)	08.20-s026: Started on Dec 06, 2016 at 19:57:58 JST
+ncvlog
+    -incdir ./../../include
+    -64bit
+    -message
+    -update
+    -pragma
+    -nowarn mrstar
+    -append_log
+    -define MODELSIM
+    -define FOR_SIM
+    -define SIMULATION
+    -logfile log.vlog
+    ../../tb/tb.v
+
+file: ../../tb/tb.v
+	module work.tb
+		errors: 0, warnings: 0
+TOOL:	ncvlog(64)	08.20-s026: Exiting on Dec 06, 2016 at 19:57:58 JST  (total: 00:00:00)
+
+---
+
+ncvlog(64): 08.20-s026: (c) Copyright 1995-2010 Cadence Design Systems, Inc.
+TOOL:	ncvlog(64)	08.20-s026: Started on Dec 06, 2016 at 19:57:58 JST
+ncvlog
+    -incdir ./../../include
+    -64bit
+    -message
+    -update
+    -pragma
+    -nowarn mrstar
+    -append_log
+    -define MODELSIM
+    -define FOR_SIM
+    -define SIMULATION
+    -logfile log.vlog
+    ../../tb/monitor_model.v
+
+file: ../../tb/monitor_model.v
+	module work.monitor_model
+		errors: 0, warnings: 0
+TOOL:	ncvlog(64)	08.20-s026: Exiting on Dec 06, 2016 at 19:57:59 JST  (total: 00:00:01)
+
+---
+
+ncvlog(64): 08.20-s026: (c) Copyright 1995-2010 Cadence Design Systems, Inc.
+TOOL:	ncvlog(64)	08.20-s026: Started on Dec 06, 2016 at 19:57:59 JST
+ncvlog
+    -incdir ./../../include
+    -64bit
+    -message
+    -update
+    -pragma
+    -nowarn mrstar
+    -append_log
+    -define MODELSIM
+    -define FOR_SIM
+    -define SIMULATION
+    -logfile log.vlog
+    ../../fpga/fpga_top.v
+
+file: ../../fpga/fpga_top.v
+	module work.fpga_top
+		errors: 0, warnings: 0
+TOOL:	ncvlog(64)	08.20-s026: Exiting on Dec 06, 2016 at 19:57:59 JST  (total: 00:00:00)

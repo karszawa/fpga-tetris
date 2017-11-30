@@ -1,0 +1,68 @@
+#!/bin/tcsh
+
+#source TOOL.ENV 
+
+rm -rf log.*
+rm -rf work
+mkdir -p work
+
+#ncvlog -64 -define VIRAGE_FAST_VERILOG -define MEM_CHECK_OFF  ../model/MEM/*.v
+
+if ( $1 == 'trunk' ) then
+   set CMP_PATH = ../../../../trunk/DE/sim/ 
+else if ( $1 == 'rqc' ) then
+   set CMP_PATH = ../../rqc/ 
+else if ( $1 == 'var' ) then
+   set CMP_PATH = ../../var/ 
+else 
+   set CMP_PATH = ../
+endif
+
+
+#if ( $2 == 'all' | $2 == 'ALL' ) then
+#	perl -f ./devc.pl $1 $CMP_PATH/list/ids_CCO.f
+#	cat log.vlog >  log.all.vlog
+#	cat log.vhdl >  log.all.vhdl
+#	perl -f ./devc.pl $1 $CMP_PATH/list/ids_CVI.f 
+#	cat log.vlog >> log.all.vlog
+#	cat log.vhdl >> log.all.vhdl
+#	perl -f ./devc.pl $1 $CMP_PATH/list/ids_GSC.f 
+#	cat log.vlog >> log.all.vlog
+#	cat log.vhdl >> log.all.vhdl
+#	perl -f ./devc.pl $1 $CMP_PATH/list/ids_IMX.f 
+#	cat log.vlog >> log.all.vlog
+#	cat log.vhdl >> log.all.vhdl
+#	perl -f ./devc.pl $1 $CMP_PATH/list/ids_MCU.f 
+#	cat log.vlog >> log.all.vlog
+#	cat log.vhdl >> log.all.vhdl
+#	perl -f ./devc.pl $1 $CMP_PATH/list/ids_ND0.f 
+#	cat log.vlog >> log.all.vlog
+#	cat log.vhdl >> log.all.vhdl
+#	perl -f ./devc.pl $1 $CMP_PATH/list/ids_ND1.f 
+#	cat log.vlog >> log.all.vlog
+#	cat log.vhdl >> log.all.vhdl
+#	perl -f ./devc.pl $1 $CMP_PATH/list/ids_SUB.f 
+#	cat log.vlog >> log.all.vlog
+#	cat log.vhdl >> log.all.vhdl
+#	perl -f ./devc.pl $1 $CMP_PATH/list/ids_VSD.f 
+#	cat log.vlog >> log.all.vlog
+#	cat log.vhdl >> log.all.vhdl
+#	perl -f ./devc.pl $1 $CMP_PATH/list/ids_SRE.f 
+#	cat log.vlog >> log.all.vlog
+#	cat log.vhdl >> log.all.vhdl
+#	perl -f ./devc.pl $1 $CMP_PATH/list/ids_TOP.f 
+#	cat log.vlog >> log.all.vlog
+#	cat log.vhdl >> log.all.vhdl
+#	grep "*F" log.all.vlog
+#	grep "*F" log.all.vhdl
+#	grep "*E" log.all.vlog
+#	grep "*E" log.all.vhdl
+#else
+	perl -f ./devc.pl $1 $CMP_PATH/list/$2
+	grep "*F" log.vlog
+	grep "*F" log.vhdl
+	grep "*E" log.vlog
+	grep "*E" log.vhdl
+#endif
+
+

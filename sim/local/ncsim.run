@@ -1,0 +1,15 @@
+#/bin/csh -f
+
+variable textio_severity_level ignore
+set assert_1164_warnings {no}
+set assert_stop_level never
+variable rangecnst_severity_level ignore
+
+database -open tb -into tb.shm -incsize 512
+probe -create -database tb tb -depth all -all -memories
+
+#run 3.5 us
+ run 20ms
+
+
+

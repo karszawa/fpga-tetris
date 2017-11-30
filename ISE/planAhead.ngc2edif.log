@@ -1,0 +1,58 @@
+Release 11.1 - ngc2edif L.57 (lin64)
+Copyright (c) 1995-2009 Xilinx, Inc.  All rights reserved.
+Reading design fpga_top.ngc ...
+WARNING:NetListWriters:298 - No output is written to fpga_top.xncf, ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+WARNING:NetListWriters:306 - Signal bus
+   A_AUDIO/A0_IF/Madd_cnt_audio_sync_addsub0000_cy<4 : 1> on block fpga_top is
+   not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus A_AUDIO/A0_IF/data_out<255 : 160> on
+   block fpga_top is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus
+   A_DVI_TELE_TXRX/A_CPG/Madd_cnt_color_b_mux0000_cy<5 : 1> on block fpga_top is
+   not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   A_DVI_TELE_TXRX/A_CPG/Madd_cnt_color_g_mux0000_cy<5 : 1> on block fpga_top is
+   not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   A_DVI_TELE_TXRX/A_CPG/Msub_cnt_color_r_mux0000_cy<5 : 1> on block fpga_top is
+   not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   A_DVI_TELE_TXRX/A_DVI/DVIInit/I2CControl/Master/LastState<7 : 1> on block
+   fpga_top is not reconstructed, because there are some missing bus signals.
+  finished :Prep
+Writing EDIF netlist file fpga_top.edif ...
+ngc2edif: Total memory usage is 79868 kilobytes
+
+Release 11.1 - ngc2edif L.57 (lin64)
+Copyright (c) 1995-2009 Xilinx, Inc.  All rights reserved.
+Reading design fpga_top.ngc ...
+WARNING:NetListWriters:298 - No output is written to fpga_top.xncf, ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+WARNING:NetListWriters:306 - Signal bus
+   A_AUDIO/A0_IF/Madd_cnt_audio_sync_addsub0000_cy<4 : 1> on block fpga_top is
+   not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus A_AUDIO/A0_IF/data_out<255 : 160> on
+   block fpga_top is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus
+   A_DVI_TELE_TXRX/A_CPG/Madd_cnt_color_b_mux0000_cy<5 : 1> on block fpga_top is
+   not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   A_DVI_TELE_TXRX/A_CPG/Madd_cnt_color_g_mux0000_cy<5 : 1> on block fpga_top is
+   not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   A_DVI_TELE_TXRX/A_CPG/Msub_cnt_color_r_mux0000_cy<5 : 1> on block fpga_top is
+   not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   A_DVI_TELE_TXRX/A_DVI/DVIInit/I2CControl/Master/LastState<7 : 1> on block
+   fpga_top is not reconstructed, because there are some missing bus signals.
+  finished :Prep
+Writing EDIF netlist file fpga_top.edif ...
+ngc2edif: Total memory usage is 79864 kilobytes
+

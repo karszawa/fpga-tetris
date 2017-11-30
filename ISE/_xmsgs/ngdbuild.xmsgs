@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated
+     by the Xilinx ISE software.  Any direct editing or
+     changes made to this file may result in unpredictable
+     behavior or data corruption.  It is strongly advised that
+     users do not edit the contents of this file. -->
+<messages>
+<msg type="warning" file="ConstraintSystem" num="137" delta="unknown" >Constraint <arg fmt="%s" index="1">&lt;NET &quot;CLK_33MHZ_FPGA&quot; TNM_NET = CLK_33MHZ_FPGA;&gt; [/home/jikken17/FPGA_TOP/fpga/fpga_top.ucf(13)]</arg>: No appropriate instances for the TNM constraint are driven by &quot;<arg fmt="%s" index="2">CLK_33MHZ_FPGA</arg>&quot;.
+</msg>
+
+<msg type="warning" file="ConstraintSystem" num="203" delta="unknown" >A target design object for the <arg fmt="%s" index="1">Locate</arg> constraint &apos;<arg fmt="%s" index="2">&lt;Net TP&lt;0&gt; LOC = N4  |&gt; [/home/jikken17/FPGA_TOP/fpga/fpga_top.ucf(75)]</arg>&apos; could not be found and so the <arg fmt="%s" index="3">Locate</arg> constraint will be removed.
+</msg>
+
+<msg type="warning" file="ConstraintSystem" num="203" delta="unknown" >A target design object for the <arg fmt="%s" index="1">Locate</arg> constraint &apos;<arg fmt="%s" index="2">&lt;Net TP&lt;1&gt; LOC = P5  |&gt; [/home/jikken17/FPGA_TOP/fpga/fpga_top.ucf(76)]</arg>&apos; could not be found and so the <arg fmt="%s" index="3">Locate</arg> constraint will be removed.
+</msg>
+
+<msg type="info" file="ConstraintSystem" num="178" delta="unknown" ><arg fmt="%s" index="1">TNM</arg> &apos;<arg fmt="%s" index="2">sys_clk_pin</arg>&apos;, used in period specification &apos;<arg fmt="%s" index="3">TS_sys_clk_pin</arg>&apos;, was traced into <arg fmt="%s" index="4">DCM_ADV</arg> instance <arg fmt="%s" index="5">A_CRG/DCM_ADV_INST</arg>. The following new TNM groups and period specifications were generated at the <arg fmt="%s" index="6">DCM_ADV</arg> output(s): 
+<arg fmt="%s" index="7">CLKDV</arg>: <arg fmt="%s" index="8">&lt;TIMESPEC TS_A_CRG_CLKDV_BUF_0 = PERIOD &quot;A_CRG_CLKDV_BUF_0&quot; TS_sys_clk_pin / 2 HIGH 50%&gt;</arg>
+</msg>
+
+<msg type="info" file="ConstraintSystem" num="178" delta="unknown" ><arg fmt="%s" index="1">TNM</arg> &apos;<arg fmt="%s" index="2">sys_clk_pin</arg>&apos;, used in period specification &apos;<arg fmt="%s" index="3">TS_sys_clk_pin</arg>&apos;, was traced into <arg fmt="%s" index="4">DCM_ADV</arg> instance <arg fmt="%s" index="5">A_CRG/DCM_ADV_INST</arg>. The following new TNM groups and period specifications were generated at the <arg fmt="%s" index="6">DCM_ADV</arg> output(s): 
+<arg fmt="%s" index="7">CLKFX</arg>: <arg fmt="%s" index="8">&lt;TIMESPEC TS_A_CRG_CLKFX_BUF_2 = PERIOD &quot;A_CRG_CLKFX_BUF_2&quot; TS_sys_clk_pin * 0.75 HIGH 50%&gt;</arg>
+</msg>
+
+<msg type="warning" file="ConstraintSystem" num="194" delta="unknown" >The <arg fmt="%s" index="1">TNM</arg> &apos;<arg fmt="%s" index="2">CLK_33MHZ_FPGA</arg>&apos;, does not directly or indirectly drive any flip-flops, latches and/or RAMs and is not actively used by any referencing constraint.
+ </msg>
+
+<msg type="warning" file="NgdBuild" num="1012" delta="unknown" >The constraint <arg fmt="%s" index="1">&lt;NET: UniqueName: /fpga_top/EXPANDED/I2C_SDA_DVI PULLUP&gt;</arg> is overridden on the design object <arg fmt="%s" index="2">I2C_SDA_DVI</arg> by the constraint <arg fmt="%s" index="3">&lt;Net I2C_SDA_DVI PULLUP;&gt; [/home/jikken17/FPGA_TOP/fpga/fpga_top.ucf(71)]</arg>.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="1012" delta="unknown" >The constraint <arg fmt="%s" index="1">&lt;NET: UniqueName: /fpga_top/EXPANDED/I2C_SCL_DVI PULLUP&gt;</arg> is overridden on the design object <arg fmt="%s" index="2">I2C_SCL_DVI</arg> by the constraint <arg fmt="%s" index="3">&lt;Net I2C_SCL_DVI PULLUP;&gt; [/home/jikken17/FPGA_TOP/fpga/fpga_top.ucf(65)]</arg>.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="1012" delta="unknown" >The constraint <arg fmt="%s" index="1">&lt;Net TP&lt;0&gt; LOC = N4  |&gt; [/home/jikken17/FPGA_TOP/fpga/fpga_top.ucf(75)]</arg> is overridden on the design object <arg fmt="%s" index="2">TP&lt;0&gt;</arg> by the constraint <arg fmt="%s" index="3">&lt;Net TP&lt;0&gt; LOC = E13  |&gt; [/home/jikken17/FPGA_TOP/fpga/fpga_top.ucf(79)]</arg>.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="1012" delta="unknown" >The constraint <arg fmt="%s" index="1">&lt;IOSTANDARD=LVCMOS33  |&gt; [/home/jikken17/FPGA_TOP/fpga/fpga_top.ucf(75)]</arg> is overridden on the design object <arg fmt="%s" index="2">TP&lt;0&gt;</arg> by the constraint <arg fmt="%s" index="3">&lt;IOSTANDARD=LVCMOS25  |&gt; [/home/jikken17/FPGA_TOP/fpga/fpga_top.ucf(79)]</arg>.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="1012" delta="unknown" >The constraint <arg fmt="%s" index="1">&lt;Net TP&lt;1&gt; LOC = P5  |&gt; [/home/jikken17/FPGA_TOP/fpga/fpga_top.ucf(76)]</arg> is overridden on the design object <arg fmt="%s" index="2">TP&lt;1&gt;</arg> by the constraint <arg fmt="%s" index="3">&lt;Net TP&lt;1&gt; LOC = D14  |&gt; [/home/jikken17/FPGA_TOP/fpga/fpga_top.ucf(80)]</arg>.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="1012" delta="unknown" >The constraint <arg fmt="%s" index="1">&lt;IOSTANDARD=LVCMOS33  |&gt; [/home/jikken17/FPGA_TOP/fpga/fpga_top.ucf(76)]</arg> is overridden on the design object <arg fmt="%s" index="2">TP&lt;1&gt;</arg> by the constraint <arg fmt="%s" index="3">&lt;IOSTANDARD=LVCMOS25  |&gt; [/home/jikken17/FPGA_TOP/fpga/fpga_top.ucf(80)]</arg>.
+</msg>
+
+<msg type="info" file="NgdBuild" num="1222" delta="unknown" >Setting <arg fmt="%s" index="1">CLKIN_PERIOD</arg> attribute associated with <arg fmt="%s" index="2">DCM</arg> instance <arg fmt="%s" index="3">A_CRG/DCM_ADV_INST</arg> to <arg fmt="%s" index="4">10.000000</arg> ns based on the period specification (<arg fmt="%s" index="5">&lt;TIMESPEC TS_sys_clk_pin = PERIOD sys_clk_pin 100000 kHz;&gt; [/home/jikken17/FPGA_TOP/fpga/fpga_top.ucf(3)]</arg>).
+</msg>
+
+<msg type="warning" file="NgdBuild" num="486" delta="unknown" >Attribute &quot;<arg fmt="%s" index="1">CLK_FEEDBACK</arg>&quot; is not allowed on symbol &quot;<arg fmt="%s" index="2">A_LCD/pll2/PLL_ADV_INST</arg>&quot; of type &quot;<arg fmt="%s" index="3">PLL_ADV</arg>&quot;.  This attribute will be ignored.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="486" delta="unknown" >Attribute &quot;<arg fmt="%s" index="1">CLK_FEEDBACK</arg>&quot; is not allowed on symbol &quot;<arg fmt="%s" index="2">A_LCD/pll/PLL_ADV_INST</arg>&quot; of type &quot;<arg fmt="%s" index="3">PLL_ADV</arg>&quot;.  This attribute will be ignored.
+</msg>
+
+</messages>
+

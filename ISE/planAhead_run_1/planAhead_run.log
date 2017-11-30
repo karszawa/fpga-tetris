@@ -1,0 +1,53 @@
+
+****** PlanAhead v11.3
+  **** Build 48858 by hdbuild on Fri Aug 21 18:43:38 PDT 2009
+    ** Copyright 1986-1999, 2001-2009 Xilinx, Inc. All Rights Reserved.
+
+INFO: [HD-Licensing 0] Attempting to get a license: PlanAhead
+INFO: [HD-Licensing 1] Got a license: PlanAhead
+INFO: [HD-Licensing 3] Your PlanAhead license expires in -1793 day(s)
+INFO: [HD-ArchReader 11] Loading parts and site information from /mnt/cad/Xilinx/11.1/PlanAhead/parts/arch.xml
+INFO: [HD-RTPRIM 0] Parsing RTL primitives file '/mnt/cad/Xilinx/11.1/PlanAhead/parts/xilinx/rtl/prims/rtl_prims.xml'
+INFO: [HD-RTPRIM 1] Finished Parsing RTL primitives file '/mnt/cad/Xilinx/11.1/PlanAhead/parts/xilinx/rtl/prims/rtl_prims.xml'
+INFO: [HD-Application 1] Opened log file /home/jikken17/FPGA_TOP/ISE//home/jikken17/FPGA_TOP/ISE/planAhead_run_1/planAhead.log
+INFO: [HD-Application 2] Opened journal file /home/jikken17/FPGA_TOP/ISE//home/jikken17/FPGA_TOP/ISE/planAhead_run_1/planAhead.jou
+INFO: [HD-RTPRIM 0] Parsing template file '/mnt/cad/Xilinx/11.1/ISE/data/projnav/templates/verilog.xml'
+INFO: [HD-RTPRIM 1] Finished parsing template file '/mnt/cad/Xilinx/11.1/ISE/data/projnav/templates/verilog.xml'
+INFO: [HD-RTPRIM 0] Parsing template file '/mnt/cad/Xilinx/11.1/ISE/data/projnav/templates/vhdl.xml'
+INFO: [HD-RTPRIM 1] Finished parsing template file '/mnt/cad/Xilinx/11.1/ISE/data/projnav/templates/vhdl.xml'
+INFO: [HD-RTPRIM 0] Parsing template file '/mnt/cad/Xilinx/11.1/ISE/data/projnav/templates/ucf.xml'
+INFO: [HD-RTPRIM 1] Finished parsing template file '/mnt/cad/Xilinx/11.1/ISE/data/projnav/templates/ucf.xml'
+Release 11.1 - ngc2edif L.57 (lin64)
+Copyright (c) 1995-2009 Xilinx, Inc.  All rights reserved.
+
+Release 11.1 - ngc2edif L.57 (lin64)
+Copyright (c) 1995-2009 Xilinx, Inc.  All rights reserved.
+Reading design fpga_top.ngc ...
+WARNING:NetListWriters:298 - No output is written to fpga_top.xncf, ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+WARNING:NetListWriters:306 - Signal bus
+   A_AUDIO/A0_IF/Madd_cnt_audio_sync_addsub0000_cy<4 : 1> on block fpga_top is
+   not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus A_AUDIO/A0_IF/data_out<255 : 160> on
+   block fpga_top is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus
+   A_DVI_TELE_TXRX/A_CPG/Madd_cnt_color_b_mux0000_cy<5 : 1> on block fpga_top is
+   not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   A_DVI_TELE_TXRX/A_CPG/Madd_cnt_color_g_mux0000_cy<5 : 1> on block fpga_top is
+   not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   A_DVI_TELE_TXRX/A_CPG/Msub_cnt_color_r_mux0000_cy<5 : 1> on block fpga_top is
+   not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   A_DVI_TELE_TXRX/A_DVI/DVIInit/I2CControl/Master/LastState<7 : 1> on block
+   fpga_top is not reconstructed, because there are some missing bus signals.
+  finished :Prep
+Writing EDIF netlist file fpga_top.edif ...
+ngc2edif: Total memory usage is 79864 kilobytes
+
+INFO: [HD-Application 0] Exiting PlanAhead...
+INFO: [HD-Licensing 2] Releasing license: PlanAhead

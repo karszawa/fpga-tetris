@@ -1,0 +1,8 @@
+#!/usr/bin/csh
+
+rm display_1024x768_*.ppm
+rm -rf ./work/*
+rm -rf ./tb.shm/*.trn
+rm -rf ./tb.shm/*.dsn
+rm -rf ./.nfs*
+

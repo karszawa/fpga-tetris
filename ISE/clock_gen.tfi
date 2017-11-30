@@ -1,0 +1,13 @@
+
+
+
+// Instantiate the module
+clock_gen instance_name (
+    .CLKIN_IN(CLKIN_IN), 
+    .USER_RST_IN(USER_RST_IN), 
+    .CLKFX_OUT(CLKFX_OUT), 
+    .CLKIN_IBUFG_OUT(CLKIN_IBUFG_OUT), 
+    .CLK0_OUT(CLK0_OUT)
+    );
+
+

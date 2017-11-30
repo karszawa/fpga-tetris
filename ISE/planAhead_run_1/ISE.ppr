@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<Project Version="3" Minor="4">
+	<MacroFamily Arch="virtex5" Part="xc5vlx50ff676-1"/>
+	<NetlistH Dir="netlists/netlist_1" File="nlh.xml" State="current">
+		<FloorplanH Dir="floorplans/floorplan_1" File="pfi.xml" State="open"/>
+	</NetlistH>
+	<DefaultLaunch Dir="$PRUNDIR"/>
+	<DefaultPromote Dir="$PROMOTEDIR"/>
+</Project>
+

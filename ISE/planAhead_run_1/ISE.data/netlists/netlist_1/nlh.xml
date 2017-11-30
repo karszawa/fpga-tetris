@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<NetlistInfo Version="1" Minor="6">
+	<NetlistHandle Name="netlist_1" TargetPart="xc5vlx50ff676-1" TopFile="fpga_top.edf">
+		<Search Path="/home/jikken17/FPGA_TOP/ISE"/>
+	</NetlistHandle>
+</NetlistInfo>
+

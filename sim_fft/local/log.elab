@@ -1,0 +1,41 @@
+ncelab(64): 08.20-s026: (c) Copyright 1995-2010 Cadence Design Systems, Inc.
+	Elaborating the design hierarchy:
+		Caching library 'work' ....... Done
+	Building instance overlay tables: .................... Done
+	Generating native compiled code:
+		work.COMPLEX_ADDER:module <0x72d0f751>
+			streams:   5, words:   905
+		work.COMPLEX_SUBTRACTOR:module <0x73a9cd94>
+			streams:   5, words:   917
+		work.CONTROLLER:module <0x2ba912bb>
+			streams:   4, words:  1455
+		work.FF32:module <0x408b88f7>
+			streams:   2, words:   319
+		work.FFT16:module <0x655c8692>
+			streams:   7, words:  2299
+		work.FFT16_SEQUENTIAL:module <0x4be0c95e>
+			streams:  18, words:  8190
+		work.J_MULTIPLIER:module <0x43651b04>
+			streams:   2, words:   396
+		work.RADIX4:module <0x1644f1ea>
+			streams:   1, words:   106
+		work.TWIDDLER:module <0x4d2c80aa>
+			streams:   4, words:  1088
+		work.crg:module <0x7615167b>
+			streams:  54, words: 16662
+		work.tb:module <0x124c00a0>
+			streams:   6, words:  1314
+	Loading native compiled code:     .................... Done
+	Building instance specific data structures.
+	Design hierarchy summary:
+		                 Instances  Unique
+		Modules:               125      11
+		Registers:              82      67
+		Scalar wires:           52       -
+		Vectored wires:        724       -
+		Always blocks:          40      25
+		Initial blocks:         10      10
+		Cont. assignments:     448      43
+		Pseudo assignments:     24      24
+		Simulation timescale:  1ps
+	Writing initial simulation snapshot: work.tb:module
