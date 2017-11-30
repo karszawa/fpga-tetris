@@ -379,11 +379,6 @@ move_rect A_RECT (
 .i_button_w			(BUTTON_W		),//i
 .i_button_s			(BUTTON_S		),//i
 .i_button_n			(BUTTON_N		),//i
-.i_mouse_valid		(mouse_valid	),//i
-.i_rect_pos_x		(rect_pos_x		),//i[12-1: 0]	
-.i_rect_pos_y		(rect_pos_y		),//i[12-1: 0]	
-.i_mouse_dif_x		(mouse_dif_x	),//i[ 9-1: 0]	
-.i_mouse_dif_y		(mouse_dif_y	),//i[ 9-1: 0]	
 .o_sync_vs			(o_rect_vs		),//o
 .o_sync_hs			(o_rect_hs		),//o
 .o_sync_va			(o_rect_va		),//o

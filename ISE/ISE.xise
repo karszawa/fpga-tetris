@@ -226,6 +226,10 @@
       <association xil_pn:name="BehavioralSimulation"/>
       <association xil_pn:name="Implementation"/>
     </file>
+    <file xil_pn:name="update_position.v" xil_pn:type="FILE_VERILOG">
+      <association xil_pn:name="BehavioralSimulation"/>
+      <association xil_pn:name="Implementation"/>
+    </file>
   </files>
 
   <properties>
@@ -284,7 +288,7 @@
     <property xil_pn:name="Configuration Pin RdWr" xil_pn:value="Pull Up" xil_pn:valueState="default"/>
     <property xil_pn:name="Configuration Rate" xil_pn:value="2" xil_pn:valueState="default"/>
     <property xil_pn:name="Constraint File Name" xil_pn:value="" xil_pn:valueState="default"/>
-    <property xil_pn:name="Constraints Entry" xil_pn:value="Floorplan Editor" xil_pn:valueState="default"/>
+    <property xil_pn:name="Constraints Entry" xil_pn:value="Constraints Editor" xil_pn:valueState="non-default"/>
     <property xil_pn:name="Constraints Interaction Report File" xil_pn:value="" xil_pn:valueState="default"/>
     <property xil_pn:name="Constraints Interaction Report File Post Trace" xil_pn:value="" xil_pn:valueState="default"/>
     <property xil_pn:name="Convert Tristates To Logic" xil_pn:value="Yes" xil_pn:valueState="default"/>
@@ -353,7 +357,7 @@
     <property xil_pn:name="Fallback Reconfiguration" xil_pn:value="Enable" xil_pn:valueState="default"/>
     <property xil_pn:name="Fanout Guide" xil_pn:value="100" xil_pn:valueState="default"/>
     <property xil_pn:name="Filter Files From Compile Order" xil_pn:value="true" xil_pn:valueState="default"/>
-    <property xil_pn:name="Fitter Report Format" xil_pn:value="Text" xil_pn:valueState="default"/>
+    <property xil_pn:name="Fitter Report Format" xil_pn:value="HTML" xil_pn:valueState="non-default"/>
     <property xil_pn:name="Flatten Output Netlist" xil_pn:value="false" xil_pn:valueState="default"/>
     <property xil_pn:name="Flow Debug Level" xil_pn:value="0" xil_pn:valueState="default"/>
     <property xil_pn:name="Frequency" xil_pn:value="0.0" xil_pn:valueState="default"/>

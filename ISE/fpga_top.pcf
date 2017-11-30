@@ -1,24 +1,8 @@
 //! **************************************************************************
-// Written by: Map L.57 on Tue Nov 28 16:53:06 2017
+// Written by: Map L.57 on Thu Nov 30 16:43:03 2017
 //! **************************************************************************
 
 SCHEMATIC START;
-COMP "MOUSE_CLK" LOCATE = SITE "L2" LEVEL 1;
-COMP "LCD_DATA<0>" LOCATE = SITE "R6" LEVEL 1;
-COMP "LCD_DATA<1>" LOCATE = SITE "T3" LEVEL 1;
-COMP "LCD_DATA<2>" LOCATE = SITE "R3" LEVEL 1;
-COMP "LCD_DATA<3>" LOCATE = SITE "P4" LEVEL 1;
-COMP "MOUSE_DATA" LOCATE = SITE "K1" LEVEL 1;
-COMP "clk" LOCATE = SITE "AD8" LEVEL 1;
-COMP "flash_audio_reset_b" LOCATE = SITE "AD10" LEVEL 1;
-COMP "LED_C" LOCATE = SITE "T22" LEVEL 1;
-COMP "LED_E" LOCATE = SITE "Y18" LEVEL 1;
-COMP "LED_N" LOCATE = SITE "Y8" LEVEL 1;
-COMP "LED_S" LOCATE = SITE "AA8" LEVEL 1;
-COMP "LED_W" LOCATE = SITE "AA18" LEVEL 1;
-COMP "DVI_H" LOCATE = SITE "C19" LEVEL 1;
-COMP "DVI_V" LOCATE = SITE "D19" LEVEL 1;
-COMP "TP<0>" LOCATE = SITE "E13" LEVEL 1;
 COMP "TP<1>" LOCATE = SITE "D14" LEVEL 1;
 COMP "TP<2>" LOCATE = SITE "E12" LEVEL 1;
 COMP "TP<3>" LOCATE = SITE "F12" LEVEL 1;
@@ -76,6 +60,22 @@ COMP "I2C_SCL_DVI" LOCATE = SITE "D21" LEVEL 1;
 COMP "CLK_27MHZ_FPGA" LOCATE = SITE "AD13" LEVEL 1;
 COMP "TELE_RX" LOCATE = SITE "AB26" LEVEL 1;
 COMP "TELE_TX" LOCATE = SITE "P21" LEVEL 1;
+COMP "MOUSE_CLK" LOCATE = SITE "L2" LEVEL 1;
+COMP "LCD_DATA<0>" LOCATE = SITE "R6" LEVEL 1;
+COMP "LCD_DATA<1>" LOCATE = SITE "T3" LEVEL 1;
+COMP "LCD_DATA<2>" LOCATE = SITE "R3" LEVEL 1;
+COMP "LCD_DATA<3>" LOCATE = SITE "P4" LEVEL 1;
+COMP "MOUSE_DATA" LOCATE = SITE "K1" LEVEL 1;
+COMP "clk" LOCATE = SITE "AD8" LEVEL 1;
+COMP "flash_audio_reset_b" LOCATE = SITE "AD10" LEVEL 1;
+COMP "LED_C" LOCATE = SITE "T22" LEVEL 1;
+COMP "LED_E" LOCATE = SITE "Y18" LEVEL 1;
+COMP "LED_N" LOCATE = SITE "Y8" LEVEL 1;
+COMP "LED_S" LOCATE = SITE "AA8" LEVEL 1;
+COMP "LED_W" LOCATE = SITE "AA18" LEVEL 1;
+COMP "DVI_H" LOCATE = SITE "C19" LEVEL 1;
+COMP "DVI_V" LOCATE = SITE "D19" LEVEL 1;
+COMP "TP<0>" LOCATE = SITE "E13" LEVEL 1;
 TIMEGRP A_CRG_CLKDV_BUF = BEL "A_PS2_KEY_MOUSE/A1_KEYBOARD/ps2_clk_reg" BEL
         "A_PS2_KEY_MOUSE/A1_KEYBOARD/ps2_data_reg" BEL
         "A_PS2_KEY_MOUSE/A1_KEYBOARD/last_ps2_clk" BEL
@@ -640,7 +640,7 @@ TIMEGRP A_CRG_CLKFX_BUF = BEL
         "A_DVI_TELE_TXRX/A_TELE_TX/cnt_idle_2" BEL
         "A_DVI_TELE_TXRX/A_TELE_TX/cnt_idle_1" BEL
         "A_DVI_TELE_TXRX/A_TELE_TX/cnt_idle_0" BEL
-        "A_DVI_TELE_TXRX/DISP_MODE_0" BEL "A_DVI_TELE_TXRX/DISP_MODE_1" BEL
+        "A_DVI_TELE_TXRX/DISP_MODE_1" BEL "A_DVI_TELE_TXRX/DISP_MODE_0" BEL
         "A_DVI_TELE_TXRX/A_TELE_TX/r_addr_6" BEL
         "A_DVI_TELE_TXRX/A_TELE_TX/r_addr_5" BEL
         "A_DVI_TELE_TXRX/A_TELE_TX/r_addr_4" BEL
@@ -648,16 +648,6 @@ TIMEGRP A_CRG_CLKFX_BUF = BEL
         "A_DVI_TELE_TXRX/A_TELE_TX/r_addr_2" BEL
         "A_DVI_TELE_TXRX/A_TELE_TX/r_addr_1" BEL
         "A_DVI_TELE_TXRX/A_TELE_TX/r_addr_0" BEL
-        "A_DVI_TELE_TXRX/A_RECT/A1_SYNC/r_cnt_v_9" BEL
-        "A_DVI_TELE_TXRX/A_RECT/A1_SYNC/r_cnt_v_8" BEL
-        "A_DVI_TELE_TXRX/A_RECT/A1_SYNC/r_cnt_v_7" BEL
-        "A_DVI_TELE_TXRX/A_RECT/A1_SYNC/r_cnt_v_6" BEL
-        "A_DVI_TELE_TXRX/A_RECT/A1_SYNC/r_cnt_v_5" BEL
-        "A_DVI_TELE_TXRX/A_RECT/A1_SYNC/r_cnt_v_4" BEL
-        "A_DVI_TELE_TXRX/A_RECT/A1_SYNC/r_cnt_v_3" BEL
-        "A_DVI_TELE_TXRX/A_RECT/A1_SYNC/r_cnt_v_2" BEL
-        "A_DVI_TELE_TXRX/A_RECT/A1_SYNC/r_cnt_v_1" BEL
-        "A_DVI_TELE_TXRX/A_RECT/A1_SYNC/r_cnt_v_0" BEL
         "A_DVI_TELE_TXRX/A_DISPLAY/A0_SYNC_GEN/r_cnt_h_10" BEL
         "A_DVI_TELE_TXRX/A_DISPLAY/A0_SYNC_GEN/r_cnt_h_9" BEL
         "A_DVI_TELE_TXRX/A_DISPLAY/A0_SYNC_GEN/r_cnt_h_8" BEL
@@ -669,17 +659,6 @@ TIMEGRP A_CRG_CLKFX_BUF = BEL
         "A_DVI_TELE_TXRX/A_DISPLAY/A0_SYNC_GEN/r_cnt_h_2" BEL
         "A_DVI_TELE_TXRX/A_DISPLAY/A0_SYNC_GEN/r_cnt_h_1" BEL
         "A_DVI_TELE_TXRX/A_DISPLAY/A0_SYNC_GEN/r_cnt_h_0" BEL
-        "A_DVI_TELE_TXRX/A_RECT/A1_SYNC/r_cnt_h_10" BEL
-        "A_DVI_TELE_TXRX/A_RECT/A1_SYNC/r_cnt_h_9" BEL
-        "A_DVI_TELE_TXRX/A_RECT/A1_SYNC/r_cnt_h_8" BEL
-        "A_DVI_TELE_TXRX/A_RECT/A1_SYNC/r_cnt_h_7" BEL
-        "A_DVI_TELE_TXRX/A_RECT/A1_SYNC/r_cnt_h_6" BEL
-        "A_DVI_TELE_TXRX/A_RECT/A1_SYNC/r_cnt_h_5" BEL
-        "A_DVI_TELE_TXRX/A_RECT/A1_SYNC/r_cnt_h_4" BEL
-        "A_DVI_TELE_TXRX/A_RECT/A1_SYNC/r_cnt_h_3" BEL
-        "A_DVI_TELE_TXRX/A_RECT/A1_SYNC/r_cnt_h_2" BEL
-        "A_DVI_TELE_TXRX/A_RECT/A1_SYNC/r_cnt_h_1" BEL
-        "A_DVI_TELE_TXRX/A_RECT/A1_SYNC/r_cnt_h_0" BEL
         "A_DVI_TELE_TXRX/A_DISPLAY/A0_SYNC_GEN/r_cnt_v_9" BEL
         "A_DVI_TELE_TXRX/A_DISPLAY/A0_SYNC_GEN/r_cnt_v_8" BEL
         "A_DVI_TELE_TXRX/A_DISPLAY/A0_SYNC_GEN/r_cnt_v_7" BEL
@@ -714,11 +693,6 @@ TIMEGRP A_CRG_CLKFX_BUF = BEL
         "A_DVI_TELE_TXRX/A_TELE_TX/cnt_run_2" BEL
         "A_DVI_TELE_TXRX/A_TELE_TX/cnt_run_1" BEL
         "A_DVI_TELE_TXRX/A_TELE_TX/cnt_run_0" BEL
-        "A_DVI_TELE_TXRX/A_RECT/A1_SYNC/o_sync_vs" BEL
-        "A_DVI_TELE_TXRX/A_RECT/A1_SYNC/o_sync_hs" BEL
-        "A_DVI_TELE_TXRX/A_RECT/A1_SYNC/o_sync_va" BEL
-        "A_DVI_TELE_TXRX/A_RECT/A1_SYNC/o_sync_ha" BEL
-        "A_DVI_TELE_TXRX/A_RECT/A1_SYNC/o_sync_de" BEL
         "A_DVI_TELE_TXRX/A_DISPLAY/A0_SYNC_GEN/o_sync_vs" BEL
         "A_DVI_TELE_TXRX/A_DISPLAY/A0_SYNC_GEN/o_sync_hs" BEL
         "A_DVI_TELE_TXRX/A_DISPLAY/A0_SYNC_GEN/o_sync_va" BEL
@@ -932,38 +906,6 @@ TIMEGRP A_CRG_CLKFX_BUF = BEL
         "A_DVI_TELE_TXRX/A_DVI/DVIInit/I2CControl/InLatch/Value/Out_2" BEL
         "A_DVI_TELE_TXRX/A_DVI/DVIInit/I2CControl/InLatch/Value/Out_1" BEL
         "A_DVI_TELE_TXRX/A_DVI/DVIInit/I2CControl/InLatch/Value/Out_0" BEL
-        "A_DVI_TELE_TXRX/A_RECT/A2_DRAW/r_cnt_y_10" BEL
-        "A_DVI_TELE_TXRX/A_RECT/A2_DRAW/r_cnt_y_9" BEL
-        "A_DVI_TELE_TXRX/A_RECT/A2_DRAW/r_cnt_y_8" BEL
-        "A_DVI_TELE_TXRX/A_RECT/A2_DRAW/r_cnt_y_7" BEL
-        "A_DVI_TELE_TXRX/A_RECT/A2_DRAW/r_cnt_y_6" BEL
-        "A_DVI_TELE_TXRX/A_RECT/A2_DRAW/r_cnt_y_5" BEL
-        "A_DVI_TELE_TXRX/A_RECT/A2_DRAW/r_cnt_y_4" BEL
-        "A_DVI_TELE_TXRX/A_RECT/A2_DRAW/r_cnt_y_3" BEL
-        "A_DVI_TELE_TXRX/A_RECT/A2_DRAW/r_cnt_y_2" BEL
-        "A_DVI_TELE_TXRX/A_RECT/A2_DRAW/r_cnt_y_1" BEL
-        "A_DVI_TELE_TXRX/A_RECT/A2_DRAW/r_cnt_y_0" BEL
-        "A_DVI_TELE_TXRX/A_RECT/A2_DRAW/r_cnt_x_10" BEL
-        "A_DVI_TELE_TXRX/A_RECT/A2_DRAW/r_cnt_x_9" BEL
-        "A_DVI_TELE_TXRX/A_RECT/A2_DRAW/r_cnt_x_8" BEL
-        "A_DVI_TELE_TXRX/A_RECT/A2_DRAW/r_cnt_x_7" BEL
-        "A_DVI_TELE_TXRX/A_RECT/A2_DRAW/r_cnt_x_6" BEL
-        "A_DVI_TELE_TXRX/A_RECT/A2_DRAW/r_cnt_x_5" BEL
-        "A_DVI_TELE_TXRX/A_RECT/A2_DRAW/r_cnt_x_4" BEL
-        "A_DVI_TELE_TXRX/A_RECT/A2_DRAW/r_cnt_x_3" BEL
-        "A_DVI_TELE_TXRX/A_RECT/A2_DRAW/r_cnt_x_2" BEL
-        "A_DVI_TELE_TXRX/A_RECT/A2_DRAW/r_cnt_x_1" BEL
-        "A_DVI_TELE_TXRX/A_RECT/A2_DRAW/r_cnt_x_0" BEL
-        "A_DVI_TELE_TXRX/A_RECT/A2_DRAW/area_2" BEL
-        "A_DVI_TELE_TXRX/A_RECT/A2_DRAW/area_1" BEL
-        "A_DVI_TELE_TXRX/A_RECT/A2_DRAW/o_sync_red_6" BEL
-        "A_DVI_TELE_TXRX/A_RECT/A2_DRAW/o_sync_red_3" BEL
-        "A_DVI_TELE_TXRX/A_RECT/A2_DRAW/o_sync_red_2" BEL
-        "A_DVI_TELE_TXRX/A_RECT/A2_DRAW/o_sync_de" BEL
-        "A_DVI_TELE_TXRX/A_RECT/A2_DRAW/o_sync_ha" BEL
-        "A_DVI_TELE_TXRX/A_RECT/A2_DRAW/o_sync_va" BEL
-        "A_DVI_TELE_TXRX/A_RECT/A2_DRAW/o_sync_hs" BEL
-        "A_DVI_TELE_TXRX/A_RECT/A2_DRAW/o_sync_vs" BEL
         "A_DVI_TELE_TXRX/A_DVI/DVIInit/I2CControl/Master/SDAShft/SHIFT.Register/Out_0"
         BEL
         "A_DVI_TELE_TXRX/A_DVI/DVIInit/I2CControl/Master/SDAShft/SHIFT.Register/Out_1"
@@ -2046,6 +1988,86 @@ TIMEGRP A_CRG_CLKFX_BUF = BEL
         "A_DVI_TELE_TXRX/A_DISPLAY/A1_DISP_DIGIT/r_cnt_clmn_2" BEL
         "A_DVI_TELE_TXRX/A_DISPLAY/A1_DISP_DIGIT/r_cnt_clmn_1" BEL
         "A_DVI_TELE_TXRX/A_DISPLAY/A1_DISP_DIGIT/r_cnt_clmn_0" BEL
+        "A_DVI_TELE_TXRX/A_RECT/A2_DRAW/o_sync_vs" BEL
+        "A_DVI_TELE_TXRX/A_RECT/A2_DRAW/o_sync_hs" BEL
+        "A_DVI_TELE_TXRX/A_RECT/A2_DRAW/o_sync_de" BEL
+        "A_DVI_TELE_TXRX/A_RECT/A2_DRAW/o_sync_va" BEL
+        "A_DVI_TELE_TXRX/A_RECT/A2_DRAW/o_sync_ha" BEL
+        "A_DVI_TELE_TXRX/A_RECT/A2_DRAW/o_sync_red_3" BEL
+        "A_DVI_TELE_TXRX/A_RECT/A2_DRAW/o_sync_blu_2" BEL
+        "A_DVI_TELE_TXRX/A_RECT/A2_DRAW/o_sync_blu_6" BEL
+        "A_DVI_TELE_TXRX/A_RECT/A2_DRAW/area_3" BEL
+        "A_DVI_TELE_TXRX/A_RECT/A2_DRAW/area_1" BEL
+        "A_DVI_TELE_TXRX/A_RECT/A2_DRAW/r_cnt_x_0" BEL
+        "A_DVI_TELE_TXRX/A_RECT/A2_DRAW/r_cnt_x_1" BEL
+        "A_DVI_TELE_TXRX/A_RECT/A2_DRAW/r_cnt_x_2" BEL
+        "A_DVI_TELE_TXRX/A_RECT/A2_DRAW/r_cnt_x_3" BEL
+        "A_DVI_TELE_TXRX/A_RECT/A2_DRAW/r_cnt_x_4" BEL
+        "A_DVI_TELE_TXRX/A_RECT/A2_DRAW/r_cnt_x_5" BEL
+        "A_DVI_TELE_TXRX/A_RECT/A2_DRAW/r_cnt_x_6" BEL
+        "A_DVI_TELE_TXRX/A_RECT/A2_DRAW/r_cnt_x_7" BEL
+        "A_DVI_TELE_TXRX/A_RECT/A2_DRAW/r_cnt_x_8" BEL
+        "A_DVI_TELE_TXRX/A_RECT/A2_DRAW/r_cnt_x_9" BEL
+        "A_DVI_TELE_TXRX/A_RECT/A2_DRAW/r_cnt_x_10" BEL
+        "A_DVI_TELE_TXRX/A_RECT/A2_DRAW/r_cnt_y_0" BEL
+        "A_DVI_TELE_TXRX/A_RECT/A2_DRAW/r_cnt_y_1" BEL
+        "A_DVI_TELE_TXRX/A_RECT/A2_DRAW/r_cnt_y_2" BEL
+        "A_DVI_TELE_TXRX/A_RECT/A2_DRAW/r_cnt_y_3" BEL
+        "A_DVI_TELE_TXRX/A_RECT/A2_DRAW/r_cnt_y_4" BEL
+        "A_DVI_TELE_TXRX/A_RECT/A2_DRAW/r_cnt_y_5" BEL
+        "A_DVI_TELE_TXRX/A_RECT/A2_DRAW/r_cnt_y_6" BEL
+        "A_DVI_TELE_TXRX/A_RECT/A2_DRAW/r_cnt_y_7" BEL
+        "A_DVI_TELE_TXRX/A_RECT/A2_DRAW/r_cnt_y_8" BEL
+        "A_DVI_TELE_TXRX/A_RECT/A2_DRAW/r_cnt_y_9" BEL
+        "A_DVI_TELE_TXRX/A_RECT/A2_DRAW/r_cnt_y_10" BEL
+        "A_DVI_TELE_TXRX/A_RECT/blk_pos_x_9" BEL
+        "A_DVI_TELE_TXRX/A_RECT/blk_pos_x_8" BEL
+        "A_DVI_TELE_TXRX/A_RECT/blk_pos_x_7" BEL
+        "A_DVI_TELE_TXRX/A_RECT/blk_pos_x_6" BEL
+        "A_DVI_TELE_TXRX/A_RECT/blk_pos_x_5" BEL
+        "A_DVI_TELE_TXRX/A_RECT/blk_pos_x_4" BEL
+        "A_DVI_TELE_TXRX/A_RECT/blk_pos_x_3" BEL
+        "A_DVI_TELE_TXRX/A_RECT/blk_pos_x_2" BEL
+        "A_DVI_TELE_TXRX/A_RECT/blk_pos_x_1" BEL
+        "A_DVI_TELE_TXRX/A_RECT/blk_pos_x_0" BEL
+        "A_DVI_TELE_TXRX/A_RECT/blk_pos_y_9" BEL
+        "A_DVI_TELE_TXRX/A_RECT/blk_pos_y_8" BEL
+        "A_DVI_TELE_TXRX/A_RECT/blk_pos_y_7" BEL
+        "A_DVI_TELE_TXRX/A_RECT/blk_pos_y_6" BEL
+        "A_DVI_TELE_TXRX/A_RECT/blk_pos_y_5" BEL
+        "A_DVI_TELE_TXRX/A_RECT/blk_pos_y_4" BEL
+        "A_DVI_TELE_TXRX/A_RECT/blk_pos_y_3" BEL
+        "A_DVI_TELE_TXRX/A_RECT/blk_pos_y_2" BEL
+        "A_DVI_TELE_TXRX/A_RECT/blk_pos_y_1" BEL
+        "A_DVI_TELE_TXRX/A_RECT/blk_pos_y_0" BEL
+        "A_DVI_TELE_TXRX/A_RECT/A1_SYNC/r_cnt_h_10" BEL
+        "A_DVI_TELE_TXRX/A_RECT/A1_SYNC/r_cnt_h_9" BEL
+        "A_DVI_TELE_TXRX/A_RECT/A1_SYNC/r_cnt_h_8" BEL
+        "A_DVI_TELE_TXRX/A_RECT/A1_SYNC/r_cnt_h_7" BEL
+        "A_DVI_TELE_TXRX/A_RECT/A1_SYNC/r_cnt_h_6" BEL
+        "A_DVI_TELE_TXRX/A_RECT/A1_SYNC/r_cnt_h_5" BEL
+        "A_DVI_TELE_TXRX/A_RECT/A1_SYNC/r_cnt_h_4" BEL
+        "A_DVI_TELE_TXRX/A_RECT/A1_SYNC/r_cnt_h_3" BEL
+        "A_DVI_TELE_TXRX/A_RECT/A1_SYNC/r_cnt_h_2" BEL
+        "A_DVI_TELE_TXRX/A_RECT/A1_SYNC/r_cnt_h_1" BEL
+        "A_DVI_TELE_TXRX/A_RECT/A1_SYNC/r_cnt_h_0" BEL
+        "A_DVI_TELE_TXRX/A_RECT/A1_SYNC/r_cnt_v_9" BEL
+        "A_DVI_TELE_TXRX/A_RECT/A1_SYNC/r_cnt_v_8" BEL
+        "A_DVI_TELE_TXRX/A_RECT/A1_SYNC/r_cnt_v_7" BEL
+        "A_DVI_TELE_TXRX/A_RECT/A1_SYNC/r_cnt_v_6" BEL
+        "A_DVI_TELE_TXRX/A_RECT/A1_SYNC/r_cnt_v_5" BEL
+        "A_DVI_TELE_TXRX/A_RECT/A1_SYNC/r_cnt_v_4" BEL
+        "A_DVI_TELE_TXRX/A_RECT/A1_SYNC/r_cnt_v_3" BEL
+        "A_DVI_TELE_TXRX/A_RECT/A1_SYNC/r_cnt_v_2" BEL
+        "A_DVI_TELE_TXRX/A_RECT/A1_SYNC/r_cnt_v_1" BEL
+        "A_DVI_TELE_TXRX/A_RECT/A1_SYNC/r_cnt_v_0" BEL
+        "A_DVI_TELE_TXRX/A_RECT/A1_SYNC/o_sync_vs" BEL
+        "A_DVI_TELE_TXRX/A_RECT/A1_SYNC/o_sync_hs" BEL
+        "A_DVI_TELE_TXRX/A_RECT/A1_SYNC/o_sync_va" BEL
+        "A_DVI_TELE_TXRX/A_RECT/A1_SYNC/o_sync_ha" BEL
+        "A_DVI_TELE_TXRX/A_RECT/A1_SYNC/o_sync_de" BEL
+        "A_DVI_TELE_TXRX/A_RECT/block_rad_1" BEL
+        "A_DVI_TELE_TXRX/A_RECT/block_rad_0" BEL
         "A_DVI_TELE_TXRX/A_DVI/DVIInit/I2CCmdInit/SHIFT.VldShft/SHIFT.Register/Out_0"
         BEL
         "A_DVI_TELE_TXRX/A_DVI/DVIInit/I2CCmdInit/SHIFT.VldShft/SHIFT.Register/Out_1"
@@ -2232,6 +2254,16 @@ TIMEGRP A_CRG_CLKFX_BUF = BEL
         "A_DVI_TELE_TXRX/A_DVI/DVIInit/I2CDatInit/SHIFT.VldShft/SHIFT.Register/Out_5"
         BEL "A_DVI_TELE_TXRX/A_DVI/DVIInit/I2CDatInit/SHIFT.SprReg/Out_0" BEL
         "A_DVI_TELE_TXRX/A_DVI/DVIInit/I2CDatInit/SHIFT.LstValReg/Out_0" BEL
+        "A_DVI_TELE_TXRX/A_DVI/DVIData/PixCnt/RgnAX/FSM.State/Out_1" BEL
+        "A_DVI_TELE_TXRX/A_DVI/DVIData/PixCnt/RgnAX/FSM.State/Out_2" BEL
+        "A_DVI_TELE_TXRX/A_DVI/DVIData/PixCnt/RgnAY/FSM.State/Out_1" BEL
+        "A_DVI_TELE_TXRX/A_DVI/DVIData/PixCnt/RgnAY/FSM.State/Out_2" BEL
+        "A_DVI_TELE_TXRX/A_DVI/DVIData/PixCnt/RgnHS/FSM.State/Out_0" BEL
+        "A_DVI_TELE_TXRX/A_DVI/DVIData/PixCnt/RgnHS/FSM.State/Out_1" BEL
+        "A_DVI_TELE_TXRX/A_DVI/DVIData/PixCnt/RgnHS/FSM.State/Out_2" BEL
+        "A_DVI_TELE_TXRX/A_DVI/DVIData/PixCnt/RgnVS/FSM.State/Out_0" BEL
+        "A_DVI_TELE_TXRX/A_DVI/DVIData/PixCnt/RgnVS/FSM.State/Out_1" BEL
+        "A_DVI_TELE_TXRX/A_DVI/DVIData/PixCnt/RgnVS/FSM.State/Out_2" BEL
         "A_DVI_TELE_TXRX/A_DVI/DVIData/PixCnt/XCnt/Register/Out_10" BEL
         "A_DVI_TELE_TXRX/A_DVI/DVIData/PixCnt/XCnt/Register/Out_9" BEL
         "A_DVI_TELE_TXRX/A_DVI/DVIData/PixCnt/XCnt/Register/Out_8" BEL
@@ -2271,16 +2303,6 @@ TIMEGRP A_CRG_CLKFX_BUF = BEL
         "A_DVI_TELE_TXRX/A_DVI/DVIData/SyncBuf/Out_1" BEL
         "A_DVI_TELE_TXRX/A_DVI/DVIData/SyncBuf/Out_2" BEL
         "A_DVI_TELE_TXRX/A_DVI/DVIData/FVPReg/Out_0" BEL
-        "A_DVI_TELE_TXRX/A_DVI/DVIData/PixCnt/RgnAX/FSM.State/Out_1" BEL
-        "A_DVI_TELE_TXRX/A_DVI/DVIData/PixCnt/RgnAX/FSM.State/Out_2" BEL
-        "A_DVI_TELE_TXRX/A_DVI/DVIData/PixCnt/RgnAY/FSM.State/Out_1" BEL
-        "A_DVI_TELE_TXRX/A_DVI/DVIData/PixCnt/RgnAY/FSM.State/Out_2" BEL
-        "A_DVI_TELE_TXRX/A_DVI/DVIData/PixCnt/RgnHS/FSM.State/Out_0" BEL
-        "A_DVI_TELE_TXRX/A_DVI/DVIData/PixCnt/RgnHS/FSM.State/Out_1" BEL
-        "A_DVI_TELE_TXRX/A_DVI/DVIData/PixCnt/RgnHS/FSM.State/Out_2" BEL
-        "A_DVI_TELE_TXRX/A_DVI/DVIData/PixCnt/RgnVS/FSM.State/Out_0" BEL
-        "A_DVI_TELE_TXRX/A_DVI/DVIData/PixCnt/RgnVS/FSM.State/Out_1" BEL
-        "A_DVI_TELE_TXRX/A_DVI/DVIData/PixCnt/RgnVS/FSM.State/Out_2" BEL
         "A_DVI_TELE_TXRX/A_BUTTON/Mshreg_BUTTON_E_D_3" BEL
         "A_DVI_TELE_TXRX/A_BUTTON/BUTTON_E_D_3" BEL
         "A_DVI_TELE_TXRX/A_BUTTON/Mshreg_BUTTON_N_D_3" BEL
@@ -2345,7 +2367,7 @@ TIMEGRP A_CRG_CLKFX_BUF_1 = BEL
         "A_DVI_TELE_TXRX/A_TELE_TX/cnt_idle_2" BEL
         "A_DVI_TELE_TXRX/A_TELE_TX/cnt_idle_1" BEL
         "A_DVI_TELE_TXRX/A_TELE_TX/cnt_idle_0" BEL
-        "A_DVI_TELE_TXRX/DISP_MODE_0" BEL "A_DVI_TELE_TXRX/DISP_MODE_1" BEL
+        "A_DVI_TELE_TXRX/DISP_MODE_1" BEL "A_DVI_TELE_TXRX/DISP_MODE_0" BEL
         "A_DVI_TELE_TXRX/A_TELE_TX/r_addr_6" BEL
         "A_DVI_TELE_TXRX/A_TELE_TX/r_addr_5" BEL
         "A_DVI_TELE_TXRX/A_TELE_TX/r_addr_4" BEL
@@ -2353,16 +2375,6 @@ TIMEGRP A_CRG_CLKFX_BUF_1 = BEL
         "A_DVI_TELE_TXRX/A_TELE_TX/r_addr_2" BEL
         "A_DVI_TELE_TXRX/A_TELE_TX/r_addr_1" BEL
         "A_DVI_TELE_TXRX/A_TELE_TX/r_addr_0" BEL
-        "A_DVI_TELE_TXRX/A_RECT/A1_SYNC/r_cnt_v_9" BEL
-        "A_DVI_TELE_TXRX/A_RECT/A1_SYNC/r_cnt_v_8" BEL
-        "A_DVI_TELE_TXRX/A_RECT/A1_SYNC/r_cnt_v_7" BEL
-        "A_DVI_TELE_TXRX/A_RECT/A1_SYNC/r_cnt_v_6" BEL
-        "A_DVI_TELE_TXRX/A_RECT/A1_SYNC/r_cnt_v_5" BEL
-        "A_DVI_TELE_TXRX/A_RECT/A1_SYNC/r_cnt_v_4" BEL
-        "A_DVI_TELE_TXRX/A_RECT/A1_SYNC/r_cnt_v_3" BEL
-        "A_DVI_TELE_TXRX/A_RECT/A1_SYNC/r_cnt_v_2" BEL
-        "A_DVI_TELE_TXRX/A_RECT/A1_SYNC/r_cnt_v_1" BEL
-        "A_DVI_TELE_TXRX/A_RECT/A1_SYNC/r_cnt_v_0" BEL
         "A_DVI_TELE_TXRX/A_DISPLAY/A0_SYNC_GEN/r_cnt_h_10" BEL
         "A_DVI_TELE_TXRX/A_DISPLAY/A0_SYNC_GEN/r_cnt_h_9" BEL
         "A_DVI_TELE_TXRX/A_DISPLAY/A0_SYNC_GEN/r_cnt_h_8" BEL
@@ -2374,17 +2386,6 @@ TIMEGRP A_CRG_CLKFX_BUF_1 = BEL
         "A_DVI_TELE_TXRX/A_DISPLAY/A0_SYNC_GEN/r_cnt_h_2" BEL
         "A_DVI_TELE_TXRX/A_DISPLAY/A0_SYNC_GEN/r_cnt_h_1" BEL
         "A_DVI_TELE_TXRX/A_DISPLAY/A0_SYNC_GEN/r_cnt_h_0" BEL
-        "A_DVI_TELE_TXRX/A_RECT/A1_SYNC/r_cnt_h_10" BEL
-        "A_DVI_TELE_TXRX/A_RECT/A1_SYNC/r_cnt_h_9" BEL
-        "A_DVI_TELE_TXRX/A_RECT/A1_SYNC/r_cnt_h_8" BEL
-        "A_DVI_TELE_TXRX/A_RECT/A1_SYNC/r_cnt_h_7" BEL
-        "A_DVI_TELE_TXRX/A_RECT/A1_SYNC/r_cnt_h_6" BEL
-        "A_DVI_TELE_TXRX/A_RECT/A1_SYNC/r_cnt_h_5" BEL
-        "A_DVI_TELE_TXRX/A_RECT/A1_SYNC/r_cnt_h_4" BEL
-        "A_DVI_TELE_TXRX/A_RECT/A1_SYNC/r_cnt_h_3" BEL
-        "A_DVI_TELE_TXRX/A_RECT/A1_SYNC/r_cnt_h_2" BEL
-        "A_DVI_TELE_TXRX/A_RECT/A1_SYNC/r_cnt_h_1" BEL
-        "A_DVI_TELE_TXRX/A_RECT/A1_SYNC/r_cnt_h_0" BEL
         "A_DVI_TELE_TXRX/A_DISPLAY/A0_SYNC_GEN/r_cnt_v_9" BEL
         "A_DVI_TELE_TXRX/A_DISPLAY/A0_SYNC_GEN/r_cnt_v_8" BEL
         "A_DVI_TELE_TXRX/A_DISPLAY/A0_SYNC_GEN/r_cnt_v_7" BEL
@@ -2419,11 +2420,6 @@ TIMEGRP A_CRG_CLKFX_BUF_1 = BEL
         "A_DVI_TELE_TXRX/A_TELE_TX/cnt_run_2" BEL
         "A_DVI_TELE_TXRX/A_TELE_TX/cnt_run_1" BEL
         "A_DVI_TELE_TXRX/A_TELE_TX/cnt_run_0" BEL
-        "A_DVI_TELE_TXRX/A_RECT/A1_SYNC/o_sync_vs" BEL
-        "A_DVI_TELE_TXRX/A_RECT/A1_SYNC/o_sync_hs" BEL
-        "A_DVI_TELE_TXRX/A_RECT/A1_SYNC/o_sync_va" BEL
-        "A_DVI_TELE_TXRX/A_RECT/A1_SYNC/o_sync_ha" BEL
-        "A_DVI_TELE_TXRX/A_RECT/A1_SYNC/o_sync_de" BEL
         "A_DVI_TELE_TXRX/A_DISPLAY/A0_SYNC_GEN/o_sync_vs" BEL
         "A_DVI_TELE_TXRX/A_DISPLAY/A0_SYNC_GEN/o_sync_hs" BEL
         "A_DVI_TELE_TXRX/A_DISPLAY/A0_SYNC_GEN/o_sync_va" BEL
@@ -2637,38 +2633,6 @@ TIMEGRP A_CRG_CLKFX_BUF_1 = BEL
         "A_DVI_TELE_TXRX/A_DVI/DVIInit/I2CControl/InLatch/Value/Out_2" BEL
         "A_DVI_TELE_TXRX/A_DVI/DVIInit/I2CControl/InLatch/Value/Out_1" BEL
         "A_DVI_TELE_TXRX/A_DVI/DVIInit/I2CControl/InLatch/Value/Out_0" BEL
-        "A_DVI_TELE_TXRX/A_RECT/A2_DRAW/r_cnt_y_10" BEL
-        "A_DVI_TELE_TXRX/A_RECT/A2_DRAW/r_cnt_y_9" BEL
-        "A_DVI_TELE_TXRX/A_RECT/A2_DRAW/r_cnt_y_8" BEL
-        "A_DVI_TELE_TXRX/A_RECT/A2_DRAW/r_cnt_y_7" BEL
-        "A_DVI_TELE_TXRX/A_RECT/A2_DRAW/r_cnt_y_6" BEL
-        "A_DVI_TELE_TXRX/A_RECT/A2_DRAW/r_cnt_y_5" BEL
-        "A_DVI_TELE_TXRX/A_RECT/A2_DRAW/r_cnt_y_4" BEL
-        "A_DVI_TELE_TXRX/A_RECT/A2_DRAW/r_cnt_y_3" BEL
-        "A_DVI_TELE_TXRX/A_RECT/A2_DRAW/r_cnt_y_2" BEL
-        "A_DVI_TELE_TXRX/A_RECT/A2_DRAW/r_cnt_y_1" BEL
-        "A_DVI_TELE_TXRX/A_RECT/A2_DRAW/r_cnt_y_0" BEL
-        "A_DVI_TELE_TXRX/A_RECT/A2_DRAW/r_cnt_x_10" BEL
-        "A_DVI_TELE_TXRX/A_RECT/A2_DRAW/r_cnt_x_9" BEL
-        "A_DVI_TELE_TXRX/A_RECT/A2_DRAW/r_cnt_x_8" BEL
-        "A_DVI_TELE_TXRX/A_RECT/A2_DRAW/r_cnt_x_7" BEL
-        "A_DVI_TELE_TXRX/A_RECT/A2_DRAW/r_cnt_x_6" BEL
-        "A_DVI_TELE_TXRX/A_RECT/A2_DRAW/r_cnt_x_5" BEL
-        "A_DVI_TELE_TXRX/A_RECT/A2_DRAW/r_cnt_x_4" BEL
-        "A_DVI_TELE_TXRX/A_RECT/A2_DRAW/r_cnt_x_3" BEL
-        "A_DVI_TELE_TXRX/A_RECT/A2_DRAW/r_cnt_x_2" BEL
-        "A_DVI_TELE_TXRX/A_RECT/A2_DRAW/r_cnt_x_1" BEL
-        "A_DVI_TELE_TXRX/A_RECT/A2_DRAW/r_cnt_x_0" BEL
-        "A_DVI_TELE_TXRX/A_RECT/A2_DRAW/area_2" BEL
-        "A_DVI_TELE_TXRX/A_RECT/A2_DRAW/area_1" BEL
-        "A_DVI_TELE_TXRX/A_RECT/A2_DRAW/o_sync_red_6" BEL
-        "A_DVI_TELE_TXRX/A_RECT/A2_DRAW/o_sync_red_3" BEL
-        "A_DVI_TELE_TXRX/A_RECT/A2_DRAW/o_sync_red_2" BEL
-        "A_DVI_TELE_TXRX/A_RECT/A2_DRAW/o_sync_de" BEL
-        "A_DVI_TELE_TXRX/A_RECT/A2_DRAW/o_sync_ha" BEL
-        "A_DVI_TELE_TXRX/A_RECT/A2_DRAW/o_sync_va" BEL
-        "A_DVI_TELE_TXRX/A_RECT/A2_DRAW/o_sync_hs" BEL
-        "A_DVI_TELE_TXRX/A_RECT/A2_DRAW/o_sync_vs" BEL
         "A_DVI_TELE_TXRX/A_DVI/DVIInit/I2CControl/Master/SDAShft/SHIFT.Register/Out_0"
         BEL
         "A_DVI_TELE_TXRX/A_DVI/DVIInit/I2CControl/Master/SDAShft/SHIFT.Register/Out_1"
@@ -3751,6 +3715,86 @@ TIMEGRP A_CRG_CLKFX_BUF_1 = BEL
         "A_DVI_TELE_TXRX/A_DISPLAY/A1_DISP_DIGIT/r_cnt_clmn_2" BEL
         "A_DVI_TELE_TXRX/A_DISPLAY/A1_DISP_DIGIT/r_cnt_clmn_1" BEL
         "A_DVI_TELE_TXRX/A_DISPLAY/A1_DISP_DIGIT/r_cnt_clmn_0" BEL
+        "A_DVI_TELE_TXRX/A_RECT/A2_DRAW/o_sync_vs" BEL
+        "A_DVI_TELE_TXRX/A_RECT/A2_DRAW/o_sync_hs" BEL
+        "A_DVI_TELE_TXRX/A_RECT/A2_DRAW/o_sync_de" BEL
+        "A_DVI_TELE_TXRX/A_RECT/A2_DRAW/o_sync_va" BEL
+        "A_DVI_TELE_TXRX/A_RECT/A2_DRAW/o_sync_ha" BEL
+        "A_DVI_TELE_TXRX/A_RECT/A2_DRAW/o_sync_red_3" BEL
+        "A_DVI_TELE_TXRX/A_RECT/A2_DRAW/o_sync_blu_2" BEL
+        "A_DVI_TELE_TXRX/A_RECT/A2_DRAW/o_sync_blu_6" BEL
+        "A_DVI_TELE_TXRX/A_RECT/A2_DRAW/area_3" BEL
+        "A_DVI_TELE_TXRX/A_RECT/A2_DRAW/area_1" BEL
+        "A_DVI_TELE_TXRX/A_RECT/A2_DRAW/r_cnt_x_0" BEL
+        "A_DVI_TELE_TXRX/A_RECT/A2_DRAW/r_cnt_x_1" BEL
+        "A_DVI_TELE_TXRX/A_RECT/A2_DRAW/r_cnt_x_2" BEL
+        "A_DVI_TELE_TXRX/A_RECT/A2_DRAW/r_cnt_x_3" BEL
+        "A_DVI_TELE_TXRX/A_RECT/A2_DRAW/r_cnt_x_4" BEL
+        "A_DVI_TELE_TXRX/A_RECT/A2_DRAW/r_cnt_x_5" BEL
+        "A_DVI_TELE_TXRX/A_RECT/A2_DRAW/r_cnt_x_6" BEL
+        "A_DVI_TELE_TXRX/A_RECT/A2_DRAW/r_cnt_x_7" BEL
+        "A_DVI_TELE_TXRX/A_RECT/A2_DRAW/r_cnt_x_8" BEL
+        "A_DVI_TELE_TXRX/A_RECT/A2_DRAW/r_cnt_x_9" BEL
+        "A_DVI_TELE_TXRX/A_RECT/A2_DRAW/r_cnt_x_10" BEL
+        "A_DVI_TELE_TXRX/A_RECT/A2_DRAW/r_cnt_y_0" BEL
+        "A_DVI_TELE_TXRX/A_RECT/A2_DRAW/r_cnt_y_1" BEL
+        "A_DVI_TELE_TXRX/A_RECT/A2_DRAW/r_cnt_y_2" BEL
+        "A_DVI_TELE_TXRX/A_RECT/A2_DRAW/r_cnt_y_3" BEL
+        "A_DVI_TELE_TXRX/A_RECT/A2_DRAW/r_cnt_y_4" BEL
+        "A_DVI_TELE_TXRX/A_RECT/A2_DRAW/r_cnt_y_5" BEL
+        "A_DVI_TELE_TXRX/A_RECT/A2_DRAW/r_cnt_y_6" BEL
+        "A_DVI_TELE_TXRX/A_RECT/A2_DRAW/r_cnt_y_7" BEL
+        "A_DVI_TELE_TXRX/A_RECT/A2_DRAW/r_cnt_y_8" BEL
+        "A_DVI_TELE_TXRX/A_RECT/A2_DRAW/r_cnt_y_9" BEL
+        "A_DVI_TELE_TXRX/A_RECT/A2_DRAW/r_cnt_y_10" BEL
+        "A_DVI_TELE_TXRX/A_RECT/blk_pos_x_9" BEL
+        "A_DVI_TELE_TXRX/A_RECT/blk_pos_x_8" BEL
+        "A_DVI_TELE_TXRX/A_RECT/blk_pos_x_7" BEL
+        "A_DVI_TELE_TXRX/A_RECT/blk_pos_x_6" BEL
+        "A_DVI_TELE_TXRX/A_RECT/blk_pos_x_5" BEL
+        "A_DVI_TELE_TXRX/A_RECT/blk_pos_x_4" BEL
+        "A_DVI_TELE_TXRX/A_RECT/blk_pos_x_3" BEL
+        "A_DVI_TELE_TXRX/A_RECT/blk_pos_x_2" BEL
+        "A_DVI_TELE_TXRX/A_RECT/blk_pos_x_1" BEL
+        "A_DVI_TELE_TXRX/A_RECT/blk_pos_x_0" BEL
+        "A_DVI_TELE_TXRX/A_RECT/blk_pos_y_9" BEL
+        "A_DVI_TELE_TXRX/A_RECT/blk_pos_y_8" BEL
+        "A_DVI_TELE_TXRX/A_RECT/blk_pos_y_7" BEL
+        "A_DVI_TELE_TXRX/A_RECT/blk_pos_y_6" BEL
+        "A_DVI_TELE_TXRX/A_RECT/blk_pos_y_5" BEL
+        "A_DVI_TELE_TXRX/A_RECT/blk_pos_y_4" BEL
+        "A_DVI_TELE_TXRX/A_RECT/blk_pos_y_3" BEL
+        "A_DVI_TELE_TXRX/A_RECT/blk_pos_y_2" BEL
+        "A_DVI_TELE_TXRX/A_RECT/blk_pos_y_1" BEL
+        "A_DVI_TELE_TXRX/A_RECT/blk_pos_y_0" BEL
+        "A_DVI_TELE_TXRX/A_RECT/A1_SYNC/r_cnt_h_10" BEL
+        "A_DVI_TELE_TXRX/A_RECT/A1_SYNC/r_cnt_h_9" BEL
+        "A_DVI_TELE_TXRX/A_RECT/A1_SYNC/r_cnt_h_8" BEL
+        "A_DVI_TELE_TXRX/A_RECT/A1_SYNC/r_cnt_h_7" BEL
+        "A_DVI_TELE_TXRX/A_RECT/A1_SYNC/r_cnt_h_6" BEL
+        "A_DVI_TELE_TXRX/A_RECT/A1_SYNC/r_cnt_h_5" BEL
+        "A_DVI_TELE_TXRX/A_RECT/A1_SYNC/r_cnt_h_4" BEL
+        "A_DVI_TELE_TXRX/A_RECT/A1_SYNC/r_cnt_h_3" BEL
+        "A_DVI_TELE_TXRX/A_RECT/A1_SYNC/r_cnt_h_2" BEL
+        "A_DVI_TELE_TXRX/A_RECT/A1_SYNC/r_cnt_h_1" BEL
+        "A_DVI_TELE_TXRX/A_RECT/A1_SYNC/r_cnt_h_0" BEL
+        "A_DVI_TELE_TXRX/A_RECT/A1_SYNC/r_cnt_v_9" BEL
+        "A_DVI_TELE_TXRX/A_RECT/A1_SYNC/r_cnt_v_8" BEL
+        "A_DVI_TELE_TXRX/A_RECT/A1_SYNC/r_cnt_v_7" BEL
+        "A_DVI_TELE_TXRX/A_RECT/A1_SYNC/r_cnt_v_6" BEL
+        "A_DVI_TELE_TXRX/A_RECT/A1_SYNC/r_cnt_v_5" BEL
+        "A_DVI_TELE_TXRX/A_RECT/A1_SYNC/r_cnt_v_4" BEL
+        "A_DVI_TELE_TXRX/A_RECT/A1_SYNC/r_cnt_v_3" BEL
+        "A_DVI_TELE_TXRX/A_RECT/A1_SYNC/r_cnt_v_2" BEL
+        "A_DVI_TELE_TXRX/A_RECT/A1_SYNC/r_cnt_v_1" BEL
+        "A_DVI_TELE_TXRX/A_RECT/A1_SYNC/r_cnt_v_0" BEL
+        "A_DVI_TELE_TXRX/A_RECT/A1_SYNC/o_sync_vs" BEL
+        "A_DVI_TELE_TXRX/A_RECT/A1_SYNC/o_sync_hs" BEL
+        "A_DVI_TELE_TXRX/A_RECT/A1_SYNC/o_sync_va" BEL
+        "A_DVI_TELE_TXRX/A_RECT/A1_SYNC/o_sync_ha" BEL
+        "A_DVI_TELE_TXRX/A_RECT/A1_SYNC/o_sync_de" BEL
+        "A_DVI_TELE_TXRX/A_RECT/block_rad_1" BEL
+        "A_DVI_TELE_TXRX/A_RECT/block_rad_0" BEL
         "A_DVI_TELE_TXRX/A_DVI/DVIInit/I2CCmdInit/SHIFT.VldShft/SHIFT.Register/Out_0"
         BEL
         "A_DVI_TELE_TXRX/A_DVI/DVIInit/I2CCmdInit/SHIFT.VldShft/SHIFT.Register/Out_1"
@@ -3937,6 +3981,16 @@ TIMEGRP A_CRG_CLKFX_BUF_1 = BEL
         "A_DVI_TELE_TXRX/A_DVI/DVIInit/I2CDatInit/SHIFT.VldShft/SHIFT.Register/Out_5"
         BEL "A_DVI_TELE_TXRX/A_DVI/DVIInit/I2CDatInit/SHIFT.SprReg/Out_0" BEL
         "A_DVI_TELE_TXRX/A_DVI/DVIInit/I2CDatInit/SHIFT.LstValReg/Out_0" BEL
+        "A_DVI_TELE_TXRX/A_DVI/DVIData/PixCnt/RgnAX/FSM.State/Out_1" BEL
+        "A_DVI_TELE_TXRX/A_DVI/DVIData/PixCnt/RgnAX/FSM.State/Out_2" BEL
+        "A_DVI_TELE_TXRX/A_DVI/DVIData/PixCnt/RgnAY/FSM.State/Out_1" BEL
+        "A_DVI_TELE_TXRX/A_DVI/DVIData/PixCnt/RgnAY/FSM.State/Out_2" BEL
+        "A_DVI_TELE_TXRX/A_DVI/DVIData/PixCnt/RgnHS/FSM.State/Out_0" BEL
+        "A_DVI_TELE_TXRX/A_DVI/DVIData/PixCnt/RgnHS/FSM.State/Out_1" BEL
+        "A_DVI_TELE_TXRX/A_DVI/DVIData/PixCnt/RgnHS/FSM.State/Out_2" BEL
+        "A_DVI_TELE_TXRX/A_DVI/DVIData/PixCnt/RgnVS/FSM.State/Out_0" BEL
+        "A_DVI_TELE_TXRX/A_DVI/DVIData/PixCnt/RgnVS/FSM.State/Out_1" BEL
+        "A_DVI_TELE_TXRX/A_DVI/DVIData/PixCnt/RgnVS/FSM.State/Out_2" BEL
         "A_DVI_TELE_TXRX/A_DVI/DVIData/PixCnt/XCnt/Register/Out_10" BEL
         "A_DVI_TELE_TXRX/A_DVI/DVIData/PixCnt/XCnt/Register/Out_9" BEL
         "A_DVI_TELE_TXRX/A_DVI/DVIData/PixCnt/XCnt/Register/Out_8" BEL
@@ -3976,16 +4030,6 @@ TIMEGRP A_CRG_CLKFX_BUF_1 = BEL
         "A_DVI_TELE_TXRX/A_DVI/DVIData/SyncBuf/Out_1" BEL
         "A_DVI_TELE_TXRX/A_DVI/DVIData/SyncBuf/Out_2" BEL
         "A_DVI_TELE_TXRX/A_DVI/DVIData/FVPReg/Out_0" BEL
-        "A_DVI_TELE_TXRX/A_DVI/DVIData/PixCnt/RgnAX/FSM.State/Out_1" BEL
-        "A_DVI_TELE_TXRX/A_DVI/DVIData/PixCnt/RgnAX/FSM.State/Out_2" BEL
-        "A_DVI_TELE_TXRX/A_DVI/DVIData/PixCnt/RgnAY/FSM.State/Out_1" BEL
-        "A_DVI_TELE_TXRX/A_DVI/DVIData/PixCnt/RgnAY/FSM.State/Out_2" BEL
-        "A_DVI_TELE_TXRX/A_DVI/DVIData/PixCnt/RgnHS/FSM.State/Out_0" BEL
-        "A_DVI_TELE_TXRX/A_DVI/DVIData/PixCnt/RgnHS/FSM.State/Out_1" BEL
-        "A_DVI_TELE_TXRX/A_DVI/DVIData/PixCnt/RgnHS/FSM.State/Out_2" BEL
-        "A_DVI_TELE_TXRX/A_DVI/DVIData/PixCnt/RgnVS/FSM.State/Out_0" BEL
-        "A_DVI_TELE_TXRX/A_DVI/DVIData/PixCnt/RgnVS/FSM.State/Out_1" BEL
-        "A_DVI_TELE_TXRX/A_DVI/DVIData/PixCnt/RgnVS/FSM.State/Out_2" BEL
         "A_DVI_TELE_TXRX/A_BUTTON/Mshreg_BUTTON_E_D_3" BEL
         "A_DVI_TELE_TXRX/A_BUTTON/BUTTON_E_D_3" BEL
         "A_DVI_TELE_TXRX/A_BUTTON/Mshreg_BUTTON_N_D_3" BEL
@@ -4050,7 +4094,7 @@ TIMEGRP A_CRG_CLKFX_BUF_0 = BEL
         "A_DVI_TELE_TXRX/A_TELE_TX/cnt_idle_2" BEL
         "A_DVI_TELE_TXRX/A_TELE_TX/cnt_idle_1" BEL
         "A_DVI_TELE_TXRX/A_TELE_TX/cnt_idle_0" BEL
-        "A_DVI_TELE_TXRX/DISP_MODE_0" BEL "A_DVI_TELE_TXRX/DISP_MODE_1" BEL
+        "A_DVI_TELE_TXRX/DISP_MODE_1" BEL "A_DVI_TELE_TXRX/DISP_MODE_0" BEL
         "A_DVI_TELE_TXRX/A_TELE_TX/r_addr_6" BEL
         "A_DVI_TELE_TXRX/A_TELE_TX/r_addr_5" BEL
         "A_DVI_TELE_TXRX/A_TELE_TX/r_addr_4" BEL
@@ -4058,16 +4102,6 @@ TIMEGRP A_CRG_CLKFX_BUF_0 = BEL
         "A_DVI_TELE_TXRX/A_TELE_TX/r_addr_2" BEL
         "A_DVI_TELE_TXRX/A_TELE_TX/r_addr_1" BEL
         "A_DVI_TELE_TXRX/A_TELE_TX/r_addr_0" BEL
-        "A_DVI_TELE_TXRX/A_RECT/A1_SYNC/r_cnt_v_9" BEL
-        "A_DVI_TELE_TXRX/A_RECT/A1_SYNC/r_cnt_v_8" BEL
-        "A_DVI_TELE_TXRX/A_RECT/A1_SYNC/r_cnt_v_7" BEL
-        "A_DVI_TELE_TXRX/A_RECT/A1_SYNC/r_cnt_v_6" BEL
-        "A_DVI_TELE_TXRX/A_RECT/A1_SYNC/r_cnt_v_5" BEL
-        "A_DVI_TELE_TXRX/A_RECT/A1_SYNC/r_cnt_v_4" BEL
-        "A_DVI_TELE_TXRX/A_RECT/A1_SYNC/r_cnt_v_3" BEL
-        "A_DVI_TELE_TXRX/A_RECT/A1_SYNC/r_cnt_v_2" BEL
-        "A_DVI_TELE_TXRX/A_RECT/A1_SYNC/r_cnt_v_1" BEL
-        "A_DVI_TELE_TXRX/A_RECT/A1_SYNC/r_cnt_v_0" BEL
         "A_DVI_TELE_TXRX/A_DISPLAY/A0_SYNC_GEN/r_cnt_h_10" BEL
         "A_DVI_TELE_TXRX/A_DISPLAY/A0_SYNC_GEN/r_cnt_h_9" BEL
         "A_DVI_TELE_TXRX/A_DISPLAY/A0_SYNC_GEN/r_cnt_h_8" BEL
@@ -4079,17 +4113,6 @@ TIMEGRP A_CRG_CLKFX_BUF_0 = BEL
         "A_DVI_TELE_TXRX/A_DISPLAY/A0_SYNC_GEN/r_cnt_h_2" BEL
         "A_DVI_TELE_TXRX/A_DISPLAY/A0_SYNC_GEN/r_cnt_h_1" BEL
         "A_DVI_TELE_TXRX/A_DISPLAY/A0_SYNC_GEN/r_cnt_h_0" BEL
-        "A_DVI_TELE_TXRX/A_RECT/A1_SYNC/r_cnt_h_10" BEL
-        "A_DVI_TELE_TXRX/A_RECT/A1_SYNC/r_cnt_h_9" BEL
-        "A_DVI_TELE_TXRX/A_RECT/A1_SYNC/r_cnt_h_8" BEL
-        "A_DVI_TELE_TXRX/A_RECT/A1_SYNC/r_cnt_h_7" BEL
-        "A_DVI_TELE_TXRX/A_RECT/A1_SYNC/r_cnt_h_6" BEL
-        "A_DVI_TELE_TXRX/A_RECT/A1_SYNC/r_cnt_h_5" BEL
-        "A_DVI_TELE_TXRX/A_RECT/A1_SYNC/r_cnt_h_4" BEL
-        "A_DVI_TELE_TXRX/A_RECT/A1_SYNC/r_cnt_h_3" BEL
-        "A_DVI_TELE_TXRX/A_RECT/A1_SYNC/r_cnt_h_2" BEL
-        "A_DVI_TELE_TXRX/A_RECT/A1_SYNC/r_cnt_h_1" BEL
-        "A_DVI_TELE_TXRX/A_RECT/A1_SYNC/r_cnt_h_0" BEL
         "A_DVI_TELE_TXRX/A_DISPLAY/A0_SYNC_GEN/r_cnt_v_9" BEL
         "A_DVI_TELE_TXRX/A_DISPLAY/A0_SYNC_GEN/r_cnt_v_8" BEL
         "A_DVI_TELE_TXRX/A_DISPLAY/A0_SYNC_GEN/r_cnt_v_7" BEL
@@ -4124,11 +4147,6 @@ TIMEGRP A_CRG_CLKFX_BUF_0 = BEL
         "A_DVI_TELE_TXRX/A_TELE_TX/cnt_run_2" BEL
         "A_DVI_TELE_TXRX/A_TELE_TX/cnt_run_1" BEL
         "A_DVI_TELE_TXRX/A_TELE_TX/cnt_run_0" BEL
-        "A_DVI_TELE_TXRX/A_RECT/A1_SYNC/o_sync_vs" BEL
-        "A_DVI_TELE_TXRX/A_RECT/A1_SYNC/o_sync_hs" BEL
-        "A_DVI_TELE_TXRX/A_RECT/A1_SYNC/o_sync_va" BEL
-        "A_DVI_TELE_TXRX/A_RECT/A1_SYNC/o_sync_ha" BEL
-        "A_DVI_TELE_TXRX/A_RECT/A1_SYNC/o_sync_de" BEL
         "A_DVI_TELE_TXRX/A_DISPLAY/A0_SYNC_GEN/o_sync_vs" BEL
         "A_DVI_TELE_TXRX/A_DISPLAY/A0_SYNC_GEN/o_sync_hs" BEL
         "A_DVI_TELE_TXRX/A_DISPLAY/A0_SYNC_GEN/o_sync_va" BEL
@@ -4342,38 +4360,6 @@ TIMEGRP A_CRG_CLKFX_BUF_0 = BEL
         "A_DVI_TELE_TXRX/A_DVI/DVIInit/I2CControl/InLatch/Value/Out_2" BEL
         "A_DVI_TELE_TXRX/A_DVI/DVIInit/I2CControl/InLatch/Value/Out_1" BEL
         "A_DVI_TELE_TXRX/A_DVI/DVIInit/I2CControl/InLatch/Value/Out_0" BEL
-        "A_DVI_TELE_TXRX/A_RECT/A2_DRAW/r_cnt_y_10" BEL
-        "A_DVI_TELE_TXRX/A_RECT/A2_DRAW/r_cnt_y_9" BEL
-        "A_DVI_TELE_TXRX/A_RECT/A2_DRAW/r_cnt_y_8" BEL
-        "A_DVI_TELE_TXRX/A_RECT/A2_DRAW/r_cnt_y_7" BEL
-        "A_DVI_TELE_TXRX/A_RECT/A2_DRAW/r_cnt_y_6" BEL
-        "A_DVI_TELE_TXRX/A_RECT/A2_DRAW/r_cnt_y_5" BEL
-        "A_DVI_TELE_TXRX/A_RECT/A2_DRAW/r_cnt_y_4" BEL
-        "A_DVI_TELE_TXRX/A_RECT/A2_DRAW/r_cnt_y_3" BEL
-        "A_DVI_TELE_TXRX/A_RECT/A2_DRAW/r_cnt_y_2" BEL
-        "A_DVI_TELE_TXRX/A_RECT/A2_DRAW/r_cnt_y_1" BEL
-        "A_DVI_TELE_TXRX/A_RECT/A2_DRAW/r_cnt_y_0" BEL
-        "A_DVI_TELE_TXRX/A_RECT/A2_DRAW/r_cnt_x_10" BEL
-        "A_DVI_TELE_TXRX/A_RECT/A2_DRAW/r_cnt_x_9" BEL
-        "A_DVI_TELE_TXRX/A_RECT/A2_DRAW/r_cnt_x_8" BEL
-        "A_DVI_TELE_TXRX/A_RECT/A2_DRAW/r_cnt_x_7" BEL
-        "A_DVI_TELE_TXRX/A_RECT/A2_DRAW/r_cnt_x_6" BEL
-        "A_DVI_TELE_TXRX/A_RECT/A2_DRAW/r_cnt_x_5" BEL
-        "A_DVI_TELE_TXRX/A_RECT/A2_DRAW/r_cnt_x_4" BEL
-        "A_DVI_TELE_TXRX/A_RECT/A2_DRAW/r_cnt_x_3" BEL
-        "A_DVI_TELE_TXRX/A_RECT/A2_DRAW/r_cnt_x_2" BEL
-        "A_DVI_TELE_TXRX/A_RECT/A2_DRAW/r_cnt_x_1" BEL
-        "A_DVI_TELE_TXRX/A_RECT/A2_DRAW/r_cnt_x_0" BEL
-        "A_DVI_TELE_TXRX/A_RECT/A2_DRAW/area_2" BEL
-        "A_DVI_TELE_TXRX/A_RECT/A2_DRAW/area_1" BEL
-        "A_DVI_TELE_TXRX/A_RECT/A2_DRAW/o_sync_red_6" BEL
-        "A_DVI_TELE_TXRX/A_RECT/A2_DRAW/o_sync_red_3" BEL
-        "A_DVI_TELE_TXRX/A_RECT/A2_DRAW/o_sync_red_2" BEL
-        "A_DVI_TELE_TXRX/A_RECT/A2_DRAW/o_sync_de" BEL
-        "A_DVI_TELE_TXRX/A_RECT/A2_DRAW/o_sync_ha" BEL
-        "A_DVI_TELE_TXRX/A_RECT/A2_DRAW/o_sync_va" BEL
-        "A_DVI_TELE_TXRX/A_RECT/A2_DRAW/o_sync_hs" BEL
-        "A_DVI_TELE_TXRX/A_RECT/A2_DRAW/o_sync_vs" BEL
         "A_DVI_TELE_TXRX/A_DVI/DVIInit/I2CControl/Master/SDAShft/SHIFT.Register/Out_0"
         BEL
         "A_DVI_TELE_TXRX/A_DVI/DVIInit/I2CControl/Master/SDAShft/SHIFT.Register/Out_1"
@@ -5456,6 +5442,86 @@ TIMEGRP A_CRG_CLKFX_BUF_0 = BEL
         "A_DVI_TELE_TXRX/A_DISPLAY/A1_DISP_DIGIT/r_cnt_clmn_2" BEL
         "A_DVI_TELE_TXRX/A_DISPLAY/A1_DISP_DIGIT/r_cnt_clmn_1" BEL
         "A_DVI_TELE_TXRX/A_DISPLAY/A1_DISP_DIGIT/r_cnt_clmn_0" BEL
+        "A_DVI_TELE_TXRX/A_RECT/A2_DRAW/o_sync_vs" BEL
+        "A_DVI_TELE_TXRX/A_RECT/A2_DRAW/o_sync_hs" BEL
+        "A_DVI_TELE_TXRX/A_RECT/A2_DRAW/o_sync_de" BEL
+        "A_DVI_TELE_TXRX/A_RECT/A2_DRAW/o_sync_va" BEL
+        "A_DVI_TELE_TXRX/A_RECT/A2_DRAW/o_sync_ha" BEL
+        "A_DVI_TELE_TXRX/A_RECT/A2_DRAW/o_sync_red_3" BEL
+        "A_DVI_TELE_TXRX/A_RECT/A2_DRAW/o_sync_blu_2" BEL
+        "A_DVI_TELE_TXRX/A_RECT/A2_DRAW/o_sync_blu_6" BEL
+        "A_DVI_TELE_TXRX/A_RECT/A2_DRAW/area_3" BEL
+        "A_DVI_TELE_TXRX/A_RECT/A2_DRAW/area_1" BEL
+        "A_DVI_TELE_TXRX/A_RECT/A2_DRAW/r_cnt_x_0" BEL
+        "A_DVI_TELE_TXRX/A_RECT/A2_DRAW/r_cnt_x_1" BEL
+        "A_DVI_TELE_TXRX/A_RECT/A2_DRAW/r_cnt_x_2" BEL
+        "A_DVI_TELE_TXRX/A_RECT/A2_DRAW/r_cnt_x_3" BEL
+        "A_DVI_TELE_TXRX/A_RECT/A2_DRAW/r_cnt_x_4" BEL
+        "A_DVI_TELE_TXRX/A_RECT/A2_DRAW/r_cnt_x_5" BEL
+        "A_DVI_TELE_TXRX/A_RECT/A2_DRAW/r_cnt_x_6" BEL
+        "A_DVI_TELE_TXRX/A_RECT/A2_DRAW/r_cnt_x_7" BEL
+        "A_DVI_TELE_TXRX/A_RECT/A2_DRAW/r_cnt_x_8" BEL
+        "A_DVI_TELE_TXRX/A_RECT/A2_DRAW/r_cnt_x_9" BEL
+        "A_DVI_TELE_TXRX/A_RECT/A2_DRAW/r_cnt_x_10" BEL
+        "A_DVI_TELE_TXRX/A_RECT/A2_DRAW/r_cnt_y_0" BEL
+        "A_DVI_TELE_TXRX/A_RECT/A2_DRAW/r_cnt_y_1" BEL
+        "A_DVI_TELE_TXRX/A_RECT/A2_DRAW/r_cnt_y_2" BEL
+        "A_DVI_TELE_TXRX/A_RECT/A2_DRAW/r_cnt_y_3" BEL
+        "A_DVI_TELE_TXRX/A_RECT/A2_DRAW/r_cnt_y_4" BEL
+        "A_DVI_TELE_TXRX/A_RECT/A2_DRAW/r_cnt_y_5" BEL
+        "A_DVI_TELE_TXRX/A_RECT/A2_DRAW/r_cnt_y_6" BEL
+        "A_DVI_TELE_TXRX/A_RECT/A2_DRAW/r_cnt_y_7" BEL
+        "A_DVI_TELE_TXRX/A_RECT/A2_DRAW/r_cnt_y_8" BEL
+        "A_DVI_TELE_TXRX/A_RECT/A2_DRAW/r_cnt_y_9" BEL
+        "A_DVI_TELE_TXRX/A_RECT/A2_DRAW/r_cnt_y_10" BEL
+        "A_DVI_TELE_TXRX/A_RECT/blk_pos_x_9" BEL
+        "A_DVI_TELE_TXRX/A_RECT/blk_pos_x_8" BEL
+        "A_DVI_TELE_TXRX/A_RECT/blk_pos_x_7" BEL
+        "A_DVI_TELE_TXRX/A_RECT/blk_pos_x_6" BEL
+        "A_DVI_TELE_TXRX/A_RECT/blk_pos_x_5" BEL
+        "A_DVI_TELE_TXRX/A_RECT/blk_pos_x_4" BEL
+        "A_DVI_TELE_TXRX/A_RECT/blk_pos_x_3" BEL
+        "A_DVI_TELE_TXRX/A_RECT/blk_pos_x_2" BEL
+        "A_DVI_TELE_TXRX/A_RECT/blk_pos_x_1" BEL
+        "A_DVI_TELE_TXRX/A_RECT/blk_pos_x_0" BEL
+        "A_DVI_TELE_TXRX/A_RECT/blk_pos_y_9" BEL
+        "A_DVI_TELE_TXRX/A_RECT/blk_pos_y_8" BEL
+        "A_DVI_TELE_TXRX/A_RECT/blk_pos_y_7" BEL
+        "A_DVI_TELE_TXRX/A_RECT/blk_pos_y_6" BEL
+        "A_DVI_TELE_TXRX/A_RECT/blk_pos_y_5" BEL
+        "A_DVI_TELE_TXRX/A_RECT/blk_pos_y_4" BEL
+        "A_DVI_TELE_TXRX/A_RECT/blk_pos_y_3" BEL
+        "A_DVI_TELE_TXRX/A_RECT/blk_pos_y_2" BEL
+        "A_DVI_TELE_TXRX/A_RECT/blk_pos_y_1" BEL
+        "A_DVI_TELE_TXRX/A_RECT/blk_pos_y_0" BEL
+        "A_DVI_TELE_TXRX/A_RECT/A1_SYNC/r_cnt_h_10" BEL
+        "A_DVI_TELE_TXRX/A_RECT/A1_SYNC/r_cnt_h_9" BEL
+        "A_DVI_TELE_TXRX/A_RECT/A1_SYNC/r_cnt_h_8" BEL
+        "A_DVI_TELE_TXRX/A_RECT/A1_SYNC/r_cnt_h_7" BEL
+        "A_DVI_TELE_TXRX/A_RECT/A1_SYNC/r_cnt_h_6" BEL
+        "A_DVI_TELE_TXRX/A_RECT/A1_SYNC/r_cnt_h_5" BEL
+        "A_DVI_TELE_TXRX/A_RECT/A1_SYNC/r_cnt_h_4" BEL
+        "A_DVI_TELE_TXRX/A_RECT/A1_SYNC/r_cnt_h_3" BEL
+        "A_DVI_TELE_TXRX/A_RECT/A1_SYNC/r_cnt_h_2" BEL
+        "A_DVI_TELE_TXRX/A_RECT/A1_SYNC/r_cnt_h_1" BEL
+        "A_DVI_TELE_TXRX/A_RECT/A1_SYNC/r_cnt_h_0" BEL
+        "A_DVI_TELE_TXRX/A_RECT/A1_SYNC/r_cnt_v_9" BEL
+        "A_DVI_TELE_TXRX/A_RECT/A1_SYNC/r_cnt_v_8" BEL
+        "A_DVI_TELE_TXRX/A_RECT/A1_SYNC/r_cnt_v_7" BEL
+        "A_DVI_TELE_TXRX/A_RECT/A1_SYNC/r_cnt_v_6" BEL
+        "A_DVI_TELE_TXRX/A_RECT/A1_SYNC/r_cnt_v_5" BEL
+        "A_DVI_TELE_TXRX/A_RECT/A1_SYNC/r_cnt_v_4" BEL
+        "A_DVI_TELE_TXRX/A_RECT/A1_SYNC/r_cnt_v_3" BEL
+        "A_DVI_TELE_TXRX/A_RECT/A1_SYNC/r_cnt_v_2" BEL
+        "A_DVI_TELE_TXRX/A_RECT/A1_SYNC/r_cnt_v_1" BEL
+        "A_DVI_TELE_TXRX/A_RECT/A1_SYNC/r_cnt_v_0" BEL
+        "A_DVI_TELE_TXRX/A_RECT/A1_SYNC/o_sync_vs" BEL
+        "A_DVI_TELE_TXRX/A_RECT/A1_SYNC/o_sync_hs" BEL
+        "A_DVI_TELE_TXRX/A_RECT/A1_SYNC/o_sync_va" BEL
+        "A_DVI_TELE_TXRX/A_RECT/A1_SYNC/o_sync_ha" BEL
+        "A_DVI_TELE_TXRX/A_RECT/A1_SYNC/o_sync_de" BEL
+        "A_DVI_TELE_TXRX/A_RECT/block_rad_1" BEL
+        "A_DVI_TELE_TXRX/A_RECT/block_rad_0" BEL
         "A_DVI_TELE_TXRX/A_DVI/DVIInit/I2CCmdInit/SHIFT.VldShft/SHIFT.Register/Out_0"
         BEL
         "A_DVI_TELE_TXRX/A_DVI/DVIInit/I2CCmdInit/SHIFT.VldShft/SHIFT.Register/Out_1"
@@ -5642,6 +5708,16 @@ TIMEGRP A_CRG_CLKFX_BUF_0 = BEL
         "A_DVI_TELE_TXRX/A_DVI/DVIInit/I2CDatInit/SHIFT.VldShft/SHIFT.Register/Out_5"
         BEL "A_DVI_TELE_TXRX/A_DVI/DVIInit/I2CDatInit/SHIFT.SprReg/Out_0" BEL
         "A_DVI_TELE_TXRX/A_DVI/DVIInit/I2CDatInit/SHIFT.LstValReg/Out_0" BEL
+        "A_DVI_TELE_TXRX/A_DVI/DVIData/PixCnt/RgnAX/FSM.State/Out_1" BEL
+        "A_DVI_TELE_TXRX/A_DVI/DVIData/PixCnt/RgnAX/FSM.State/Out_2" BEL
+        "A_DVI_TELE_TXRX/A_DVI/DVIData/PixCnt/RgnAY/FSM.State/Out_1" BEL
+        "A_DVI_TELE_TXRX/A_DVI/DVIData/PixCnt/RgnAY/FSM.State/Out_2" BEL
+        "A_DVI_TELE_TXRX/A_DVI/DVIData/PixCnt/RgnHS/FSM.State/Out_0" BEL
+        "A_DVI_TELE_TXRX/A_DVI/DVIData/PixCnt/RgnHS/FSM.State/Out_1" BEL
+        "A_DVI_TELE_TXRX/A_DVI/DVIData/PixCnt/RgnHS/FSM.State/Out_2" BEL
+        "A_DVI_TELE_TXRX/A_DVI/DVIData/PixCnt/RgnVS/FSM.State/Out_0" BEL
+        "A_DVI_TELE_TXRX/A_DVI/DVIData/PixCnt/RgnVS/FSM.State/Out_1" BEL
+        "A_DVI_TELE_TXRX/A_DVI/DVIData/PixCnt/RgnVS/FSM.State/Out_2" BEL
         "A_DVI_TELE_TXRX/A_DVI/DVIData/PixCnt/XCnt/Register/Out_10" BEL
         "A_DVI_TELE_TXRX/A_DVI/DVIData/PixCnt/XCnt/Register/Out_9" BEL
         "A_DVI_TELE_TXRX/A_DVI/DVIData/PixCnt/XCnt/Register/Out_8" BEL
@@ -5681,16 +5757,6 @@ TIMEGRP A_CRG_CLKFX_BUF_0 = BEL
         "A_DVI_TELE_TXRX/A_DVI/DVIData/SyncBuf/Out_1" BEL
         "A_DVI_TELE_TXRX/A_DVI/DVIData/SyncBuf/Out_2" BEL
         "A_DVI_TELE_TXRX/A_DVI/DVIData/FVPReg/Out_0" BEL
-        "A_DVI_TELE_TXRX/A_DVI/DVIData/PixCnt/RgnAX/FSM.State/Out_1" BEL
-        "A_DVI_TELE_TXRX/A_DVI/DVIData/PixCnt/RgnAX/FSM.State/Out_2" BEL
-        "A_DVI_TELE_TXRX/A_DVI/DVIData/PixCnt/RgnAY/FSM.State/Out_1" BEL
-        "A_DVI_TELE_TXRX/A_DVI/DVIData/PixCnt/RgnAY/FSM.State/Out_2" BEL
-        "A_DVI_TELE_TXRX/A_DVI/DVIData/PixCnt/RgnHS/FSM.State/Out_0" BEL
-        "A_DVI_TELE_TXRX/A_DVI/DVIData/PixCnt/RgnHS/FSM.State/Out_1" BEL
-        "A_DVI_TELE_TXRX/A_DVI/DVIData/PixCnt/RgnHS/FSM.State/Out_2" BEL
-        "A_DVI_TELE_TXRX/A_DVI/DVIData/PixCnt/RgnVS/FSM.State/Out_0" BEL
-        "A_DVI_TELE_TXRX/A_DVI/DVIData/PixCnt/RgnVS/FSM.State/Out_1" BEL
-        "A_DVI_TELE_TXRX/A_DVI/DVIData/PixCnt/RgnVS/FSM.State/Out_2" BEL
         "A_DVI_TELE_TXRX/A_BUTTON/Mshreg_BUTTON_E_D_3" BEL
         "A_DVI_TELE_TXRX/A_BUTTON/BUTTON_E_D_3" BEL
         "A_DVI_TELE_TXRX/A_BUTTON/Mshreg_BUTTON_N_D_3" BEL
@@ -5755,7 +5821,7 @@ TIMEGRP A_CRG_CLKFX_BUF_2 = BEL
         "A_DVI_TELE_TXRX/A_TELE_TX/cnt_idle_2" BEL
         "A_DVI_TELE_TXRX/A_TELE_TX/cnt_idle_1" BEL
         "A_DVI_TELE_TXRX/A_TELE_TX/cnt_idle_0" BEL
-        "A_DVI_TELE_TXRX/DISP_MODE_0" BEL "A_DVI_TELE_TXRX/DISP_MODE_1" BEL
+        "A_DVI_TELE_TXRX/DISP_MODE_1" BEL "A_DVI_TELE_TXRX/DISP_MODE_0" BEL
         "A_DVI_TELE_TXRX/A_TELE_TX/r_addr_6" BEL
         "A_DVI_TELE_TXRX/A_TELE_TX/r_addr_5" BEL
         "A_DVI_TELE_TXRX/A_TELE_TX/r_addr_4" BEL
@@ -5763,16 +5829,6 @@ TIMEGRP A_CRG_CLKFX_BUF_2 = BEL
         "A_DVI_TELE_TXRX/A_TELE_TX/r_addr_2" BEL
         "A_DVI_TELE_TXRX/A_TELE_TX/r_addr_1" BEL
         "A_DVI_TELE_TXRX/A_TELE_TX/r_addr_0" BEL
-        "A_DVI_TELE_TXRX/A_RECT/A1_SYNC/r_cnt_v_9" BEL
-        "A_DVI_TELE_TXRX/A_RECT/A1_SYNC/r_cnt_v_8" BEL
-        "A_DVI_TELE_TXRX/A_RECT/A1_SYNC/r_cnt_v_7" BEL
-        "A_DVI_TELE_TXRX/A_RECT/A1_SYNC/r_cnt_v_6" BEL
-        "A_DVI_TELE_TXRX/A_RECT/A1_SYNC/r_cnt_v_5" BEL
-        "A_DVI_TELE_TXRX/A_RECT/A1_SYNC/r_cnt_v_4" BEL
-        "A_DVI_TELE_TXRX/A_RECT/A1_SYNC/r_cnt_v_3" BEL
-        "A_DVI_TELE_TXRX/A_RECT/A1_SYNC/r_cnt_v_2" BEL
-        "A_DVI_TELE_TXRX/A_RECT/A1_SYNC/r_cnt_v_1" BEL
-        "A_DVI_TELE_TXRX/A_RECT/A1_SYNC/r_cnt_v_0" BEL
         "A_DVI_TELE_TXRX/A_DISPLAY/A0_SYNC_GEN/r_cnt_h_10" BEL
         "A_DVI_TELE_TXRX/A_DISPLAY/A0_SYNC_GEN/r_cnt_h_9" BEL
         "A_DVI_TELE_TXRX/A_DISPLAY/A0_SYNC_GEN/r_cnt_h_8" BEL
@@ -5784,17 +5840,6 @@ TIMEGRP A_CRG_CLKFX_BUF_2 = BEL
         "A_DVI_TELE_TXRX/A_DISPLAY/A0_SYNC_GEN/r_cnt_h_2" BEL
         "A_DVI_TELE_TXRX/A_DISPLAY/A0_SYNC_GEN/r_cnt_h_1" BEL
         "A_DVI_TELE_TXRX/A_DISPLAY/A0_SYNC_GEN/r_cnt_h_0" BEL
-        "A_DVI_TELE_TXRX/A_RECT/A1_SYNC/r_cnt_h_10" BEL
-        "A_DVI_TELE_TXRX/A_RECT/A1_SYNC/r_cnt_h_9" BEL
-        "A_DVI_TELE_TXRX/A_RECT/A1_SYNC/r_cnt_h_8" BEL
-        "A_DVI_TELE_TXRX/A_RECT/A1_SYNC/r_cnt_h_7" BEL
-        "A_DVI_TELE_TXRX/A_RECT/A1_SYNC/r_cnt_h_6" BEL
-        "A_DVI_TELE_TXRX/A_RECT/A1_SYNC/r_cnt_h_5" BEL
-        "A_DVI_TELE_TXRX/A_RECT/A1_SYNC/r_cnt_h_4" BEL
-        "A_DVI_TELE_TXRX/A_RECT/A1_SYNC/r_cnt_h_3" BEL
-        "A_DVI_TELE_TXRX/A_RECT/A1_SYNC/r_cnt_h_2" BEL
-        "A_DVI_TELE_TXRX/A_RECT/A1_SYNC/r_cnt_h_1" BEL
-        "A_DVI_TELE_TXRX/A_RECT/A1_SYNC/r_cnt_h_0" BEL
         "A_DVI_TELE_TXRX/A_DISPLAY/A0_SYNC_GEN/r_cnt_v_9" BEL
         "A_DVI_TELE_TXRX/A_DISPLAY/A0_SYNC_GEN/r_cnt_v_8" BEL
         "A_DVI_TELE_TXRX/A_DISPLAY/A0_SYNC_GEN/r_cnt_v_7" BEL
@@ -5829,11 +5874,6 @@ TIMEGRP A_CRG_CLKFX_BUF_2 = BEL
         "A_DVI_TELE_TXRX/A_TELE_TX/cnt_run_2" BEL
         "A_DVI_TELE_TXRX/A_TELE_TX/cnt_run_1" BEL
         "A_DVI_TELE_TXRX/A_TELE_TX/cnt_run_0" BEL
-        "A_DVI_TELE_TXRX/A_RECT/A1_SYNC/o_sync_vs" BEL
-        "A_DVI_TELE_TXRX/A_RECT/A1_SYNC/o_sync_hs" BEL
-        "A_DVI_TELE_TXRX/A_RECT/A1_SYNC/o_sync_va" BEL
-        "A_DVI_TELE_TXRX/A_RECT/A1_SYNC/o_sync_ha" BEL
-        "A_DVI_TELE_TXRX/A_RECT/A1_SYNC/o_sync_de" BEL
         "A_DVI_TELE_TXRX/A_DISPLAY/A0_SYNC_GEN/o_sync_vs" BEL
         "A_DVI_TELE_TXRX/A_DISPLAY/A0_SYNC_GEN/o_sync_hs" BEL
         "A_DVI_TELE_TXRX/A_DISPLAY/A0_SYNC_GEN/o_sync_va" BEL
@@ -6047,38 +6087,6 @@ TIMEGRP A_CRG_CLKFX_BUF_2 = BEL
         "A_DVI_TELE_TXRX/A_DVI/DVIInit/I2CControl/InLatch/Value/Out_2" BEL
         "A_DVI_TELE_TXRX/A_DVI/DVIInit/I2CControl/InLatch/Value/Out_1" BEL
         "A_DVI_TELE_TXRX/A_DVI/DVIInit/I2CControl/InLatch/Value/Out_0" BEL
-        "A_DVI_TELE_TXRX/A_RECT/A2_DRAW/r_cnt_y_10" BEL
-        "A_DVI_TELE_TXRX/A_RECT/A2_DRAW/r_cnt_y_9" BEL
-        "A_DVI_TELE_TXRX/A_RECT/A2_DRAW/r_cnt_y_8" BEL
-        "A_DVI_TELE_TXRX/A_RECT/A2_DRAW/r_cnt_y_7" BEL
-        "A_DVI_TELE_TXRX/A_RECT/A2_DRAW/r_cnt_y_6" BEL
-        "A_DVI_TELE_TXRX/A_RECT/A2_DRAW/r_cnt_y_5" BEL
-        "A_DVI_TELE_TXRX/A_RECT/A2_DRAW/r_cnt_y_4" BEL
-        "A_DVI_TELE_TXRX/A_RECT/A2_DRAW/r_cnt_y_3" BEL
-        "A_DVI_TELE_TXRX/A_RECT/A2_DRAW/r_cnt_y_2" BEL
-        "A_DVI_TELE_TXRX/A_RECT/A2_DRAW/r_cnt_y_1" BEL
-        "A_DVI_TELE_TXRX/A_RECT/A2_DRAW/r_cnt_y_0" BEL
-        "A_DVI_TELE_TXRX/A_RECT/A2_DRAW/r_cnt_x_10" BEL
-        "A_DVI_TELE_TXRX/A_RECT/A2_DRAW/r_cnt_x_9" BEL
-        "A_DVI_TELE_TXRX/A_RECT/A2_DRAW/r_cnt_x_8" BEL
-        "A_DVI_TELE_TXRX/A_RECT/A2_DRAW/r_cnt_x_7" BEL
-        "A_DVI_TELE_TXRX/A_RECT/A2_DRAW/r_cnt_x_6" BEL
-        "A_DVI_TELE_TXRX/A_RECT/A2_DRAW/r_cnt_x_5" BEL
-        "A_DVI_TELE_TXRX/A_RECT/A2_DRAW/r_cnt_x_4" BEL
-        "A_DVI_TELE_TXRX/A_RECT/A2_DRAW/r_cnt_x_3" BEL
-        "A_DVI_TELE_TXRX/A_RECT/A2_DRAW/r_cnt_x_2" BEL
-        "A_DVI_TELE_TXRX/A_RECT/A2_DRAW/r_cnt_x_1" BEL
-        "A_DVI_TELE_TXRX/A_RECT/A2_DRAW/r_cnt_x_0" BEL
-        "A_DVI_TELE_TXRX/A_RECT/A2_DRAW/area_2" BEL
-        "A_DVI_TELE_TXRX/A_RECT/A2_DRAW/area_1" BEL
-        "A_DVI_TELE_TXRX/A_RECT/A2_DRAW/o_sync_red_6" BEL
-        "A_DVI_TELE_TXRX/A_RECT/A2_DRAW/o_sync_red_3" BEL
-        "A_DVI_TELE_TXRX/A_RECT/A2_DRAW/o_sync_red_2" BEL
-        "A_DVI_TELE_TXRX/A_RECT/A2_DRAW/o_sync_de" BEL
-        "A_DVI_TELE_TXRX/A_RECT/A2_DRAW/o_sync_ha" BEL
-        "A_DVI_TELE_TXRX/A_RECT/A2_DRAW/o_sync_va" BEL
-        "A_DVI_TELE_TXRX/A_RECT/A2_DRAW/o_sync_hs" BEL
-        "A_DVI_TELE_TXRX/A_RECT/A2_DRAW/o_sync_vs" BEL
         "A_DVI_TELE_TXRX/A_DVI/DVIInit/I2CControl/Master/SDAShft/SHIFT.Register/Out_0"
         BEL
         "A_DVI_TELE_TXRX/A_DVI/DVIInit/I2CControl/Master/SDAShft/SHIFT.Register/Out_1"
@@ -7161,6 +7169,86 @@ TIMEGRP A_CRG_CLKFX_BUF_2 = BEL
         "A_DVI_TELE_TXRX/A_DISPLAY/A1_DISP_DIGIT/r_cnt_clmn_2" BEL
         "A_DVI_TELE_TXRX/A_DISPLAY/A1_DISP_DIGIT/r_cnt_clmn_1" BEL
         "A_DVI_TELE_TXRX/A_DISPLAY/A1_DISP_DIGIT/r_cnt_clmn_0" BEL
+        "A_DVI_TELE_TXRX/A_RECT/A2_DRAW/o_sync_vs" BEL
+        "A_DVI_TELE_TXRX/A_RECT/A2_DRAW/o_sync_hs" BEL
+        "A_DVI_TELE_TXRX/A_RECT/A2_DRAW/o_sync_de" BEL
+        "A_DVI_TELE_TXRX/A_RECT/A2_DRAW/o_sync_va" BEL
+        "A_DVI_TELE_TXRX/A_RECT/A2_DRAW/o_sync_ha" BEL
+        "A_DVI_TELE_TXRX/A_RECT/A2_DRAW/o_sync_red_3" BEL
+        "A_DVI_TELE_TXRX/A_RECT/A2_DRAW/o_sync_blu_2" BEL
+        "A_DVI_TELE_TXRX/A_RECT/A2_DRAW/o_sync_blu_6" BEL
+        "A_DVI_TELE_TXRX/A_RECT/A2_DRAW/area_3" BEL
+        "A_DVI_TELE_TXRX/A_RECT/A2_DRAW/area_1" BEL
+        "A_DVI_TELE_TXRX/A_RECT/A2_DRAW/r_cnt_x_0" BEL
+        "A_DVI_TELE_TXRX/A_RECT/A2_DRAW/r_cnt_x_1" BEL
+        "A_DVI_TELE_TXRX/A_RECT/A2_DRAW/r_cnt_x_2" BEL
+        "A_DVI_TELE_TXRX/A_RECT/A2_DRAW/r_cnt_x_3" BEL
+        "A_DVI_TELE_TXRX/A_RECT/A2_DRAW/r_cnt_x_4" BEL
+        "A_DVI_TELE_TXRX/A_RECT/A2_DRAW/r_cnt_x_5" BEL
+        "A_DVI_TELE_TXRX/A_RECT/A2_DRAW/r_cnt_x_6" BEL
+        "A_DVI_TELE_TXRX/A_RECT/A2_DRAW/r_cnt_x_7" BEL
+        "A_DVI_TELE_TXRX/A_RECT/A2_DRAW/r_cnt_x_8" BEL
+        "A_DVI_TELE_TXRX/A_RECT/A2_DRAW/r_cnt_x_9" BEL
+        "A_DVI_TELE_TXRX/A_RECT/A2_DRAW/r_cnt_x_10" BEL
+        "A_DVI_TELE_TXRX/A_RECT/A2_DRAW/r_cnt_y_0" BEL
+        "A_DVI_TELE_TXRX/A_RECT/A2_DRAW/r_cnt_y_1" BEL
+        "A_DVI_TELE_TXRX/A_RECT/A2_DRAW/r_cnt_y_2" BEL
+        "A_DVI_TELE_TXRX/A_RECT/A2_DRAW/r_cnt_y_3" BEL
+        "A_DVI_TELE_TXRX/A_RECT/A2_DRAW/r_cnt_y_4" BEL
+        "A_DVI_TELE_TXRX/A_RECT/A2_DRAW/r_cnt_y_5" BEL
+        "A_DVI_TELE_TXRX/A_RECT/A2_DRAW/r_cnt_y_6" BEL
+        "A_DVI_TELE_TXRX/A_RECT/A2_DRAW/r_cnt_y_7" BEL
+        "A_DVI_TELE_TXRX/A_RECT/A2_DRAW/r_cnt_y_8" BEL
+        "A_DVI_TELE_TXRX/A_RECT/A2_DRAW/r_cnt_y_9" BEL
+        "A_DVI_TELE_TXRX/A_RECT/A2_DRAW/r_cnt_y_10" BEL
+        "A_DVI_TELE_TXRX/A_RECT/blk_pos_x_9" BEL
+        "A_DVI_TELE_TXRX/A_RECT/blk_pos_x_8" BEL
+        "A_DVI_TELE_TXRX/A_RECT/blk_pos_x_7" BEL
+        "A_DVI_TELE_TXRX/A_RECT/blk_pos_x_6" BEL
+        "A_DVI_TELE_TXRX/A_RECT/blk_pos_x_5" BEL
+        "A_DVI_TELE_TXRX/A_RECT/blk_pos_x_4" BEL
+        "A_DVI_TELE_TXRX/A_RECT/blk_pos_x_3" BEL
+        "A_DVI_TELE_TXRX/A_RECT/blk_pos_x_2" BEL
+        "A_DVI_TELE_TXRX/A_RECT/blk_pos_x_1" BEL
+        "A_DVI_TELE_TXRX/A_RECT/blk_pos_x_0" BEL
+        "A_DVI_TELE_TXRX/A_RECT/blk_pos_y_9" BEL
+        "A_DVI_TELE_TXRX/A_RECT/blk_pos_y_8" BEL
+        "A_DVI_TELE_TXRX/A_RECT/blk_pos_y_7" BEL
+        "A_DVI_TELE_TXRX/A_RECT/blk_pos_y_6" BEL
+        "A_DVI_TELE_TXRX/A_RECT/blk_pos_y_5" BEL
+        "A_DVI_TELE_TXRX/A_RECT/blk_pos_y_4" BEL
+        "A_DVI_TELE_TXRX/A_RECT/blk_pos_y_3" BEL
+        "A_DVI_TELE_TXRX/A_RECT/blk_pos_y_2" BEL
+        "A_DVI_TELE_TXRX/A_RECT/blk_pos_y_1" BEL
+        "A_DVI_TELE_TXRX/A_RECT/blk_pos_y_0" BEL
+        "A_DVI_TELE_TXRX/A_RECT/A1_SYNC/r_cnt_h_10" BEL
+        "A_DVI_TELE_TXRX/A_RECT/A1_SYNC/r_cnt_h_9" BEL
+        "A_DVI_TELE_TXRX/A_RECT/A1_SYNC/r_cnt_h_8" BEL
+        "A_DVI_TELE_TXRX/A_RECT/A1_SYNC/r_cnt_h_7" BEL
+        "A_DVI_TELE_TXRX/A_RECT/A1_SYNC/r_cnt_h_6" BEL
+        "A_DVI_TELE_TXRX/A_RECT/A1_SYNC/r_cnt_h_5" BEL
+        "A_DVI_TELE_TXRX/A_RECT/A1_SYNC/r_cnt_h_4" BEL
+        "A_DVI_TELE_TXRX/A_RECT/A1_SYNC/r_cnt_h_3" BEL
+        "A_DVI_TELE_TXRX/A_RECT/A1_SYNC/r_cnt_h_2" BEL
+        "A_DVI_TELE_TXRX/A_RECT/A1_SYNC/r_cnt_h_1" BEL
+        "A_DVI_TELE_TXRX/A_RECT/A1_SYNC/r_cnt_h_0" BEL
+        "A_DVI_TELE_TXRX/A_RECT/A1_SYNC/r_cnt_v_9" BEL
+        "A_DVI_TELE_TXRX/A_RECT/A1_SYNC/r_cnt_v_8" BEL
+        "A_DVI_TELE_TXRX/A_RECT/A1_SYNC/r_cnt_v_7" BEL
+        "A_DVI_TELE_TXRX/A_RECT/A1_SYNC/r_cnt_v_6" BEL
+        "A_DVI_TELE_TXRX/A_RECT/A1_SYNC/r_cnt_v_5" BEL
+        "A_DVI_TELE_TXRX/A_RECT/A1_SYNC/r_cnt_v_4" BEL
+        "A_DVI_TELE_TXRX/A_RECT/A1_SYNC/r_cnt_v_3" BEL
+        "A_DVI_TELE_TXRX/A_RECT/A1_SYNC/r_cnt_v_2" BEL
+        "A_DVI_TELE_TXRX/A_RECT/A1_SYNC/r_cnt_v_1" BEL
+        "A_DVI_TELE_TXRX/A_RECT/A1_SYNC/r_cnt_v_0" BEL
+        "A_DVI_TELE_TXRX/A_RECT/A1_SYNC/o_sync_vs" BEL
+        "A_DVI_TELE_TXRX/A_RECT/A1_SYNC/o_sync_hs" BEL
+        "A_DVI_TELE_TXRX/A_RECT/A1_SYNC/o_sync_va" BEL
+        "A_DVI_TELE_TXRX/A_RECT/A1_SYNC/o_sync_ha" BEL
+        "A_DVI_TELE_TXRX/A_RECT/A1_SYNC/o_sync_de" BEL
+        "A_DVI_TELE_TXRX/A_RECT/block_rad_1" BEL
+        "A_DVI_TELE_TXRX/A_RECT/block_rad_0" BEL
         "A_DVI_TELE_TXRX/A_DVI/DVIInit/I2CCmdInit/SHIFT.VldShft/SHIFT.Register/Out_0"
         BEL
         "A_DVI_TELE_TXRX/A_DVI/DVIInit/I2CCmdInit/SHIFT.VldShft/SHIFT.Register/Out_1"
@@ -7347,6 +7435,16 @@ TIMEGRP A_CRG_CLKFX_BUF_2 = BEL
         "A_DVI_TELE_TXRX/A_DVI/DVIInit/I2CDatInit/SHIFT.VldShft/SHIFT.Register/Out_5"
         BEL "A_DVI_TELE_TXRX/A_DVI/DVIInit/I2CDatInit/SHIFT.SprReg/Out_0" BEL
         "A_DVI_TELE_TXRX/A_DVI/DVIInit/I2CDatInit/SHIFT.LstValReg/Out_0" BEL
+        "A_DVI_TELE_TXRX/A_DVI/DVIData/PixCnt/RgnAX/FSM.State/Out_1" BEL
+        "A_DVI_TELE_TXRX/A_DVI/DVIData/PixCnt/RgnAX/FSM.State/Out_2" BEL
+        "A_DVI_TELE_TXRX/A_DVI/DVIData/PixCnt/RgnAY/FSM.State/Out_1" BEL
+        "A_DVI_TELE_TXRX/A_DVI/DVIData/PixCnt/RgnAY/FSM.State/Out_2" BEL
+        "A_DVI_TELE_TXRX/A_DVI/DVIData/PixCnt/RgnHS/FSM.State/Out_0" BEL
+        "A_DVI_TELE_TXRX/A_DVI/DVIData/PixCnt/RgnHS/FSM.State/Out_1" BEL
+        "A_DVI_TELE_TXRX/A_DVI/DVIData/PixCnt/RgnHS/FSM.State/Out_2" BEL
+        "A_DVI_TELE_TXRX/A_DVI/DVIData/PixCnt/RgnVS/FSM.State/Out_0" BEL
+        "A_DVI_TELE_TXRX/A_DVI/DVIData/PixCnt/RgnVS/FSM.State/Out_1" BEL
+        "A_DVI_TELE_TXRX/A_DVI/DVIData/PixCnt/RgnVS/FSM.State/Out_2" BEL
         "A_DVI_TELE_TXRX/A_DVI/DVIData/PixCnt/XCnt/Register/Out_10" BEL
         "A_DVI_TELE_TXRX/A_DVI/DVIData/PixCnt/XCnt/Register/Out_9" BEL
         "A_DVI_TELE_TXRX/A_DVI/DVIData/PixCnt/XCnt/Register/Out_8" BEL
@@ -7386,16 +7484,6 @@ TIMEGRP A_CRG_CLKFX_BUF_2 = BEL
         "A_DVI_TELE_TXRX/A_DVI/DVIData/SyncBuf/Out_1" BEL
         "A_DVI_TELE_TXRX/A_DVI/DVIData/SyncBuf/Out_2" BEL
         "A_DVI_TELE_TXRX/A_DVI/DVIData/FVPReg/Out_0" BEL
-        "A_DVI_TELE_TXRX/A_DVI/DVIData/PixCnt/RgnAX/FSM.State/Out_1" BEL
-        "A_DVI_TELE_TXRX/A_DVI/DVIData/PixCnt/RgnAX/FSM.State/Out_2" BEL
-        "A_DVI_TELE_TXRX/A_DVI/DVIData/PixCnt/RgnAY/FSM.State/Out_1" BEL
-        "A_DVI_TELE_TXRX/A_DVI/DVIData/PixCnt/RgnAY/FSM.State/Out_2" BEL
-        "A_DVI_TELE_TXRX/A_DVI/DVIData/PixCnt/RgnHS/FSM.State/Out_0" BEL
-        "A_DVI_TELE_TXRX/A_DVI/DVIData/PixCnt/RgnHS/FSM.State/Out_1" BEL
-        "A_DVI_TELE_TXRX/A_DVI/DVIData/PixCnt/RgnHS/FSM.State/Out_2" BEL
-        "A_DVI_TELE_TXRX/A_DVI/DVIData/PixCnt/RgnVS/FSM.State/Out_0" BEL
-        "A_DVI_TELE_TXRX/A_DVI/DVIData/PixCnt/RgnVS/FSM.State/Out_1" BEL
-        "A_DVI_TELE_TXRX/A_DVI/DVIData/PixCnt/RgnVS/FSM.State/Out_2" BEL
         "A_DVI_TELE_TXRX/A_BUTTON/Mshreg_BUTTON_E_D_3" BEL
         "A_DVI_TELE_TXRX/A_BUTTON/BUTTON_E_D_3" BEL
         "A_DVI_TELE_TXRX/A_BUTTON/Mshreg_BUTTON_N_D_3" BEL

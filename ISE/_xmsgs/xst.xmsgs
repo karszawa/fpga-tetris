@@ -8,16 +8,55 @@
 <msg type="warning" file="HDLCompilers" num="298" delta="unknown" ><arg fmt="%s" index="1">&quot;../rtl/dvi/DVI_TOP.v&quot; line 364 </arg>Too many digits specified in decimal constant
 </msg>
 
+<msg type="warning" file="HDLCompilers" num="259" delta="unknown" ><arg fmt="%s" index="1">&quot;../rtl/dvi/move_rect.v&quot; line 103 </arg>Connection to input port &apos;<arg fmt="%s" index="2">blk_pos_x</arg>&apos; does not match port size
+</msg>
+
+<msg type="warning" file="HDLCompilers" num="259" delta="unknown" ><arg fmt="%s" index="1">&quot;../rtl/dvi/move_rect.v&quot; line 104 </arg>Connection to input port &apos;<arg fmt="%s" index="2">blk_pos_y</arg>&apos; does not match port size
+</msg>
+
+<msg type="warning" file="HDLCompilers" num="259" delta="unknown" ><arg fmt="%s" index="1">&quot;../rtl/dvi/move_rect.v&quot; line 105 </arg>Connection to input port &apos;<arg fmt="%s" index="2">blk_id</arg>&apos; does not match port size
+</msg>
+
+<msg type="warning" file="HDLCompilers" num="259" delta="unknown" ><arg fmt="%s" index="1">&quot;../rtl/dvi/move_rect.v&quot; line 106 </arg>Connection to input port &apos;<arg fmt="%s" index="2">blk_rad</arg>&apos; does not match port size
+</msg>
+
 <msg type="info" file="Xst" num="1433" delta="unknown" >Contents of array &lt;<arg fmt="%s" index="1">disp_buf_1</arg>&gt; may be accessed with an index that exceeds the array size. This could cause simulation mismatch.
 </msg>
 
-<msg type="warning" file="Xst" num="790" delta="unknown" >&quot;<arg fmt="%s" index="1">../rtl/dvi/draw_rect.v</arg>&quot; line <arg fmt="%d" index="2">106</arg>: Index value(s) does not match array range, simulation mismatch.
+<msg type="warning" file="Xst" num="790" delta="unknown" >&quot;<arg fmt="%s" index="1">../rtl/dvi/draw_rect.v</arg>&quot; line <arg fmt="%d" index="2">80</arg>: Index value(s) does not match array range, simulation mismatch.
+</msg>
+
+<msg type="warning" file="Xst" num="790" delta="unknown" >&quot;<arg fmt="%s" index="1">../rtl/dvi/draw_rect.v</arg>&quot; line <arg fmt="%d" index="2">81</arg>: Index value(s) does not match array range, simulation mismatch.
+</msg>
+
+<msg type="warning" file="Xst" num="790" delta="unknown" >&quot;<arg fmt="%s" index="1">../rtl/dvi/draw_rect.v</arg>&quot; line <arg fmt="%d" index="2">83</arg>: Index value(s) does not match array range, simulation mismatch.
+</msg>
+
+<msg type="warning" file="Xst" num="790" delta="unknown" >&quot;<arg fmt="%s" index="1">../rtl/dvi/draw_rect.v</arg>&quot; line <arg fmt="%d" index="2">84</arg>: Index value(s) does not match array range, simulation mismatch.
+</msg>
+
+<msg type="warning" file="Xst" num="790" delta="unknown" >&quot;<arg fmt="%s" index="1">../rtl/dvi/draw_rect.v</arg>&quot; line <arg fmt="%d" index="2">86</arg>: Index value(s) does not match array range, simulation mismatch.
+</msg>
+
+<msg type="warning" file="Xst" num="790" delta="unknown" >&quot;<arg fmt="%s" index="1">../rtl/dvi/draw_rect.v</arg>&quot; line <arg fmt="%d" index="2">87</arg>: Index value(s) does not match array range, simulation mismatch.
+</msg>
+
+<msg type="warning" file="Xst" num="790" delta="unknown" >&quot;<arg fmt="%s" index="1">../rtl/dvi/draw_rect.v</arg>&quot; line <arg fmt="%d" index="2">89</arg>: Index value(s) does not match array range, simulation mismatch.
+</msg>
+
+<msg type="warning" file="Xst" num="790" delta="unknown" >&quot;<arg fmt="%s" index="1">../rtl/dvi/draw_rect.v</arg>&quot; line <arg fmt="%d" index="2">90</arg>: Index value(s) does not match array range, simulation mismatch.
+</msg>
+
+<msg type="warning" file="Xst" num="790" delta="unknown" >&quot;<arg fmt="%s" index="1">../rtl/dvi/draw_rect.v</arg>&quot; line <arg fmt="%d" index="2">94</arg>: Index value(s) does not match array range, simulation mismatch.
 </msg>
 
 <msg type="info" file="Xst" num="2679" delta="unknown" >Register &lt;<arg fmt="%s" index="1">i</arg>&gt; in unit &lt;<arg fmt="%s" index="2">disp_digit</arg>&gt; has a constant value of <arg fmt="%s" index="3">10000000</arg> during circuit operation. The register is replaced by logic.
 </msg>
 
-<msg type="info" file="Xst" num="2679" delta="unknown" >Register &lt;<arg fmt="%s" index="1">board</arg>&gt; in unit &lt;<arg fmt="%s" index="2">draw_rect</arg>&gt; has a constant value of <arg fmt="%s" index="3">0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000100010001</arg> during circuit operation. The register is replaced by logic.
+<msg type="info" file="Xst" num="2679" delta="unknown" >Register &lt;<arg fmt="%s" index="1">block_id</arg>&gt; in unit &lt;<arg fmt="%s" index="2">move_rect</arg>&gt; has a constant value of <arg fmt="%s" index="3">0000</arg> during circuit operation. The register is replaced by logic.
+</msg>
+
+<msg type="info" file="Xst" num="2679" delta="unknown" >Register &lt;<arg fmt="%s" index="1">board</arg>&gt; in unit &lt;<arg fmt="%s" index="2">move_rect</arg>&gt; has a constant value of <arg fmt="%s" index="3">0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</arg> during circuit operation. The register is replaced by logic.
 </msg>
 
 <msg type="info" file="Xst" num="2679" delta="unknown" >Register &lt;<arg fmt="%s" index="1">data_out&lt;250&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">audio_if</arg>&gt; has a constant value of <arg fmt="%s" index="3">0</arg> during circuit operation. The register is replaced by logic.
@@ -1325,40 +1364,7 @@
 <msg type="warning" file="Xst" num="647" delta="unknown" >Input &lt;<arg fmt="%s" index="1">Count&lt;2&gt;</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 </msg>
 
-<msg type="warning" file="Xst" num="647" delta="unknown" >Input &lt;<arg fmt="%s" index="1">i_pls_c</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
-</msg>
-
-<msg type="warning" file="Xst" num="647" delta="unknown" >Input &lt;<arg fmt="%s" index="1">i_pls_e</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
-</msg>
-
-<msg type="warning" file="Xst" num="647" delta="unknown" >Input &lt;<arg fmt="%s" index="1">i_pls_n</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
-</msg>
-
-<msg type="warning" file="Xst" num="647" delta="unknown" >Input &lt;<arg fmt="%s" index="1">i_mouse_dif_x</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
-</msg>
-
-<msg type="warning" file="Xst" num="647" delta="unknown" >Input &lt;<arg fmt="%s" index="1">i_mouse_dif_y</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
-</msg>
-
-<msg type="warning" file="Xst" num="647" delta="unknown" >Input &lt;<arg fmt="%s" index="1">i_pls_s</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
-</msg>
-
-<msg type="warning" file="Xst" num="647" delta="unknown" >Input &lt;<arg fmt="%s" index="1">i_pls_w</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
-</msg>
-
-<msg type="warning" file="Xst" num="647" delta="unknown" >Input &lt;<arg fmt="%s" index="1">i_mouse_valid</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
-</msg>
-
-<msg type="warning" file="Xst" num="647" delta="unknown" >Input &lt;<arg fmt="%s" index="1">i_rect_pos_x&lt;11&gt;</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
-</msg>
-
-<msg type="warning" file="Xst" num="647" delta="unknown" >Input &lt;<arg fmt="%s" index="1">i_rect_pos_y&lt;11&gt;</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
-</msg>
-
-<msg type="warning" file="Xst" num="646" delta="unknown" >Signal &lt;<arg fmt="%s" index="1">r_pos_y</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
-</msg>
-
-<msg type="warning" file="Xst" num="646" delta="unknown" >Signal &lt;<arg fmt="%s" index="1">r_pos_x</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="647" delta="unknown" >Input &lt;<arg fmt="%s" index="1">blk_id&lt;4:3&gt;</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 </msg>
 
 <msg type="info" file="Xst" num="2117" delta="unknown" >HDL ADVISOR - Mux Selector &lt;<arg fmt="%s" index="1">area</arg>&gt; of Case statement line <arg fmt="%s" index="2">0</arg> was re-encoded using one-hot encoding. The case statement will be optimized (default statement optimization), but this optimization may lead to design initialization problems. To ensure the design works safely, you can:
@@ -1367,7 +1373,7 @@
 	- use the attribute &apos;<arg fmt="%s" index="7">safe_implementation</arg> <arg fmt="%s" index="8">yes</arg>&apos; to force XST to perform a safe (but less efficient) optimization
 </msg>
 
-<msg type="warning" file="Xst" num="643" delta="unknown" >&quot;<arg fmt="%s" index="1">../rtl/dvi/draw_rect.v</arg>&quot; line <arg fmt="%d" index="2">96</arg>: The result of a <arg fmt="%d" index="3">32</arg>x<arg fmt="%d" index="4">4</arg>-bit multiplication is partially used. Only the <arg fmt="%d" index="5">8</arg> least significant bits are used. If you are doing this on purpose, you may safely ignore this warning. Otherwise, make sure you are not losing information, leading to unexpected circuit behavior.
+<msg type="warning" file="Xst" num="643" delta="unknown" >&quot;<arg fmt="%s" index="1">../rtl/dvi/draw_rect.v</arg>&quot; line <arg fmt="%d" index="2">66</arg>: The result of a <arg fmt="%d" index="3">10</arg>x<arg fmt="%d" index="4">4</arg>-bit multiplication is partially used. Only the <arg fmt="%d" index="5">8</arg> least significant bits are used. If you are doing this on purpose, you may safely ignore this warning. Otherwise, make sure you are not losing information, leading to unexpected circuit behavior.
 </msg>
 
 <msg type="warning" file="Xst" num="646" delta="unknown" >Signal &lt;<arg fmt="%s" index="1">write_r</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
@@ -1401,6 +1407,12 @@
 	- add an &apos;<arg fmt="%s" index="3">INIT</arg>&apos; attribute on signal &lt;<arg fmt="%s" index="4">s_ps2_transmitter</arg>&gt; (optimization is then done without any risk)
 	- use the attribute &apos;<arg fmt="%s" index="5">signal_encoding</arg> <arg fmt="%s" index="6">user</arg>&apos; to avoid onehot optimization
 	- use the attribute &apos;<arg fmt="%s" index="7">safe_implementation</arg> <arg fmt="%s" index="8">yes</arg>&apos; to force XST to perform a safe (but less efficient) optimization
+</msg>
+
+<msg type="warning" file="Xst" num="1780" delta="unknown" >Signal &lt;<arg fmt="%s" index="1">state</arg>&gt; is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="646" delta="unknown" >Signal &lt;<arg fmt="%s" index="1">i_pls_c</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
 </msg>
 
 <msg type="warning" file="Xst" num="1780" delta="unknown" >Signal &lt;<arg fmt="%s" index="1">BUF_Q</arg>&gt; is never used or assigned. This unconnected signal will be trimmed during the optimization process.
@@ -1697,10 +1709,25 @@
 <msg type="warning" file="Xst" num="1305" delta="unknown" >Output &lt;<arg fmt="%s" index="1">LCD_EN</arg>&gt; is never assigned. Tied to value <arg fmt="%s" index="2">0</arg>.
 </msg>
 
+<msg type="warning" file="Xst" num="647" delta="unknown" >Input &lt;<arg fmt="%s" index="1">rect_pos_x</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="unknown" >Input &lt;<arg fmt="%s" index="1">rect_pos_y</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="unknown" >Input &lt;<arg fmt="%s" index="1">mouse_dif_x</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="unknown" >Input &lt;<arg fmt="%s" index="1">mouse_dif_y</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
 <msg type="warning" file="Xst" num="1305" delta="unknown" >Output &lt;<arg fmt="%s" index="1">LCD_RS</arg>&gt; is never assigned. Tied to value <arg fmt="%s" index="2">0</arg>.
 </msg>
 
 <msg type="warning" file="Xst" num="1305" delta="unknown" >Output &lt;<arg fmt="%s" index="1">LCD_RW</arg>&gt; is never assigned. Tied to value <arg fmt="%s" index="2">0</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="unknown" >Input &lt;<arg fmt="%s" index="1">mouse_valid</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 </msg>
 
 <msg type="warning" file="Xst" num="2563" delta="unknown" >Inout &lt;<arg fmt="%s" index="1">LCD_DATA&lt;0&gt;</arg>&gt; is never assigned. Tied to value <arg fmt="%s" index="2">Z</arg>.
@@ -1776,10 +1803,6 @@
 It will be removed from the design.
 </msg>
 
-<msg type="warning" file="Xst" num="1290" delta="unknown" >Hierarchical block &lt;<arg fmt="%s" index="1">A0_BUTTON</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">A_RECT</arg>&gt;.
-It will be removed from the design.
-</msg>
-
 <msg type="warning" file="Xst" num="1290" delta="unknown" >Hierarchical block &lt;<arg fmt="%s" index="1">DOBuff</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">I2CControl</arg>&gt;.
 It will be removed from the design.
 </msg>
@@ -1796,13 +1819,16 @@ It will be removed from the design.
 <msg type="info" file="Xst" num="2261" delta="unknown" >The FF/Latch &lt;<arg fmt="%s" index="1">o_tx_addr_3</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">A_TELE_TX</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;o_tx_data_3&gt; </arg>
 </msg>
 
-<msg type="info" file="Xst" num="2261" delta="unknown" >The FF/Latch &lt;<arg fmt="%s" index="1">o_sync_red_0</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">A2_DRAW</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">7 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;o_sync_red_1&gt; &lt;o_sync_red_4&gt; &lt;o_sync_blu_0&gt; &lt;o_sync_blu_1&gt; &lt;o_sync_blu_2&gt; &lt;o_sync_blu_4&gt; &lt;o_sync_blu_5&gt; </arg>
+<msg type="info" file="Xst" num="2261" delta="unknown" >The FF/Latch &lt;<arg fmt="%s" index="1">o_sync_red_0</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">A2_DRAW</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">5 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;o_sync_red_1&gt; &lt;o_sync_red_4&gt; &lt;o_sync_blu_0&gt; &lt;o_sync_blu_1&gt; &lt;o_sync_blu_4&gt; </arg>
 </msg>
 
-<msg type="info" file="Xst" num="2261" delta="unknown" >The FF/Latch &lt;<arg fmt="%s" index="1">o_sync_red_3</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">A2_DRAW</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">4 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;o_sync_red_7&gt; &lt;o_sync_blu_3&gt; &lt;o_sync_blu_6&gt; &lt;o_sync_blu_7&gt; </arg>
+<msg type="info" file="Xst" num="2261" delta="unknown" >The FF/Latch &lt;<arg fmt="%s" index="1">o_sync_red_3</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">A2_DRAW</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">3 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;o_sync_red_7&gt; &lt;o_sync_blu_3&gt; &lt;o_sync_blu_7&gt; </arg>
 </msg>
 
 <msg type="info" file="Xst" num="2261" delta="unknown" >The FF/Latch &lt;<arg fmt="%s" index="1">o_sync_red_2</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">A2_DRAW</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;o_sync_red_5&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="unknown" >The FF/Latch &lt;<arg fmt="%s" index="1">o_sync_blu_2</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">A2_DRAW</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;o_sync_blu_5&gt; </arg>
 </msg>
 
 <msg type="warning" file="Xst" num="1710" delta="unknown" >FF/Latch &lt;<arg fmt="%s" index="1">Out_0</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">FSM.State</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
@@ -1820,7 +1846,13 @@ It will be removed from the design.
 <msg type="warning" file="Xst" num="1710" delta="unknown" >FF/Latch &lt;<arg fmt="%s" index="1">FFd1</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">FSM</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
+<msg type="warning" file="Xst" num="1710" delta="unknown" >FF/Latch &lt;<arg fmt="%s" index="1">2</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">area</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
 <msg type="warning" file="Xst" num="1710" delta="unknown" >FF/Latch &lt;<arg fmt="%s" index="1">o_sync_red_0</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">A2_DRAW</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="unknown" >FF/Latch &lt;<arg fmt="%s" index="1">o_sync_red_2</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">A2_DRAW</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
 <msg type="warning" file="Xst" num="1710" delta="unknown" >FF/Latch &lt;<arg fmt="%s" index="1">0</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">2</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
@@ -1887,13 +1919,7 @@ It will be removed from the design.
 <msg type="warning" file="Xst" num="1895" delta="unknown" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">o_sync_blu_1</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">draw_rect</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="1895" delta="unknown" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">o_sync_blu_2</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">draw_rect</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
-</msg>
-
 <msg type="warning" file="Xst" num="1895" delta="unknown" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">o_sync_blu_4</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">draw_rect</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
-</msg>
-
-<msg type="warning" file="Xst" num="1895" delta="unknown" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">o_sync_blu_5</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">draw_rect</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
 <msg type="info" file="Xst" num="2261" delta="unknown" >The FF/Latch &lt;<arg fmt="%s" index="1">o_tx_addr_0</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">tele_tx</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;o_tx_data_0&gt; </arg>
@@ -1908,10 +1934,13 @@ It will be removed from the design.
 <msg type="info" file="Xst" num="2261" delta="unknown" >The FF/Latch &lt;<arg fmt="%s" index="1">o_tx_addr_3</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">tele_tx</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;o_tx_data_3&gt; </arg>
 </msg>
 
-<msg type="info" file="Xst" num="2261" delta="unknown" >The FF/Latch &lt;<arg fmt="%s" index="1">o_sync_red_3</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">draw_rect</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">4 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;o_sync_red_7&gt; &lt;o_sync_blu_3&gt; &lt;o_sync_blu_6&gt; &lt;o_sync_blu_7&gt; </arg>
+<msg type="info" file="Xst" num="2261" delta="unknown" >The FF/Latch &lt;<arg fmt="%s" index="1">o_sync_red_3</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">draw_rect</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">3 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;o_sync_red_7&gt; &lt;o_sync_blu_3&gt; &lt;o_sync_blu_7&gt; </arg>
 </msg>
 
 <msg type="info" file="Xst" num="2261" delta="unknown" >The FF/Latch &lt;<arg fmt="%s" index="1">o_sync_red_2</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">draw_rect</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;o_sync_red_5&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="unknown" >The FF/Latch &lt;<arg fmt="%s" index="1">o_sync_blu_2</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">draw_rect</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;o_sync_blu_5&gt; </arg>
 </msg>
 
 <msg type="info" file="Xst" num="2261" delta="unknown" >The FF/Latch &lt;<arg fmt="%s" index="1">o_addr_3</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">tele_err</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">3 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;o_addr_4&gt; &lt;o_addr_5&gt; &lt;o_addr_6&gt; </arg>
@@ -1923,7 +1952,16 @@ It will be removed from the design.
 <msg type="warning" file="Xst" num="1294" delta="unknown" >Latch &lt;<arg fmt="%s" index="1">data_ready</arg>&gt; is equivalent to a wire in block &lt;<arg fmt="%s" index="2">ps2_mouse_interface</arg>&gt;.
 </msg>
 
+<msg type="warning" file="Xst" num="1710" delta="unknown" >FF/Latch &lt;<arg fmt="%s" index="1">area_2</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">draw_rect</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1895" delta="unknown" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">o_sync_red_2</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">draw_rect</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
 <msg type="warning" file="Xst" num="2677" delta="unknown" >Node &lt;<arg fmt="%s" index="1">area_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">draw_rect</arg>&gt;.
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="unknown" >The FF/Latch &lt;<arg fmt="%s" index="1">o_sync_red_3</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">draw_rect</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;o_sync_red_6&gt; </arg>
 </msg>
 
 <msg type="warning" file="Xst" num="1710" delta="unknown" >FF/Latch &lt;<arg fmt="%s" index="1">nxtSTATE_2</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">ps2_keyboard_ctrl</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
@@ -1968,9 +2006,6 @@ It will be removed from the design.
 </msg>
 
 <msg type="warning" file="Xst" num="2677" delta="unknown" >Node &lt;<arg fmt="%s" index="1">cnt_clk_31</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">DVI_TOP</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="1989" delta="unknown" >Unit &lt;<arg fmt="%s" index="1">DVI_TOP</arg>&gt;: instances &lt;<arg fmt="%s" index="2">A_BUTTON</arg>&gt;, &lt;<arg fmt="%s" index="3">A_RECT/A0_BUTTON</arg>&gt; of unit &lt;<arg fmt="%s" index="4">button_detector</arg>&gt; are equivalent, second instance is removed
 </msg>
 
 <msg type="warning" file="Xst" num="2677" delta="unknown" >Node &lt;<arg fmt="%s" index="1">A_PS2_KEY_MOUSE/A0_MOUSE/m1/left_button</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">fpga_top</arg>&gt;.
@@ -2384,25 +2419,115 @@ This instance will be removed from the design along with all underlying logic
 <msg type="warning" file="Xst" num="2677" delta="unknown" >Node &lt;<arg fmt="%s" index="1">A_AUDIO/A1_PROC/A_BUTTON_PLS/O_PLS_BUTTON_N</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">fpga_top</arg>&gt;.
 </msg>
 
+<msg type="warning" file="Xst" num="2677" delta="unknown" >Node &lt;<arg fmt="%s" index="1">A_DVI_TELE_TXRX/A_RECT/A0_BUTTON/BUTTON_C_D_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">fpga_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="unknown" >Node &lt;<arg fmt="%s" index="1">A_DVI_TELE_TXRX/A_RECT/A0_BUTTON/BUTTON_C_D_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">fpga_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="unknown" >Node &lt;<arg fmt="%s" index="1">A_DVI_TELE_TXRX/A_RECT/A0_BUTTON/BUTTON_C_D_2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">fpga_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="unknown" >Node &lt;<arg fmt="%s" index="1">A_DVI_TELE_TXRX/A_RECT/A0_BUTTON/BUTTON_C_D_3</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">fpga_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="unknown" >Node &lt;<arg fmt="%s" index="1">A_DVI_TELE_TXRX/A_RECT/A0_BUTTON/BUTTON_C_D_4</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">fpga_top</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="unknown" >Node &lt;<arg fmt="%s" index="1">A_DVI_TELE_TXRX/A_RECT/A0_BUTTON/O_PLS_BUTTON_C</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">fpga_top</arg>&gt;.
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="unknown" >The FF/Latch &lt;<arg fmt="%s" index="1">A_DVI_TELE_TXRX/A_BUTTON/BUTTON_W_D_0</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">fpga_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;A_DVI_TELE_TXRX/A_RECT/A0_BUTTON/BUTTON_W_D_0&gt; </arg>
+</msg>
+
 <msg type="info" file="Xst" num="2261" delta="unknown" >The FF/Latch &lt;<arg fmt="%s" index="1">A_PS2_KEY_MOUSE/A1_KEYBOARD/A1_PS2_Command_Out/ps2_command_7</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">fpga_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">7 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;A_PS2_KEY_MOUSE/A1_KEYBOARD/A1_PS2_Command_Out/ps2_command_6&gt; &lt;A_PS2_KEY_MOUSE/A1_KEYBOARD/A1_PS2_Command_Out/ps2_command_5&gt; &lt;A_PS2_KEY_MOUSE/A1_KEYBOARD/A1_PS2_Command_Out/ps2_command_4&gt; &lt;A_PS2_KEY_MOUSE/A1_KEYBOARD/A1_PS2_Command_Out/ps2_command_3&gt; &lt;A_PS2_KEY_MOUSE/A1_KEYBOARD/A1_PS2_Command_Out/ps2_command_2&gt; &lt;A_PS2_KEY_MOUSE/A1_KEYBOARD/A1_PS2_Command_Out/ps2_command_1&gt; &lt;A_PS2_KEY_MOUSE/A1_KEYBOARD/A1_PS2_Command_Out/ps2_command_0&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="unknown" >The FF/Latch &lt;<arg fmt="%s" index="1">A_DVI_TELE_TXRX/A_BUTTON/BUTTON_E_D_0</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">fpga_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;A_DVI_TELE_TXRX/A_RECT/A0_BUTTON/BUTTON_E_D_0&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="unknown" >The FF/Latch &lt;<arg fmt="%s" index="1">A_DVI_TELE_TXRX/A_BUTTON/BUTTON_N_D_0</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">fpga_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;A_DVI_TELE_TXRX/A_RECT/A0_BUTTON/BUTTON_N_D_0&gt; </arg>
 </msg>
 
 <msg type="info" file="Xst" num="2261" delta="unknown" >The FF/Latch &lt;<arg fmt="%s" index="1">A_AUDIO/A0_IF/A_BUTTON_PLS/BUTTON_S_D_0</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">fpga_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;A_AUDIO/A1_PROC/A_BUTTON_PLS/BUTTON_S_D_0&gt; </arg>
 </msg>
 
+<msg type="info" file="Xst" num="2261" delta="unknown" >The FF/Latch &lt;<arg fmt="%s" index="1">A_DVI_TELE_TXRX/A_BUTTON/BUTTON_S_D_0</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">fpga_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;A_DVI_TELE_TXRX/A_RECT/A0_BUTTON/BUTTON_S_D_0&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="unknown" >The FF/Latch &lt;<arg fmt="%s" index="1">A_DVI_TELE_TXRX/A_BUTTON/BUTTON_W_D_1</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">fpga_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;A_DVI_TELE_TXRX/A_RECT/A0_BUTTON/BUTTON_W_D_1&gt; </arg>
+</msg>
+
 <msg type="info" file="Xst" num="2261" delta="unknown" >The FF/Latch &lt;<arg fmt="%s" index="1">A_AUDIO/A0_IF/A_BUTTON_PLS/BUTTON_S_D_1</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">fpga_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;A_AUDIO/A1_PROC/A_BUTTON_PLS/BUTTON_S_D_1&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="unknown" >The FF/Latch &lt;<arg fmt="%s" index="1">A_DVI_TELE_TXRX/A_BUTTON/BUTTON_N_D_1</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">fpga_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;A_DVI_TELE_TXRX/A_RECT/A0_BUTTON/BUTTON_N_D_1&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="unknown" >The FF/Latch &lt;<arg fmt="%s" index="1">A_DVI_TELE_TXRX/A_BUTTON/BUTTON_S_D_1</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">fpga_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;A_DVI_TELE_TXRX/A_RECT/A0_BUTTON/BUTTON_S_D_1&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="unknown" >The FF/Latch &lt;<arg fmt="%s" index="1">A_DVI_TELE_TXRX/A_BUTTON/BUTTON_E_D_1</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">fpga_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;A_DVI_TELE_TXRX/A_RECT/A0_BUTTON/BUTTON_E_D_1&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="unknown" >The FF/Latch &lt;<arg fmt="%s" index="1">A_DVI_TELE_TXRX/A_BUTTON/BUTTON_W_D_2</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">fpga_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;A_DVI_TELE_TXRX/A_RECT/A0_BUTTON/BUTTON_W_D_2&gt; </arg>
 </msg>
 
 <msg type="info" file="Xst" num="2261" delta="unknown" >The FF/Latch &lt;<arg fmt="%s" index="1">A_AUDIO/A0_IF/A_BUTTON_PLS/BUTTON_S_D_2</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">fpga_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;A_AUDIO/A1_PROC/A_BUTTON_PLS/BUTTON_S_D_2&gt; </arg>
 </msg>
 
+<msg type="info" file="Xst" num="2261" delta="unknown" >The FF/Latch &lt;<arg fmt="%s" index="1">A_DVI_TELE_TXRX/A_BUTTON/BUTTON_N_D_2</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">fpga_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;A_DVI_TELE_TXRX/A_RECT/A0_BUTTON/BUTTON_N_D_2&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="unknown" >The FF/Latch &lt;<arg fmt="%s" index="1">A_DVI_TELE_TXRX/A_BUTTON/BUTTON_S_D_2</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">fpga_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;A_DVI_TELE_TXRX/A_RECT/A0_BUTTON/BUTTON_S_D_2&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="unknown" >The FF/Latch &lt;<arg fmt="%s" index="1">A_DVI_TELE_TXRX/A_BUTTON/BUTTON_E_D_2</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">fpga_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;A_DVI_TELE_TXRX/A_RECT/A0_BUTTON/BUTTON_E_D_2&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="unknown" >The FF/Latch &lt;<arg fmt="%s" index="1">A_DVI_TELE_TXRX/A_BUTTON/BUTTON_W_D_3</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">fpga_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;A_DVI_TELE_TXRX/A_RECT/A0_BUTTON/BUTTON_W_D_3&gt; </arg>
+</msg>
+
 <msg type="info" file="Xst" num="2261" delta="unknown" >The FF/Latch &lt;<arg fmt="%s" index="1">A_AUDIO/A0_IF/A_BUTTON_PLS/BUTTON_S_D_3</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">fpga_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;A_AUDIO/A1_PROC/A_BUTTON_PLS/BUTTON_S_D_3&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="unknown" >The FF/Latch &lt;<arg fmt="%s" index="1">A_DVI_TELE_TXRX/A_BUTTON/BUTTON_N_D_3</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">fpga_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;A_DVI_TELE_TXRX/A_RECT/A0_BUTTON/BUTTON_N_D_3&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="unknown" >The FF/Latch &lt;<arg fmt="%s" index="1">A_DVI_TELE_TXRX/A_BUTTON/BUTTON_S_D_3</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">fpga_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;A_DVI_TELE_TXRX/A_RECT/A0_BUTTON/BUTTON_S_D_3&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="unknown" >The FF/Latch &lt;<arg fmt="%s" index="1">A_DVI_TELE_TXRX/A_BUTTON/BUTTON_E_D_3</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">fpga_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;A_DVI_TELE_TXRX/A_RECT/A0_BUTTON/BUTTON_E_D_3&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="unknown" >The FF/Latch &lt;<arg fmt="%s" index="1">A_DVI_TELE_TXRX/A_BUTTON/BUTTON_W_D_4</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">fpga_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;A_DVI_TELE_TXRX/A_RECT/A0_BUTTON/BUTTON_W_D_4&gt; </arg>
 </msg>
 
 <msg type="info" file="Xst" num="2261" delta="unknown" >The FF/Latch &lt;<arg fmt="%s" index="1">A_AUDIO/A0_IF/A_BUTTON_PLS/BUTTON_S_D_4</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">fpga_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;A_AUDIO/A1_PROC/A_BUTTON_PLS/BUTTON_S_D_4&gt; </arg>
 </msg>
 
+<msg type="info" file="Xst" num="2261" delta="unknown" >The FF/Latch &lt;<arg fmt="%s" index="1">A_DVI_TELE_TXRX/A_BUTTON/BUTTON_N_D_4</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">fpga_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;A_DVI_TELE_TXRX/A_RECT/A0_BUTTON/BUTTON_N_D_4&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="unknown" >The FF/Latch &lt;<arg fmt="%s" index="1">A_DVI_TELE_TXRX/A_BUTTON/BUTTON_S_D_4</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">fpga_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;A_DVI_TELE_TXRX/A_RECT/A0_BUTTON/BUTTON_S_D_4&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="unknown" >The FF/Latch &lt;<arg fmt="%s" index="1">A_DVI_TELE_TXRX/A_BUTTON/BUTTON_E_D_4</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">fpga_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;A_DVI_TELE_TXRX/A_RECT/A0_BUTTON/BUTTON_E_D_4&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="unknown" >The FF/Latch &lt;<arg fmt="%s" index="1">A_DVI_TELE_TXRX/A_BUTTON/O_PLS_BUTTON_E</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">fpga_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;A_DVI_TELE_TXRX/A_RECT/A0_BUTTON/O_PLS_BUTTON_E&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="unknown" >The FF/Latch &lt;<arg fmt="%s" index="1">A_DVI_TELE_TXRX/A_BUTTON/O_PLS_BUTTON_S</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">fpga_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;A_DVI_TELE_TXRX/A_RECT/A0_BUTTON/O_PLS_BUTTON_S&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="unknown" >The FF/Latch &lt;<arg fmt="%s" index="1">A_DVI_TELE_TXRX/A_BUTTON/O_PLS_BUTTON_N</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">fpga_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;A_DVI_TELE_TXRX/A_RECT/A0_BUTTON/O_PLS_BUTTON_N&gt; </arg>
+</msg>
+
 <msg type="info" file="Xst" num="2261" delta="unknown" >The FF/Latch &lt;<arg fmt="%s" index="1">A_AUDIO/A0_IF/A_BUTTON_PLS/O_PLS_BUTTON_S</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">fpga_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;A_AUDIO/A1_PROC/A_BUTTON_PLS/O_PLS_BUTTON_S&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="unknown" >The FF/Latch &lt;<arg fmt="%s" index="1">A_DVI_TELE_TXRX/A_BUTTON/O_PLS_BUTTON_W</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">fpga_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;A_DVI_TELE_TXRX/A_RECT/A0_BUTTON/O_PLS_BUTTON_W&gt; </arg>
 </msg>
 
 <msg type="info" file="Xst" num="2169" delta="unknown" >HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.

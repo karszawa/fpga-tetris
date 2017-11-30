@@ -5,14 +5,14 @@ Parameter TMPDIR set to xst/projnav.tmp
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.11 secs
+Total CPU time to Xst completion: 0.07 secs
  
 --> 
 Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.11 secs
+Total CPU time to Xst completion: 0.07 secs
  
 --> 
 Reading design: fpga_top.prj
@@ -396,20 +396,15 @@ Analyzing hierarchy for module <disp_digit> in library <work> with parameters.
 Analyzing hierarchy for module <button_detector> in library <work>.
 
 Analyzing hierarchy for module <draw_rect> in library <work> with parameters.
-	BG_COLOR_BLU = "00000000"
-	BG_COLOR_GRN = "00000000"
-	BG_COLOR_RED = "00000000"
+	BLOCKS = "0000000000000001000000100000001100000000000100001111000011100000000000000000000100000010000000110000000000010000111100001110000000000000111100000000000100010001000000000000000000000001111100011111000011110001000000010001000100010000000011110000000000000001"
 	COLOR_BLANK = "0000"
 	COLOR_BLOCK = "0010"
 	COLOR_OUTER = "0001"
+	COLOR_TARGET = "0011"
+	IW = "00000000000000000000000010000000"
 	MAX_H = "01100000000"
 	MAX_W = "10000000000"
-	RECT_COLOR_BLU = "10000000"
-	RECT_COLOR_GRN = "10000000"
-	RECT_COLOR_RED = "11111111"
-	RECT_H = "00000110010"
-	RECT_W = "00000110010"
-	STEP = "00000000101"
+	RW = "00000000000000000000000000100000"
 
 Analyzing hierarchy for module <lcd_memory> in library <work>.
 
@@ -1613,21 +1608,24 @@ Analyzing module <move_rect> in library <work>.
 Module <move_rect> is correct for synthesis.
  
 Analyzing module <draw_rect> in library <work>.
-	BG_COLOR_BLU = 8'b00000000
-	BG_COLOR_GRN = 8'b00000000
-	BG_COLOR_RED = 8'b00000000
+	BLOCKS = 256'b0000000000000001000000100000001100000000000100001111000011100000000000000000000100000010000000110000000000010000111100001110000000000000111100000000000100010001000000000000000000000001111100011111000011110001000000010001000100010000000011110000000000000001
 	COLOR_BLANK = 4'b0000
 	COLOR_BLOCK = 4'b0010
 	COLOR_OUTER = 4'b0001
+	COLOR_TARGET = 4'b0011
+	IW = 32'sb00000000000000000000000010000000
 	MAX_H = 11'b01100000000
 	MAX_W = 11'b10000000000
-	RECT_COLOR_BLU = 8'b10000000
-	RECT_COLOR_GRN = 8'b10000000
-	RECT_COLOR_RED = 8'b11111111
-	RECT_H = 11'b00000110010
-	RECT_W = 11'b00000110010
-	STEP = 11'b00000000101
-WARNING:Xst:790 - "../rtl/dvi/draw_rect.v" line 106: Index value(s) does not match array range, simulation mismatch.
+	RW = 32'sb00000000000000000000000000100000
+WARNING:Xst:790 - "../rtl/dvi/draw_rect.v" line 80: Index value(s) does not match array range, simulation mismatch.
+WARNING:Xst:790 - "../rtl/dvi/draw_rect.v" line 81: Index value(s) does not match array range, simulation mismatch.
+WARNING:Xst:790 - "../rtl/dvi/draw_rect.v" line 83: Index value(s) does not match array range, simulation mismatch.
+WARNING:Xst:790 - "../rtl/dvi/draw_rect.v" line 84: Index value(s) does not match array range, simulation mismatch.
+WARNING:Xst:790 - "../rtl/dvi/draw_rect.v" line 86: Index value(s) does not match array range, simulation mismatch.
+WARNING:Xst:790 - "../rtl/dvi/draw_rect.v" line 87: Index value(s) does not match array range, simulation mismatch.
+WARNING:Xst:790 - "../rtl/dvi/draw_rect.v" line 89: Index value(s) does not match array range, simulation mismatch.
+WARNING:Xst:790 - "../rtl/dvi/draw_rect.v" line 90: Index value(s) does not match array range, simulation mismatch.
+WARNING:Xst:790 - "../rtl/dvi/draw_rect.v" line 94: Index value(s) does not match array range, simulation mismatch.
 Module <draw_rect> is correct for synthesis.
  
 Analyzing module <lcd_top> in library <work>.
@@ -1887,9 +1885,10 @@ Module <ps2_keyboard_ctrl> is correct for synthesis.
 
 Performing bidirectional port resolution...
 INFO:Xst:2679 - Register <i> in unit <disp_digit> has a constant value of 10000000 during circuit operation. The register is replaced by logic.
-INFO:Xst:2679 - Register <board> in unit <draw_rect> has a constant value of
-   0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000100010
-   001 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <block_id> in unit <move_rect> has a constant value of 0000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <board> in unit <move_rect> has a constant value of
+   0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+   000 during circuit operation. The register is replaced by logic.
 INFO:Xst:2679 - Register <data_out<250>> in unit <audio_if> has a constant value of 0 during circuit operation. The register is replaced by logic.
 INFO:Xst:2679 - Register <data_out<249>> in unit <audio_if> has a constant value of 0 during circuit operation. The register is replaced by logic.
 INFO:Xst:2679 - Register <data_out<248>> in unit <audio_if> has a constant value of 0 during circuit operation. The register is replaced by logic.
@@ -2685,27 +2684,22 @@ Unit <disp_digit_seg> synthesized.
 
 Synthesizing Unit <draw_rect>.
     Related source file is "../rtl/dvi/draw_rect.v".
-WARNING:Xst:647 - Input <i_pls_c> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
-WARNING:Xst:647 - Input <i_pls_e> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
-WARNING:Xst:647 - Input <i_pls_n> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
-WARNING:Xst:647 - Input <i_mouse_dif_x> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
-WARNING:Xst:647 - Input <i_mouse_dif_y> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
-WARNING:Xst:647 - Input <i_pls_s> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
-WARNING:Xst:647 - Input <i_pls_w> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
-WARNING:Xst:647 - Input <i_mouse_valid> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
-WARNING:Xst:647 - Input <i_rect_pos_x<11>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
-WARNING:Xst:647 - Input <i_rect_pos_y<11>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
-WARNING:Xst:646 - Signal <r_pos_y> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
-WARNING:Xst:646 - Signal <r_pos_x> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:647 - Input <blk_id<4:3>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
     Register <o_sync_grn> equivalent to <o_sync_blu> has been removed
-    Using one-hot encoding for signal <area$mux0000>.
+    Using one-hot encoding for signal <area>.
 INFO:Xst:2117 - HDL ADVISOR - Mux Selector <area> of Case statement line 0 was re-encoded using one-hot encoding. The case statement will be optimized (default statement optimization), but this optimization may lead to design initialization problems. To ensure the design works safely, you can:
    	- add an 'INIT' attribute on signal <area> (optimization is then done without any risk)
    	- use the attribute 'signal_encoding user' to avoid onehot optimization
    	- use the attribute 'safe_implementation yes' to force XST to perform a safe (but less efficient) optimization
-    Using one-hot encoding for signal <area>.
-WARNING:Xst:643 - "../rtl/dvi/draw_rect.v" line 96: The result of a 32x4-bit multiplication is partially used. Only the 8 least significant bits are used. If you are doing this on purpose, you may safely ignore this warning. Otherwise, make sure you are not losing information, leading to unexpected circuit behavior.
-    Found 1021x5-bit ROM for signal <area$mux0000> created at line 106.
+WARNING:Xst:643 - "../rtl/dvi/draw_rect.v" line 66: The result of a 10x4-bit multiplication is partially used. Only the 8 least significant bits are used. If you are doing this on purpose, you may safely ignore this warning. Otherwise, make sure you are not losing information, leading to unexpected circuit behavior.
+    Found 253x6-bit ROM for signal <add0000$mux0000> created at line 78.
+    Found 249x6-bit ROM for signal <add0001$mux0000> created at line 78.
+    Found 245x4-bit ROM for signal <add0002$mux0000> created at line 78.
+    Found 241x4-bit ROM for signal <add0003$mux0000> created at line 78.
+    Found 237x4-bit ROM for signal <add0004$mux0000> created at line 78.
+    Found 233x4-bit ROM for signal <add0005$mux0000> created at line 78.
+    Found 229x4-bit ROM for signal <add0006$mux0000> created at line 78.
+    Found 225x4-bit ROM for signal <add0007$mux0000> created at line 78.
     Found 1-bit register for signal <o_sync_vs>.
     Found 1-bit register for signal <o_sync_de>.
     Found 8-bit register for signal <o_sync_red>.
@@ -2713,20 +2707,37 @@ WARNING:Xst:643 - "../rtl/dvi/draw_rect.v" line 96: The result of a 32x4-bit mul
     Found 1-bit register for signal <o_sync_hs>.
     Found 8-bit register for signal <o_sync_blu>.
     Found 1-bit register for signal <o_sync_va>.
-    Found 3-bit register for signal <area>.
-    Found 11-bit comparator greater for signal <area$cmp_gt0000> created at line 104.
-    Found 11-bit comparator greater for signal <area$cmp_gt0001> created at line 104.
+    Found 6-bit adder for signal <$add0000> created at line 78.
+    Found 6-bit adder for signal <$add0001> created at line 78.
+    Found 5-bit adder carry out for signal <add0002$addsub0000> created at line 78.
+    Found 5-bit adder carry out for signal <add0003$addsub0000> created at line 78.
+    Found 5-bit adder carry out for signal <add0004$addsub0000> created at line 78.
+    Found 5-bit adder carry out for signal <add0005$addsub0000> created at line 78.
+    Found 5-bit adder carry out for signal <add0006$addsub0000> created at line 78.
+    Found 5-bit adder carry out for signal <add0007$addsub0000> created at line 78.
+    Found 4-bit register for signal <area>.
+    Found 11-bit comparator equal for signal <area$cmp_eq0000> created at line 78.
+    Found 11-bit comparator equal for signal <area$cmp_eq0001> created at line 78.
+    Found 10-bit comparator equal for signal <area$cmp_eq0002> created at line 78.
+    Found 10-bit comparator equal for signal <area$cmp_eq0003> created at line 78.
+    Found 10-bit comparator equal for signal <area$cmp_eq0004> created at line 78.
+    Found 10-bit comparator equal for signal <area$cmp_eq0005> created at line 78.
+    Found 10-bit comparator equal for signal <area$cmp_eq0006> created at line 78.
+    Found 10-bit comparator equal for signal <area$cmp_eq0007> created at line 78.
+    Found 10-bit comparator greatequal for signal <area$cmp_ge0000> created at line 76.
+    Found 10-bit comparator greatequal for signal <area$cmp_ge0001> created at line 76.
+    Found 10-bit adder for signal <blk_offset>.
+    Found 8-bit adder for signal <offset$add0000> created at line 66.
+    Found 10x4-bit multiplier for signal <offset$mult0001> created at line 66.
     Found 11-bit up counter for signal <r_cnt_x>.
     Found 11-bit up counter for signal <r_cnt_y>.
-    Found 8-bit adder for signal <tmp$add0000> created at line 96.
-    Found 32x4-bit multiplier for signal <tmp$mult0001> created at line 96.
     Summary:
-	inferred   1 ROM(s).
+	inferred   8 ROM(s).
 	inferred   2 Counter(s).
 	inferred  21 D-type flip-flop(s).
-	inferred   1 Adder/Subtractor(s).
+	inferred  10 Adder/Subtractor(s).
 	inferred   1 Multiplier(s).
-	inferred   2 Comparator(s).
+	inferred  10 Comparator(s).
 Unit <draw_rect> synthesized.
 
 
@@ -2956,6 +2967,22 @@ Unit <crg> synthesized.
 
 Synthesizing Unit <move_rect>.
     Related source file is "../rtl/dvi/move_rect.v".
+WARNING:Xst:1780 - Signal <state> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <i_pls_c> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+    Found 2-bit adder for signal <$add0000> created at line 58.
+    Found 10-bit up accumulator for signal <blk_pos_x>.
+    Found 10-bit adder for signal <blk_pos_x$add0000>.
+    Found 10-bit comparator greatequal for signal <blk_pos_x$cmp_ge0000> created at line 52.
+    Found 10-bit comparator lessequal for signal <blk_pos_x$cmp_le0000> created at line 52.
+    Found 10-bit up counter for signal <blk_pos_y>.
+    Found 10-bit comparator less for signal <blk_pos_y$cmp_lt0000> created at line 62.
+    Found 2-bit register for signal <block_rad>.
+    Summary:
+	inferred   1 Counter(s).
+	inferred   1 Accumulator(s).
+	inferred   2 D-type flip-flop(s).
+	inferred   2 Adder/Subtractor(s).
+	inferred   3 Comparator(s).
 Unit <move_rect> synthesized.
 
 
@@ -3526,8 +3553,13 @@ Synthesizing Unit <DVI_TOP>.
     Related source file is "../rtl/dvi/DVI_TOP.v".
 WARNING:Xst:647 - Input <clk> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 WARNING:Xst:1305 - Output <LCD_EN> is never assigned. Tied to value 0.
+WARNING:Xst:647 - Input <rect_pos_x> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <rect_pos_y> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <mouse_dif_x> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <mouse_dif_y> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 WARNING:Xst:1305 - Output <LCD_RS> is never assigned. Tied to value 0.
 WARNING:Xst:1305 - Output <LCD_RW> is never assigned. Tied to value 0.
+WARNING:Xst:647 - Input <mouse_valid> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 WARNING:Xst:2563 - Inout <LCD_DATA<0>> is never assigned. Tied to value Z.
 WARNING:Xst:2563 - Inout <LCD_DATA<1>> is never assigned. Tied to value Z.
 WARNING:Xst:2563 - Inout <LCD_DATA<2>> is never assigned. Tied to value Z.
@@ -3581,28 +3613,37 @@ HDL Synthesis Report
 Macro Statistics
 # RAMs                                                 : 1
  32x8-bit dual-port RAM                                : 1
-# ROMs                                                 : 2
- 1021x5-bit ROM                                        : 1
+# ROMs                                                 : 9
  16x7-bit ROM                                          : 1
+ 225x4-bit ROM                                         : 1
+ 229x4-bit ROM                                         : 1
+ 233x4-bit ROM                                         : 1
+ 237x4-bit ROM                                         : 1
+ 241x4-bit ROM                                         : 1
+ 245x4-bit ROM                                         : 1
+ 249x6-bit ROM                                         : 1
+ 253x6-bit ROM                                         : 1
 # Multipliers                                          : 1
- 32x4-bit multiplier                                   : 1
-# Adders/Subtractors                                   : 26
- 10-bit adder                                          : 1
+ 10x4-bit multiplier                                   : 1
+# Adders/Subtractors                                   : 37
+ 10-bit adder                                          : 3
  11-bit adder                                          : 1
  12-bit adder                                          : 2
  12-bit addsub                                         : 2
- 2-bit adder                                           : 1
+ 2-bit adder                                           : 2
  20-bit adder                                          : 1
  3-bit adder                                           : 2
  32-bit adder                                          : 1
  4-bit adder                                           : 1
  5-bit adder                                           : 2
+ 5-bit adder carry out                                 : 6
+ 6-bit adder                                           : 2
  7-bit adder                                           : 2
  8-bit adder                                           : 7
  8-bit subtractor                                      : 1
  9-bit adder                                           : 2
-# Counters                                             : 44
- 10-bit up counter                                     : 2
+# Counters                                             : 45
+ 10-bit up counter                                     : 3
  11-bit up counter                                     : 5
  13-bit up counter                                     : 3
  14-bit up counter                                     : 1
@@ -3618,20 +3659,22 @@ Macro Statistics
  7-bit up counter                                      : 1
  8-bit down counter                                    : 1
  8-bit up counter                                      : 6
-# Registers                                            : 867
+# Accumulators                                         : 1
+ 10-bit up accumulator                                 : 1
+# Registers                                            : 868
  1-bit register                                        : 482
  10-bit register                                       : 1
  11-bit register                                       : 1
  12-bit register                                       : 4
  16-bit register                                       : 1
  17-bit register                                       : 1
- 2-bit register                                        : 3
+ 2-bit register                                        : 4
  20-bit register                                       : 5
  256-bit register                                      : 2
- 3-bit register                                        : 19
+ 3-bit register                                        : 18
  32-bit register                                       : 1
  33-bit register                                       : 1
- 4-bit register                                        : 262
+ 4-bit register                                        : 263
  40-bit register                                       : 2
  5-bit register                                        : 23
  6-bit register                                        : 2
@@ -3641,11 +3684,13 @@ Macro Statistics
 # Latches                                              : 2
  1-bit latch                                           : 1
  3-bit latch                                           : 1
-# Comparators                                          : 63
- 10-bit comparator greatequal                          : 2
- 10-bit comparator less                                : 8
+# Comparators                                          : 74
+ 10-bit comparator equal                               : 6
+ 10-bit comparator greatequal                          : 5
+ 10-bit comparator less                                : 9
+ 10-bit comparator lessequal                           : 1
+ 11-bit comparator equal                               : 2
  11-bit comparator greatequal                          : 2
- 11-bit comparator greater                             : 2
  11-bit comparator less                                : 8
  12-bit comparator greater                             : 2
  12-bit comparator not equal                           : 2
@@ -3804,23 +3849,24 @@ Optimizing FSM <A_DVI_TELE_TXRX/A_TELE_TX/state_cur/FSM> on signal <state_cur[1:
 -------------------
 WARNING:Xst:1290 - Hierarchical block <Value> is unconnected in block <DOBuff>.
    It will be removed from the design.
-WARNING:Xst:1290 - Hierarchical block <A0_BUTTON> is unconnected in block <A_RECT>.
-   It will be removed from the design.
 WARNING:Xst:1290 - Hierarchical block <DOBuff> is unconnected in block <I2CControl>.
    It will be removed from the design.
 INFO:Xst:2261 - The FF/Latch <o_tx_addr_0> in Unit <A_TELE_TX> is equivalent to the following FF/Latch, which will be removed : <o_tx_data_0> 
 INFO:Xst:2261 - The FF/Latch <o_tx_addr_1> in Unit <A_TELE_TX> is equivalent to the following FF/Latch, which will be removed : <o_tx_data_1> 
 INFO:Xst:2261 - The FF/Latch <o_tx_addr_2> in Unit <A_TELE_TX> is equivalent to the following FF/Latch, which will be removed : <o_tx_data_2> 
 INFO:Xst:2261 - The FF/Latch <o_tx_addr_3> in Unit <A_TELE_TX> is equivalent to the following FF/Latch, which will be removed : <o_tx_data_3> 
-INFO:Xst:2261 - The FF/Latch <o_sync_red_0> in Unit <A2_DRAW> is equivalent to the following 7 FFs/Latches, which will be removed : <o_sync_red_1> <o_sync_red_4> <o_sync_blu_0> <o_sync_blu_1> <o_sync_blu_2> <o_sync_blu_4> <o_sync_blu_5> 
-INFO:Xst:2261 - The FF/Latch <o_sync_red_3> in Unit <A2_DRAW> is equivalent to the following 4 FFs/Latches, which will be removed : <o_sync_red_7> <o_sync_blu_3> <o_sync_blu_6> <o_sync_blu_7> 
+INFO:Xst:2261 - The FF/Latch <o_sync_red_0> in Unit <A2_DRAW> is equivalent to the following 5 FFs/Latches, which will be removed : <o_sync_red_1> <o_sync_red_4> <o_sync_blu_0> <o_sync_blu_1> <o_sync_blu_4> 
+INFO:Xst:2261 - The FF/Latch <o_sync_red_3> in Unit <A2_DRAW> is equivalent to the following 3 FFs/Latches, which will be removed : <o_sync_red_7> <o_sync_blu_3> <o_sync_blu_7> 
 INFO:Xst:2261 - The FF/Latch <o_sync_red_2> in Unit <A2_DRAW> is equivalent to the following FF/Latch, which will be removed : <o_sync_red_5> 
+INFO:Xst:2261 - The FF/Latch <o_sync_blu_2> in Unit <A2_DRAW> is equivalent to the following FF/Latch, which will be removed : <o_sync_blu_5> 
 WARNING:Xst:1710 - FF/Latch <Out_0> (without init value) has a constant value of 0 in block <FSM.State>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1710 - FF/Latch <Out_0> (without init value) has a constant value of 0 in block <FSM.State>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1710 - FF/Latch <Out_0> (without init value) has a constant value of 0 in block <SAReg>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1710 - FF/Latch <Out_16> (without init value) has a constant value of 0 in block <Value>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1710 - FF/Latch <FFd1> (without init value) has a constant value of 0 in block <FSM>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <2> (without init value) has a constant value of 0 in block <area>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1710 - FF/Latch <o_sync_red_0> (without init value) has a constant value of 0 in block <A2_DRAW>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <o_sync_red_2> (without init value) has a constant value of 0 in block <A2_DRAW>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1710 - FF/Latch <0> (without init value) has a constant value of 0 in block <2>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1710 - FF/Latch <curSTATE_2> (without init value) has a constant value of 0 in block <A2_KEYBOARD_CTRL>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:2677 - Node <LastState_0> of sequential type is unconnected in block <Master>.
@@ -3863,28 +3909,35 @@ Advanced HDL Synthesis Report
 Macro Statistics
 # RAMs                                                 : 1
  32x8-bit dual-port distributed RAM                    : 1
-# ROMs                                                 : 2
- 1021x5-bit ROM                                        : 1
+# ROMs                                                 : 9
  16x7-bit ROM                                          : 1
-# Multipliers                                          : 1
- 32x4-bit multiplier                                   : 1
-# Adders/Subtractors                                   : 26
- 10-bit adder                                          : 1
+ 225x4-bit ROM                                         : 1
+ 229x4-bit ROM                                         : 1
+ 233x4-bit ROM                                         : 1
+ 237x4-bit ROM                                         : 1
+ 241x4-bit ROM                                         : 1
+ 245x4-bit ROM                                         : 1
+ 249x6-bit ROM                                         : 1
+ 253x6-bit ROM                                         : 1
+# Adders/Subtractors                                   : 36
+ 10-bit adder                                          : 2
  11-bit adder                                          : 1
  12-bit adder                                          : 2
  12-bit addsub                                         : 2
- 2-bit adder                                           : 1
+ 2-bit adder                                           : 2
  20-bit adder                                          : 1
  3-bit adder                                           : 2
  32-bit adder                                          : 1
  4-bit adder                                           : 1
  5-bit adder                                           : 2
+ 5-bit adder carry out                                 : 6
+ 6-bit adder                                           : 2
  7-bit adder                                           : 3
  8-bit adder                                           : 6
  8-bit subtractor                                      : 1
  9-bit adder                                           : 2
-# Counters                                             : 43
- 10-bit up counter                                     : 2
+# Counters                                             : 44
+ 10-bit up counter                                     : 3
  11-bit up counter                                     : 5
  13-bit up counter                                     : 3
  14-bit up counter                                     : 1
@@ -3900,16 +3953,20 @@ Macro Statistics
  7-bit up counter                                      : 1
  8-bit down counter                                    : 1
  8-bit up counter                                      : 6
-# Registers                                            : 3055
- Flip-Flops                                            : 3055
+# Accumulators                                         : 1
+ 10-bit up accumulator                                 : 1
+# Registers                                            : 3058
+ Flip-Flops                                            : 3058
 # Latches                                              : 2
  1-bit latch                                           : 1
  3-bit latch                                           : 1
-# Comparators                                          : 63
- 10-bit comparator greatequal                          : 2
- 10-bit comparator less                                : 8
+# Comparators                                          : 74
+ 10-bit comparator equal                               : 6
+ 10-bit comparator greatequal                          : 5
+ 10-bit comparator less                                : 9
+ 10-bit comparator lessequal                           : 1
+ 11-bit comparator equal                               : 2
  11-bit comparator greatequal                          : 2
- 11-bit comparator greater                             : 2
  11-bit comparator less                                : 8
  12-bit comparator greater                             : 2
  12-bit comparator not equal                           : 2
@@ -3947,19 +4004,21 @@ WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <o_sync_red_1> (with
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <o_sync_red_4> (without init value) has a constant value of 0 in block <draw_rect>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <o_sync_blu_0> (without init value) has a constant value of 0 in block <draw_rect>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <o_sync_blu_1> (without init value) has a constant value of 0 in block <draw_rect>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <o_sync_blu_2> (without init value) has a constant value of 0 in block <draw_rect>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <o_sync_blu_4> (without init value) has a constant value of 0 in block <draw_rect>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <o_sync_blu_5> (without init value) has a constant value of 0 in block <draw_rect>. This FF/Latch will be trimmed during the optimization process.
 INFO:Xst:2261 - The FF/Latch <o_tx_addr_0> in Unit <tele_tx> is equivalent to the following FF/Latch, which will be removed : <o_tx_data_0> 
 INFO:Xst:2261 - The FF/Latch <o_tx_addr_1> in Unit <tele_tx> is equivalent to the following FF/Latch, which will be removed : <o_tx_data_1> 
 INFO:Xst:2261 - The FF/Latch <o_tx_addr_2> in Unit <tele_tx> is equivalent to the following FF/Latch, which will be removed : <o_tx_data_2> 
 INFO:Xst:2261 - The FF/Latch <o_tx_addr_3> in Unit <tele_tx> is equivalent to the following FF/Latch, which will be removed : <o_tx_data_3> 
-INFO:Xst:2261 - The FF/Latch <o_sync_red_3> in Unit <draw_rect> is equivalent to the following 4 FFs/Latches, which will be removed : <o_sync_red_7> <o_sync_blu_3> <o_sync_blu_6> <o_sync_blu_7> 
+INFO:Xst:2261 - The FF/Latch <o_sync_red_3> in Unit <draw_rect> is equivalent to the following 3 FFs/Latches, which will be removed : <o_sync_red_7> <o_sync_blu_3> <o_sync_blu_7> 
 INFO:Xst:2261 - The FF/Latch <o_sync_red_2> in Unit <draw_rect> is equivalent to the following FF/Latch, which will be removed : <o_sync_red_5> 
+INFO:Xst:2261 - The FF/Latch <o_sync_blu_2> in Unit <draw_rect> is equivalent to the following FF/Latch, which will be removed : <o_sync_blu_5> 
 INFO:Xst:2261 - The FF/Latch <o_addr_3> in Unit <tele_err> is equivalent to the following 3 FFs/Latches, which will be removed : <o_addr_4> <o_addr_5> <o_addr_6> 
 WARNING:Xst:1710 - FF/Latch <Out_16> (without init value) has a constant value of 0 in block <Register_7>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1294 - Latch <data_ready> is equivalent to a wire in block <ps2_mouse_interface>.
+WARNING:Xst:1710 - FF/Latch <area_2> (without init value) has a constant value of 0 in block <draw_rect>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <o_sync_red_2> (without init value) has a constant value of 0 in block <draw_rect>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:2677 - Node <area_0> of sequential type is unconnected in block <draw_rect>.
+INFO:Xst:2261 - The FF/Latch <o_sync_red_3> in Unit <draw_rect> is equivalent to the following FF/Latch, which will be removed : <o_sync_red_6> 
 WARNING:Xst:1710 - FF/Latch <nxtSTATE_2> (without init value) has a constant value of 0 in block <ps2_keyboard_ctrl>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <curSTATE_2> (without init value) has a constant value of 0 in block <ps2_keyboard_ctrl>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1710 - FF/Latch <RgnAX/FSM.State/Out_0> (without init value) has a constant value of 0 in block <PixelCounter>. This FF/Latch will be trimmed during the optimization process.
@@ -3975,7 +4034,6 @@ WARNING:Xst:2677 - Node <cnt_clk_28> of sequential type is unconnected in block 
 WARNING:Xst:2677 - Node <cnt_clk_29> of sequential type is unconnected in block <DVI_TOP>.
 WARNING:Xst:2677 - Node <cnt_clk_30> of sequential type is unconnected in block <DVI_TOP>.
 WARNING:Xst:2677 - Node <cnt_clk_31> of sequential type is unconnected in block <DVI_TOP>.
-WARNING:Xst:1989 - Unit <DVI_TOP>: instances <A_BUTTON>, <A_RECT/A0_BUTTON> of unit <button_detector> are equivalent, second instance is removed
 WARNING:Xst:2677 - Node <A_PS2_KEY_MOUSE/A0_MOUSE/m1/left_button> of sequential type is unconnected in block <fpga_top>.
 WARNING:Xst:2677 - Node <A_PS2_KEY_MOUSE/A0_MOUSE/m1/right_button> of sequential type is unconnected in block <fpga_top>.
 WARNING:Xst:2677 - Node <A_PS2_KEY_MOUSE/mpos_y_chg_lvl> of sequential type is unconnected in block <fpga_top>.
@@ -4106,6 +4164,8 @@ Optimizing unit <audio_if> ...
 
 Optimizing unit <audio_proc> ...
 
+Optimizing unit <move_rect> ...
+
 Optimizing unit <PixelCounter> ...
 
 Optimizing unit <FIFOInitial_1> ...
@@ -4174,16 +4234,46 @@ WARNING:Xst:2677 - Node <A_AUDIO/A1_PROC/A_BUTTON_PLS/O_PLS_BUTTON_W> of sequent
 WARNING:Xst:2677 - Node <A_AUDIO/A1_PROC/A_BUTTON_PLS/O_PLS_BUTTON_C> of sequential type is unconnected in block <fpga_top>.
 WARNING:Xst:2677 - Node <A_AUDIO/A1_PROC/A_BUTTON_PLS/O_PLS_BUTTON_E> of sequential type is unconnected in block <fpga_top>.
 WARNING:Xst:2677 - Node <A_AUDIO/A1_PROC/A_BUTTON_PLS/O_PLS_BUTTON_N> of sequential type is unconnected in block <fpga_top>.
+WARNING:Xst:2677 - Node <A_DVI_TELE_TXRX/A_RECT/A0_BUTTON/BUTTON_C_D_0> of sequential type is unconnected in block <fpga_top>.
+WARNING:Xst:2677 - Node <A_DVI_TELE_TXRX/A_RECT/A0_BUTTON/BUTTON_C_D_1> of sequential type is unconnected in block <fpga_top>.
+WARNING:Xst:2677 - Node <A_DVI_TELE_TXRX/A_RECT/A0_BUTTON/BUTTON_C_D_2> of sequential type is unconnected in block <fpga_top>.
+WARNING:Xst:2677 - Node <A_DVI_TELE_TXRX/A_RECT/A0_BUTTON/BUTTON_C_D_3> of sequential type is unconnected in block <fpga_top>.
+WARNING:Xst:2677 - Node <A_DVI_TELE_TXRX/A_RECT/A0_BUTTON/BUTTON_C_D_4> of sequential type is unconnected in block <fpga_top>.
+WARNING:Xst:2677 - Node <A_DVI_TELE_TXRX/A_RECT/A0_BUTTON/O_PLS_BUTTON_C> of sequential type is unconnected in block <fpga_top>.
 
 Mapping all equations...
 Building and optimizing final netlist ...
+INFO:Xst:2261 - The FF/Latch <A_DVI_TELE_TXRX/A_BUTTON/BUTTON_W_D_0> in Unit <fpga_top> is equivalent to the following FF/Latch, which will be removed : <A_DVI_TELE_TXRX/A_RECT/A0_BUTTON/BUTTON_W_D_0> 
 INFO:Xst:2261 - The FF/Latch <A_PS2_KEY_MOUSE/A1_KEYBOARD/A1_PS2_Command_Out/ps2_command_7> in Unit <fpga_top> is equivalent to the following 7 FFs/Latches, which will be removed : <A_PS2_KEY_MOUSE/A1_KEYBOARD/A1_PS2_Command_Out/ps2_command_6> <A_PS2_KEY_MOUSE/A1_KEYBOARD/A1_PS2_Command_Out/ps2_command_5> <A_PS2_KEY_MOUSE/A1_KEYBOARD/A1_PS2_Command_Out/ps2_command_4> <A_PS2_KEY_MOUSE/A1_KEYBOARD/A1_PS2_Command_Out/ps2_command_3> <A_PS2_KEY_MOUSE/A1_KEYBOARD/A1_PS2_Command_Out/ps2_command_2> <A_PS2_KEY_MOUSE/A1_KEYBOARD/A1_PS2_Command_Out/ps2_command_1> <A_PS2_KEY_MOUSE/A1_KEYBOARD/A1_PS2_Command_Out/ps2_command_0> 
+INFO:Xst:2261 - The FF/Latch <A_DVI_TELE_TXRX/A_BUTTON/BUTTON_E_D_0> in Unit <fpga_top> is equivalent to the following FF/Latch, which will be removed : <A_DVI_TELE_TXRX/A_RECT/A0_BUTTON/BUTTON_E_D_0> 
+INFO:Xst:2261 - The FF/Latch <A_DVI_TELE_TXRX/A_BUTTON/BUTTON_N_D_0> in Unit <fpga_top> is equivalent to the following FF/Latch, which will be removed : <A_DVI_TELE_TXRX/A_RECT/A0_BUTTON/BUTTON_N_D_0> 
 INFO:Xst:2261 - The FF/Latch <A_AUDIO/A0_IF/A_BUTTON_PLS/BUTTON_S_D_0> in Unit <fpga_top> is equivalent to the following FF/Latch, which will be removed : <A_AUDIO/A1_PROC/A_BUTTON_PLS/BUTTON_S_D_0> 
+INFO:Xst:2261 - The FF/Latch <A_DVI_TELE_TXRX/A_BUTTON/BUTTON_S_D_0> in Unit <fpga_top> is equivalent to the following FF/Latch, which will be removed : <A_DVI_TELE_TXRX/A_RECT/A0_BUTTON/BUTTON_S_D_0> 
+INFO:Xst:2261 - The FF/Latch <A_DVI_TELE_TXRX/A_BUTTON/BUTTON_W_D_1> in Unit <fpga_top> is equivalent to the following FF/Latch, which will be removed : <A_DVI_TELE_TXRX/A_RECT/A0_BUTTON/BUTTON_W_D_1> 
 INFO:Xst:2261 - The FF/Latch <A_AUDIO/A0_IF/A_BUTTON_PLS/BUTTON_S_D_1> in Unit <fpga_top> is equivalent to the following FF/Latch, which will be removed : <A_AUDIO/A1_PROC/A_BUTTON_PLS/BUTTON_S_D_1> 
+INFO:Xst:2261 - The FF/Latch <A_DVI_TELE_TXRX/A_BUTTON/BUTTON_N_D_1> in Unit <fpga_top> is equivalent to the following FF/Latch, which will be removed : <A_DVI_TELE_TXRX/A_RECT/A0_BUTTON/BUTTON_N_D_1> 
+INFO:Xst:2261 - The FF/Latch <A_DVI_TELE_TXRX/A_BUTTON/BUTTON_S_D_1> in Unit <fpga_top> is equivalent to the following FF/Latch, which will be removed : <A_DVI_TELE_TXRX/A_RECT/A0_BUTTON/BUTTON_S_D_1> 
+INFO:Xst:2261 - The FF/Latch <A_DVI_TELE_TXRX/A_BUTTON/BUTTON_E_D_1> in Unit <fpga_top> is equivalent to the following FF/Latch, which will be removed : <A_DVI_TELE_TXRX/A_RECT/A0_BUTTON/BUTTON_E_D_1> 
+INFO:Xst:2261 - The FF/Latch <A_DVI_TELE_TXRX/A_BUTTON/BUTTON_W_D_2> in Unit <fpga_top> is equivalent to the following FF/Latch, which will be removed : <A_DVI_TELE_TXRX/A_RECT/A0_BUTTON/BUTTON_W_D_2> 
 INFO:Xst:2261 - The FF/Latch <A_AUDIO/A0_IF/A_BUTTON_PLS/BUTTON_S_D_2> in Unit <fpga_top> is equivalent to the following FF/Latch, which will be removed : <A_AUDIO/A1_PROC/A_BUTTON_PLS/BUTTON_S_D_2> 
+INFO:Xst:2261 - The FF/Latch <A_DVI_TELE_TXRX/A_BUTTON/BUTTON_N_D_2> in Unit <fpga_top> is equivalent to the following FF/Latch, which will be removed : <A_DVI_TELE_TXRX/A_RECT/A0_BUTTON/BUTTON_N_D_2> 
+INFO:Xst:2261 - The FF/Latch <A_DVI_TELE_TXRX/A_BUTTON/BUTTON_S_D_2> in Unit <fpga_top> is equivalent to the following FF/Latch, which will be removed : <A_DVI_TELE_TXRX/A_RECT/A0_BUTTON/BUTTON_S_D_2> 
+INFO:Xst:2261 - The FF/Latch <A_DVI_TELE_TXRX/A_BUTTON/BUTTON_E_D_2> in Unit <fpga_top> is equivalent to the following FF/Latch, which will be removed : <A_DVI_TELE_TXRX/A_RECT/A0_BUTTON/BUTTON_E_D_2> 
+INFO:Xst:2261 - The FF/Latch <A_DVI_TELE_TXRX/A_BUTTON/BUTTON_W_D_3> in Unit <fpga_top> is equivalent to the following FF/Latch, which will be removed : <A_DVI_TELE_TXRX/A_RECT/A0_BUTTON/BUTTON_W_D_3> 
 INFO:Xst:2261 - The FF/Latch <A_AUDIO/A0_IF/A_BUTTON_PLS/BUTTON_S_D_3> in Unit <fpga_top> is equivalent to the following FF/Latch, which will be removed : <A_AUDIO/A1_PROC/A_BUTTON_PLS/BUTTON_S_D_3> 
+INFO:Xst:2261 - The FF/Latch <A_DVI_TELE_TXRX/A_BUTTON/BUTTON_N_D_3> in Unit <fpga_top> is equivalent to the following FF/Latch, which will be removed : <A_DVI_TELE_TXRX/A_RECT/A0_BUTTON/BUTTON_N_D_3> 
+INFO:Xst:2261 - The FF/Latch <A_DVI_TELE_TXRX/A_BUTTON/BUTTON_S_D_3> in Unit <fpga_top> is equivalent to the following FF/Latch, which will be removed : <A_DVI_TELE_TXRX/A_RECT/A0_BUTTON/BUTTON_S_D_3> 
+INFO:Xst:2261 - The FF/Latch <A_DVI_TELE_TXRX/A_BUTTON/BUTTON_E_D_3> in Unit <fpga_top> is equivalent to the following FF/Latch, which will be removed : <A_DVI_TELE_TXRX/A_RECT/A0_BUTTON/BUTTON_E_D_3> 
+INFO:Xst:2261 - The FF/Latch <A_DVI_TELE_TXRX/A_BUTTON/BUTTON_W_D_4> in Unit <fpga_top> is equivalent to the following FF/Latch, which will be removed : <A_DVI_TELE_TXRX/A_RECT/A0_BUTTON/BUTTON_W_D_4> 
 INFO:Xst:2261 - The FF/Latch <A_AUDIO/A0_IF/A_BUTTON_PLS/BUTTON_S_D_4> in Unit <fpga_top> is equivalent to the following FF/Latch, which will be removed : <A_AUDIO/A1_PROC/A_BUTTON_PLS/BUTTON_S_D_4> 
+INFO:Xst:2261 - The FF/Latch <A_DVI_TELE_TXRX/A_BUTTON/BUTTON_N_D_4> in Unit <fpga_top> is equivalent to the following FF/Latch, which will be removed : <A_DVI_TELE_TXRX/A_RECT/A0_BUTTON/BUTTON_N_D_4> 
+INFO:Xst:2261 - The FF/Latch <A_DVI_TELE_TXRX/A_BUTTON/BUTTON_S_D_4> in Unit <fpga_top> is equivalent to the following FF/Latch, which will be removed : <A_DVI_TELE_TXRX/A_RECT/A0_BUTTON/BUTTON_S_D_4> 
+INFO:Xst:2261 - The FF/Latch <A_DVI_TELE_TXRX/A_BUTTON/BUTTON_E_D_4> in Unit <fpga_top> is equivalent to the following FF/Latch, which will be removed : <A_DVI_TELE_TXRX/A_RECT/A0_BUTTON/BUTTON_E_D_4> 
+INFO:Xst:2261 - The FF/Latch <A_DVI_TELE_TXRX/A_BUTTON/O_PLS_BUTTON_E> in Unit <fpga_top> is equivalent to the following FF/Latch, which will be removed : <A_DVI_TELE_TXRX/A_RECT/A0_BUTTON/O_PLS_BUTTON_E> 
+INFO:Xst:2261 - The FF/Latch <A_DVI_TELE_TXRX/A_BUTTON/O_PLS_BUTTON_S> in Unit <fpga_top> is equivalent to the following FF/Latch, which will be removed : <A_DVI_TELE_TXRX/A_RECT/A0_BUTTON/O_PLS_BUTTON_S> 
+INFO:Xst:2261 - The FF/Latch <A_DVI_TELE_TXRX/A_BUTTON/O_PLS_BUTTON_N> in Unit <fpga_top> is equivalent to the following FF/Latch, which will be removed : <A_DVI_TELE_TXRX/A_RECT/A0_BUTTON/O_PLS_BUTTON_N> 
 INFO:Xst:2261 - The FF/Latch <A_AUDIO/A0_IF/A_BUTTON_PLS/O_PLS_BUTTON_S> in Unit <fpga_top> is equivalent to the following FF/Latch, which will be removed : <A_AUDIO/A1_PROC/A_BUTTON_PLS/O_PLS_BUTTON_S> 
+INFO:Xst:2261 - The FF/Latch <A_DVI_TELE_TXRX/A_BUTTON/O_PLS_BUTTON_W> in Unit <fpga_top> is equivalent to the following FF/Latch, which will be removed : <A_DVI_TELE_TXRX/A_RECT/A0_BUTTON/O_PLS_BUTTON_W> 
 Found area constraint ratio of 100 (+ 5) on block fpga_top, actual ratio is 18.
 
 Final Macro Processing ...
@@ -4204,8 +4294,8 @@ Unit <fpga_top> processed.
 Final Register Report
 
 Macro Statistics
-# Registers                                            : 3286
- Flip-Flops                                            : 3286
+# Registers                                            : 3308
+ Flip-Flops                                            : 3308
 # Shift Registers                                      : 9
  4-bit shift register                                  : 8
  6-bit shift register                                  : 1
@@ -4237,32 +4327,33 @@ Design Statistics
 # IOs                              : 72
 
 Cell Usage :
-# BELS                             : 3549
+# BELS                             : 3703
 #      GND                         : 1
-#      INV                         : 66
-#      LUT1                        : 261
-#      LUT2                        : 174
-#      LUT3                        : 526
-#      LUT4                        : 200
-#      LUT5                        : 411
-#      LUT6                        : 789
-#      MUXCY                       : 591
-#      MUXF7                       : 34
+#      INV                         : 68
+#      LUT1                        : 271
+#      LUT2                        : 183
+#      LUT3                        : 528
+#      LUT4                        : 211
+#      LUT5                        : 425
+#      LUT6                        : 845
+#      MUXCY                       : 603
+#      MUXF7                       : 48
+#      MUXF8                       : 11
 #      VCC                         : 1
-#      XORCY                       : 495
-# FlipFlops/Latches                : 3317
+#      XORCY                       : 508
+# FlipFlops/Latches                : 3339
 #      FD                          : 23
-#      FDC                         : 841
-#      FDCE                        : 910
+#      FDC                         : 851
+#      FDCE                        : 922
 #      FDE                         : 1129
 #      FDP                         : 2
 #      FDPE                        : 100
-#      FDR                         : 42
-#      FDRE                        : 220
+#      FDR                         : 36
+#      FDRE                        : 226
 #      FDRS                        : 1
 #      FDRSE                       : 18
-#      FDS                         : 12
-#      FDSE                        : 3
+#      FDS                         : 8
+#      FDSE                        : 7
 #      LD                          : 2
 #      ODDR                        : 14
 # RAMS                             : 3
@@ -4293,19 +4384,19 @@ Selected Device : 5vlx50ff676-1
 
 
 Slice Logic Utilization: 
- Number of Slice Registers:            3317  out of  28800    11%  
- Number of Slice LUTs:                 2444  out of  28800     8%  
-    Number used as Logic:              2427  out of  28800     8%  
+ Number of Slice Registers:            3339  out of  28800    11%  
+ Number of Slice LUTs:                 2548  out of  28800     8%  
+    Number used as Logic:              2531  out of  28800     8%  
     Number used as Memory:               17  out of   7680     0%  
        Number used as RAM:                8
        Number used as SRL:                9
 
 Slice Logic Distribution: 
- Number of LUT Flip Flop pairs used:   4559
-   Number with an unused Flip Flop:    1242  out of   4559    27%  
-   Number with an unused LUT:          2115  out of   4559    46%  
-   Number of fully used LUT-FF pairs:  1202  out of   4559    26%  
-   Number of unique control sets:       271
+ Number of LUT Flip Flop pairs used:   4663
+   Number with an unused Flip Flop:    1324  out of   4663    28%  
+   Number with an unused LUT:          2115  out of   4663    45%  
+   Number of fully used LUT-FF pairs:  1224  out of   4663    26%  
+   Number of unique control sets:       276
 
 IO Utilization: 
  Number of IOs:                          72
@@ -4340,7 +4431,7 @@ Clock Signal                                                                    
 clk                                                                                                    | A_CRG/DCM_ADV_INST:CLKDV                            | 254   |
 A_LCD/pll2/CLKOUT0_BUF                                                                                 | BUFG                                                | 460   |
 A_LCD/pll/CLKOUT0_BUF                                                                                  | BUFG                                                | 9     |
-clk                                                                                                    | A_CRG/DCM_ADV_INST:CLKFX                            | 1592  |
+clk                                                                                                    | A_CRG/DCM_ADV_INST:CLKFX                            | 1614  |
 A_PS2_KEY_MOUSE/A2_KEYBOARD_CTRL/nxtSTATE_not0001(A_PS2_KEY_MOUSE/A2_KEYBOARD_CTRL/nxtSTATE_not00011:O)| NONE(*)(A_PS2_KEY_MOUSE/A2_KEYBOARD_CTRL/nxtSTATE_1)| 2     |
 CLK_27MHZ_FPGA                                                                                         | BUFGP                                               | 130   |
 audio_bit_clk                                                                                          | BUFGP                                               | 882   |
@@ -4355,7 +4446,7 @@ Asynchronous Control Signals Information:
 -----------------------------------------------------------------------------------------+---------------------------------------------------+-------+
 Control Signal                                                                           | Buffer(FF name)                                   | Load  |
 -----------------------------------------------------------------------------------------+---------------------------------------------------+-------+
-A_AUDIO/A0_IF/A_BUTTON_PLS/rst_n_inv(A_PS2_KEY_MOUSE/A2_KEYBOARD_CTRL/rst_n_inv1_INV_0:O)| NONE(A_AUDIO/A0_IF/A_BUTTON_PLS/O_PLS_BUTTON_C)   | 1404  |
+A_AUDIO/A0_IF/A_BUTTON_PLS/rst_n_inv(A_PS2_KEY_MOUSE/A2_KEYBOARD_CTRL/rst_n_inv1_INV_0:O)| NONE(A_AUDIO/A0_IF/A_BUTTON_PLS/O_PLS_BUTTON_C)   | 1426  |
 A_LCD/A0_LCD_CTRL_TOP/A0_KEY2CHAR/RST_inv(A_LCD/A1_LCD/RST_inv1_INV_0:O)                 | NONE(A_LCD/A0_LCD_CTRL_TOP/A0_KEY2CHAR/cnt_wait_0)| 449   |
 -----------------------------------------------------------------------------------------+---------------------------------------------------+-------+
 
@@ -4375,7 +4466,7 @@ All values displayed in nanoseconds (ns)
 =========================================================================
 Timing constraint: Default period analysis for Clock 'clk'
   Clock period: 4.776ns (frequency: 209.380MHz)
-  Total number of paths / destination ports: 141475 / 3618
+  Total number of paths / destination ports: 143240 / 3662
 -------------------------------------------------------------------------
 Delay:               6.368ns (Levels of Logic = 7)
   Source:            A_DVI_TELE_TXRX/A_DISPLAY/A1_DISP_DIGIT/disp_buf_1_63_3 (FF)
@@ -4476,7 +4567,7 @@ Delay:               3.116ns (Levels of Logic = 3)
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
      FDCE:C->Q             2   0.471   0.715  A_LCD/rstmod/counter_2 (A_LCD/rstmod/counter_2)
-     LUT3:I0->O            1   0.094   0.480  A_LCD/rstmod/rstgen_cmp_eq0000_SW0 (N82)
+     LUT3:I0->O            1   0.094   0.480  A_LCD/rstmod/rstgen_cmp_eq0000_SW0 (N94)
      LUT6:I5->O            2   0.094   0.581  A_LCD/rstmod/rstgen_cmp_eq0000 (A_LCD/rstmod/rstgen_cmp_eq0000)
      LUT3:I1->O            8   0.094   0.374  A_LCD/rstmod/counter_not00011 (A_LCD/rstmod/counter_not0001)
      FDCE:CE                   0.213          A_LCD/rstmod/counter_0
@@ -4486,33 +4577,33 @@ Delay:               3.116ns (Levels of Logic = 3)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'CLK_27MHZ_FPGA'
-  Clock period: 3.805ns (frequency: 262.812MHz)
-  Total number of paths / destination ports: 991 / 150
+  Clock period: 3.608ns (frequency: 277.162MHz)
+  Total number of paths / destination ports: 993 / 150
 -------------------------------------------------------------------------
-Delay:               3.805ns (Levels of Logic = 4)
+Delay:               3.608ns (Levels of Logic = 4)
   Source:            A_AUDIO/A0_IF/cnt_audio_rst_0 (FF)
-  Destination:       A_AUDIO/A0_IF/curSTATE_CTRL_1 (FF)
+  Destination:       A_AUDIO/A0_IF/curSTATE_CTRL_0 (FF)
   Source Clock:      CLK_27MHZ_FPGA rising
   Destination Clock: CLK_27MHZ_FPGA rising
 
-  Data Path: A_AUDIO/A0_IF/cnt_audio_rst_0 to A_AUDIO/A0_IF/curSTATE_CTRL_1
+  Data Path: A_AUDIO/A0_IF/cnt_audio_rst_0 to A_AUDIO/A0_IF/curSTATE_CTRL_0
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
      FDCE:C->Q             2   0.471   0.978  A_AUDIO/A0_IF/cnt_audio_rst_0 (A_AUDIO/A0_IF/cnt_audio_rst_0)
      LUT5:I0->O            1   0.094   0.710  A_AUDIO/A0_IF/done_audio_rst_cmp_ge0000314 (A_AUDIO/A0_IF/done_audio_rst_cmp_ge0000314)
-     LUT6:I3->O            2   0.094   0.581  A_AUDIO/A0_IF/done_audio_rst_cmp_ge0000357 (A_AUDIO/A0_IF/done_audio_rst_cmp_ge0000357)
-     LUT5:I3->O           22   0.094   0.689  A_AUDIO/A0_IF/done_audio_rst_cmp_ge0000389 (A_AUDIO/A0_IF/done_audio_rst_cmp_ge0000)
-     LUT4:I2->O            1   0.094   0.000  A_AUDIO/A0_IF/nxtSTATE_CTRL<1>1 (A_AUDIO/A0_IF/nxtSTATE_CTRL<1>)
-     FDC:D                    -0.018          A_AUDIO/A0_IF/curSTATE_CTRL_1
+     LUT6:I3->O            2   0.094   0.485  A_AUDIO/A0_IF/done_audio_rst_cmp_ge0000357 (A_AUDIO/A0_IF/done_audio_rst_cmp_ge0000357)
+     LUT5:I4->O           21   0.094   0.588  A_AUDIO/A0_IF/done_audio_rst_cmp_ge0000389 (A_AUDIO/A0_IF/done_audio_rst_cmp_ge0000)
+     LUT6:I5->O            1   0.094   0.000  A_AUDIO/A0_IF/nxtSTATE_CTRL<0>1 (A_AUDIO/A0_IF/nxtSTATE_CTRL<0>)
+     FDC:D                    -0.018          A_AUDIO/A0_IF/curSTATE_CTRL_0
     ----------------------------------------
-    Total                      3.805ns (0.847ns logic, 2.958ns route)
-                                       (22.3% logic, 77.7% route)
+    Total                      3.608ns (0.847ns logic, 2.761ns route)
+                                       (23.5% logic, 76.5% route)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'audio_bit_clk'
   Clock period: 4.892ns (frequency: 204.415MHz)
-  Total number of paths / destination ports: 6581 / 1106
+  Total number of paths / destination ports: 6588 / 1106
 -------------------------------------------------------------------------
 Delay:               4.892ns (Levels of Logic = 87)
   Source:            A_AUDIO/A0_IF/data_in_0 (FF)
@@ -4690,7 +4781,7 @@ Offset:              1.154ns (Levels of Logic = 1)
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IOBUF:IO->O           1   0.818   0.336  LCD_DATA_3_IOBUF (N197)
+     IOBUF:IO->O           1   0.818   0.336  LCD_DATA_3_IOBUF (N207)
      FDCE:D                   -0.018          A_LCD/A1_LCD/inst/device_busy
     ----------------------------------------
     Total                      1.154ns (0.818ns logic, 0.336ns route)
@@ -4815,15 +4906,15 @@ Delay:               3.734ns (Levels of Logic = 2)
 =========================================================================
 
 
-Total REAL time to Xst completion: 25.00 secs
-Total CPU time to Xst completion: 24.19 secs
+Total REAL time to Xst completion: 29.00 secs
+Total CPU time to Xst completion: 28.58 secs
  
 --> 
 
 
-Total memory usage is 575220 kilobytes
+Total memory usage is 582180 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :  338 (   0 filtered)
-Number of infos    :  458 (   0 filtered)
+Number of warnings :  352 (   0 filtered)
+Number of infos    :  486 (   0 filtered)
 
