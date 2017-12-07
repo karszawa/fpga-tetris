@@ -1,7 +1,7 @@
 #Release 11.1 - par L.57 (lin64)
 #Copyright (c) 1995-2009 Xilinx, Inc.  All rights reserved.
 
-#Thu Nov 30 16:43:20 2017
+#Thu Dec  7 16:46:05 2017
 
 #
 ## NOTE: This file is designed to be imported into a spreadsheet program
@@ -358,7 +358,7 @@ G24,,IOBM,IO_L3P_SM5P_13,UNUSED,,13,,,,,,,,,
 G25,,IOBS,IO_L3N_SM5N_13,UNUSED,,13,,,,,,,,,
 G26,,IOBM,IO_L2P_SM6P_13,UNUSED,,13,,,,,,,,,
 H1,,IOBS,IO_L2N_14,UNUSED,,14,,,,,,,,,
-H2,,IOBS,IO_L7N_14,UNUSED,,14,,,,,,,,,
+H2,KEYBOARD_DATA,IOB,IO_L7N_14,TRISTATE,LVCMOS18,14,12,SLOW,,,,LOCATED,NO,NONE,
 H3,,IOBM,IO_L5P_14,UNUSED,,14,,,,,,,,,
 H4,,IOBM,IO_L6P_12,UNUSED,,12,,,,,,,,,
 H5,,,VCCO_12,,,12,,,,,3.30,,,,

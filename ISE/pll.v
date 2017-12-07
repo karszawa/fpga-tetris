@@ -4,14 +4,14 @@
 //   ____  ____ 
 //  /   /\/   / 
 // /___/  \  /    Vendor: Xilinx 
-// \   \   \/     Version : 11.5
+// \   \   \/     Version : 11.1
 //  \   \         Application : xaw2verilog
 //  /   /         Filename : pll.v
-// /___/   /\     Timestamp : 11/16/2016 17:53:38
+// /___/   /\     Timestamp : 12/04/2017 17:11:29
 // \   \  /  \ 
 //  \___\/\___\ 
 //
-//Command: xaw2verilog -intstyle /mnt/rose/usr5/OLD/hyun/Dropbox/Experiment_TA/2016/ISE/ipcore_dir/pll.xaw -st pll.v
+//Command: xaw2verilog -intstyle /home/jikken17/FPGA_TOP/ISE/ipcore_dir/pll.xaw -st pll.v
 //Design Name: pll
 //Device: xc5vlx50-1ff676
 //

@@ -11,41 +11,41 @@ Target Device  : xc5vlx50
 Target Package : ff676
 Target Speed   : -1
 Mapper Version : virtex5 -- $Revision: 1.51.18.1 $
-Mapped Date    : Thu Nov 30 16:42:28 2017
+Mapped Date    : Thu Dec  7 16:43:05 2017
 
 Design Summary
 --------------
 Number of errors:      0
-Number of warnings:   35
+Number of warnings:   34
 Slice Logic Utilization:
-  Number of Slice Registers:                 3,282 out of  28,800   11%
-    Number used as Flip Flops:               3,280
+  Number of Slice Registers:                 4,310 out of  28,800   14%
+    Number used as Flip Flops:               4,308
     Number used as Latches:                      2
-  Number of Slice LUTs:                      2,385 out of  28,800    8%
-    Number used as logic:                    2,342 out of  28,800    8%
-      Number using O6 output only:           1,891
-      Number using O5 output only:             253
-      Number using O5 and O6:                  198
+  Number of Slice LUTs:                      7,683 out of  28,800   26%
+    Number used as logic:                    7,646 out of  28,800   26%
+      Number using O6 output only:           7,225
+      Number using O5 output only:             246
+      Number using O5 and O6:                  175
     Number used as Memory:                      17 out of   7,680    1%
       Number used as Dual Port RAM:              8
         Number using O6 output only:             4
         Number using O5 and O6:                  4
       Number used as Shift Register:             9
         Number using O6 output only:             9
-    Number used as exclusive route-thru:        26
-  Number of route-thrus:                       279
-    Number using O6 output only:               277
-    Number using O5 output only:                 2
+    Number used as exclusive route-thru:        20
+  Number of route-thrus:                       266
+    Number using O6 output only:               265
+    Number using O5 output only:                 1
 
 Slice Logic Distribution:
-  Number of occupied Slices:                 1,314 out of   7,200   18%
-  Number of LUT Flip Flop pairs used:        4,238
-    Number with an unused Flip Flop:           956 out of   4,238   22%
-    Number with an unused LUT:               1,853 out of   4,238   43%
-    Number of fully used LUT-FF pairs:       1,429 out of   4,238   33%
-    Number of unique control sets:             129
+  Number of occupied Slices:                 2,924 out of   7,200   40%
+  Number of LUT Flip Flop pairs used:        9,357
+    Number with an unused Flip Flop:         5,047 out of   9,357   53%
+    Number with an unused LUT:               1,674 out of   9,357   17%
+    Number of fully used LUT-FF pairs:       2,636 out of   9,357   28%
+    Number of unique control sets:             134
     Number of slice register sites lost
-      to control set restrictions:             157 out of  28,800    1%
+      to control set restrictions:             169 out of  28,800    1%
 
   A LUT Flip Flop pair for this architecture represents one LUT paired with
   one Flip Flop within a slice.  A control set is a unique combination of
@@ -56,8 +56,8 @@ Slice Logic Distribution:
   over-mapped for a non-BRAM resource or if placement fails.
 
 IO Utilization:
-  Number of bonded IOBs:                        71 out of     440   16%
-    Number of LOCed IOBs:                       71 out of      71  100%
+  Number of bonded IOBs:                        72 out of     440   16%
+    Number of LOCed IOBs:                       72 out of      72  100%
     IOB Flip Flops:                             14
 
 Specific Feature Utilization:
@@ -66,11 +66,11 @@ Specific Feature Utilization:
   Number of DCM_ADVs:                            1 out of      12    8%
   Number of PLL_ADVs:                            2 out of       6   33%
 
-Average Fanout of Non-Clock Nets:                3.59
+Average Fanout of Non-Clock Nets:                4.95
 
-Peak Memory Usage:  830 MB
-Total REAL time to MAP completion:  35 secs 
-Total CPU time to MAP completion:   33 secs 
+Peak Memory Usage:  937 MB
+Total REAL time to MAP completion:  2 mins 21 secs 
+Total CPU time to MAP completion:   2 mins 20 secs 
 
 Table of Contents
 -----------------
@@ -109,8 +109,6 @@ WARNING:LIT:395 - The above warning message is repeated 10 more times for the
    DIP<4>_IBUF,
    DIP<3>_IBUF
    To see the details of these warning messages, please use the -detail switch.
-WARNING:MapLib:701 - Signal KEYBOARD_DATA connected to top level port
-   KEYBOARD_DATA has been removed.
 WARNING:Pack:2515 - The LUT-1 inverter "A_LCD/A1_LCD/inst/lcddata_en_inv1_INV_0"
    failed to join the OLOGIC comp matched to output buffer "LCD_DATA_0_OBUFT". 
    This may result in suboptimal timing.  The LUT-1 inverter
@@ -150,41 +148,41 @@ WARNING:PhysDesignRules:367 - The signal <DIP<7>_IBUF> is incomplete. The signal
 WARNING:PhysDesignRules:367 - The signal <CLK_33MHZ_FPGA_IBUF> is incomplete.
    The signal does not drive any load pins in the design.
 WARNING:PhysDesignRules:781 - PULLDOWN on an active net. PULLDOWN of comp
-   ProtoComp0.PULL is set but the tri state is not configured. 
+   ProtoComp1363.PULL is set but the tri state is not configured. 
 WARNING:PhysDesignRules:781 - PULLDOWN on an active net. PULLDOWN of comp
-   ProtoComp0.PULL.1 is set but the tri state is not configured. 
+   ProtoComp1363.PULL.1 is set but the tri state is not configured. 
 WARNING:PhysDesignRules:781 - PULLDOWN on an active net. PULLDOWN of comp
-   ProtoComp0.PULL.2 is set but the tri state is not configured. 
+   ProtoComp1363.PULL.2 is set but the tri state is not configured. 
 WARNING:PhysDesignRules:781 - PULLDOWN on an active net. PULLDOWN of comp
-   ProtoComp0.PULL.3 is set but the tri state is not configured. 
+   ProtoComp1363.PULL.3 is set but the tri state is not configured. 
 WARNING:PhysDesignRules:781 - PULLDOWN on an active net. PULLDOWN of comp
-   ProtoComp0.PULL.4 is set but the tri state is not configured. 
+   ProtoComp1363.PULL.4 is set but the tri state is not configured. 
 WARNING:PhysDesignRules:781 - PULLDOWN on an active net. PULLDOWN of comp
-   ProtoComp0.PULL.5 is set but the tri state is not configured. 
+   ProtoComp1363.PULL.5 is set but the tri state is not configured. 
 WARNING:PhysDesignRules:781 - PULLDOWN on an active net. PULLDOWN of comp
-   ProtoComp0.PULL.6 is set but the tri state is not configured. 
+   ProtoComp1363.PULL.6 is set but the tri state is not configured. 
 WARNING:PhysDesignRules:781 - PULLDOWN on an active net. PULLDOWN of comp
-   ProtoComp0.PULL.7 is set but the tri state is not configured. 
+   ProtoComp1363.PULL.7 is set but the tri state is not configured. 
 WARNING:PhysDesignRules:781 - PULLDOWN on an active net. PULLDOWN of comp
-   ProtoComp0.PULL.8 is set but the tri state is not configured. 
+   ProtoComp1363.PULL.8 is set but the tri state is not configured. 
 WARNING:PhysDesignRules:781 - PULLDOWN on an active net. PULLDOWN of comp
-   ProtoComp0.PULL.9 is set but the tri state is not configured. 
+   ProtoComp1363.PULL.9 is set but the tri state is not configured. 
 WARNING:PhysDesignRules:781 - PULLDOWN on an active net. PULLDOWN of comp
-   ProtoComp0.PULL.10 is set but the tri state is not configured. 
+   ProtoComp1363.PULL.10 is set but the tri state is not configured. 
 WARNING:PhysDesignRules:781 - PULLDOWN on an active net. PULLDOWN of comp
-   ProtoComp0.PULL.11 is set but the tri state is not configured. 
+   ProtoComp1363.PULL.11 is set but the tri state is not configured. 
 WARNING:PhysDesignRules:781 - PULLDOWN on an active net. PULLDOWN of comp
-   ProtoComp0.PULL.12 is set but the tri state is not configured. 
+   ProtoComp1363.PULL.12 is set but the tri state is not configured. 
 WARNING:PhysDesignRules:781 - PULLDOWN on an active net. PULLDOWN of comp
-   ProtoComp0.PULL.13 is set but the tri state is not configured. 
+   ProtoComp1363.PULL.13 is set but the tri state is not configured. 
 WARNING:PhysDesignRules:781 - PULLDOWN on an active net. PULLDOWN of comp
-   ProtoComp0.PULL.14 is set but the tri state is not configured. 
+   ProtoComp1363.PULL.14 is set but the tri state is not configured. 
 WARNING:PhysDesignRules:781 - PULLDOWN on an active net. PULLDOWN of comp
-   ProtoComp0.PULL.15 is set but the tri state is not configured. 
+   ProtoComp1363.PULL.15 is set but the tri state is not configured. 
 WARNING:PhysDesignRules:781 - PULLDOWN on an active net. PULLDOWN of comp
-   ProtoComp0.PULL.16 is set but the tri state is not configured. 
+   ProtoComp1363.PULL.16 is set but the tri state is not configured. 
 WARNING:PhysDesignRules:781 - PULLDOWN on an active net. PULLDOWN of comp
-   ProtoComp0.PULL.17 is set but the tri state is not configured. 
+   ProtoComp1363.PULL.17 is set but the tri state is not configured. 
 
 Section 3 - Informational
 -------------------------
@@ -212,9 +210,9 @@ INFO:PhysDesignRules:1437 - To achieve optimal frequency synthesis performance
 
 Section 4 - Removed Logic Summary
 ---------------------------------
- 258 block(s) removed
+ 244 block(s) removed
    2 block(s) optimized away
- 257 signal(s) removed
+ 244 signal(s) removed
 
 Section 5 - Removed Logic
 -------------------------
@@ -239,54 +237,6 @@ The trimmed logic reported below is either:
    2. part of disabled logic
    3. a side-effect of other trimmed logic
 
-The signal "A_DVI_TELE_TXRX/A_RECT/A2_DRAW_Mrom_add0001_mux00006_f7" is unused
-and has been removed.
- Unused block "A_DVI_TELE_TXRX/A_RECT/A2_DRAW_Mrom_add0001_mux00006_f7" (MUX)
-removed.
-  The signal "A_DVI_TELE_TXRX/A_RECT/A2_DRAW_Mrom_add0001_mux00006_f71" is unused
-and has been removed.
-   Unused block "A_DVI_TELE_TXRX/A_RECT/A2_DRAW_Mrom_add0001_mux00006_f71" (ROM)
-removed.
-The signal "A_DVI_TELE_TXRX/A_RECT/A2_DRAW_Mrom_add0001_mux00008" is unused and
-has been removed.
- Unused block "A_DVI_TELE_TXRX/A_RECT/A2_DRAW_Mrom_add0001_mux00008" (ROM)
-removed.
-The signal "A_DVI_TELE_TXRX/A_RECT/A2_DRAW_Mrom_add0001_mux000081" is unused and
-has been removed.
- Unused block "A_DVI_TELE_TXRX/A_RECT/A2_DRAW_Mrom_add0001_mux000081" (ROM)
-removed.
-The signal "A_DVI_TELE_TXRX/A_RECT/A2_DRAW_Mrom_add0001_mux00008_f7" is unused
-and has been removed.
- Unused block "A_DVI_TELE_TXRX/A_RECT/A2_DRAW_Mrom_add0001_mux00008_f7" (MUX)
-removed.
-The signal "A_DVI_TELE_TXRX/A_RECT/A2_DRAW_Mrom_add0004_mux00001" is unused and
-has been removed.
- Unused block "A_DVI_TELE_TXRX/A_RECT/A2_DRAW_Mrom_add0004_mux00002" (ROM)
-removed.
-The signal "A_DVI_TELE_TXRX/A_RECT/A2_DRAW_Mrom_add0004_mux00004" is unused and
-has been removed.
- Unused block "A_DVI_TELE_TXRX/A_RECT/A2_DRAW_Mrom_add0004_mux00004" (ROM)
-removed.
-The signal "A_DVI_TELE_TXRX/A_RECT/A2_DRAW_Mrom_add0004_mux00004_f71" is unused
-and has been removed.
- Unused block "A_DVI_TELE_TXRX/A_RECT/A2_DRAW_Mrom_add0004_mux00004_f71" (ROM)
-removed.
-The signal "A_DVI_TELE_TXRX/A_RECT/A2_DRAW_Mrom_add0004_mux00004_f72" is unused
-and has been removed.
- Unused block "A_DVI_TELE_TXRX/A_RECT/A2_DRAW_Mrom_add0004_mux00004_f72" (ROM)
-removed.
-The signal "A_DVI_TELE_TXRX/A_RECT/A2_DRAW_Mrom_add0007_mux00004" is unused and
-has been removed.
- Unused block "A_DVI_TELE_TXRX/A_RECT/A2_DRAW_Mrom_add0007_mux00004" (ROM)
-removed.
-The signal "A_DVI_TELE_TXRX/A_RECT/A2_DRAW_Mrom_add0007_mux000041" is unused and
-has been removed.
- Unused block "A_DVI_TELE_TXRX/A_RECT/A2_DRAW_Mrom_add0007_mux000041" (ROM)
-removed.
-The signal "A_DVI_TELE_TXRX/A_RECT/A2_DRAW_Mrom_add0007_mux00004_f7" is unused
-and has been removed.
- Unused block "A_DVI_TELE_TXRX/A_RECT/A2_DRAW_Mrom_add0007_mux00004_f7" (MUX)
-removed.
 The signal "A_PS2_KEY_MOUSE/A0_MOUSE/Madd_my_sub0000_cy<8>" is unused and has
 been removed.
  Unused block "A_PS2_KEY_MOUSE/A0_MOUSE/Madd_my_sub0000_cy<8>11" (ROM) removed.
@@ -1106,9 +1056,6 @@ removed.
 has been removed.
          Unused block "A_PS2_KEY_MOUSE/A0_MOUSE/Mcompar_my_cmp_lt0000_lut<5>_INV_0" (BUF)
 removed.
-The signal "KEYBOARD_DATA" is unused and has been removed.
- Unused block "KEYBOARD_DATA_OBUFT" (TRI) removed.
-Unused block "KEYBOARD_DATA" (PAD) removed.
 
 Optimized Block(s):
 TYPE 		BLOCK
@@ -1163,6 +1110,7 @@ Section 6 - IOB Properties
 | I2C_SCL_DVI                        | IOB              | OUTPUT    | LVCMOS33             |       | 24       | FAST |              | PULLUP   |          |
 | I2C_SDA_DVI                        | IOB              | BIDIR     | LVCMOS33             |       | 24       | FAST |              | PULLUP   |          |
 | KEYBOARD_CLK                       | IOB              | BIDIR     | LVCMOS18             |       | 12       | SLOW |              |          |          |
+| KEYBOARD_DATA                      | IOB              | OUTPUT    | LVCMOS18             |       | 12       | SLOW |              |          |          |
 | LCD_DATA<0>                        | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              | PULLDOWN |          |
 | LCD_DATA<1>                        | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              | PULLDOWN |          |
 | LCD_DATA<2>                        | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              | PULLDOWN |          |

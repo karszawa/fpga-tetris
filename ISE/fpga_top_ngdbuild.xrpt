@@ -5,30 +5,34 @@
     The structure and the elements are likely to change over the next few releases.
     This means code written to parse this file will need to be revisited each subsequent release.-->
 
-  <application stringID="NgdBuild" timeStamp="Thu Nov 30 16:42:27 2017">
+  <application stringID="NgdBuild" timeStamp="Thu Dec  7 16:43:03 2017">
     <section stringID="User_Env">
       <table stringID="User_EnvVar">
         <column stringID="variable"/>
         <column stringID="value"/>
         <row stringID="row" value="0">
-          <item stringID="variable" value="XIL_IMPACT_USE_LIBUSB"/>
-          <item stringID="value" value="1"/>
+          <item stringID="variable" value="XILINXD_LICENSE_FILE"/>
+          <item stringID="value" value="2100@133.11.58.13"/>
         </row>
         <row stringID="row" value="1">
-          <item stringID="variable" value="XILINX_DIR"/>
-          <item stringID="value" value="/mnt/cad/Xilinx/11.1"/>
-        </row>
-        <row stringID="row" value="2">
-          <item stringID="variable" value="XILINX_EDK"/>
-          <item stringID="value" value="/mnt/cad/Xilinx/11.1/EDK"/>
-        </row>
-        <row stringID="row" value="3">
           <item stringID="variable" value="XILINX"/>
           <item stringID="value" value="/mnt/cad/Xilinx/11.1/ISE"/>
         </row>
+        <row stringID="row" value="2">
+          <item stringID="variable" value="XILINX_DIR"/>
+          <item stringID="value" value="/mnt/cad/Xilinx/11.1"/>
+        </row>
+        <row stringID="row" value="3">
+          <item stringID="variable" value="XILINX_EDK"/>
+          <item stringID="value" value="/mnt/cad/Xilinx/11.1/EDK"/>
+        </row>
         <row stringID="row" value="4">
-          <item stringID="variable" value="XILINXD_LICENSE_FILE"/>
-          <item stringID="value" value="2100@133.11.58.13"/>
+          <item stringID="variable" value="XIL_TIMING_ALLOW_IMPOSSIBLE"/>
+          <item stringID="value" value="1"/>
+        </row>
+        <row stringID="row" value="5">
+          <item stringID="variable" value="XIL_IMPACT_USE_LIBUSB"/>
+          <item stringID="value" value="1"/>
         </row>
       </table>
       <item stringID="User_EnvOs" value="OS Information">
@@ -41,15 +45,15 @@
         <column stringID="speed"/>
         <row stringID="row" value="0">
           <item stringID="arch" value="Intel(R) Core(TM) i5-4590 CPU @ 3.30GHz"/>
-          <item stringID="speed" value="800.000 MHz"/>
+          <item stringID="speed" value="1000.000 MHz"/>
         </row>
         <row stringID="row" value="1">
           <item stringID="arch" value="Intel(R) Core(TM) i5-4590 CPU @ 3.30GHz"/>
-          <item stringID="speed" value="3301.000 MHz"/>
+          <item stringID="speed" value="800.000 MHz"/>
         </row>
         <row stringID="row" value="2">
           <item stringID="arch" value="Intel(R) Core(TM) i5-4590 CPU @ 3.30GHz"/>
-          <item stringID="speed" value="1900.000 MHz"/>
+          <item stringID="speed" value="3301.000 MHz"/>
         </row>
         <row stringID="row" value="3">
           <item stringID="arch" value="Intel(R) Core(TM) i5-4590 CPU @ 3.30GHz"/>

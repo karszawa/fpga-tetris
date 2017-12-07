@@ -1,6 +1,10 @@
 `timescale 1ns/1ps
 
-module draw_rect (
+module draw_rect #(
+	parameter BLOCKS = 1024'b0,
+	parameter IW = 0,
+	parameter RW = 0
+) (
 	input clk,
 	input rst_n,
 
@@ -33,23 +37,17 @@ parameter COLOR_OUTER = 4'd1;
 parameter COLOR_BLOCK = 4'd2;
 parameter COLOR_TARGET = 4'd3;
 
-// 4 bits * 2 positions * 4 blocks * 4 rads * 2 types 
-parameter [4 * 2 * 4 * 4 * 2 - 1 : 0] BLOCKS = {	
-	// Type I
-	{ 4'd0, 4'd0 }, { 4'd0, 4'd1 }, { 4'd0, 4'd2 }, { 4'd0, 4'd3 },
-	{ 4'd0, 4'd0 }, { 4'd1, 4'd0 }, { -4'd1, 4'd0 }, { -4'd2, 4'd0 },
-	{ 4'd0, 4'd0 }, { 4'd0, 4'd1 }, { 4'd0, 4'd2 }, { 4'd0, 4'd3 },
-	{ 4'd0, 4'd0 }, { 4'd1, 4'd0 }, { -4'd1, 4'd0 }, { -4'd2, 4'd0 },
-
-	// Type J
-	{ 4'd0, 4'd0 }, { -4'd1, 4'd0 }, { 4'd0, 4'd1 }, { 4'd1, 4'd1 },
-	{ 4'd0, 4'd0 }, { 4'd0, -4'd0 }, { 4'd0, 4'd1 }, { -4'd1, 4'd1 },
-	{ -4'd1, 4'd0 }, { -4'd1, 4'd1 }, { 4'd0, 4'd1 }, { 4'd1, 4'd1 },
-	{ 4'd1, -4'd0 }, { 4'd0, -4'd1 }, { 4'd0, 4'd0 }, { 4'd0, 4'd1 }
+parameter [63 : 0] COLOR_TARGET_RED = {
+	8'd255, 8'd0, 8'd255, 8'd255, 8'd127, 8'd0, 8'd255
 };
 
-parameter IW = 4 * 2 * 4 * 4;
-parameter RW = 4 * 2 * 4;
+parameter [63 : 0] COLOR_TARGET_GRN = {
+	8'd0, 8'd255, 8'd127, 8'd0, 8'd255, 8'd255, 8'd255
+};
+
+parameter [63 : 0] COLOR_TARGET_BLU = {
+	8'd0, 8'd0, 8'd0, 8'd255, 8'd127, 8'd127, 8'd0
+};
 
 reg [11-1: 0] r_cnt_x;
 reg	[11-1: 0] r_cnt_y;
@@ -63,10 +61,28 @@ wire [9:0] board_x;
 assign board_x = r_cnt_x >> 5;
 
 wire [9:0] offset;
-assign offset = (board_y * 10 + board_x) * 4;
+assign offset = (board_y << 3 + board_y << 1 + board_x) << 2;
 
 wire [9:0] blk_offset;
 assign blk_offset = blk_id * IW + blk_rad * RW;
+
+wire [9:0] blk_abs_x_1;
+wire [9:0] blk_abs_y_1;
+wire [9:0] blk_abs_x_2;
+wire [9:0] blk_abs_y_2;
+wire [9:0] blk_abs_x_3;
+wire [9:0] blk_abs_y_3;
+wire [9:0] blk_abs_x_4;
+wire [9:0] blk_abs_y_4;
+
+assign blk_abs_x_1 = { 5'b0, blk_pos_x } + { {6{BLOCKS[blk_offset+ 3]}}, BLOCKS[blk_offset+ 0 +: 4] };
+assign blk_abs_y_1 = { 5'b0, blk_pos_y } + { {6{BLOCKS[blk_offset+ 7]}}, BLOCKS[blk_offset+ 4 +: 4] };
+assign blk_abs_x_2 = { 5'b0, blk_pos_x } + { {6{BLOCKS[blk_offset+11]}}, BLOCKS[blk_offset+ 8 +: 4] };
+assign blk_abs_y_2 = { 5'b0, blk_pos_y } + { {6{BLOCKS[blk_offset+15]}}, BLOCKS[blk_offset+12 +: 4] };
+assign blk_abs_x_3 = { 5'b0, blk_pos_x } + { {6{BLOCKS[blk_offset+19]}}, BLOCKS[blk_offset+16 +: 4] };
+assign blk_abs_y_3 = { 5'b0, blk_pos_y } + { {6{BLOCKS[blk_offset+23]}}, BLOCKS[blk_offset+20 +: 4] };
+assign blk_abs_x_4 = { 5'b0, blk_pos_x } + { {6{BLOCKS[blk_offset+27]}}, BLOCKS[blk_offset+24 +: 4] };
+assign blk_abs_y_4 = { 5'b0, blk_pos_y } + { {6{BLOCKS[blk_offset+31]}}, BLOCKS[blk_offset+28 +: 4] };
 
 // AREA
 always @ (posedge clk or negedge rst_n) begin
@@ -76,23 +92,14 @@ always @ (posedge clk or negedge rst_n) begin
 		if (board_x >= 10 || board_y >= 20) begin
 			area <= COLOR_OUTER;
 		end else if (
-			(
-				board_x == blk_pos_x + $signed(BLOCKS[blk_offset+ 0 +: 4]) &&
-				board_y == blk_pos_y + $signed(BLOCKS[blk_offset+ 4 +: 4])
-			) || (
-				board_x == blk_pos_x + $signed(BLOCKS[blk_offset+ 8 +: 4]) &&
-				board_y == blk_pos_y + $signed(BLOCKS[blk_offset+12 +: 4])
-			) || (
-				board_x == blk_pos_x + $signed(BLOCKS[blk_offset+16 +: 4]) &&
-				board_y == blk_pos_y + $signed(BLOCKS[blk_offset+20 +: 4])
-			) || (
-				board_x == blk_pos_x + $signed(BLOCKS[blk_offset+24 +: 4]) &&
-				board_y == blk_pos_y + $signed(BLOCKS[blk_offset+28 +: 4])
-			)
+			(board_x == blk_abs_x_1 && board_y == blk_abs_y_1) ||
+			(board_x == blk_abs_x_2 && board_y == blk_abs_y_2) ||
+			(board_x == blk_abs_x_3 && board_y == blk_abs_y_3) ||
+			(board_x == blk_abs_x_4 && board_y == blk_abs_y_4)
 		) begin
 			area <= COLOR_TARGET;
 		end else if (board[offset +: 4] != 0) begin
-			area <= COLOR_BLOCK;
+			area <= board[offset +: 4];
 		end else begin
 			area <= COLOR_BLANK;
 		end
@@ -137,20 +144,23 @@ always @ (posedge clk or negedge rst_n) begin
 		o_sync_ha <= i_sync_ha;
 		o_sync_de <= i_sync_de;
 		
-		o_sync_red	<= (area == COLOR_BLANK ? 8'd0:
-					   (area == COLOR_OUTER ? 8'd200:
-					   (area == COLOR_BLOCK ? 8'd100:
-					   (area == COLOR_TARGET ? 8'd0 : 8'd0))));
-					
-		o_sync_grn	<= (area == COLOR_BLANK ? 8'd0:
-					   (area == COLOR_OUTER ? 8'd200:
-					   (area == COLOR_BLOCK ? 8'd0:
-					   (area == COLOR_TARGET ? 8'd100 : 8'd0))));
-					   
-		o_sync_blu	<= (area == COLOR_BLANK ? 8'd0:
-					   (area == COLOR_OUTER ? 8'd200:
-					   (area == COLOR_BLOCK ? 8'd0:
-					   (area == COLOR_TARGET ? 8'd100 : 8'd0))));
+		if (area == COLOR_TARGET) begin
+			o_sync_red <= COLOR_TARGET_RED[blk_id * 8 +: 8];
+			o_sync_grn <= COLOR_TARGET_GRN[blk_id * 8 +: 8];
+			o_sync_blu <= COLOR_TARGET_BLU[blk_id * 8 +: 8];
+		end else if (area == COLOR_BLANK) begin
+			o_sync_red <= 8'd0;
+			o_sync_grn <= 8'd0;
+			o_sync_blu <= 8'd0;
+		end else if (area == COLOR_OUTER) begin
+			o_sync_red <= 8'd200;
+			o_sync_grn <= 8'd200;
+			o_sync_blu <= 8'd200;
+		end else begin
+			o_sync_red <= COLOR_TARGET_RED[area * 8 +: 8];
+			o_sync_grn <= COLOR_TARGET_GRN[area * 8 +: 8];
+			o_sync_blu <= COLOR_TARGET_BLU[area * 8 +: 8];
+		end
 	end
 end
 

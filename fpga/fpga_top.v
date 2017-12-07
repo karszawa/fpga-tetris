@@ -217,78 +217,6 @@ DVI_TOP A_DVI_TELE_TXRX (
 .TP						(TP_DVI					) //o[7:0]
 );
 
-
-//	sysele #(
-//	// set 1 to use external ADC-DAC board
-//	.with_dac_adc			(0						),
-//	// set 1 to enable convolution coding and viterbi algorithm
-//	.with_error_correction	(0						),
-//	// 1 -- BPSK
-//	// 2 -- QPSK
-//	// 4 -- 16QAM
-//	.modtype				(1						),
-//	// DAC-cable-ADC delay
-//	.ad1_delay_init			(3						),
-//	.ad2_delay_init			(3						),
-//	.ad_valid_delay_init	(8						)
-//	) A_LCD (
-//	// Global 100MHz clock
-//	`ifndef FOR_SIM
-//	.CLK					(clk					),//i
-//	.CLK_33MHZ_FPGA			(CLK_33MHZ_FPGA			),//i
-//	.CLK_DIFF_FPGA_P		(CLK_DIFF_FPGA_P		),//i
-//	.CLK_DIFF_FPGA_N		(CLK_DIFF_FPGA_N		),//i
-//	`else
-//	.clk_40					(clk_40					),//i
-//	.clk_100				(clk_100				),//i
-//	.clk_200				(clk_200				),//i
-//	.clk_120				(clk_120				),//i
-//	.clk_240				(clk_240				),//i
-//	.locked1				(locked1				),//i
-//	.locked2				(locked2				),//i
-//	`endif
-//	// Reset signal, active low
-//	.nRST					(rst_n					),//i
-//	// North, East, South, West and Center buttons
-//	// Active High
-//	.BTN_N					(BUTTON_N				),//i
-//	.BTN_E					(BUTTON_E				),//i
-//	.BTN_S					(BUTTON_S				),//i
-//	.BTN_W					(BUTTON_W				),//i
-//	.BTN_C					(BUTTON_C				),//i
-//	// DIP Switches
-//	.DIP					(DIP					),//i[7:0]
-//	// North, East, South, West and Center LEDs
-//	// Active High
-//	.LED_N					(	/* OPEN	*/			),//o
-//	.LED_E					(	/* OPEN	*/			),//o
-//	.LED_S					(	/* OPEN	*/			),//o
-//	.LED_W					(	/* OPEN	*/			),//o
-//	.LED_C					(	/* OPEN	*/			),//o
-//	// LEDs
-//	.LED					(	/* OPEN	*/			),//o[7:0]
-//	// LCD driver
-//	.LCDDATA				(LCD_DATA				),//io[3:0]
-//	.RS						(LCD_RS					),//o
-//	.RW						(LCD_RW					),//o
-//	.EN						(LCD_EN  				),//o
-//	// DAC interface
-//	.DA2					(	/* OPEN */			),//o[9:4]
-//	.DACLK					(	/* OPEN */			),//o
-//	.DA1					(	/* OPEN */			),//o[9:4]
-//	// ADC interface
-//	.ADN					(ADN					),//i[7:0]
-//	.ADP					(ADP					),//i[7:0]
-//	.DCON					(DCON					),//i
-//	.DCOP					(DCOP					),//i
-//	.ADC_nOE				(ADC_nOE				),//o
-//	.SCLK					(SCLK					),//o
-//	.SDIO					(SDIO					),//io        
-//	.CSB					(CSB					),//o
-//	.ADCLKP					(ADCLKP					),//o
-//	.ADCLKN					(ADCLKN					) //o
-//	);
-
 lcd_top A_LCD (
 // Global 100MHz clock
 `ifndef FOR_SIM
@@ -341,14 +269,6 @@ audio A_AUDIO (
 .audio_sync				(audio_sync				),//o	// FPGA pin AD11 (bank 4)	// AC-Link frame sync, 12.288MHz/256 = 48kHz
 .flash_audio_reset_b	(flash_audio_reset_b	),//o	// FPGA pin AD10 (bank 4)	// reset of AC97, negative reset
 .tp						(TP_AUD					) //o[ 8-1: 0]
-//.led0					(	/* OPEN */			),//o
-//.led1					(	/* OPEN */			),//o
-//.led2					(	/* OPEN */			),//o
-//.led3					(	/* OPEN */			),//o
-//.led4					(	/* OPEN */			),//o
-//.led5					(	/* OPEN */			),//o
-//.led6					(	/* OPEN */			),//o
-//.led7					(	/* OPEN */			) // for debugging
 );
 
 ps2_top A_PS2_KEY_MOUSE (

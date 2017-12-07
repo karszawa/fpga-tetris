@@ -39,6 +39,7 @@ module lcd_top (
    // LEDs
    output [7:0] LED 
 );
+
    // ==================================================
    // WIRES
    // ==================================================
@@ -197,7 +198,7 @@ lcd #(
 .busy(lcd_busy),
 .update(lcd_update)
 );
-   
+
 lcd_ctrl_top #(
 `ifdef FOR_SIM
 .update_period(32'd24_000)
@@ -216,5 +217,5 @@ lcd_ctrl_top #(
 .valid_i(valid_i_lcdclk),
 .recv_data(recv_data_lcdclk)
 );
-   
+
 endmodule
