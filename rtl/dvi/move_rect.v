@@ -105,10 +105,10 @@ wire [9:0] blk_offset_2;
 wire [9:0] blk_offset_3;
 wire [9:0] blk_offset_4;
 
-assign blk_offset_1 = (blk_abs_y_1 << 3 + blk_abs_y_1 << 1 + blk_abs_x_1) << 2;
-assign blk_offset_2 = (blk_abs_y_2 << 3 + blk_abs_y_2 << 1 + blk_abs_x_2) << 2;
-assign blk_offset_3 = (blk_abs_y_3 << 3 + blk_abs_y_3 << 1 + blk_abs_x_3) << 2;
-assign blk_offset_4 = (blk_abs_y_4 << 3 + blk_abs_y_4 << 1 + blk_abs_x_4) << 2;
+assign blk_offset_1 = (blk_abs_y_1 * 10 + blk_abs_x_1) * 4;
+assign blk_offset_2 = (blk_abs_y_2 * 10 + blk_abs_x_2) * 4;
+assign blk_offset_3 = (blk_abs_y_3 * 10 + blk_abs_x_3) * 4;
+assign blk_offset_4 = (blk_abs_y_4 * 10 + blk_abs_x_4) * 4;
 
 wire [9:0] blk_abs_x_pox_1;
 wire [9:0] blk_abs_x_mox_1;
@@ -141,30 +141,30 @@ wire [9:0] pox_offset_2;
 wire [9:0] pox_offset_3;
 wire [9:0] pox_offset_4;
 
-assign pox_offset_1 = (blk_abs_y_1 << 3 + blk_abs_y_1 << 1 + blk_abs_x_pox_1) << 2;
-assign pox_offset_2 = (blk_abs_y_2 << 3 + blk_abs_y_2 << 1 + blk_abs_x_pox_2) << 2;
-assign pox_offset_3 = (blk_abs_y_3 << 3 + blk_abs_y_3 << 1 + blk_abs_x_pox_3) << 2;
-assign pox_offset_4 = (blk_abs_y_4 << 3 + blk_abs_y_4 << 1 + blk_abs_x_pox_4) << 2;
+assign pox_offset_1 = (blk_abs_y_1 * 10 + blk_abs_x_pox_1) * 4;
+assign pox_offset_2 = (blk_abs_y_2 * 10 + blk_abs_x_pox_2) * 4;
+assign pox_offset_3 = (blk_abs_y_3 * 10 + blk_abs_x_pox_3) * 4;
+assign pox_offset_4 = (blk_abs_y_4 * 10 + blk_abs_x_pox_4) * 4;
 
 wire [9:0] mox_offset_1;
 wire [9:0] mox_offset_2;
 wire [9:0] mox_offset_3;
 wire [9:0] mox_offset_4;
 
-assign mox_offset_1 = (blk_abs_y_1 << 3 + blk_abs_y_1 << 1 + blk_abs_x_mox_1) << 2;
-assign mox_offset_2 = (blk_abs_y_2 << 3 + blk_abs_y_2 << 1 + blk_abs_x_mox_2) << 2;
-assign mox_offset_3 = (blk_abs_y_3 << 3 + blk_abs_y_3 << 1 + blk_abs_x_mox_3) << 2;
-assign mox_offset_4 = (blk_abs_y_4 << 3 + blk_abs_y_4 << 1 + blk_abs_x_mox_4) << 2;
+assign mox_offset_1 = (blk_abs_y_1 * 10 + blk_abs_x_mox_1) * 4;
+assign mox_offset_2 = (blk_abs_y_2 * 10 + blk_abs_x_mox_2) * 4;
+assign mox_offset_3 = (blk_abs_y_3 * 10 + blk_abs_x_mox_3) * 4;
+assign mox_offset_4 = (blk_abs_y_4 * 10 + blk_abs_x_mox_4) * 4;
 
 wire [9:0] poy_offset_1;
 wire [9:0] poy_offset_2;
 wire [9:0] poy_offset_3;
 wire [9:0] poy_offset_4;
 
-assign poy_offset_1 = (blk_abs_y_poy_1 << 3 + blk_abs_y_poy_1 << 1 + blk_abs_x_1) << 2;
-assign poy_offset_2 = (blk_abs_y_poy_2 << 3 + blk_abs_y_poy_2 << 1 + blk_abs_x_2) << 2;
-assign poy_offset_3 = (blk_abs_y_poy_3 << 3 + blk_abs_y_poy_3 << 1 + blk_abs_x_3) << 2;
-assign poy_offset_4 = (blk_abs_y_poy_4 << 3 + blk_abs_y_poy_4 << 1 + blk_abs_x_4) << 2;
+assign poy_offset_1 = (blk_abs_y_poy_1 * 10 + blk_abs_x_1) * 4;
+assign poy_offset_2 = (blk_abs_y_poy_2 * 10 + blk_abs_x_2) * 4;
+assign poy_offset_3 = (blk_abs_y_poy_3 * 10 + blk_abs_x_3) * 4;
+assign poy_offset_4 = (blk_abs_y_poy_4 * 10 + blk_abs_x_4) * 4;
 
 wire [9:0] pr_offset;
 assign pr_offset = blk_id * IW + ((blk_rad + 1) % 4) * RW;
@@ -192,10 +192,10 @@ wire [9:0] pr_offset_2;
 wire [9:0] pr_offset_3;
 wire [9:0] pr_offset_4;
 
-assign pr_offset_1 = (blk_abs_y_pr_1 << 3 + blk_abs_y_pr_1 << 1 + blk_abs_x_pr_1) << 2;
-assign pr_offset_2 = (blk_abs_y_pr_2 << 3 + blk_abs_y_pr_2 << 1 + blk_abs_x_pr_2) << 2;
-assign pr_offset_3 = (blk_abs_y_pr_3 << 3 + blk_abs_y_pr_3 << 1 + blk_abs_x_pr_3) << 2;
-assign pr_offset_4 = (blk_abs_y_pr_4 << 3 + blk_abs_y_pr_4 << 1 + blk_abs_x_pr_4) << 2;
+assign pr_offset_1 = (blk_abs_y_pr_1 * 10 + blk_abs_x_pr_1) * 4;
+assign pr_offset_2 = (blk_abs_y_pr_2 * 10 + blk_abs_x_pr_2) * 4;
+assign pr_offset_3 = (blk_abs_y_pr_3 * 10 + blk_abs_x_pr_3) * 4;
+assign pr_offset_4 = (blk_abs_y_pr_4 * 10 + blk_abs_x_pr_4) * 4;
 
 reg [24:0] drop_counter;
 
@@ -210,15 +210,15 @@ reg [9:0] target_line;
 reg [9:0] drop_line_count;
 
 wire [9:0] drop_target_line_board_offset;
-assign drop_target_line_board_offset = target_line << 5 + target_line << 3;
+assign drop_target_line_board_offset = target_line * 40;
 
 wire [9:0] drop_dest_line_board_offset;
-assign drop_dest_line_board_offset = (target_line + target_offset) << 5 + (target_line + target_offset) << 3;
+assign drop_dest_line_board_offset = (target_line + drop_target_line_board_offset) * 40;
 
 always @ (posedge clk or negedge rst_n) begin
 	if (~rst_n) begin
 		blk_pos_x <= 5'd4;
-		blk_pos_y <= 5'd1;
+		blk_pos_y <= 5'd0;
 		blk_id <= 4'b0;
 		blk_rad <= 2'b0;
 		board <= 1024'b0;
@@ -228,6 +228,11 @@ always @ (posedge clk or negedge rst_n) begin
 		state <= STATE_PLAY;
 	end else begin
 		// reset position
+		if (i_pls_c != 0) begin
+			board <= 1025'b0;
+			state <= STATE_RESET;
+		end
+		
 		if (state == STATE_RESET) begin
 			blk_pos_x <= 5'd4;
 			blk_pos_y <= 5'd0;
@@ -291,7 +296,7 @@ always @ (posedge clk or negedge rst_n) begin
 		end
 
 		// drop
-		if (state == STATE_PLAY && i_pls_s != 0 /* && drop_counter == 25'b0 */) begin
+		if (state == STATE_PLAY /* && i_pls_s != 0 */ && drop_counter == 25'b0) begin
 			if (
 				board[poy_offset_1 +: 4] == 4'b0 &&
 				board[poy_offset_2 +: 4] == 4'b0 &&
@@ -304,6 +309,15 @@ always @ (posedge clk or negedge rst_n) begin
 			) begin
 				blk_pos_y <= blk_pos_y + 5'b1;
 			end else begin
+				// reg [24:0] put_counter;
+				// assign put_counter <= 25'b1;
+				// reset put_counter if button pushed
+				// if (put_counter == 25'b0) begin
+				//	put_counter <= 25'b1;
+				// 	state <= STATE_PUT;
+				// end else begin
+				//	put_counter <= put_counter + 25'b1;
+				// end
 				state <= STATE_PUT;
 			end
 		end
@@ -311,7 +325,6 @@ always @ (posedge clk or negedge rst_n) begin
 		if (state == STATE_PUT) begin
 			state <= STATE_DELETE;
 
-/*
 			board[blk_offset_1 + 0] <= blk_id[0];
 			board[blk_offset_1 + 1] <= blk_id[1];
 			board[blk_offset_1 + 2] <= blk_id[2];
@@ -328,11 +341,6 @@ always @ (posedge clk or negedge rst_n) begin
 			board[blk_offset_4 + 1] <= blk_id[1];
 			board[blk_offset_4 + 2] <= blk_id[2];
 			board[blk_offset_4 + 3] <= blk_id[3];
-*/
-			board[blk_offset_1 +: 4] <= blk_id;
-			board[blk_offset_2 +: 4] <= blk_id;
-			board[blk_offset_3 +: 4] <= blk_id;
-			board[blk_offset_4 +: 4] <= blk_id;
 		end
 
 		if (state == STATE_DELETE) begin
@@ -443,17 +451,5 @@ draw_rect #(.BLOCKS(BLOCKS), .IW(IW), .RW(RW)) A2_DRAW (
 	.o_sync_grn (o_sync_grn),//o[ 8-1: 0]
 	.o_sync_blu (o_sync_blu) //o[ 8-1: 0]
 );
-
-/*update_position UPDATE_POSITION (
-	.clk (clk),
-    .i_pls_e (i_pls_e),
-    .i_pls_w (i_pls_w),
-    .board (board),
-    .block_id (block_id),
-    .block_rad (block_rad),
-    .blk_pos_x (blk_pos_x),
-    .blk_pos_y (blk_pos_y),
-    .state (state)
-);*/
 
 endmodule

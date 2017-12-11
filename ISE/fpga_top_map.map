@@ -11,7 +11,7 @@ Target Device  : xc5vlx50
 Target Package : ff676
 Target Speed   : -1
 Mapper Version : virtex5 -- $Revision: 1.51.18.1 $
-Mapped Date    : Thu Dec  7 16:43:05 2017
+Mapped Date    : Fri Dec  8 17:43:00 2017
 
 vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 INFO:Security:50 - The XILINXD_LICENSE_FILE environment variable is set to
@@ -29,13 +29,13 @@ version of Xilinx tools will continue to function, but you no longer qualify for
 Xilinx software updates or new releases.
 ----------------------------------------------------------------------
 WARNING:LIT:243 - Logical network CLK_33MHZ_FPGA_IBUF has no load.
-WARNING:LIT:395 - The above warning message is repeated 10 more times for the
+WARNING:LIT:395 - The above warning message is repeated 11 more times for the
    following (max. 5 shown):
+   TELE_RX_IBUF,
    DIP<7>_IBUF,
    DIP<6>_IBUF,
    DIP<5>_IBUF,
-   DIP<4>_IBUF,
-   DIP<3>_IBUF
+   DIP<4>_IBUF
    To see the details of these warning messages, please use the -detail switch.
 Mapping design into LUTs...
 Running directed packing...
@@ -60,70 +60,70 @@ Updating timing models...
 INFO:Map:215 - The Interim Design Summary has been generated in the MAP Report
    (.mrp).
 Running timing-driven placement...
-Total REAL time at the beginning of Placer: 14 secs 
-Total CPU  time at the beginning of Placer: 13 secs 
+Total REAL time at the beginning of Placer: 16 secs 
+Total CPU  time at the beginning of Placer: 16 secs 
 
 Phase 1.1  Initial Placement Analysis
-Phase 1.1  Initial Placement Analysis (Checksum:1540d832) REAL time: 15 secs 
+Phase 1.1  Initial Placement Analysis (Checksum:b6e4a8aa) REAL time: 18 secs 
 
 Phase 2.7  Design Feasibility Check
-Phase 2.7  Design Feasibility Check (Checksum:1540d832) REAL time: 15 secs 
+Phase 2.7  Design Feasibility Check (Checksum:b6e4a8aa) REAL time: 18 secs 
 
 Phase 3.31  Local Placement Optimization
-Phase 3.31  Local Placement Optimization (Checksum:1540d832) REAL time: 15 secs 
+Phase 3.31  Local Placement Optimization (Checksum:b6e4a8aa) REAL time: 18 secs 
 
 Phase 4.37  Local Placement Optimization
-Phase 4.37  Local Placement Optimization (Checksum:1540d832) REAL time: 15 secs 
+Phase 4.37  Local Placement Optimization (Checksum:b6e4a8aa) REAL time: 18 secs 
 
 Phase 5.33  Local Placement Optimization
-Phase 5.33  Local Placement Optimization (Checksum:1540d832) REAL time: 19 secs 
+Phase 5.33  Local Placement Optimization (Checksum:b6e4a8aa) REAL time: 22 secs 
 
 Phase 6.32  Local Placement Optimization
-Phase 6.32  Local Placement Optimization (Checksum:1540d832) REAL time: 19 secs 
+Phase 6.32  Local Placement Optimization (Checksum:b6e4a8aa) REAL time: 22 secs 
 
 Phase 7.2  Initial Clock and IO Placement
 
-Phase 7.2  Initial Clock and IO Placement (Checksum:58b1fbd7) REAL time: 19 secs 
+Phase 7.2  Initial Clock and IO Placement (Checksum:8ceb136f) REAL time: 23 secs 
 
 Phase 8.36  Local Placement Optimization
-Phase 8.36  Local Placement Optimization (Checksum:58b1fbd7) REAL time: 19 secs 
+Phase 8.36  Local Placement Optimization (Checksum:8ceb136f) REAL time: 23 secs 
 
 Phase 9.30  Global Clock Region Assignment
-Phase 9.30  Global Clock Region Assignment (Checksum:58b1fbd7) REAL time: 19 secs 
+Phase 9.30  Global Clock Region Assignment (Checksum:8ceb136f) REAL time: 23 secs 
 
 Phase 10.3  Local Placement Optimization
-Phase 10.3  Local Placement Optimization (Checksum:58b1fbd7) REAL time: 20 secs 
+Phase 10.3  Local Placement Optimization (Checksum:8ceb136f) REAL time: 23 secs 
 
 Phase 11.5  Local Placement Optimization
-Phase 11.5  Local Placement Optimization (Checksum:58b1fbd7) REAL time: 20 secs 
+Phase 11.5  Local Placement Optimization (Checksum:8ceb136f) REAL time: 24 secs 
 
 Phase 12.8  Global Placement
-............................................................................................................................
-...............................................................................................................................
-............................................................................................................................................................................................................
-.............................................................
-.....................................................
-.......................
+...........................................................................................................................
+...................................................................................................................
+....................................................................................................................................................................................................
+..............................................................................................
 ...........................................................................................
-Phase 12.8  Global Placement (Checksum:8801e15d) REAL time: 1 mins 5 secs 
+.............................................
+...............................................................................................................................
+Phase 12.8  Global Placement (Checksum:74cf52e5) REAL time: 2 mins 
 
 Phase 13.29  Local Placement Optimization
-Phase 13.29  Local Placement Optimization (Checksum:8801e15d) REAL time: 1 mins 5 secs 
+Phase 13.29  Local Placement Optimization (Checksum:74cf52e5) REAL time: 2 mins 
 
 Phase 14.5  Local Placement Optimization
-Phase 14.5  Local Placement Optimization (Checksum:8801e15d) REAL time: 1 mins 5 secs 
+Phase 14.5  Local Placement Optimization (Checksum:74cf52e5) REAL time: 2 mins 1 secs 
 
 Phase 15.18  Placement Optimization
-Phase 15.18  Placement Optimization (Checksum:a54b13b2) REAL time: 2 mins 14 secs 
+Phase 15.18  Placement Optimization (Checksum:32c46cd3) REAL time: 3 mins 1 secs 
 
 Phase 16.5  Local Placement Optimization
-Phase 16.5  Local Placement Optimization (Checksum:a54b13b2) REAL time: 2 mins 14 secs 
+Phase 16.5  Local Placement Optimization (Checksum:32c46cd3) REAL time: 3 mins 2 secs 
 
 Phase 17.34  Placement Validation
-Phase 17.34  Placement Validation (Checksum:a54b13b2) REAL time: 2 mins 14 secs 
+Phase 17.34  Placement Validation (Checksum:32c46cd3) REAL time: 3 mins 2 secs 
 
-Total REAL time to Placer completion: 2 mins 15 secs 
-Total CPU  time to Placer completion: 2 mins 14 secs 
+Total REAL time to Placer completion: 3 mins 3 secs 
+Total CPU  time to Placer completion: 3 mins 2 secs 
 Running post-placement packing...
 Writing output files...
 WARNING:PhysDesignRules:372 - Gated clock. Clock net
@@ -148,78 +148,79 @@ WARNING:PhysDesignRules:367 - The signal <DIP<7>_IBUF> is incomplete. The signal
    does not drive any load pins in the design.
 WARNING:PhysDesignRules:367 - The signal <CLK_33MHZ_FPGA_IBUF> is incomplete.
    The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <TELE_RX_IBUF> is incomplete. The
+   signal does not drive any load pins in the design.
 WARNING:PhysDesignRules:781 - PULLDOWN on an active net. PULLDOWN of comp
-   ProtoComp1363.PULL is set but the tri state is not configured. 
+   ProtoComp1331.PULL is set but the tri state is not configured. 
 WARNING:PhysDesignRules:781 - PULLDOWN on an active net. PULLDOWN of comp
-   ProtoComp1363.PULL.1 is set but the tri state is not configured. 
+   ProtoComp1331.PULL.1 is set but the tri state is not configured. 
 WARNING:PhysDesignRules:781 - PULLDOWN on an active net. PULLDOWN of comp
-   ProtoComp1363.PULL.2 is set but the tri state is not configured. 
+   ProtoComp1331.PULL.2 is set but the tri state is not configured. 
 WARNING:PhysDesignRules:781 - PULLDOWN on an active net. PULLDOWN of comp
-   ProtoComp1363.PULL.3 is set but the tri state is not configured. 
+   ProtoComp1331.PULL.3 is set but the tri state is not configured. 
 WARNING:PhysDesignRules:781 - PULLDOWN on an active net. PULLDOWN of comp
-   ProtoComp1363.PULL.4 is set but the tri state is not configured. 
+   ProtoComp1331.PULL.4 is set but the tri state is not configured. 
 WARNING:PhysDesignRules:781 - PULLDOWN on an active net. PULLDOWN of comp
-   ProtoComp1363.PULL.5 is set but the tri state is not configured. 
+   ProtoComp1331.PULL.5 is set but the tri state is not configured. 
 WARNING:PhysDesignRules:781 - PULLDOWN on an active net. PULLDOWN of comp
-   ProtoComp1363.PULL.6 is set but the tri state is not configured. 
+   ProtoComp1331.PULL.6 is set but the tri state is not configured. 
 WARNING:PhysDesignRules:781 - PULLDOWN on an active net. PULLDOWN of comp
-   ProtoComp1363.PULL.7 is set but the tri state is not configured. 
+   ProtoComp1331.PULL.7 is set but the tri state is not configured. 
 WARNING:PhysDesignRules:781 - PULLDOWN on an active net. PULLDOWN of comp
-   ProtoComp1363.PULL.8 is set but the tri state is not configured. 
+   ProtoComp1331.PULL.8 is set but the tri state is not configured. 
 WARNING:PhysDesignRules:781 - PULLDOWN on an active net. PULLDOWN of comp
-   ProtoComp1363.PULL.9 is set but the tri state is not configured. 
+   ProtoComp1331.PULL.9 is set but the tri state is not configured. 
 WARNING:PhysDesignRules:781 - PULLDOWN on an active net. PULLDOWN of comp
-   ProtoComp1363.PULL.10 is set but the tri state is not configured. 
+   ProtoComp1331.PULL.10 is set but the tri state is not configured. 
 WARNING:PhysDesignRules:781 - PULLDOWN on an active net. PULLDOWN of comp
-   ProtoComp1363.PULL.11 is set but the tri state is not configured. 
+   ProtoComp1331.PULL.11 is set but the tri state is not configured. 
 WARNING:PhysDesignRules:781 - PULLDOWN on an active net. PULLDOWN of comp
-   ProtoComp1363.PULL.12 is set but the tri state is not configured. 
+   ProtoComp1331.PULL.12 is set but the tri state is not configured. 
 WARNING:PhysDesignRules:781 - PULLDOWN on an active net. PULLDOWN of comp
-   ProtoComp1363.PULL.13 is set but the tri state is not configured. 
+   ProtoComp1331.PULL.13 is set but the tri state is not configured. 
 WARNING:PhysDesignRules:781 - PULLDOWN on an active net. PULLDOWN of comp
-   ProtoComp1363.PULL.14 is set but the tri state is not configured. 
+   ProtoComp1331.PULL.14 is set but the tri state is not configured. 
 WARNING:PhysDesignRules:781 - PULLDOWN on an active net. PULLDOWN of comp
-   ProtoComp1363.PULL.15 is set but the tri state is not configured. 
+   ProtoComp1331.PULL.15 is set but the tri state is not configured. 
 WARNING:PhysDesignRules:781 - PULLDOWN on an active net. PULLDOWN of comp
-   ProtoComp1363.PULL.16 is set but the tri state is not configured. 
+   ProtoComp1331.PULL.16 is set but the tri state is not configured. 
 WARNING:PhysDesignRules:781 - PULLDOWN on an active net. PULLDOWN of comp
-   ProtoComp1363.PULL.17 is set but the tri state is not configured. 
+   ProtoComp1331.PULL.17 is set but the tri state is not configured. 
 
 Design Summary
 --------------
 
 Design Summary:
 Number of errors:      0
-Number of warnings:   34
+Number of warnings:   35
 Slice Logic Utilization:
-  Number of Slice Registers:                 4,310 out of  28,800   14%
-    Number used as Flip Flops:               4,308
+  Number of Slice Registers:                 3,075 out of  28,800   10%
+    Number used as Flip Flops:               3,073
     Number used as Latches:                      2
-  Number of Slice LUTs:                      7,683 out of  28,800   26%
-    Number used as logic:                    7,646 out of  28,800   26%
-      Number using O6 output only:           7,225
-      Number using O5 output only:             246
-      Number using O5 and O6:                  175
-    Number used as Memory:                      17 out of   7,680    1%
+  Number of Slice LUTs:                     11,921 out of  28,800   41%
+    Number used as logic:                   11,891 out of  28,800   41%
+      Number using O6 output only:          11,540
+      Number using O5 output only:             185
+      Number using O5 and O6:                  166
+    Number used as Memory:                      16 out of   7,680    1%
       Number used as Dual Port RAM:              8
         Number using O6 output only:             4
         Number using O5 and O6:                  4
-      Number used as Shift Register:             9
-        Number using O6 output only:             9
-    Number used as exclusive route-thru:        20
-  Number of route-thrus:                       266
-    Number using O6 output only:               265
-    Number using O5 output only:                 1
+      Number used as Shift Register:             8
+        Number using O6 output only:             8
+    Number used as exclusive route-thru:        14
+  Number of route-thrus:                       193
+    Number using O6 output only:               193
 
 Slice Logic Distribution:
-  Number of occupied Slices:                 2,924 out of   7,200   40%
-  Number of LUT Flip Flop pairs used:        9,357
-    Number with an unused Flip Flop:         5,047 out of   9,357   53%
-    Number with an unused LUT:               1,674 out of   9,357   17%
-    Number of fully used LUT-FF pairs:       2,636 out of   9,357   28%
-    Number of unique control sets:             134
+  Number of occupied Slices:                 3,763 out of   7,200   52%
+  Number of LUT Flip Flop pairs used:       12,779
+    Number with an unused Flip Flop:         9,704 out of  12,779   75%
+    Number with an unused LUT:                 858 out of  12,779    6%
+    Number of fully used LUT-FF pairs:       2,217 out of  12,779   17%
+    Number of unique control sets:             120
     Number of slice register sites lost
-      to control set restrictions:             169 out of  28,800    1%
+      to control set restrictions:             149 out of  28,800    1%
 
   A LUT Flip Flop pair for this architecture represents one LUT paired with
   one Flip Flop within a slice.  A control set is a unique combination of
@@ -240,11 +241,11 @@ Specific Feature Utilization:
   Number of DCM_ADVs:                            1 out of      12    8%
   Number of PLL_ADVs:                            2 out of       6   33%
 
-Average Fanout of Non-Clock Nets:                4.95
+Average Fanout of Non-Clock Nets:                5.63
 
-Peak Memory Usage:  937 MB
-Total REAL time to MAP completion:  2 mins 21 secs 
-Total CPU time to MAP completion:   2 mins 20 secs 
+Peak Memory Usage:  990 MB
+Total REAL time to MAP completion:  3 mins 10 secs 
+Total CPU time to MAP completion:   3 mins 10 secs 
 
 Mapping completed.
 See MAP report file "fpga_top_map.mrp" for details.

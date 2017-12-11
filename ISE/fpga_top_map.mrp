@@ -11,41 +11,40 @@ Target Device  : xc5vlx50
 Target Package : ff676
 Target Speed   : -1
 Mapper Version : virtex5 -- $Revision: 1.51.18.1 $
-Mapped Date    : Thu Dec  7 16:43:05 2017
+Mapped Date    : Fri Dec  8 17:43:00 2017
 
 Design Summary
 --------------
 Number of errors:      0
-Number of warnings:   34
+Number of warnings:   35
 Slice Logic Utilization:
-  Number of Slice Registers:                 4,310 out of  28,800   14%
-    Number used as Flip Flops:               4,308
+  Number of Slice Registers:                 3,075 out of  28,800   10%
+    Number used as Flip Flops:               3,073
     Number used as Latches:                      2
-  Number of Slice LUTs:                      7,683 out of  28,800   26%
-    Number used as logic:                    7,646 out of  28,800   26%
-      Number using O6 output only:           7,225
-      Number using O5 output only:             246
-      Number using O5 and O6:                  175
-    Number used as Memory:                      17 out of   7,680    1%
+  Number of Slice LUTs:                     11,921 out of  28,800   41%
+    Number used as logic:                   11,891 out of  28,800   41%
+      Number using O6 output only:          11,540
+      Number using O5 output only:             185
+      Number using O5 and O6:                  166
+    Number used as Memory:                      16 out of   7,680    1%
       Number used as Dual Port RAM:              8
         Number using O6 output only:             4
         Number using O5 and O6:                  4
-      Number used as Shift Register:             9
-        Number using O6 output only:             9
-    Number used as exclusive route-thru:        20
-  Number of route-thrus:                       266
-    Number using O6 output only:               265
-    Number using O5 output only:                 1
+      Number used as Shift Register:             8
+        Number using O6 output only:             8
+    Number used as exclusive route-thru:        14
+  Number of route-thrus:                       193
+    Number using O6 output only:               193
 
 Slice Logic Distribution:
-  Number of occupied Slices:                 2,924 out of   7,200   40%
-  Number of LUT Flip Flop pairs used:        9,357
-    Number with an unused Flip Flop:         5,047 out of   9,357   53%
-    Number with an unused LUT:               1,674 out of   9,357   17%
-    Number of fully used LUT-FF pairs:       2,636 out of   9,357   28%
-    Number of unique control sets:             134
+  Number of occupied Slices:                 3,763 out of   7,200   52%
+  Number of LUT Flip Flop pairs used:       12,779
+    Number with an unused Flip Flop:         9,704 out of  12,779   75%
+    Number with an unused LUT:                 858 out of  12,779    6%
+    Number of fully used LUT-FF pairs:       2,217 out of  12,779   17%
+    Number of unique control sets:             120
     Number of slice register sites lost
-      to control set restrictions:             169 out of  28,800    1%
+      to control set restrictions:             149 out of  28,800    1%
 
   A LUT Flip Flop pair for this architecture represents one LUT paired with
   one Flip Flop within a slice.  A control set is a unique combination of
@@ -66,11 +65,11 @@ Specific Feature Utilization:
   Number of DCM_ADVs:                            1 out of      12    8%
   Number of PLL_ADVs:                            2 out of       6   33%
 
-Average Fanout of Non-Clock Nets:                4.95
+Average Fanout of Non-Clock Nets:                5.63
 
-Peak Memory Usage:  937 MB
-Total REAL time to MAP completion:  2 mins 21 secs 
-Total CPU time to MAP completion:   2 mins 20 secs 
+Peak Memory Usage:  990 MB
+Total REAL time to MAP completion:  3 mins 10 secs 
+Total CPU time to MAP completion:   3 mins 10 secs 
 
 Table of Contents
 -----------------
@@ -101,13 +100,13 @@ WARNING:Security:42 - Your software subscription period has lapsed. Your current
 version of Xilinx tools will continue to function, but you no longer qualify for
 Xilinx software updates or new releases.
 WARNING:LIT:243 - Logical network CLK_33MHZ_FPGA_IBUF has no load.
-WARNING:LIT:395 - The above warning message is repeated 10 more times for the
+WARNING:LIT:395 - The above warning message is repeated 11 more times for the
    following (max. 5 shown):
+   TELE_RX_IBUF,
    DIP<7>_IBUF,
    DIP<6>_IBUF,
    DIP<5>_IBUF,
-   DIP<4>_IBUF,
-   DIP<3>_IBUF
+   DIP<4>_IBUF
    To see the details of these warning messages, please use the -detail switch.
 WARNING:Pack:2515 - The LUT-1 inverter "A_LCD/A1_LCD/inst/lcddata_en_inv1_INV_0"
    failed to join the OLOGIC comp matched to output buffer "LCD_DATA_0_OBUFT". 
@@ -147,42 +146,44 @@ WARNING:PhysDesignRules:367 - The signal <DIP<7>_IBUF> is incomplete. The signal
    does not drive any load pins in the design.
 WARNING:PhysDesignRules:367 - The signal <CLK_33MHZ_FPGA_IBUF> is incomplete.
    The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <TELE_RX_IBUF> is incomplete. The
+   signal does not drive any load pins in the design.
 WARNING:PhysDesignRules:781 - PULLDOWN on an active net. PULLDOWN of comp
-   ProtoComp1363.PULL is set but the tri state is not configured. 
+   ProtoComp1331.PULL is set but the tri state is not configured. 
 WARNING:PhysDesignRules:781 - PULLDOWN on an active net. PULLDOWN of comp
-   ProtoComp1363.PULL.1 is set but the tri state is not configured. 
+   ProtoComp1331.PULL.1 is set but the tri state is not configured. 
 WARNING:PhysDesignRules:781 - PULLDOWN on an active net. PULLDOWN of comp
-   ProtoComp1363.PULL.2 is set but the tri state is not configured. 
+   ProtoComp1331.PULL.2 is set but the tri state is not configured. 
 WARNING:PhysDesignRules:781 - PULLDOWN on an active net. PULLDOWN of comp
-   ProtoComp1363.PULL.3 is set but the tri state is not configured. 
+   ProtoComp1331.PULL.3 is set but the tri state is not configured. 
 WARNING:PhysDesignRules:781 - PULLDOWN on an active net. PULLDOWN of comp
-   ProtoComp1363.PULL.4 is set but the tri state is not configured. 
+   ProtoComp1331.PULL.4 is set but the tri state is not configured. 
 WARNING:PhysDesignRules:781 - PULLDOWN on an active net. PULLDOWN of comp
-   ProtoComp1363.PULL.5 is set but the tri state is not configured. 
+   ProtoComp1331.PULL.5 is set but the tri state is not configured. 
 WARNING:PhysDesignRules:781 - PULLDOWN on an active net. PULLDOWN of comp
-   ProtoComp1363.PULL.6 is set but the tri state is not configured. 
+   ProtoComp1331.PULL.6 is set but the tri state is not configured. 
 WARNING:PhysDesignRules:781 - PULLDOWN on an active net. PULLDOWN of comp
-   ProtoComp1363.PULL.7 is set but the tri state is not configured. 
+   ProtoComp1331.PULL.7 is set but the tri state is not configured. 
 WARNING:PhysDesignRules:781 - PULLDOWN on an active net. PULLDOWN of comp
-   ProtoComp1363.PULL.8 is set but the tri state is not configured. 
+   ProtoComp1331.PULL.8 is set but the tri state is not configured. 
 WARNING:PhysDesignRules:781 - PULLDOWN on an active net. PULLDOWN of comp
-   ProtoComp1363.PULL.9 is set but the tri state is not configured. 
+   ProtoComp1331.PULL.9 is set but the tri state is not configured. 
 WARNING:PhysDesignRules:781 - PULLDOWN on an active net. PULLDOWN of comp
-   ProtoComp1363.PULL.10 is set but the tri state is not configured. 
+   ProtoComp1331.PULL.10 is set but the tri state is not configured. 
 WARNING:PhysDesignRules:781 - PULLDOWN on an active net. PULLDOWN of comp
-   ProtoComp1363.PULL.11 is set but the tri state is not configured. 
+   ProtoComp1331.PULL.11 is set but the tri state is not configured. 
 WARNING:PhysDesignRules:781 - PULLDOWN on an active net. PULLDOWN of comp
-   ProtoComp1363.PULL.12 is set but the tri state is not configured. 
+   ProtoComp1331.PULL.12 is set but the tri state is not configured. 
 WARNING:PhysDesignRules:781 - PULLDOWN on an active net. PULLDOWN of comp
-   ProtoComp1363.PULL.13 is set but the tri state is not configured. 
+   ProtoComp1331.PULL.13 is set but the tri state is not configured. 
 WARNING:PhysDesignRules:781 - PULLDOWN on an active net. PULLDOWN of comp
-   ProtoComp1363.PULL.14 is set but the tri state is not configured. 
+   ProtoComp1331.PULL.14 is set but the tri state is not configured. 
 WARNING:PhysDesignRules:781 - PULLDOWN on an active net. PULLDOWN of comp
-   ProtoComp1363.PULL.15 is set but the tri state is not configured. 
+   ProtoComp1331.PULL.15 is set but the tri state is not configured. 
 WARNING:PhysDesignRules:781 - PULLDOWN on an active net. PULLDOWN of comp
-   ProtoComp1363.PULL.16 is set but the tri state is not configured. 
+   ProtoComp1331.PULL.16 is set but the tri state is not configured. 
 WARNING:PhysDesignRules:781 - PULLDOWN on an active net. PULLDOWN of comp
-   ProtoComp1363.PULL.17 is set but the tri state is not configured. 
+   ProtoComp1331.PULL.17 is set but the tri state is not configured. 
 
 Section 3 - Informational
 -------------------------
@@ -240,19 +241,16 @@ The trimmed logic reported below is either:
 The signal "A_PS2_KEY_MOUSE/A0_MOUSE/Madd_my_sub0000_cy<8>" is unused and has
 been removed.
  Unused block "A_PS2_KEY_MOUSE/A0_MOUSE/Madd_my_sub0000_cy<8>11" (ROM) removed.
-  The signal "A_PS2_KEY_MOUSE/A0_MOUSE/m1/y_increment<6>" is unused and has been
+  The signal "A_PS2_KEY_MOUSE/A0_MOUSE/m1/y_increment<7>" is unused and has been
 removed.
-   Unused block "A_PS2_KEY_MOUSE/A0_MOUSE/m1/y_increment_6" (SFF) removed.
+   Unused block "A_PS2_KEY_MOUSE/A0_MOUSE/m1/y_increment_7" (SFF) removed.
     The signal "A_PS2_KEY_MOUSE/A0_MOUSE/m1/output_strobe" is unused and has been
 removed.
      Unused block "A_PS2_KEY_MOUSE/A0_MOUSE/m1/output_strobe_cmp_eq00001" (ROM)
 removed.
-  The signal "A_PS2_KEY_MOUSE/A0_MOUSE/m1/y_increment<5>" is unused and has been
+  The signal "A_PS2_KEY_MOUSE/A0_MOUSE/m1/y_increment<6>" is unused and has been
 removed.
-   Unused block "A_PS2_KEY_MOUSE/A0_MOUSE/m1/y_increment_5" (SFF) removed.
-  The signal "A_PS2_KEY_MOUSE/A0_MOUSE/m1/y_increment<8>" is unused and has been
-removed.
-   Unused block "A_PS2_KEY_MOUSE/A0_MOUSE/m1/y_increment_8" (SFF) removed.
+   Unused block "A_PS2_KEY_MOUSE/A0_MOUSE/m1/y_increment_6" (SFF) removed.
   The signal "A_PS2_KEY_MOUSE/A0_MOUSE/Madd_ndy_addsub0000_cy<4>" is unused and
 has been removed.
    Unused block "A_PS2_KEY_MOUSE/A0_MOUSE/Madd_ndy_addsub0000_cy<4>11" (ROM)
@@ -272,9 +270,12 @@ removed.
     The signal "A_PS2_KEY_MOUSE/A0_MOUSE/m1/y_increment<0>" is unused and has been
 removed.
      Unused block "A_PS2_KEY_MOUSE/A0_MOUSE/m1/y_increment_0" (SFF) removed.
-  The signal "A_PS2_KEY_MOUSE/A0_MOUSE/m1/y_increment<7>" is unused and has been
+  The signal "A_PS2_KEY_MOUSE/A0_MOUSE/m1/y_increment<8>" is unused and has been
 removed.
-   Unused block "A_PS2_KEY_MOUSE/A0_MOUSE/m1/y_increment_7" (SFF) removed.
+   Unused block "A_PS2_KEY_MOUSE/A0_MOUSE/m1/y_increment_8" (SFF) removed.
+  The signal "A_PS2_KEY_MOUSE/A0_MOUSE/m1/y_increment<5>" is unused and has been
+removed.
+   Unused block "A_PS2_KEY_MOUSE/A0_MOUSE/m1/y_increment_5" (SFF) removed.
 The signal "A_PS2_KEY_MOUSE/A0_MOUSE/Madd_my_sub0000_lut<8>" is unused and has
 been removed.
  Unused block "A_PS2_KEY_MOUSE/A0_MOUSE/ndy<8>1" (ROM) removed.

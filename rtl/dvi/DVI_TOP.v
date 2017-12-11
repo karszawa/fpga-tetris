@@ -167,10 +167,10 @@ always @ (posedge Clock or negedge Reset) begin
 	if (~Reset) begin
 		FPGA_MODE[0]	<= {1{1'b0}};
 		DISP_MODE		<= 2'b01;
-	end else if (O_PLS_BUTTON_C) begin
+	end/* else if (O_PLS_BUTTON_C) begin
 		FPGA_MODE[0]	<= ~FPGA_MODE[0];
 		DISP_MODE		<= DISP_MODE + 1'b1;
-	end
+	end */
 end
 
 always @ (posedge Clock or negedge Reset) begin
