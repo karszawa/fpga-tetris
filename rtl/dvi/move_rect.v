@@ -78,9 +78,11 @@ reg [4:0] blk_pos_y;
 reg [1023:0] board;
 reg [3:0] blk_id;
 reg [1:0] blk_rad;
+wire [3:0] po_blk_id;
+assign po_blk_id = blk_id + 4'd1;
 
 wire [9:0] blk_offset;
-assign blk_offset = blk_id * IW + blk_rad * RW;
+assign blk_offset = { 6'b0, blk_id } * IW + { 8'b0, blk_rad } * RW;
 
 wire [9:0] blk_abs_x_1;
 wire [9:0] blk_abs_y_1;
@@ -105,66 +107,40 @@ wire [9:0] blk_offset_2;
 wire [9:0] blk_offset_3;
 wire [9:0] blk_offset_4;
 
-assign blk_offset_1 = (blk_abs_y_1 * 10 + blk_abs_x_1) * 4;
-assign blk_offset_2 = (blk_abs_y_2 * 10 + blk_abs_x_2) * 4;
-assign blk_offset_3 = (blk_abs_y_3 * 10 + blk_abs_x_3) * 4;
-assign blk_offset_4 = (blk_abs_y_4 * 10 + blk_abs_x_4) * 4;
-
-wire [9:0] blk_abs_x_pox_1;
-wire [9:0] blk_abs_x_mox_1;
-wire [9:0] blk_abs_y_pox_1;
-wire [9:0] blk_abs_x_pox_2;
-wire [9:0] blk_abs_x_mox_2;
-wire [9:0] blk_abs_y_pox_2;
-wire [9:0] blk_abs_x_pox_3;
-wire [9:0] blk_abs_x_mox_3;
-wire [9:0] blk_abs_y_pox_3;
-wire [9:0] blk_abs_x_pox_4;
-wire [9:0] blk_abs_x_mox_4;
-wire [9:0] blk_abs_y_pox_4;
-
-assign blk_abs_x_pox_1 = blk_abs_x_1 + 10'b1;
-assign blk_abs_x_mox_1 = blk_abs_x_1 - 10'b1;
-assign blk_abs_y_poy_1 = blk_abs_y_1 + 10'b1;
-assign blk_abs_x_pox_2 = blk_abs_x_2 + 10'b1;
-assign blk_abs_x_mox_2 = blk_abs_x_2 - 10'b1;
-assign blk_abs_y_poy_2 = blk_abs_y_2 + 10'b1;
-assign blk_abs_x_pox_3 = blk_abs_x_3 + 10'b1;
-assign blk_abs_x_mox_3 = blk_abs_x_3 - 10'b1;
-assign blk_abs_y_poy_3 = blk_abs_y_3 + 10'b1;
-assign blk_abs_x_pox_4 = blk_abs_x_4 + 10'b1;
-assign blk_abs_x_mox_4 = blk_abs_x_4 - 10'b1;
-assign blk_abs_y_poy_4 = blk_abs_y_4 + 10'b1;
+assign blk_offset_1 = (blk_abs_y_1 * 10'd10 + blk_abs_x_1) * 10'd4;
+assign blk_offset_2 = (blk_abs_y_2 * 10'd10 + blk_abs_x_2) * 10'd4;
+assign blk_offset_3 = (blk_abs_y_3 * 10'd10 + blk_abs_x_3) * 10'd4;
+assign blk_offset_4 = (blk_abs_y_4 * 10'd10 + blk_abs_x_4) * 10'd4;
 
 wire [9:0] pox_offset_1;
 wire [9:0] pox_offset_2;
 wire [9:0] pox_offset_3;
 wire [9:0] pox_offset_4;
 
-assign pox_offset_1 = (blk_abs_y_1 * 10 + blk_abs_x_pox_1) * 4;
-assign pox_offset_2 = (blk_abs_y_2 * 10 + blk_abs_x_pox_2) * 4;
-assign pox_offset_3 = (blk_abs_y_3 * 10 + blk_abs_x_pox_3) * 4;
-assign pox_offset_4 = (blk_abs_y_4 * 10 + blk_abs_x_pox_4) * 4;
+assign pox_offset_1 = blk_offset_1 + 10'd4;
+assign pox_offset_2 = blk_offset_2 + 10'd4;
+assign pox_offset_3 = blk_offset_3 + 10'd4;
+assign pox_offset_4 = blk_offset_4 + 10'd4;
 
 wire [9:0] mox_offset_1;
 wire [9:0] mox_offset_2;
 wire [9:0] mox_offset_3;
 wire [9:0] mox_offset_4;
 
-assign mox_offset_1 = (blk_abs_y_1 * 10 + blk_abs_x_mox_1) * 4;
-assign mox_offset_2 = (blk_abs_y_2 * 10 + blk_abs_x_mox_2) * 4;
-assign mox_offset_3 = (blk_abs_y_3 * 10 + blk_abs_x_mox_3) * 4;
-assign mox_offset_4 = (blk_abs_y_4 * 10 + blk_abs_x_mox_4) * 4;
+assign mox_offset_1 = blk_offset_1 - 10'd4;
+assign mox_offset_2 = blk_offset_2 - 10'd4;
+assign mox_offset_3 = blk_offset_3 - 10'd4;
+assign mox_offset_4 = blk_offset_4 - 10'd4;
 
 wire [9:0] poy_offset_1;
 wire [9:0] poy_offset_2;
 wire [9:0] poy_offset_3;
 wire [9:0] poy_offset_4;
 
-assign poy_offset_1 = (blk_abs_y_poy_1 * 10 + blk_abs_x_1) * 4;
-assign poy_offset_2 = (blk_abs_y_poy_2 * 10 + blk_abs_x_2) * 4;
-assign poy_offset_3 = (blk_abs_y_poy_3 * 10 + blk_abs_x_3) * 4;
-assign poy_offset_4 = (blk_abs_y_poy_4 * 10 + blk_abs_x_4) * 4;
+assign poy_offset_1 = blk_offset_1 + 10'd40;
+assign poy_offset_2 = blk_offset_2 + 10'd40;
+assign poy_offset_3 = blk_offset_3 + 10'd40;
+assign poy_offset_4 = blk_offset_4 + 10'd40;
 
 wire [9:0] pr_offset;
 assign pr_offset = blk_id * IW + ((blk_rad + 1) % 4) * RW;
@@ -205,6 +181,11 @@ parameter STATE_PLAY = 4'd0;
 parameter STATE_RESET = 4'd1;
 parameter STATE_DELETE = 4'd2;
 parameter STATE_PUT = 4'd3;
+parameter STATE_DELETE_CHECK = 4'd4;
+parameter STATE_DELETE_MOVE_1 = 4'd5;
+parameter STATE_DELETE_MOVE_2 = 4'd6;
+parameter STATE_GAME_OVER = 4'd7;
+parameter STATE_JUDGE = 4'd8;
 
 reg [9:0] target_line;
 reg [9:0] drop_line_count;
@@ -213,7 +194,9 @@ wire [9:0] drop_target_line_board_offset;
 assign drop_target_line_board_offset = target_line * 40;
 
 wire [9:0] drop_dest_line_board_offset;
-assign drop_dest_line_board_offset = (target_line + drop_target_line_board_offset) * 40;
+assign drop_dest_line_board_offset = (target_line + drop_line_count) * 40;
+
+integer i;
 
 always @ (posedge clk or negedge rst_n) begin
 	if (~rst_n) begin
@@ -223,12 +206,12 @@ always @ (posedge clk or negedge rst_n) begin
 		blk_rad <= 2'b0;
 		board <= 1024'b0;
 		drop_counter <= 25'b0;
-		target_line <= 10'd19;
+		target_line <= 10'd20;
 		drop_line_count <= 10'b0;
 		state <= STATE_PLAY;
 	end else begin
-		// reset position
-		if (i_pls_c != 0) begin
+		// reset game
+		if (i_pls_s != 0) begin
 			board <= 1025'b0;
 			state <= STATE_RESET;
 		end
@@ -239,9 +222,24 @@ always @ (posedge clk or negedge rst_n) begin
 			blk_id <= (blk_id == 10'd6 ? 4'b0 : blk_id + 4'b1);
 			blk_rad <= 2'b0;
 			drop_counter <= 25'b0;
-			target_line <= 10'd19;
+			target_line <= 10'd20;
 			drop_line_count <= 10'b0;
-			state <= STATE_PLAY;
+			
+			// state <= STATE_PLAY;
+			state <= STATE_JUDGE;
+		end
+		
+		if (state == STATE_JUDGE) begin
+			if (
+				board[blk_offset_1 +: 4] != 4'b0 ||
+				board[blk_offset_2 +: 4] != 4'b0 ||
+				board[blk_offset_3 +: 4] != 4'b0 ||
+				board[blk_offset_4 +: 4] != 4'b0
+			) begin
+				state <= STATE_GAME_OVER;
+			end else begin
+				state <= STATE_PLAY;
+			end			
 		end
 
 		// move right
@@ -257,7 +255,7 @@ always @ (posedge clk or negedge rst_n) begin
 			board[pox_offset_3 +: 4] == 4'b0 &&
 			board[pox_offset_4 +: 4] == 4'b0
 		) begin
-			blk_pos_x <= blk_pos_x + 5'b1;
+			blk_pos_x <= blk_pos_x + 5'd1;
 		end
 
 		// move left
@@ -273,7 +271,7 @@ always @ (posedge clk or negedge rst_n) begin
 			board[mox_offset_3 +: 4] == 4'b0 &&
 			board[mox_offset_4 +: 4] == 4'b0
 		) begin
-			blk_pos_x <= blk_pos_x - 5'b1;
+			blk_pos_x <= blk_pos_x - 5'd1;
 		end
 
 		// rotate
@@ -296,7 +294,7 @@ always @ (posedge clk or negedge rst_n) begin
 		end
 
 		// drop
-		if (state == STATE_PLAY /* && i_pls_s != 0 */ && drop_counter == 25'b0) begin
+		if (state == STATE_PLAY && drop_counter == 25'b0) begin
 			if (
 				board[poy_offset_1 +: 4] == 4'b0 &&
 				board[poy_offset_2 +: 4] == 4'b0 &&
@@ -309,15 +307,6 @@ always @ (posedge clk or negedge rst_n) begin
 			) begin
 				blk_pos_y <= blk_pos_y + 5'b1;
 			end else begin
-				// reg [24:0] put_counter;
-				// assign put_counter <= 25'b1;
-				// reset put_counter if button pushed
-				// if (put_counter == 25'b0) begin
-				//	put_counter <= 25'b1;
-				// 	state <= STATE_PUT;
-				// end else begin
-				//	put_counter <= put_counter + 25'b1;
-				// end
 				state <= STATE_PUT;
 			end
 		end
@@ -325,34 +314,34 @@ always @ (posedge clk or negedge rst_n) begin
 		if (state == STATE_PUT) begin
 			state <= STATE_DELETE;
 
-			board[blk_offset_1 + 0] <= blk_id[0];
-			board[blk_offset_1 + 1] <= blk_id[1];
-			board[blk_offset_1 + 2] <= blk_id[2];
-			board[blk_offset_1 + 3] <= blk_id[3];
-			board[blk_offset_2 + 0] <= blk_id[0];
-			board[blk_offset_2 + 1] <= blk_id[1];
-			board[blk_offset_2 + 2] <= blk_id[2];
-			board[blk_offset_2 + 3] <= blk_id[3];
-			board[blk_offset_3 + 0] <= blk_id[0];
-			board[blk_offset_3 + 1] <= blk_id[1];
-			board[blk_offset_3 + 2] <= blk_id[2];
-			board[blk_offset_3 + 3] <= blk_id[3];
-			board[blk_offset_4 + 0] <= blk_id[0];
-			board[blk_offset_4 + 1] <= blk_id[1];
-			board[blk_offset_4 + 2] <= blk_id[2];
-			board[blk_offset_4 + 3] <= blk_id[3];
+			board[blk_offset_1 + 0] <= po_blk_id[0];
+			board[blk_offset_1 + 1] <= po_blk_id[1];
+			board[blk_offset_1 + 2] <= po_blk_id[2];
+			board[blk_offset_1 + 3] <= po_blk_id[3];
+			board[blk_offset_2 + 0] <= po_blk_id[0];
+			board[blk_offset_2 + 1] <= po_blk_id[1];
+			board[blk_offset_2 + 2] <= po_blk_id[2];
+			board[blk_offset_2 + 3] <= po_blk_id[3];
+			board[blk_offset_3 + 0] <= po_blk_id[0];
+			board[blk_offset_3 + 1] <= po_blk_id[1];
+			board[blk_offset_3 + 2] <= po_blk_id[2];
+			board[blk_offset_3 + 3] <= po_blk_id[3];
+			board[blk_offset_4 + 0] <= po_blk_id[0];
+			board[blk_offset_4 + 1] <= po_blk_id[1];
+			board[blk_offset_4 + 2] <= po_blk_id[2];
+			board[blk_offset_4 + 3] <= po_blk_id[3];
 		end
 
-		if (state == STATE_DELETE) begin
-			state <= STATE_RESET;
-		end
+//		if (state == STATE_DELETE) begin
+//			state <= STATE_RESET;
+//		end
 
-		/*
 		if (state == STATE_DELETE) begin
-			if (target_line > 10'd19) begin
+			if (target_line > 10'd20) begin
 				state <= STATE_RESET;
 			end else begin
 				state <= STATE_DELETE_CHECK;
+				
 				target_line <= target_line - 10'b1;
 			end
 		end
@@ -370,37 +359,33 @@ always @ (posedge clk or negedge rst_n) begin
 				board[drop_target_line_board_offset +32 +: 4] != 4'b0 &&
 				board[drop_target_line_board_offset +36 +: 4] != 4'b0
 			) begin
-				board[drop_target_line_board_offset +: 40] = 40'b0;
-				target_offset <= target_offset + 10'b1;
-				state <= STATE_DELETE;
-			end else if (target_offset != 10'b0) begin
+				state <= STATE_DELETE_MOVE_2;
+				
+				drop_line_count <= drop_line_count + 10'b1;
+			end else if (drop_line_count != 10'b0) begin
 				state <= STATE_DELETE_MOVE_1;
 			end else begin
 				state <= STATE_DELETE;
 			end
 		end
 
+		// Move target line
 		if (state == STATE_DELETE_MOVE_1) begin
 			state <= STATE_DELETE_MOVE_2;
-
-			board[drop_dest_line_board_offset + 0 +: 4] <= board[drop_target_line_board_offset + 0 +: 4];
-			board[drop_dest_line_board_offset + 4 +: 4] <= board[drop_target_line_board_offset + 4 +: 4];
-			board[drop_dest_line_board_offset + 8 +: 4] <= board[drop_target_line_board_offset + 8 +: 4];
-			board[drop_dest_line_board_offset +12 +: 4] <= board[drop_target_line_board_offset +12 +: 4];
-			board[drop_dest_line_board_offset +16 +: 4] <= board[drop_target_line_board_offset +16 +: 4];
-			board[drop_dest_line_board_offset +20 +: 4] <= board[drop_target_line_board_offset +20 +: 4];
-			board[drop_dest_line_board_offset +24 +: 4] <= board[drop_target_line_board_offset +24 +: 4];
-			board[drop_dest_line_board_offset +28 +: 4] <= board[drop_target_line_board_offset +28 +: 4];
-			board[drop_dest_line_board_offset +32 +: 4] <= board[drop_target_line_board_offset +32 +: 4];
-			board[drop_dest_line_board_offset +36 +: 4] <= board[drop_target_line_board_offset +36 +: 4];
+			
+			for (i = 0; i < 40; i = i + 1) begin
+				board[drop_dest_line_board_offset + i] <= board[drop_target_line_board_offset + i];
+			end
 		end
 
+		// Delete target line
 		if (state == STATE_DELETE_MOVE_2) begin
 			state <= STATE_DELETE;
 
-			board[drop_target_line_board_offset +: 40] <= 40'b0;
+			for (i = 0; i < 40; i = i + 1) begin
+				board[drop_target_line_board_offset + i] <= 1'b0;
+			end
 		end
-		*/
 	end
 end
 
@@ -440,8 +425,10 @@ draw_rect #(.BLOCKS(BLOCKS), .IW(IW), .RW(RW)) A2_DRAW (
 	.blk_pos_x (blk_pos_x),
 	.blk_pos_y (blk_pos_y),
 	.blk_id (blk_id),
+	.po_blk_id (po_blk_id),
 	.blk_rad (blk_rad),
 	.board (board),
+	.state (state),
 	.o_sync_vs (o_sync_vs),//o
 	.o_sync_hs (o_sync_hs),//o
 	.o_sync_va (o_sync_va),//o

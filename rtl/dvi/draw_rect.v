@@ -16,8 +16,10 @@ module draw_rect #(
 	input [4:0] blk_pos_x,
 	input [4:0] blk_pos_y,
 	input [3:0] blk_id,
+	input [3:0] po_blk_id,
 	input [1:0] blk_rad,
 	input [1023:0] board,
+	input [3:0] state,
 
 	output reg o_sync_vs,
 	output reg o_sync_hs,
@@ -36,17 +38,20 @@ parameter COLOR_BLANK = 4'd8;
 parameter COLOR_OUTER = 4'd9;
 parameter COLOR_BLOCK = 4'd10;
 parameter COLOR_TARGET = 4'd11;
+parameter COLOR_GAME_OVER = 4'd12;
+
+parameter STATE_GAME_OVER = 4'd7;
 
 parameter [63 : 0] COLOR_TARGET_RED = {
-	8'd0, 8'd255, 8'd0, 8'd255, 8'd255, 8'd127, 8'd0, 8'd255
+	8'd255, 8'd0, 8'd255, 8'd255, 8'd127, 8'd0, 8'd255, 8'd0
 };
 
 parameter [63 : 0] COLOR_TARGET_GRN = {
-	8'd0, 8'd0, 8'd255, 8'd127, 8'd0, 8'd255, 8'd255, 8'd255
+	8'd0, 8'd255, 8'd127, 8'd0, 8'd255, 8'd255, 8'd255, 8'd0
 };
 
 parameter [63 : 0] COLOR_TARGET_BLU = {
-	8'd0, 8'd0, 8'd0, 8'd0, 8'd255, 8'd127, 8'd127, 8'd0
+	8'd0, 8'd0, 8'd0, 8'd255, 8'd127, 8'd127, 8'd0, 8'd0
 };
 
 reg [11-1: 0] r_cnt_x;
@@ -97,9 +102,9 @@ always @ (posedge clk or negedge rst_n) begin
 			(board_x == blk_abs_x_3 && board_y == blk_abs_y_3) ||
 			(board_x == blk_abs_x_4 && board_y == blk_abs_y_4)
 		) begin
-			area <= COLOR_TARGET;
+			area <= (state == STATE_GAME_OVER ? COLOR_GAME_OVER : COLOR_TARGET);
 		end else if (board[offset +: 4] != 4'b0) begin
-			area <= board[offset +: 4];
+			area <= (state == STATE_GAME_OVER ? COLOR_GAME_OVER : board[offset +: 4]);
 		end else begin
 			area <= COLOR_BLANK;
 		end
@@ -145,9 +150,9 @@ always @ (posedge clk or negedge rst_n) begin
 		o_sync_de <= i_sync_de;
 		
 		if (area == COLOR_TARGET) begin
-			o_sync_red <= COLOR_TARGET_RED[{ 2'b0, blk_id } << 3 +: 8];
-			o_sync_grn <= COLOR_TARGET_GRN[{ 2'b0, blk_id } << 3 +: 8];
-			o_sync_blu <= COLOR_TARGET_BLU[{ 2'b0, blk_id } << 3 +: 8];
+			o_sync_red <= COLOR_TARGET_RED[{ 2'b0, po_blk_id } * 8 +: 8];
+			o_sync_grn <= COLOR_TARGET_GRN[{ 2'b0, po_blk_id } * 8 +: 8];
+			o_sync_blu <= COLOR_TARGET_BLU[{ 2'b0, po_blk_id } * 8 +: 8];
 		end else if (area == COLOR_BLANK) begin
 			o_sync_red <= 8'd0;
 			o_sync_grn <= 8'd0;
@@ -156,10 +161,14 @@ always @ (posedge clk or negedge rst_n) begin
 			o_sync_red <= 8'd200;
 			o_sync_grn <= 8'd200;
 			o_sync_blu <= 8'd200;
+		end else if (area == COLOR_GAME_OVER) begin
+			o_sync_red <= 8'd255;
+			o_sync_grn <= 8'd0;
+			o_sync_blu <= 8'd0;
 		end else begin
-			o_sync_red <= COLOR_TARGET_RED[{ 2'b0, area } << 3 +: 8];
-			o_sync_grn <= COLOR_TARGET_GRN[{ 2'b0, area } << 3 +: 8];
-			o_sync_blu <= COLOR_TARGET_BLU[{ 2'b0, area } << 3 +: 8];
+			o_sync_red <= COLOR_TARGET_RED[{ 2'b0, area } * 8 +: 8];
+			o_sync_grn <= COLOR_TARGET_GRN[{ 2'b0, area } * 8 +: 8];
+			o_sync_blu <= COLOR_TARGET_BLU[{ 2'b0, area } * 8 +: 8];
 		end
 	end
 end

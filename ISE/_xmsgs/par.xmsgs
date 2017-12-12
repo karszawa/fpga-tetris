@@ -35,11 +35,14 @@
 <msg type="warning" file="Par" num="288" delta="unknown" >The signal <arg fmt="%s" index="1">CLK_33MHZ_FPGA_IBUF</arg> has no load.  PAR will not attempt to route this signal.
 </msg>
 
-<msg type="warning" file="ParHelpers" num="361" delta="unknown" >There are <arg fmt="%d" index="1">9</arg> loadless signals in this design. This design will cause Bitgen to issue DRC warnings.
+<msg type="warning" file="Par" num="288" delta="unknown" >The signal <arg fmt="%s" index="1">TELE_RX_IBUF</arg> has no load.  PAR will not attempt to route this signal.
+</msg>
+
+<msg type="warning" file="ParHelpers" num="361" delta="unknown" >There are <arg fmt="%d" index="1">10</arg> loadless signals in this design. This design will cause Bitgen to issue DRC warnings.
 
 </msg>
 
-<msg type="warning" file="Par" num="283" delta="unknown" >There are <arg fmt="%d" index="1">9</arg> loadless signals in this design. This design will cause Bitgen to issue DRC warnings.
+<msg type="warning" file="Par" num="283" delta="unknown" >There are <arg fmt="%d" index="1">10</arg> loadless signals in this design. This design will cause Bitgen to issue DRC warnings.
 
 </msg>
 

@@ -5,7 +5,7 @@ Loading device for application Rf_Device from file '5vlx50.nph' in environment
    "fpga_top" is an NCD, version 3.2, device xc5vlx50, package ff676, speed -1
 Opened constraints file fpga_top.pcf.
 
-Fri Dec  8 17:24:32 2017
+Mon Dec 11 18:30:06 2017
 
 /mnt/cad/Xilinx/11.1/ISE/bin/lin64/unwrapped/bitgen -intstyle ise -w -g DebugBitstream:No -g Binary:no -g CRC:Enable -g ConfigRate:2 -g CclkPin:PullUp -g M0Pin:PullUp -g M1Pin:PullUp -g M2Pin:PullUp -g ProgPin:PullUp -g DonePin:PullUp -g InitPin:Pullup -g CsPin:Pullup -g DinPin:Pullup -g BusyPin:Pullup -g RdWrPin:Pullup -g HswapenPin:PullUp -g TckPin:PullUp -g TdiPin:PullUp -g TdoPin:PullUp -g TmsPin:PullUp -g UnusedPin:PullDown -g UserID:0xFFFFFFFF -g RetainConfigStatus:Yes -g ConfigFallback:Enable -g SelectMAPAbort:Enable -g BPI_page_size:1 -g OverTempPowerDown:Disable -g DCIUpdateMode:AsRequired -g StartUpClk:CClk -g DONE_cycle:4 -g GTS_cycle:5 -g GWE_cycle:6 -g LCK_cycle:NoWait -g Match_cycle:Auto -g Security:None -g DonePipe:No -g DriveDone:No -g Encrypt:No fpga_top.ncd 
 
@@ -140,46 +140,48 @@ WARNING:PhysDesignRules:367 - The signal <DIP<7>_IBUF> is incomplete. The signal
    does not drive any load pins in the design.
 WARNING:PhysDesignRules:367 - The signal <CLK_33MHZ_FPGA_IBUF> is incomplete.
    The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <TELE_RX_IBUF> is incomplete. The
+   signal does not drive any load pins in the design.
 WARNING:PhysDesignRules:781 - PULLDOWN on an active net. PULLDOWN of comp
-   ProtoComp1200.PULL is set but the tri state is not configured. 
+   ProtoComp1153.PULL is set but the tri state is not configured. 
 WARNING:PhysDesignRules:781 - PULLDOWN on an active net. PULLDOWN of comp
-   ProtoComp1200.PULL.1 is set but the tri state is not configured. 
+   ProtoComp1153.PULL.1 is set but the tri state is not configured. 
 WARNING:PhysDesignRules:781 - PULLDOWN on an active net. PULLDOWN of comp
-   ProtoComp1200.PULL.2 is set but the tri state is not configured. 
+   ProtoComp1153.PULL.2 is set but the tri state is not configured. 
 WARNING:PhysDesignRules:781 - PULLDOWN on an active net. PULLDOWN of comp
-   ProtoComp1200.PULL.3 is set but the tri state is not configured. 
+   ProtoComp1153.PULL.3 is set but the tri state is not configured. 
 WARNING:PhysDesignRules:781 - PULLDOWN on an active net. PULLDOWN of comp
-   ProtoComp1200.PULL.4 is set but the tri state is not configured. 
+   ProtoComp1153.PULL.4 is set but the tri state is not configured. 
 WARNING:PhysDesignRules:781 - PULLDOWN on an active net. PULLDOWN of comp
-   ProtoComp1200.PULL.5 is set but the tri state is not configured. 
+   ProtoComp1153.PULL.5 is set but the tri state is not configured. 
 WARNING:PhysDesignRules:781 - PULLDOWN on an active net. PULLDOWN of comp
-   ProtoComp1200.PULL.6 is set but the tri state is not configured. 
+   ProtoComp1153.PULL.6 is set but the tri state is not configured. 
 WARNING:PhysDesignRules:781 - PULLDOWN on an active net. PULLDOWN of comp
-   ProtoComp1200.PULL.7 is set but the tri state is not configured. 
+   ProtoComp1153.PULL.7 is set but the tri state is not configured. 
 WARNING:PhysDesignRules:781 - PULLDOWN on an active net. PULLDOWN of comp
-   ProtoComp1200.PULL.8 is set but the tri state is not configured. 
+   ProtoComp1153.PULL.8 is set but the tri state is not configured. 
 WARNING:PhysDesignRules:781 - PULLDOWN on an active net. PULLDOWN of comp
-   ProtoComp1200.PULL.9 is set but the tri state is not configured. 
+   ProtoComp1153.PULL.9 is set but the tri state is not configured. 
 WARNING:PhysDesignRules:781 - PULLDOWN on an active net. PULLDOWN of comp
-   ProtoComp1200.PULL.10 is set but the tri state is not configured. 
+   ProtoComp1153.PULL.10 is set but the tri state is not configured. 
 WARNING:PhysDesignRules:781 - PULLDOWN on an active net. PULLDOWN of comp
-   ProtoComp1200.PULL.11 is set but the tri state is not configured. 
+   ProtoComp1153.PULL.11 is set but the tri state is not configured. 
 WARNING:PhysDesignRules:781 - PULLDOWN on an active net. PULLDOWN of comp
-   ProtoComp1200.PULL.12 is set but the tri state is not configured. 
+   ProtoComp1153.PULL.12 is set but the tri state is not configured. 
 WARNING:PhysDesignRules:781 - PULLDOWN on an active net. PULLDOWN of comp
-   ProtoComp1200.PULL.13 is set but the tri state is not configured. 
+   ProtoComp1153.PULL.13 is set but the tri state is not configured. 
 WARNING:PhysDesignRules:781 - PULLDOWN on an active net. PULLDOWN of comp
-   ProtoComp1200.PULL.14 is set but the tri state is not configured. 
+   ProtoComp1153.PULL.14 is set but the tri state is not configured. 
 WARNING:PhysDesignRules:781 - PULLDOWN on an active net. PULLDOWN of comp
-   ProtoComp1200.PULL.15 is set but the tri state is not configured. 
+   ProtoComp1153.PULL.15 is set but the tri state is not configured. 
 WARNING:PhysDesignRules:781 - PULLDOWN on an active net. PULLDOWN of comp
-   ProtoComp1200.PULL.16 is set but the tri state is not configured. 
+   ProtoComp1153.PULL.16 is set but the tri state is not configured. 
 WARNING:PhysDesignRules:781 - PULLDOWN on an active net. PULLDOWN of comp
-   ProtoComp1200.PULL.17 is set but the tri state is not configured. 
+   ProtoComp1153.PULL.17 is set but the tri state is not configured. 
 INFO:PhysDesignRules:1437 - To achieve optimal frequency synthesis performance
    with the CLKFX and CLKFX180 outputs of the DCM_ADV comp A_CRG/DCM_ADV_INST,
    consult the device Data Sheet.
-DRC detected 0 errors and 28 warnings.  Please see the previously displayed
+DRC detected 0 errors and 29 warnings.  Please see the previously displayed
 individual error or warning messages for more details.
 INFO:Security:50 - The XILINXD_LICENSE_FILE environment variable is set to
 '2100@133.11.58.13'.

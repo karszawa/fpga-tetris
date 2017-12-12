@@ -877,3 +877,49 @@ xst -ise "/home/jikken17/FPGA_TOP/ISE/ISE.ise" -intstyle ise -ifn "/home/jikken1
 ngdbuild -ise "ISE.ise" -intstyle ise -dd _ngo -nt timestamp -i -p xc5vlx50-ff676-1 fpga_top.ngc fpga_top.ngd  
 map -ise "ISE.ise" -intstyle ise -p xc5vlx50-ff676-1 -w -logic_opt off -ol high -t 1 -register_duplication off -global_opt off -mt off -cm area -ir off -pr off -lc off -power off -o fpga_top_map.ncd fpga_top.ngd fpga_top.pcf 
 xst -ise "/home/jikken17/FPGA_TOP/ISE/ISE.ise" -intstyle ise -ifn "/home/jikken17/FPGA_TOP/ISE/fpga_top.xst" -ofn "/home/jikken17/FPGA_TOP/ISE/fpga_top.syr" 
+xst -ise "/home/jikken17/FPGA_TOP/ISE/ISE.ise" -intstyle ise -ifn "/home/jikken17/FPGA_TOP/ISE/fpga_top.xst" -ofn "/home/jikken17/FPGA_TOP/ISE/fpga_top.syr" 
+ngdbuild -ise "ISE.ise" -intstyle ise -dd _ngo -nt timestamp -i -p xc5vlx50-ff676-1 fpga_top.ngc fpga_top.ngd  
+map -ise "ISE.ise" -intstyle ise -p xc5vlx50-ff676-1 -w -logic_opt off -ol high -t 1 -register_duplication off -global_opt off -mt off -cm area -ir off -pr off -lc off -power off -o fpga_top_map.ncd fpga_top.ngd fpga_top.pcf 
+par -ise "ISE.ise" -w -intstyle ise -ol high -t 1 fpga_top_map.ncd fpga_top.ncd fpga_top.pcf 
+trce -ise "/home/jikken17/FPGA_TOP/ISE/ISE.ise" -intstyle ise -v 3 -s 1 -fastpaths -xml fpga_top.twx fpga_top.ncd -o fpga_top.twr fpga_top.pcf 
+bitgen -ise "ISE.ise" -intstyle ise -f fpga_top.ut fpga_top.ncd 
+xst -ise "/home/jikken17/FPGA_TOP/ISE/ISE.ise" -intstyle ise -ifn "/home/jikken17/FPGA_TOP/ISE/fpga_top.xst" -ofn "/home/jikken17/FPGA_TOP/ISE/fpga_top.syr" 
+ngdbuild -ise "ISE.ise" -intstyle ise -dd _ngo -nt timestamp -i -p xc5vlx50-ff676-1 fpga_top.ngc fpga_top.ngd  
+map -ise "ISE.ise" -intstyle ise -p xc5vlx50-ff676-1 -w -logic_opt off -ol high -t 1 -register_duplication off -global_opt off -mt off -cm area -ir off -pr off -lc off -power off -o fpga_top_map.ncd fpga_top.ngd fpga_top.pcf 
+par -ise "ISE.ise" -w -intstyle ise -ol high -t 1 fpga_top_map.ncd fpga_top.ncd fpga_top.pcf 
+trce -ise "/home/jikken17/FPGA_TOP/ISE/ISE.ise" -intstyle ise -v 3 -s 1 -fastpaths -xml fpga_top.twx fpga_top.ncd -o fpga_top.twr fpga_top.pcf 
+bitgen -ise "ISE.ise" -intstyle ise -f fpga_top.ut fpga_top.ncd 
+xst -ise "/home/jikken17/FPGA_TOP/ISE/ISE.ise" -intstyle ise -ifn "/home/jikken17/FPGA_TOP/ISE/fpga_top.xst" -ofn "/home/jikken17/FPGA_TOP/ISE/fpga_top.syr" 
+xst -ise "/home/jikken17/FPGA_TOP/ISE/ISE.ise" -intstyle ise -ifn "/home/jikken17/FPGA_TOP/ISE/fpga_top.xst" -ofn "/home/jikken17/FPGA_TOP/ISE/fpga_top.syr" 
+xst -ise "/home/jikken17/FPGA_TOP/ISE/ISE.ise" -intstyle ise -ifn "/home/jikken17/FPGA_TOP/ISE/fpga_top.xst" -ofn "/home/jikken17/FPGA_TOP/ISE/fpga_top.syr" 
+xst -ise "/home/jikken17/FPGA_TOP/ISE/ISE.ise" -intstyle ise -ifn "/home/jikken17/FPGA_TOP/ISE/fpga_top.xst" -ofn "/home/jikken17/FPGA_TOP/ISE/fpga_top.syr" 
+xst -ise "/home/jikken17/FPGA_TOP/ISE/ISE.ise" -intstyle ise -ifn "/home/jikken17/FPGA_TOP/ISE/fpga_top.xst" -ofn "/home/jikken17/FPGA_TOP/ISE/fpga_top.syr" 
+xst -ise "/home/jikken17/FPGA_TOP/ISE/ISE.ise" -intstyle ise -ifn "/home/jikken17/FPGA_TOP/ISE/fpga_top.xst" -ofn "/home/jikken17/FPGA_TOP/ISE/fpga_top.syr" 
+ngdbuild -ise "ISE.ise" -intstyle ise -dd _ngo -nt timestamp -i -p xc5vlx50-ff676-1 fpga_top.ngc fpga_top.ngd  
+map -ise "ISE.ise" -intstyle ise -p xc5vlx50-ff676-1 -w -logic_opt off -ol high -t 1 -register_duplication off -global_opt off -mt off -cm area -ir off -pr off -lc off -power off -o fpga_top_map.ncd fpga_top.ngd fpga_top.pcf 
+par -ise "ISE.ise" -w -intstyle ise -ol high -t 1 fpga_top_map.ncd fpga_top.ncd fpga_top.pcf 
+trce -ise "/home/jikken17/FPGA_TOP/ISE/ISE.ise" -intstyle ise -v 3 -s 1 -fastpaths -xml fpga_top.twx fpga_top.ncd -o fpga_top.twr fpga_top.pcf 
+bitgen -ise "ISE.ise" -intstyle ise -f fpga_top.ut fpga_top.ncd 
+xst -ise "/home/jikken17/FPGA_TOP/ISE/ISE.ise" -intstyle ise -ifn "/home/jikken17/FPGA_TOP/ISE/fpga_top.xst" -ofn "/home/jikken17/FPGA_TOP/ISE/fpga_top.syr" 
+xst -ise "/home/jikken17/FPGA_TOP/ISE/ISE.ise" -intstyle ise -ifn "/home/jikken17/FPGA_TOP/ISE/fpga_top.xst" -ofn "/home/jikken17/FPGA_TOP/ISE/fpga_top.syr" 
+xst -ise "/home/jikken17/FPGA_TOP/ISE/ISE.ise" -intstyle ise -ifn "/home/jikken17/FPGA_TOP/ISE/fpga_top.xst" -ofn "/home/jikken17/FPGA_TOP/ISE/fpga_top.syr" 
+ngdbuild -ise "ISE.ise" -intstyle ise -dd _ngo -nt timestamp -i -p xc5vlx50-ff676-1 fpga_top.ngc fpga_top.ngd  
+map -ise "ISE.ise" -intstyle ise -p xc5vlx50-ff676-1 -w -logic_opt off -ol high -t 1 -register_duplication off -global_opt off -mt off -cm area -ir off -pr off -lc off -power off -o fpga_top_map.ncd fpga_top.ngd fpga_top.pcf 
+map -ise "ISE.ise" -intstyle ise -p xc5vlx50-ff676-1 -w -logic_opt off -ol high -t 1 -register_duplication off -global_opt off -mt off -cm area -ir off -pr off -lc off -power off -o fpga_top_map.ncd fpga_top.ngd fpga_top.pcf 
+map -ise "ISE.ise" -intstyle ise -p xc5vlx50-ff676-1 -w -logic_opt off -ol high -t 1 -register_duplication off -global_opt off -mt off -cm area -ir off -pr off -lc off -power off -o fpga_top_map.ncd fpga_top.ngd fpga_top.pcf 
+xst -ise "/home/jikken17/FPGA_TOP/ISE/ISE.ise" -intstyle ise -ifn "/home/jikken17/FPGA_TOP/ISE/fpga_top.xst" -ofn "/home/jikken17/FPGA_TOP/ISE/fpga_top.syr" 
+ngdbuild -ise "ISE.ise" -intstyle ise -dd _ngo -nt timestamp -i -p xc5vlx50-ff676-1 fpga_top.ngc fpga_top.ngd  
+map -ise "ISE.ise" -intstyle ise -p xc5vlx50-ff676-1 -w -logic_opt off -ol high -t 1 -register_duplication off -global_opt off -mt off -cm area -ir off -pr off -lc off -power off -o fpga_top_map.ncd fpga_top.ngd fpga_top.pcf 
+xst -ise "/home/jikken17/FPGA_TOP/ISE/ISE.ise" -intstyle ise -ifn "/home/jikken17/FPGA_TOP/ISE/fpga_top.xst" -ofn "/home/jikken17/FPGA_TOP/ISE/fpga_top.syr" 
+ngdbuild -ise "ISE.ise" -intstyle ise -dd _ngo -nt timestamp -i -p xc5vlx50-ff676-1 fpga_top.ngc fpga_top.ngd  
+map -ise "ISE.ise" -intstyle ise -p xc5vlx50-ff676-1 -w -logic_opt off -ol high -t 1 -register_duplication off -global_opt off -mt off -cm area -ir off -pr off -lc off -power off -o fpga_top_map.ncd fpga_top.ngd fpga_top.pcf 
+par -ise "ISE.ise" -w -intstyle ise -ol high -t 1 fpga_top_map.ncd fpga_top.ncd fpga_top.pcf 
+trce -ise "/home/jikken17/FPGA_TOP/ISE/ISE.ise" -intstyle ise -v 3 -s 1 -fastpaths -xml fpga_top.twx fpga_top.ncd -o fpga_top.twr fpga_top.pcf 
+bitgen -ise "ISE.ise" -intstyle ise -f fpga_top.ut fpga_top.ncd 
+xst -ise "/home/jikken17/FPGA_TOP/ISE/ISE.ise" -intstyle ise -ifn "/home/jikken17/FPGA_TOP/ISE/fpga_top.xst" -ofn "/home/jikken17/FPGA_TOP/ISE/fpga_top.syr" 
+ngdbuild -ise "ISE.ise" -intstyle ise -dd _ngo -nt timestamp -i -p xc5vlx50-ff676-1 fpga_top.ngc fpga_top.ngd  
+map -ise "ISE.ise" -intstyle ise -p xc5vlx50-ff676-1 -w -logic_opt off -ol high -t 1 -register_duplication off -global_opt off -mt off -cm area -ir off -pr off -lc off -power off -o fpga_top_map.ncd fpga_top.ngd fpga_top.pcf 
+par -ise "ISE.ise" -w -intstyle ise -ol high -t 1 fpga_top_map.ncd fpga_top.ncd fpga_top.pcf 
+trce -ise "/home/jikken17/FPGA_TOP/ISE/ISE.ise" -intstyle ise -v 3 -s 1 -fastpaths -xml fpga_top.twx fpga_top.ncd -o fpga_top.twr fpga_top.pcf 
+bitgen -ise "ISE.ise" -intstyle ise -f fpga_top.ut fpga_top.ncd 
+xst -ise "/home/jikken17/FPGA_TOP/ISE/ISE.ise" -intstyle ise -ifn "/home/jikken17/FPGA_TOP/ISE/fpga_top.xst" -ofn "/home/jikken17/FPGA_TOP/ISE/fpga_top.syr" 

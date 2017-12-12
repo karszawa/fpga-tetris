@@ -1,7 +1,7 @@
 Release 11.1 par L.57 (lin64)
 Copyright (c) 1995-2009 Xilinx, Inc.  All rights reserved.
 
-Jikken-13::  Fri Dec 08 17:23:07 2017
+Jikken-13::  Mon Dec 11 18:19:38 2017
 
 par -ise ISE.ise -w -intstyle ise -ol high -t 1 fpga_top_map.ncd fpga_top.ncd
 fpga_top.pcf 
@@ -43,20 +43,20 @@ Device Utilization Summary:
 
    Number of OLOGICs                        16 out of 560     2%
    Number of PLL_ADVs                        2 out of 6      33%
-   Number of Slice Registers              4338 out of 28800  15%
-      Number used as Flip Flops           4336
+   Number of Slice Registers              3101 out of 28800  10%
+      Number used as Flip Flops           3099
       Number used as Latches                 2
       Number used as LatchThrus              0
 
-   Number of Slice LUTS                  12315 out of 28800  42%
-   Number of Slice LUT-Flip Flop pairs   14124 out of 28800  49%
+   Number of Slice LUTS                  18275 out of 28800  63%
+   Number of Slice LUT-Flip Flop pairs   18798 out of 28800  65%
 
 
 Overall effort level (-ol):   High 
 Router effort level (-rl):    High 
 
-Starting initial Timing Analysis.  REAL time: 9 secs 
-Finished initial Timing Analysis.  REAL time: 9 secs 
+Starting initial Timing Analysis.  REAL time: 13 secs 
+Finished initial Timing Analysis.  REAL time: 13 secs 
 
 WARNING:Par:288 - The signal DIP<0>_IBUF has no load.  PAR will not attempt to route this signal.
 WARNING:Par:288 - The signal DIP<1>_IBUF has no load.  PAR will not attempt to route this signal.
@@ -67,32 +67,33 @@ WARNING:Par:288 - The signal DIP<5>_IBUF has no load.  PAR will not attempt to r
 WARNING:Par:288 - The signal DIP<6>_IBUF has no load.  PAR will not attempt to route this signal.
 WARNING:Par:288 - The signal DIP<7>_IBUF has no load.  PAR will not attempt to route this signal.
 WARNING:Par:288 - The signal CLK_33MHZ_FPGA_IBUF has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal TELE_RX_IBUF has no load.  PAR will not attempt to route this signal.
 Starting Router
 
 
-Phase  1  : 73179 unrouted;      REAL time: 11 secs 
+Phase  1  : 106185 unrouted;      REAL time: 15 secs 
 
-Phase  2  : 71069 unrouted;      REAL time: 12 secs 
+Phase  2  : 104522 unrouted;      REAL time: 16 secs 
 
-Phase  3  : 46653 unrouted;      REAL time: 25 secs 
+Phase  3  : 79062 unrouted;      REAL time: 46 secs 
 
-Phase  4  : 46771 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 31 secs 
+Phase  4  : 80069 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 1 mins 
 
 Updating file: fpga_top.ncd with current fully routed design.
 
-Phase  5  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 57 secs 
+Phase  5  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 9 mins 50 secs 
 
-Phase  6  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 57 secs 
+Phase  6  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 9 mins 50 secs 
 
-Phase  7  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 57 secs 
+Phase  7  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 9 mins 50 secs 
 
-Phase  8  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 57 secs 
+Phase  8  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 9 mins 50 secs 
 
-Phase  9  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 57 secs 
+Phase  9  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 9 mins 50 secs 
 
-Phase 10  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 1 mins 
-Total REAL time to Router completion: 1 mins 
-Total CPU time to Router completion: 1 mins 
+Phase 10  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 9 mins 54 secs 
+Total REAL time to Router completion: 9 mins 54 secs 
+Total CPU time to Router completion: 9 mins 52 secs 
 
 Partition Implementation Status
 -------------------------------
@@ -110,22 +111,22 @@ Generating Clock Report
 +---------------------+--------------+------+------+------------+-------------+
 |        Clock Net    |   Resource   |Locked|Fanout|Net Skew(ns)|Max Delay(ns)|
 +---------------------+--------------+------+------+------------+-------------+
-|             Clock75 | BUFGCTRL_X0Y1| No   |  882 |  0.297     |  1.801      |
+|             Clock75 | BUFGCTRL_X0Y1| No   |  568 |  0.306     |  1.810      |
++---------------------+--------------+------+------+------------+-------------+
+|             Clock50 | BUFGCTRL_X0Y0| No   |   71 |  0.242     |  1.780      |
++---------------------+--------------+------+------+------------+-------------+
+| audio_bit_clk_BUFGP | BUFGCTRL_X0Y3| No   |  228 |  0.264     |  1.804      |
++---------------------+--------------+------+------+------------+-------------+
+|        A_LCD/clk240 | BUFGCTRL_X0Y5| No   |  136 |  0.237     |  1.760      |
 +---------------------+--------------+------+------+------------+-------------+
 |CLK_27MHZ_FPGA_BUFGP |              |      |      |            |             |
-|                     | BUFGCTRL_X0Y4| No   |   44 |  0.169     |  1.687      |
+|                     | BUFGCTRL_X0Y4| No   |   44 |  0.205     |  1.794      |
 +---------------------+--------------+------+------+------------+-------------+
-|        A_LCD/clk240 | BUFGCTRL_X0Y5| No   |  135 |  0.176     |  1.758      |
-+---------------------+--------------+------+------+------------+-------------+
-| audio_bit_clk_BUFGP | BUFGCTRL_X0Y3| No   |  228 |  0.180     |  1.709      |
-+---------------------+--------------+------+------+------------+-------------+
-|             Clock50 | BUFGCTRL_X0Y0| No   |   71 |  0.191     |  1.710      |
-+---------------------+--------------+------+------+------------+-------------+
-|         A_LCD/clk40 |BUFGCTRL_X0Y30| No   |    3 |  0.014     |  1.522      |
+|         A_LCD/clk40 |BUFGCTRL_X0Y30| No   |    3 |  0.083     |  1.690      |
 +---------------------+--------------+------+------+------------+-------------+
 |A_PS2_KEY_MOUSE/A2_K |              |      |      |            |             |
 |EYBOARD_CTRL/nxtSTAT |              |      |      |            |             |
-|           E_not0001 |         Local|      |    1 |  0.000     |  0.446      |
+|           E_not0001 |         Local|      |    1 |  0.000     |  1.261      |
 +---------------------+--------------+------+------+------------+-------------+
 
 * Net Skew is the difference between the minimum and maximum routing
@@ -144,8 +145,8 @@ Asterisk (*) preceding a constraint indicates it was not met.
   Constraint                                |    Check    | Worst Case |  Best Case | Timing |   Timing   
                                             |             |    Slack   | Achievable | Errors |    Score   
 ----------------------------------------------------------------------------------------------------------
-  TS_A_CRG_CLKFX_BUF_2 = PERIOD TIMEGRP "A_ | SETUP       |     0.043ns|    13.290ns|       0|           0
-  CRG_CLKFX_BUF_2" TS_sys_clk_pin *         | HOLD        |     0.301ns|            |       0|           0
+  TS_A_CRG_CLKFX_BUF_2 = PERIOD TIMEGRP "A_ | SETUP       |     0.026ns|    13.307ns|       0|           0
+  CRG_CLKFX_BUF_2" TS_sys_clk_pin *         | HOLD        |     0.423ns|            |       0|           0
    0.75 HIGH 50%                            |             |            |            |        |            
 ----------------------------------------------------------------------------------------------------------
   TS_sys_clk_pin = PERIOD TIMEGRP "sys_clk_ | MINPERIOD   |     1.668ns|     8.332ns|       0|           0
@@ -163,8 +164,8 @@ Asterisk (*) preceding a constraint indicates it was not met.
   CRG_CLKFX_BUF_0" TS_sys_clk_pin *         |             |            |            |        |            
    0.75 HIGH 50%                            |             |            |            |        |            
 ----------------------------------------------------------------------------------------------------------
-  TS_A_CRG_CLKDV_BUF_0 = PERIOD TIMEGRP "A_ | SETUP       |    13.167ns|     6.833ns|       0|           0
-  CRG_CLKDV_BUF_0" TS_sys_clk_pin / 2       | HOLD        |     0.461ns|            |       0|           0
+  TS_A_CRG_CLKDV_BUF_0 = PERIOD TIMEGRP "A_ | SETUP       |    12.851ns|     7.149ns|       0|           0
+  CRG_CLKDV_BUF_0" TS_sys_clk_pin / 2       | HOLD        |     0.459ns|            |       0|           0
      HIGH 50%                               |             |            |            |        |            
 ----------------------------------------------------------------------------------------------------------
   TS_A_CRG_CLKDV_BUF = PERIOD TIMEGRP "A_CR | MINLOWPULSE |    18.946ns|     1.054ns|       0|           0
@@ -180,13 +181,13 @@ Derived Constraints for TS_sys_clk_pin
 |           Constraint          | Requirement |-------------+-------------|-------------+-------------|-------------+-------------|
 |                               |             |   Direct    | Derivative  |   Direct    | Derivative  |   Direct    | Derivative  |
 +-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
-|TS_sys_clk_pin                 |     10.000ns|      8.332ns|      9.967ns|            0|            0|            0|     20943603|
+|TS_sys_clk_pin                 |     10.000ns|      8.332ns|      9.980ns|            0|            0|            0|     22540135|
 | TS_A_CRG_CLKFX_BUF            |     13.333ns|      2.400ns|          N/A|            0|            0|            0|            0|
 | TS_A_CRG_CLKFX_BUF_1          |     13.333ns|      2.400ns|          N/A|            0|            0|            0|            0|
 | TS_A_CRG_CLKDV_BUF            |     20.000ns|      1.054ns|          N/A|            0|            0|            0|            0|
 | TS_A_CRG_CLKFX_BUF_0          |     13.333ns|      2.400ns|          N/A|            0|            0|            0|            0|
-| TS_A_CRG_CLKFX_BUF_2          |     13.333ns|     13.290ns|          N/A|            0|            0|     20937988|            0|
-| TS_A_CRG_CLKDV_BUF_0          |     20.000ns|      6.833ns|          N/A|            0|            0|         5615|            0|
+| TS_A_CRG_CLKFX_BUF_2          |     13.333ns|     13.307ns|          N/A|            0|            0|     22534536|            0|
+| TS_A_CRG_CLKDV_BUF_0          |     20.000ns|      7.149ns|          N/A|            0|            0|         5599|            0|
 +-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
 
 All constraints were met.
@@ -196,19 +197,19 @@ Generating Pad Report.
 
 All signals are completely routed.
 
-WARNING:Par:283 - There are 9 loadless signals in this design. This design will cause Bitgen to issue DRC warnings.
+WARNING:Par:283 - There are 10 loadless signals in this design. This design will cause Bitgen to issue DRC warnings.
 
-Total REAL time to PAR completion: 1 mins 4 secs 
-Total CPU time to PAR completion: 1 mins 3 secs 
+Total REAL time to PAR completion: 10 mins 
+Total CPU time to PAR completion: 9 mins 57 secs 
 
-Peak Memory Usage:  745 MB
+Peak Memory Usage:  840 MB
 
 Placer: Placement generated during map.
 Routing: Completed - No errors found.
 Timing: Completed - No errors found.
 
 Number of error messages: 0
-Number of warning messages: 11
+Number of warning messages: 12
 Number of info messages: 1
 
 Writing design to file fpga_top.ncd
